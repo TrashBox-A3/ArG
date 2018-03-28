@@ -28,6 +28,7 @@ class CfgVehicles
         backpack="";
         nakedUniform = "U_BasicBody"; 
         model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
+        hiddenSelectionsTextures[] = {"\a3\characters_f\blufor\data\clothing1_co.paa"};
         uniformClass="";
         weapons[] = {
             
@@ -77,6 +78,7 @@ class CfgVehicles
         backpack="";
         nakedUniform = "U_BasicBody"; 
         model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
+        hiddenSelectionsTextures[] = {"\a3\characters_f\blufor\data\clothing1_co.paa"};
         uniformClass="";
         weapons[] = {
             
@@ -125,6 +127,7 @@ class CfgVehicles
         backpack="B_Messenger_Gray_F";
         nakedUniform = "U_BasicBody"; 
         model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
+        hiddenSelectionsTextures[] = {"\a3\characters_f\blufor\data\clothing1_co.paa"};
         uniformClass="U_C_Poloshirt_burgundy";
         weapons[] = {
         
@@ -163,6 +166,7 @@ class CfgVehicles
         backpack="B_Messenger_Gray_F";
         nakedUniform = "U_BasicBody"; 
         model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
+        hiddenSelectionsTextures[] = {"\a3\characters_f\blufor\data\clothing1_co.paa"};
         uniformClass="U_C_Poloshirt_stripped";
         weapons[] = {
         
@@ -200,6 +204,7 @@ class CfgVehicles
         backpack="B_Messenger_Gray_F";
         nakedUniform = "U_BasicBody"; 
         model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
+        hiddenSelectionsTextures[] = {"\a3\characters_f\blufor\data\clothing1_co.paa"};
         uniformClass=;
         weapons[] = {
         
@@ -239,6 +244,7 @@ class CfgVehicles
         backpack="B_Messenger_Gray_F";
         nakedUniform = "U_BasicBody"; 
         model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
+        hiddenSelectionsTextures[] = {"\a3\characters_f\blufor\data\clothing1_co.paa"};
         uniformClass=;
         weapons[] = {
         
@@ -277,6 +283,7 @@ class CfgVehicles
         backpack="B_Messenger_Gray_F";
         nakedUniform = "U_BasicBody"; 
         model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
+        hiddenSelectionsTextures[] = {"\a3\characters_f\blufor\data\clothing1_co.paa"};
         uniformClass=;
         weapons[] = {
         
@@ -315,6 +322,7 @@ class CfgVehicles
         backpack="B_Messenger_Gray_F";
         nakedUniform = "U_BasicBody"; 
         model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
+        hiddenSelectionsTextures[] = {"\a3\characters_f\blufor\data\clothing1_co.paa"};
         uniformClass=;
         weapons[] = {
         
