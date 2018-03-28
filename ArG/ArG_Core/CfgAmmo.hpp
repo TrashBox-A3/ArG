@@ -18,7 +18,7 @@ class CfgAmmo
         tracerStartTime = 0.01; // seconds, -1 disables tracer
         tracerEndTime = 3; // seconds
         nvgOnly = false; // tracer visible only by NVG
-        coefGravity = -0.5; //default value
+        coefGravity = 0.5; //default value
 	};
 
 	class ArG_6mm_BB_025 : BulletBase

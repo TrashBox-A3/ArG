@@ -7,10 +7,7 @@ class Box_NATO_Equip_F;
         DLC = "";
         editorSubcategory = "ArG_Weapons_Box";
         editorCategory = "ArG_Objects";
-        hiddenSelectionsTextures[] = 
-        {
-            "A3\Weapons_F\Ammoboxes\data\AmmoBox_signs_CA.paa","A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"
-        };
+        
         class TransportItems
         {
             item10(ArG_AK_PKM);
