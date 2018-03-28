@@ -4,50 +4,60 @@ class Mode_FullAuto;
 class CfgWeapons
 {
 
-          ///VFC HK416A5(GBB)///
-    class rhs_weap_svd;
 
-    class ArG_VFC_HK416A5: rhs_weap_svd
+    
+
+
+
+    ///VFC HK416A5 GBB///
+    class rhs_weap_hk416d10;
+        
+    class ArG_TM_HK416_DEV: rhs_weap_hk416d10
     {
         author="Rodeostar42";
-
+       
         scope=2;
-        displayName="WE SVD";
-        model = "\rhsafrf\addons\rhs_weapons\SVD\svd_polymer.p3d";
-        baseWeapon="ArG_VFC_HK416A5";
-        picture = "\rhsafrf\addons\rhs_weapons\icons\svd_ca.paa";
+        displayName="VFC HK416A5 GBB";
+        model = "\rhsusf\addons\rhsusf_weapons2\HK416\rhs_hk416d10.p3d";
+        baseWeapon="ArG_TM_HK416_DEV";
+        picture = "\rhsusf\addons\rhsusf_weapons2\icons\rhs_hk416d10_icon_ca.paa";
         UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
-        descriptionShort = "SVD <br/>WE";
+        descriptionShort = "VFC HK416A5 GBB<br/>VFC";
         magazines[] = {
-
-            "ArG_20Rnd_762x54_BB"
+            
+            "ArG_520Rnd_556x45_BB",
+            "ArG_82Rnd_556x45_BB"
         };
 
-        initSpeed = 300; // muzzle velocity
+        initSpeed = 250; // muzzle velocity
         maxRange = 100;
         flash = "";
         flashSize = 0;
         fireLightIntensity=0;
-        reloadAction="RHS_GestureReloadSVDS";
-        recoil="GBRecoil";
-        maxZeroing=100;
+        reloadAction="GestureReloadMX";
+        recoil="NextEGRecoil";
+        maxZeroing=200;
         discreteDistanceInitIndex=0;
         maxRecoilSway=0.0125;
         swayDecaySpeed=1.25;
         soundBullet[]={"emptySound",1};
+        
 
 
 
         modes[]=
         {
             "Single",
+            "FullAuto",
+            "fullauto_medium",
+            "single_medium_optics1",
             "single_far_optics2"
         };
         class Single: Mode_SemiAuto
         {
             reloadTime=0.096000001;
-            recoil="GBRecoil";
-            recoilProne="GBRecoil";
+            recoil="EGRecoil";
+            recoilProne="EGRecoil";
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
@@ -58,19 +68,79 @@ class CfgWeapons
             midRangeProbab=0.69999999;
             maxRange=400;
             maxRangeProbab=0.30000001;
-            drySound[] = {"ArG_WE\Sound\SVD.wss",5, 1,30};
+            drySound[] = {"ArG_TM\Sound\M4_SOPMOD.wss",4, 1,15};
             class StandardSound
         {
-            begin1[] = {"ArG_WE\Sound\SVD.wss",5, 1,15};
+            begin1[] = {"ArG_TM\Sound\M4_SOPMOD.wss",4, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
         };
             class SilencedSound
         {
-            begin1[] = {"ArG_WE\Sound\SVD.wss",4, 1,15};
+            begin1[] = {"ArG_TM\Sound\M4_SOPMOD.wss",3, 1,15};
+            soundBegin[] = {"begin1",1};
+            weaponSoundEffect = "DefaultRifle";
+        };    
+        };
+        class FullAuto: Mode_FullAuto
+        {
+            reloadTime=0.096000001;
+            dispersion=0.00086999999;
+            recoil="EGRecoil";
+            recoilProne="EGRecoil";
+            flash = "";
+            flashSize = 0;
+            fireLightIntensity=0;
+            minRange=0;
+            minRangeProbab=0.89999998;
+            midRange=15;
+            midRangeProbab=0.69999999;
+            maxRange=30;
+            maxRangeProbab=0.1;
+            aiRateOfFire=1e-006;
+            drySound[] = {"ArG_VFC\Sound\VFC_HK416A5.wss",4, 1,15};
+            class StandardSound
+        {
+            begin1[] = {"ArG_VFC\Sound\VFC_HK416A5.wss",4, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
         };
+            class SilencedSound
+        {
+            begin1[] = {"ArG_VFC\Sound\VFC_HK416A5.wss",3, 1,15};
+            soundBegin[] = {"begin1",1};
+            weaponSoundEffect = "DefaultRifle";
+        };    
+        };
+        class fullauto_medium: FullAuto
+        {
+            showToPlayer=0;
+            burst=3;
+            aiBurstTerminable=1;
+            minRange=2;
+            minRangeProbab=0.5;
+            midRange=75;
+            midRangeProbab=0.69999999;
+            maxRange=150;
+            maxRangeProbab=0.050000001;
+            aiRateOfFire=2;
+            aiRateOfFireDistance=200;
+            flash = "";
+            flashSize = 0;
+            fireLightIntensity=0;
+            drySound[] = {"ArG_VFC\Sound\VFC_HK416A5.wss",4, 1,15};
+            class StandardSound
+        {
+            begin1[] = {"ArG_VFC\Sound\VFC_HK416A5.wss",4, 1,15};
+            soundBegin[] = {"begin1",1};
+            weaponSoundEffect = "DefaultRifle";
+        };
+            class SilencedSound
+        {
+            begin1[] = {"ArG_VFC\Sound\VFC_HK416A5.wss",3, 1,15};
+            soundBegin[] = {"begin1",1};
+            weaponSoundEffect = "DefaultRifle";
+        };    
         };
         class single_medium_optics1: Single
         {
@@ -87,19 +157,19 @@ class CfgWeapons
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
-            drySound[] = {"ArG_WE\Sound\SVD.wss",5, 1,30};
+            drySound[] = {"ArG_VFC\Sound\VFC_HK416A5.wss",4, 1,15};
             class StandardSound
         {
-            begin1[] = {"ArG_WE\Sound\SVD.wss",5, 1,15};
+            begin1[] = {"ArG_VFC\Sound\VFC_HK416A5.wss",4, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
         };
             class SilencedSound
         {
-            begin1[] = {"ArG_WE\Sound\SVD.wss",4, 1,15};
+            begin1[] = {"ArG_VFC\Sound\VFC_HK416A5.wss",3, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
-        };
+        };    
         };
         class single_far_optics2: single_medium_optics1
         {
@@ -116,24 +186,24 @@ class CfgWeapons
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
-            drySound[] = {"ArG_WE\Sound\SVD.wss",5, 1,30};
+            drySound[] = {"ArG_VFC\Sound\VFC_HK416A5.wss",4, 1,15};
             class StandardSound
         {
-            begin1[] = {"ArG_WE\Sound\SVD.wss",5, 1,15};
+            begin1[] = {"ArG_VFC\Sound\VFC_HK416A5.wss",4, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
         };
             class SilencedSound
         {
-            begin1[] = {"ArG_WE\Sound\SVD.wss",4, 1,15};
+            begin1[] = {"ArG_VFC\Sound\VFC_HK416A5.wss",3, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
+        };    
         };
-        };
-
-
-
-      };
+        
+        
+        
+      }; 
     
-
-  };
+  };  
+    
