@@ -14,6 +14,8 @@ class CfgVehicles
 
 
 	class  B_Soldier_base_F;
+
+	///Gamer#1//
 		class ArG_Gamer_1:  B_Soldier_base_F
 	{
 		scope=2;
