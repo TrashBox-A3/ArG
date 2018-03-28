@@ -10,10 +10,12 @@ count = _count; \
 class CfgVehicles
 {
 
-    
+    #include "ArG_ItemBox.hpp"
 
 
 	class  B_Soldier_base_F;
+
+	///Gamer#1///
 		class ArG_Gamer_1:  B_Soldier_base_F
 	{
 		scope=2;
@@ -26,7 +28,8 @@ class CfgVehicles
         backpack="";
         nakedUniform = "U_BasicBody"; 
         model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
-        uniformClass="";
+        
+        uniformClass="TRYK_U_B_PCUGs_BLK_R";
         weapons[] = {
             
             "Throw",
@@ -35,7 +38,7 @@ class CfgVehicles
         magazines[] = {};
         respawnMagazines[] = {};
         hiddenSelections[]={"Camo"};
-        hiddenSelectionsTextures[]={};
+        hiddenSelectionsTextures[] = {"\a3\characters_f\blufor\data\clothing1_co.paa"};
         linkedItems[] = {
             
             "ItemMap",
@@ -75,7 +78,8 @@ class CfgVehicles
         backpack="";
         nakedUniform = "U_BasicBody"; 
         model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
-        uniformClass="";
+        
+        uniformClass="TRYK_U_B_PCUGs_BLK_R";
         weapons[] = {
             
             "Throw",
@@ -84,7 +88,7 @@ class CfgVehicles
         magazines[] = {};
         respawnMagazines[] = {};
         hiddenSelections[]={"Camo"};
-        hiddenSelectionsTextures[]={};
+        hiddenSelectionsTextures[] = {"\a3\characters_f\blufor\data\clothing1_co.paa"};
         linkedItems[] = {
             
             "ItemMap",
@@ -123,6 +127,7 @@ class CfgVehicles
         backpack="B_Messenger_Gray_F";
         nakedUniform = "U_BasicBody"; 
         model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
+        
         uniformClass="U_C_Poloshirt_burgundy";
         weapons[] = {
         
@@ -132,7 +137,7 @@ class CfgVehicles
         magazines[] = {};
         respawnMagazines[] = {};
         hiddenSelections[]={"Camo"};
-        hiddenSelectionsTextures[]={};
+        hiddenSelectionsTextures[] = {"\a3\characters_f\blufor\data\clothing1_co.paa"};
         linkedItems[] = {
             
             "ItemMap",
@@ -161,6 +166,7 @@ class CfgVehicles
         backpack="B_Messenger_Gray_F";
         nakedUniform = "U_BasicBody"; 
         model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
+        
         uniformClass="U_C_Poloshirt_stripped";
         weapons[] = {
         
@@ -170,7 +176,7 @@ class CfgVehicles
         magazines[] = {};
         respawnMagazines[] = {};
         hiddenSelections[]={"Camo"};
-        hiddenSelectionsTextures[]={};
+        hiddenSelectionsTextures[] = {"\a3\characters_f\blufor\data\clothing1_co.paa"};
         linkedItems[] = {
             
             "ItemMap",
@@ -198,6 +204,7 @@ class CfgVehicles
         backpack="B_Messenger_Gray_F";
         nakedUniform = "U_BasicBody"; 
         model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
+        
         uniformClass=;
         weapons[] = {
         
@@ -207,7 +214,7 @@ class CfgVehicles
         magazines[] = {};
         respawnMagazines[] = {};
         hiddenSelections[]={"Camo"};
-        hiddenSelectionsTextures[]={};
+        hiddenSelectionsTextures[] = {"\a3\characters_f\blufor\data\clothing1_co.paa"};
         linkedItems[] = {
             
             "ItemMap",
@@ -237,6 +244,7 @@ class CfgVehicles
         backpack="B_Messenger_Gray_F";
         nakedUniform = "U_BasicBody"; 
         model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
+        
         uniformClass=;
         weapons[] = {
         
@@ -246,7 +254,7 @@ class CfgVehicles
         magazines[] = {};
         respawnMagazines[] = {};
         hiddenSelections[]={"Camo"};
-        hiddenSelectionsTextures[]={};
+        hiddenSelectionsTextures[] = {"\a3\characters_f\blufor\data\clothing1_co.paa"};
         linkedItems[] = {
             
             "ItemMap",
@@ -275,6 +283,7 @@ class CfgVehicles
         backpack="B_Messenger_Gray_F";
         nakedUniform = "U_BasicBody"; 
         model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
+        
         uniformClass=;
         weapons[] = {
         
@@ -284,7 +293,7 @@ class CfgVehicles
         magazines[] = {};
         respawnMagazines[] = {};
         hiddenSelections[]={"Camo"};
-        hiddenSelectionsTextures[]={};
+        hiddenSelectionsTextures[] = {"\a3\characters_f\blufor\data\clothing1_co.paa"};
         linkedItems[] = {
             
             "ItemMap",
@@ -313,6 +322,7 @@ class CfgVehicles
         backpack="B_Messenger_Gray_F";
         nakedUniform = "U_BasicBody"; 
         model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
+
         uniformClass=;
         weapons[] = {
         
@@ -322,7 +332,7 @@ class CfgVehicles
         magazines[] = {};
         respawnMagazines[] = {};
         hiddenSelections[]={"Camo"};
-        hiddenSelectionsTextures[]={};
+        hiddenSelectionsTextures[] = {"\a3\characters_f\blufor\data\clothing1_co.paa"};
         linkedItems[] = {
             
             "ItemMap",

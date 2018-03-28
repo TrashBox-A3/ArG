@@ -7,9 +7,9 @@ class CfgWeapons
 
 
     ///MX///
-    class Weapon_arifle_MX_F;
+    class arifle_MX_F;
         
-    class ArG_MX_F: Weapon_arifle_MX_F
+    class ArG_MX_F: arifle_MX_F
     {
         author="Rodeostar42";
        
