@@ -12,7 +12,7 @@ class CfgPatches
 		weapons[]=
 		{
 			
-			"ArG_VFC_HK416A5"
+			"ArG_VFC_HK416A5_GBB_BLK"
 			
 		};
 	};

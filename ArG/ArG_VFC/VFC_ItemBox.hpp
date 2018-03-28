@@ -13,8 +13,8 @@ class Box_NATO_Wps_F;
         };
         class TransportItems
         {
-            item10(ArG_AK_PKM);
-            item10(ArG_5000Rnd_762x54_BB);
+            item10(ArG_VFC_HK416A5_GBB_BLK);
+            item10(VFC_30Rnd_556x45_M4_HK416_GBB);
             
             
         };
