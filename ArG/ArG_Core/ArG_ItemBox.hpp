@@ -1,5 +1,5 @@
 class Box_NATO_Wps_F;
-    class ArG_Weapons_Box : Box_NATO_Wps_F
+    class ArG_Standard_Weapons_Box : Box_NATO_Wps_F
     {
         scope = 2;
         

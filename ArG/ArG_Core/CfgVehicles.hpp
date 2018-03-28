@@ -10,7 +10,7 @@ count = _count; \
 class CfgVehicles
 {
 
-    
+    #include "ArG_ItemBox.hpp"
 
 
 	class  B_Soldier_base_F;

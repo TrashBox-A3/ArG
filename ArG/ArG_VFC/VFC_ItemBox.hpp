@@ -14,6 +14,7 @@ class Box_NATO_Wps_F;
         class TransportItems
         {
             item10(ArG_VFC_HK416A5_GBB_BLK);
+            item10(ArG_VFC_HK416A5_GBB_SND);
             item10(VFC_30Rnd_556x45_M4_HK416_GBB);
             
             
