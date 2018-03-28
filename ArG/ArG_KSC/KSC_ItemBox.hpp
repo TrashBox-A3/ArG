@@ -1,5 +1,5 @@
-class Box_NATO_Wps_F;
-    class KSC_Weapons_Box : Box_NATO_Wps_F
+class Box_NATO_Equip_F;
+    class KSC_Weapons_Box : Box_NATO_Equip_F
     {
         scope = 2;
         

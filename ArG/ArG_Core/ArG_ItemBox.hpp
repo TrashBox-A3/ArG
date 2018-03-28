@@ -1,9 +1,9 @@
-class Box_NATO_Wps_F;
-    class ArG_Standard_Weapons_Box : Box_NATO_Wps_F
+class Box_NATO_Equip_F;
+    class ArG_Standard_Weapons_Box : Box_NATO_Equip_F
     {
         scope = 2;
         
-        displayName = "ArG Weapons Box";
+        displayName = "ArG Standard Weapons Box";
         DLC = "";
         editorSubcategory = "ArG_Weapons_Box";
         editorCategory = "ArG_Objects";

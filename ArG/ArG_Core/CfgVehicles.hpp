@@ -29,7 +29,7 @@ class CfgVehicles
         nakedUniform = "U_BasicBody"; 
         model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
         
-        uniformClass="";
+        uniformClass="TRYK_U_B_PCUGs_BLK_R";
         weapons[] = {
             
             "Throw",
@@ -79,7 +79,7 @@ class CfgVehicles
         nakedUniform = "U_BasicBody"; 
         model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
         
-        uniformClass="";
+        uniformClass="TRYK_U_B_PCUGs_BLK_R";
         weapons[] = {
             
             "Throw",
