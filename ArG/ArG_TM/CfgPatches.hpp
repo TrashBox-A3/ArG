@@ -8,7 +8,10 @@ class CfgPatches
 			
 		};
 		requiredVersion=0.1;
-		units[]={};
+		units[]={
+
+			"TM_Billboard"
+		};
 		weapons[]=
 		{
 			"ArG_TM_HK416_DEV",
