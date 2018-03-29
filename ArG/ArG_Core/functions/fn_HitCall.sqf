@@ -22,14 +22,14 @@ if (typeOf _x in _Gamer ) then
 _x addEventHandler ["HitPart", {
 
 player say3D "HitCall";
-
-player switchAction "Acts_JetsMarshallingClear_loop";
-
-sleep 5;
+player switchCamera "EXTERNAL";
 
 player switchMove "Acts_JetsMarshallingClear_loop";
 player disableAI "ANIM"}]; 
+player enableSimulationGlobal false;
+sleep 5;
 
+player enableSimulationGlobal true;
   }; 
 
 } forEach allUnits;
