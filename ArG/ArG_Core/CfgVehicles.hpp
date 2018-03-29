@@ -57,7 +57,7 @@ class CfgVehicles
         class EventHandlers
         {
 
-                hitPart = "_unit = (_this select 0) select 0; if ( (_unit getHitPointDamage 'Named_Selection') >= 0.2) then {hint 'Working'}";
+                hitPart = "_unit = (_this select 0) select 0; if ( (_unit getHitPointDamage 'Named_Selection') >= 0.1) then {hint 'Working'}";
 
         };
 
