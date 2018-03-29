@@ -26,10 +26,9 @@ player switchCamera "EXTERNAL";
 
 player switchMove "Acts_JetsMarshallingClear_loop";
 player disableAI "ANIM"}]; 
-player enableSimulationGlobal false;
-
-
-player enableSimulationGlobal true;
+"Land_HumanSkull_F" createVehicle position player;
+attachTo [player, [-0.1, 0.1, 0.15], "Pelvis"];
+setVectorDirAndUp [ [0.5, 0.5, 0], [-0.5, 0.5, 0] ];
   }; 
 
 } forEach allUnits;
