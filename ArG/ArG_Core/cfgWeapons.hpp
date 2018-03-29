@@ -225,7 +225,7 @@ class ItemCore;
         picture="\A3\weapons_F\Data\UI\gear_acca_snds_h_CA.paa";
         model="\A3\weapons_f\acc\acca_snds_h_F";
         baseWeapon="ArG_Disable_muzzleFlash";
-        class ItemInfo: ArG_Disable_muzzleFlash
+        class ItemInfo
         {
             mass=10;
             class MagazineCoef
