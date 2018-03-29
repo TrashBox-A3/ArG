@@ -37,6 +37,8 @@ class CfgWeapons
         maxRecoilSway=0.0125;
         swayDecaySpeed=1.25;
         soundBullet[]={"emptySound",1};
+        muzzleEnd="zaslehPoint";
+        alternativeFire="Zasleh2";
         
 
 
@@ -195,11 +197,63 @@ class CfgWeapons
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
         };    
+        };      
+    };
+
+
+    class InventoryMuzzleItem_Base_F;
+    class ArG_Disable_muzzleFlash: ItemCore
+    {
+        author="$STR_A3_Bohemia_Interactive";
+        _generalMacro="muzzle_snds_H";
+        htMin=1;
+        htMax=600;
+        afMax=0;
+        mfMax=0;
+        mFact=1;
+        tBody=100;
+        scope=2;
+        displayName="ArG Disable muzzleFlash";
+        picture="\A3\weapons_F\Data\UI\gear_acca_snds_h_CA.paa";
+        model="\A3\weapons_f\acc\acca_snds_h_F";
+        class ItemInfo: InventoryMuzzleItem_Base_F
+        {
+            mass=10;
+            class MagazineCoef
+            {
+                initSpeed=1.05;
+            };
+            class AmmoCoef
+            {
+                hit=1;
+                typicalSpeed=1;
+                airFriction=1;
+                visibleFire=0.30000001;
+                audibleFire=0.039999999;
+                visibleFireTime=0.5;
+                audibleFireTime=0.5;
+                cost=1;
+            };
+            soundTypeIndex=1;
+            muzzleEnd="zaslehPoint";
+            alternativeFire="Zasleh2";
+            class MuzzleCoef
+            {
+                dispersionCoef="0.8f";
+                artilleryDispersionCoef="1.0f";
+                fireLightCoef="0.1f";
+                recoilCoef="1.0f";
+                recoilProneCoef="1.0f";
+                minRangeCoef="1.0f";
+                minRangeProbabCoef="1.0f";
+                midRangeCoef="1.0f";
+                midRangeProbabCoef="1.0f";
+                maxRangeCoef="1.0f";
+                maxRangeProbabCoef="1.0f";
+            };
         };
-        
-        
-        
-      }; 
+        inertia=0.2;
+    }; 
 
 };
       
