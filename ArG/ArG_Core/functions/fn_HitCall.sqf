@@ -23,12 +23,14 @@ _x addEventHandler ["HitPart", {
 
 player say3D "HitCall";
 player switchCamera "EXTERNAL";
-
 player switchMove "Acts_JetsMarshallingClear_loop";
 player disableAI "ANIM";
 _Hit ="Land_HumanSkull_F" createVehicle position player;
 _Hit attachTo [player, [0, 0, 1.9]];
 _Hit setVectorDirAndUp [ [0, -1, 0], [0, 0, 1]];
+player enableSimulationGlobal false;
+sleep 10:
+player enableSimulationGlobal true;
 }]; 
 
   }; 
