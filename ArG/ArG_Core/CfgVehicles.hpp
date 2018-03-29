@@ -57,9 +57,12 @@ class CfgVehicles
         class EventHandlers
         {
 
-                hitPart = "_unit = (_this select 0) select 0; if ( (_unit getHitPointDamage 'Named_Selection') >= 0.01) then {_unit say3D'HitCall',_Unit playMove 'Acts_JetsMarshallingClear_loop'}";
+                hitPart = "_unit = (_this select 0) select 0; if ( (_unit getHitPointDamage 'Named_Selection') >= 0.2) then {hint 'Working'}";
 
         };
+
+
+
        
     };
 
