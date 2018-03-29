@@ -14,7 +14,5 @@ class ArG_Sign // Category class, you point to it in editorSubcategory property
     {
         displayName = "Sign"; // Name visible in the list
     };
-    
-
-    
+ 
 };

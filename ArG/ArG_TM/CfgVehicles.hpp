@@ -24,7 +24,7 @@ class CfgVehicles
 		faction = "Empty";
 		editorCategory = "ArG_Objects";
         editorSubcategory = "ArG_Sign";
-        editorPreview = "\TB_Props\TB_Props_EditorPreviews\TB_Billboard.jpg";
+        editorPreview = "\ArG_TM\TM_EditorPreviews\TM_Billboard.jpg";
 		model = "\A3\Structures_F\Civ\InfoBoards\Billboard_F.p3d";
 		hiddenSelections[]={"Camo"};
 		hiddenSelectionsTextures[] = {"\ArG_TM\Manui.jpg"};
