@@ -5,7 +5,7 @@ if (!isDedicated) then {
 
 	systemChat "hello";
 
-_ArG_Unit = [
+_Gamer = [
 "ArG_Gamer_1",
 "ArG_Gamer_2",
 "ArG_Gamer_3",
@@ -16,10 +16,18 @@ _ArG_Unit = [
 "ArG_Gamer_8"
 ];
 
-_gamer = typeOf player == _ArG_Unit ;
+{ 
+  
+if (typeOf _x in _Gamer ) then 
+  { 
+      
+_x addEventHandler ["HitPart", {
 
+player say3D "HitCall";
+player switchMove "Acts_JetsMarshallingClear_loop";
+player disableAI "ANIM"}]; 
+  }; 
 
-
-_gamer addEventHandler ["HitPart", {hint "Hitooo";_gamer say3D "HitCall";_gamer switchMove "Acts_JetsMarshallingClear_loop";_gamer disableAI "ANIM"}];
+} forEach allUnits;
 
 }; 
