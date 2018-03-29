@@ -9,7 +9,7 @@ class ItemCore;
     class InventoryMuzzleItem_Base_F;
     class InventoryOpticsItem_Base_F;
     class InventoryFlashLightItem_Base_F;
-    class Zasleh2: arifle_MX_F
+    class Zasleh2: ItemCore
     {
         scope=2;
         model="A3\weapons_f\data\zaslehsdl_proxy.p3d";
@@ -208,7 +208,7 @@ class ItemCore;
         };      
     };
 
-    
+
 
 };
       
