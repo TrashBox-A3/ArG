@@ -21,7 +21,7 @@ _Gamer = [
 
 { 
   
-if ((typeOf _x in _Gamer)&&(vehicle player != player)) then 
+if ((typeOf _x in _Gamer)) then 
   { 
       
 _x addEventHandler ["HitPart", {
