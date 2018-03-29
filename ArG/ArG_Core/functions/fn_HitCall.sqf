@@ -21,13 +21,13 @@ if (typeOf _x in _Gamer ) then
       
 _x addEventHandler ["HitPart", {
 
-_this say3D "HitCall";
-_this switchCamera "EXTERNAL";
+player say3D "HitCall";
+player switchCamera "EXTERNAL";
 
-_this switchMove "Acts_JetsMarshallingClear_loop";
-_this disableAI "ANIM"}]; 
-"Land_HumanSkull_F" createVehicle position _this;
-attachTo [_this, [-0.1, 0.1, 0.15], "Pelvis"];
+player switchMove "Acts_JetsMarshallingClear_loop";
+player disableAI "ANIM"}]; 
+"Land_HumanSkull_F" createVehicle position player;
+attachTo [player, [-0.1, 0.1, 0.15], "Pelvis"];
 setVectorDirAndUp [ [0.5, 0.5, 0], [-0.5, 0.5, 0] ];
   }; 
 
