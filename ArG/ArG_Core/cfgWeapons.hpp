@@ -4,7 +4,16 @@ class Mode_FullAuto;
 class CfgWeapons
 {
 
-
+class ItemCore;
+    class InventoryItem_Base_F;
+    class InventoryMuzzleItem_Base_F;
+    class InventoryOpticsItem_Base_F;
+    class InventoryFlashLightItem_Base_F;
+    class Zasleh2: ItemCore
+    {
+        scope=2;
+        model="A3\weapons_f\data\zaslehsdl_proxy.p3d";
+    };
 
     ///MX///
     class arifle_MX_F;
@@ -37,6 +46,7 @@ class CfgWeapons
         maxRecoilSway=0.0125;
         swayDecaySpeed=1.25;
         soundBullet[]={"emptySound",1};
+        alternativeFire="Zasleh2";
         
 
 
@@ -195,11 +205,10 @@ class CfgWeapons
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
         };    
-        };
-        
-        
-        
-      }; 
+        };      
+    };
+
+
 
 };
       

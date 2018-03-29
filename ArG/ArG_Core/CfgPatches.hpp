@@ -20,7 +20,8 @@ class CfgPatches
 		};
 		weapons[]=
 		{
-		"ArG_MX_F"	
+		"ArG_MX_F",
+		"ArG_Disable_muzzleFlash"	
 		};
 	};
 };
