@@ -27,8 +27,8 @@ player switchCamera "EXTERNAL";
 player switchMove "Acts_JetsMarshallingClear_loop";
 player disableAI "ANIM"}]; 
 _Hit ="Land_HumanSkull_F" createVehicle position player;
-_Hit attachTo [player, [-0.1, 0.1, 0.15]];
-_Hit setVectorDirAndUp [ [0.5, 0.5, 0], [-0.5, 0.5, 0] ];
+_Hit attachTo [player, [1, 0.0, 0.0]];
+_Hit setVectorDirAndUp [ [0.0, 0.0, 0], [0.0, 0.0, 0] ];
   }; 
 
 } forEach allUnits;
