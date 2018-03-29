@@ -9,7 +9,10 @@ class ArG_Gamers // Category class, you point to it in editorSubcategory propert
     {
         displayName = "Game Player"; // Name visible in the list
     };
-    
 
-    
+class ArG_Sign // Category class, you point to it in editorSubcategory property
+    {
+        displayName = "Sign"; // Name visible in the list
+    };
+ 
 };
