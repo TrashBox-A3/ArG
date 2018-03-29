@@ -24,10 +24,10 @@ _x addEventHandler ["HitPart", {
 player say3D "HitCall";
 player switchCamera "EXTERNAL";
 
-player playActionNow "Acts_JetsMarshallingClear_loop";
+player switchMove "Acts_JetsMarshallingClear_loop";
 player disableAI "ANIM"}]; 
 player enableSimulationGlobal false;
-sleep 40;
+
 
 player enableSimulationGlobal true;
   }; 
