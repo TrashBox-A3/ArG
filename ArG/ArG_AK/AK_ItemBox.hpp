@@ -11,6 +11,7 @@ class Box_NATO_Equip_F;
         class TransportItems
         {
             item10(ArG_AK_PKM);
+            item10(ArG_AK_SR25K);
             item10(ArG_5000Rnd_762x54_BB);
             item10(ArG_90Rnd_762x51_BB);
             item10(G_EyeProtectors_F);

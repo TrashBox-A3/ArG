@@ -224,7 +224,7 @@ class CfgWeapons
         flash = "";
         flashSize = 0;
         fireLightIntensity=0;
-        reloadAction="GestureReloadM200";
+        reloadAction = "RHS_GestureReloadSR25";
         recoil="EGRecoil";
         maxZeroing=200;
         discreteDistanceInitIndex=0;
