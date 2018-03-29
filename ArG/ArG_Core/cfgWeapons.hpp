@@ -4,7 +4,16 @@ class Mode_FullAuto;
 class CfgWeapons
 {
 
-
+class ItemCore;
+    class InventoryItem_Base_F;
+    class InventoryMuzzleItem_Base_F;
+    class InventoryOpticsItem_Base_F;
+    class InventoryFlashLightItem_Base_F;
+    class Zasleh2: ItemCore
+    {
+        scope=2;
+        model="A3\weapons_f\data\zaslehsdl_proxy.p3d";
+    };
 
     ///MX///
     class arifle_MX_F;
@@ -37,7 +46,6 @@ class CfgWeapons
         maxRecoilSway=0.0125;
         swayDecaySpeed=1.25;
         soundBullet[]={"emptySound",1};
-        muzzleEnd="zaslehPoint";
         alternativeFire="Zasleh2";
         
 
@@ -201,11 +209,11 @@ class CfgWeapons
     };
 
 
-    class InventoryMuzzleItem_Base_F;
-    class ArG_Disable_muzzleFlash: ItemCore
+    class muzzle_snds_H;
+    class ArG_Disable_muzzleFlash: muzzle_snds_H
     {
-        author="$STR_A3_Bohemia_Interactive";
-        _generalMacro="muzzle_snds_H";
+        author="Rodeostar42";
+        
         htMin=1;
         htMax=600;
         afMax=0;
@@ -216,7 +224,8 @@ class CfgWeapons
         displayName="ArG Disable muzzleFlash";
         picture="\A3\weapons_F\Data\UI\gear_acca_snds_h_CA.paa";
         model="\A3\weapons_f\acc\acca_snds_h_F";
-        class ItemInfo: InventoryMuzzleItem_Base_F
+        baseWeapon="ArG_Disable_muzzleFlash";
+        class ItemInfo: ArG_Disable_muzzleFlash
         {
             mass=10;
             class MagazineCoef
