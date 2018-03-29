@@ -3,8 +3,6 @@
 if (!isDedicated) then {
 
 
-	systemChat "hello";
-
 _Gamer = [
 "ArG_Gamer_1",
 "ArG_Gamer_2",
@@ -24,8 +22,14 @@ if (typeOf _x in _Gamer ) then
 _x addEventHandler ["HitPart", {
 
 player say3D "HitCall";
+
+player switchAction "Acts_JetsMarshallingClear_loop";
+
+sleep 5;
+
 player switchMove "Acts_JetsMarshallingClear_loop";
 player disableAI "ANIM"}]; 
+
   }; 
 
 } forEach allUnits;
