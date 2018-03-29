@@ -7,7 +7,6 @@ private "_unit";
 _unit = _this select 0;
  
 
-
 _Gamer = [
 "ArG_Gamer_1",
 "ArG_Gamer_2",
@@ -19,9 +18,10 @@ _Gamer = [
 "ArG_Gamer_8"
 ];
 
+
 { 
   
-if (typeOf _x in _Gamer ) then 
+if ((typeOf _x in _Gamer)&&(vehicle player == player)) then 
   { 
       
 _x addEventHandler ["HitPart", {
