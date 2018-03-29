@@ -57,11 +57,10 @@ class CfgVehicles
         class EventHandlers
         {
 
-                player addEventHandler ["HitPart", {player say3D "HitCall";player switchMove "Acts_JetsMarshallingClear_loop";player disableAI "ANIM"}];
+                hitPart = "_unit = (_this select 0) select 0; if ( (_unit getHitPointDamage 'Named_Selection') >= 0.01) then {_unit say3D'HitCall',_Unit playMove 'Acts_JetsMarshallingClear_loop'}";
 
         };
-
-        
+       
     };
 
 

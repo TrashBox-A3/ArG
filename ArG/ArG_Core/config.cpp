@@ -20,6 +20,9 @@
 
 #include "CfgEditorSubcategories.hpp"
 
+#include "CfgFunctions.hpp"
+
+
 
 
 
