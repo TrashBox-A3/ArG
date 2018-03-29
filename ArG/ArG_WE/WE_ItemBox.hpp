@@ -12,7 +12,7 @@ class Box_NATO_Equip_F;
         {
             item10(ArG_WE_SVD);
             item10(ArG_20Rnd_762x54_BB);
-            
+            item10(G_EyeProtectors_F);
             
         };
     };

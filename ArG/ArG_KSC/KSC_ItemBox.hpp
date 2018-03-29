@@ -15,7 +15,7 @@ class Box_NATO_Equip_F;
             item10(ArG_KSC_AK74M);
             item10(ArG_600Rnd_545x39_BB);
             item10(ArG_70Rnd_545x39_BB);
-            
+            item10(G_EyeProtectors_F);
             
         };
     };
