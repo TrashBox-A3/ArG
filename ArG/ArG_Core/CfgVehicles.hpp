@@ -24,12 +24,12 @@ class CfgVehicles
         faction="ArG_Core";
         icon = "iconMan";
         editorSubcategory = "ArG_Gamers";
-        editorPreview = "\JSOC\JSOC_EditorPreviews\SEALs_AOR1_RifleOperator.jpg";
-        backpack="";
+        editorPreview = "\ArG_Core\Core_EditorPreviews\ArG_Gamer_1.jpg";
+        backpack="B_FieldPack_blk";
         nakedUniform = "U_BasicBody"; 
         model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
         
-        uniformClass="TRYK_U_B_PCUGs_BLK_R";
+        uniformClass="U_BG_Guerilla2_2";
         weapons[] = {
             
             "Throw",
@@ -74,12 +74,12 @@ class CfgVehicles
         faction="ArG_Core";
         icon = "iconMan";
         editorSubcategory = "ArG_Gamers";
-        editorPreview = "\JSOC\JSOC_EditorPreviews\SEALs_AOR1_RifleOperator.jpg";
-        backpack="";
+        editorPreview = "\ArG_Core\Core_EditorPreviews\ArG_Gamer_2.jpg";
+        backpack="B_FieldPack_blk";
         nakedUniform = "U_BasicBody"; 
         model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
         
-        uniformClass="TRYK_U_B_PCUGs_BLK_R";
+        uniformClass="U_BG_Guerilla2_1";
         weapons[] = {
             
             "Throw",
@@ -123,12 +123,12 @@ class CfgVehicles
         faction="ArG_Core";
         icon = "iconMan";
         editorSubcategory = "ArG_Gamers";
-        editorPreview = "\SOAR\SOAR_EditorPreviews\SOAR_Heli_Pilot_1.jpg";
-        backpack="B_Messenger_Gray_F";
+        editorPreview = "\ArG_Core\Core_EditorPreviews\ArG_Gamer_3.jpg";
+        backpack="B_FieldPack_cbr";
         nakedUniform = "U_BasicBody"; 
         model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
         
-        uniformClass="U_C_Poloshirt_burgundy";
+        uniformClass="U_BG_Guerilla2_3";
         weapons[] = {
         
             "Throw",
@@ -162,12 +162,12 @@ class CfgVehicles
         faction="ArG_Core";
         icon = "iconMan";
         editorSubcategory = "ArG_Gamers";
-        editorPreview = "\SOAR\SOAR_EditorPreviews\SOAR_Heli_Pilot_1.jpg";
-        backpack="B_Messenger_Gray_F";
+        editorPreview = "\ArG_Core\Core_EditorPreviews\ArG_Gamer_4.jpg";
+        backpack="B_FieldPack_oli";
         nakedUniform = "U_BasicBody"; 
         model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
         
-        uniformClass="U_C_Poloshirt_stripped";
+        uniformClass="U_BG_Guerilla3_1";
         weapons[] = {
         
             "Throw",
@@ -200,12 +200,12 @@ class CfgVehicles
         faction="ArG_Core";
         icon = "iconMan";
         editorSubcategory = "ArG_Gamers";
-        editorPreview = "\SOAR\SOAR_EditorPreviews\SOAR_Heli_Pilot_1.jpg";
-        backpack="B_Messenger_Gray_F";
+        editorPreview = "\ArG_Core\Core_EditorPreviews\ArG_Gamer_5.jpg";
+        backpack="B_TacticalPack_blk";
         nakedUniform = "U_BasicBody"; 
         model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
         
-        uniformClass=;
+        uniformClass="U_C_HunterBody_grn";
         weapons[] = {
         
             "Throw",
@@ -240,12 +240,12 @@ class CfgVehicles
         faction="ArG_Core";
         icon = "iconMan";
         editorSubcategory = "ArG_Gamers";
-        editorPreview = "\SOAR\SOAR_EditorPreviews\SOAR_Heli_Pilot_1.jpg";
+        editorPreview = "\ArG_Core\Core_EditorPreviews\ArG_Gamer_6.jpg";
         backpack="B_Messenger_Gray_F";
         nakedUniform = "U_BasicBody"; 
         model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
         
-        uniformClass=;
+        uniformClass="U_OrestesBody";
         weapons[] = {
         
             "Throw",
@@ -279,12 +279,12 @@ class CfgVehicles
         faction="ArG_Core";
         icon = "iconMan";
         editorSubcategory = "ArG_Gamers";
-        editorPreview = "\SOAR\SOAR_EditorPreviews\SOAR_Heli_Pilot_1.jpg";
-        backpack="B_Messenger_Gray_F";
+        editorPreview = "\ArG_Core\Core_EditorPreviews\ArG_Gamer_7.jpg";
+        backpack="B_Messenger_Black_F";
         nakedUniform = "U_BasicBody"; 
         model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
         
-        uniformClass=;
+        uniformClass="U_C_Poor_1";
         weapons[] = {
         
             "Throw",
@@ -318,12 +318,12 @@ class CfgVehicles
         faction="ArG_Core";
         icon = "iconMan";
         editorSubcategory = "ArG_Gamers";
-        editorPreview = "\SOAR\SOAR_EditorPreviews\SOAR_Heli_Pilot_1.jpg";
+        editorPreview = "\ArG_Core\Core_EditorPreviews\ArG_Gamer_8.jpg";
         backpack="B_Messenger_Gray_F";
         nakedUniform = "U_BasicBody"; 
         model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
 
-        uniformClass=;
+        uniformClass="U_C_Poloshirt_burgundy";
         weapons[] = {
         
             "Throw",

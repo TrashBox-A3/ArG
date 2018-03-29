@@ -24,7 +24,7 @@ class Box_NATO_Equip_F;
             item10(ArG_25Rnd_9mm);
             item10(ArG_TM_P226R);
             item10(ArG_TM_M92F);
-            
+            item10(G_EyeProtectors_F);
             
         };
     };

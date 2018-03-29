@@ -12,7 +12,8 @@ class CfgPatches
 		weapons[]=
 		{
 			
-			"ArG_AK_PKM"
+			"ArG_AK_PKM",
+			"ArG_AK_SR25K"
 			
 		};
 	};
