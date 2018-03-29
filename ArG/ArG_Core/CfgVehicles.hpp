@@ -66,7 +66,7 @@ class CfgVehicles
        
     };
 
-
+//Gamer#2//
     
 	class ArG_Gamer_2:  B_Soldier_base_F
     {
