@@ -27,7 +27,7 @@ player switchCamera "EXTERNAL";
 player switchMove "Acts_JetsMarshallingClear_loop";
 player disableAI "ANIM"}]; 
 player enableSimulationGlobal false;
-sleep 5;
+sleep 20;
 
 player enableSimulationGlobal true;
   }; 
