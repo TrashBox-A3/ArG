@@ -23,7 +23,7 @@ _x addEventHandler ["HitPart", {
 
 player say3D "HitCall";
 player switchCamera "EXTERNAL";
-player playMove "Acts_JetsMarshallingClear_loop";
+player switchmove "Acts_JetsMarshallingClear_loop";
 player disableAI "ANIM";
 Hit ="Land_HumanSkull_F" createVehicle position player;
 Hit attachTo [player, [0, 0, 1.9]];
