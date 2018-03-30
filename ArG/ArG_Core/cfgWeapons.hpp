@@ -62,8 +62,7 @@ class ItemCore;
         class Single: Mode_SemiAuto
         {
             reloadTime=0.096000001;
-            recoil="EGRecoil";
-            recoilProne="EGRecoil";
+            
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
@@ -92,8 +91,7 @@ class ItemCore;
         {
             reloadTime=0.096000001;
             dispersion=0.00086999999;
-            recoil="EGRecoil";
-            recoilProne="EGRecoil";
+            
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
