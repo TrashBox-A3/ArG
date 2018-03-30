@@ -1,11 +1,11 @@
 ///script by Rodeostar42///
 
-if (!isServer) then {
+if (!isDedicated) then {
 
-private ["_player","_Gamer"];
+private ["_player"];
 
 _player = _this select 0;
-_Gamer =  _this select 1;
+
 
 _Gamer = [
 "ArG_Gamer_1",
@@ -37,7 +37,7 @@ Hit ="Land_HumanSkull_F" createVehicle position player;
 Hit attachTo [player, [0, 0, 1.9]];
 Hit setVectorDirAndUp [ [0, -1, 0], [0, 0, 1]];
 
-unit removeEventHandler ["HitPart", 0];
+player removeEventHandler ["HitPart", 0];
 
 }]; 
 
