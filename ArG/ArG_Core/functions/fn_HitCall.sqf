@@ -38,6 +38,8 @@ Hit ="Land_HumanSkull_F" createVehicle position player;
 Hit attachTo [_unit, [0, 0, 1.9]];
 Hit setVectorDirAndUp [ [0, -1, 0], [0, 0, 1]];
 
+player removeEventHandler ["HitPart", 0];
+
 }]; 
 
   }; 
