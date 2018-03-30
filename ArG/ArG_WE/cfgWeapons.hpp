@@ -46,8 +46,7 @@ class CfgWeapons
         class Single: Mode_SemiAuto
         {
             reloadTime=0.096000001;
-            recoil="GBRecoil";
-            recoilProne="GBRecoil";
+            
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
