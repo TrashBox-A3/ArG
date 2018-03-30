@@ -33,6 +33,8 @@ player switchCamera "EXTERNAL";
 player switchmove "Acts_JetsMarshallingClear_loop";
 player disableAI "ANIM";
 
+player setCaptive true;
+
 sleep 2;
 
 player playMoveNow "ApanPknlMstpSnonWnonDnon_G01";
