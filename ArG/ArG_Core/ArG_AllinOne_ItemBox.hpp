@@ -1,3 +1,4 @@
+
 class Box_NATO_Equip_F;
     class ArG_AllinOne_Weapons_Box : Box_NATO_Equip_F
     {
