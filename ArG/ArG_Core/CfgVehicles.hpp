@@ -232,5 +232,23 @@ class CfgVehicles
         
     };
 
+
+    class  Land_Billboard_F;
+    
+        class ArG_Billboard:  Land_Billboard_F
+    {
+        scope=2;
+        author="Rodeostar42";
+        displayName="ArG Billboard";
+        faction = "Empty";
+        editorCategory = "ArG_Objects";
+        editorSubcategory = "ArG_Sign";
+        editorPreview = "\ArG_TM\TM_EditorPreviews\TM_Billboard.jpg";
+        model = "\A3\Structures_F\Civ\InfoBoards\Billboard_F.p3d";
+        hiddenSelections[]={"Camo"};
+        hiddenSelectionsTextures[] = {"\ArG_Core\ArG.jpg"};
+        
+    };
+
     
 };

@@ -19,7 +19,8 @@ class CfgPatches
 		{
 		"ArG_MX_F",
 		"ArG_BuzzerBox",
-		"ArG_Speaker"	
+		"ArG_Speaker",
+		"ArG_Billboard"
 		};
 	};
 };
