@@ -14,7 +14,7 @@ class CfgGroups {
                 name = "Game Player";
 
                 class ArG_Group_1 {
-                    name = "Group 1";
+                    name = "4 Frends";
                     side = 1;
                     faction = "ArG_Core";
                     icon = "\A3\ui_f\data\map\markers\nato\b_recon.paa";
