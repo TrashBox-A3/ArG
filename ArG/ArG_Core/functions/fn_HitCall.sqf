@@ -32,7 +32,7 @@ player say3D "HitCall";
 
 player switchCamera "EXTERNAL";
 
-player switchmove "Acts_JetsMarshallingClear_loop";
+player switchmove "Acts_JetsMarshallingRight_loop";
 
 
 
@@ -54,3 +54,4 @@ Hit setVectorDirAndUp [ [0, -1, 0], [0, 0, 1]];
 
 }; 
 
+waituntil{player switchmove "Acts_JetsMarshallingRight_loop";};
