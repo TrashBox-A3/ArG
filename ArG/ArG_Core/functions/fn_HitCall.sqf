@@ -34,7 +34,7 @@ player switchCamera "EXTERNAL";
 player switchMove "Acts_JetsMarshallingRight_loop";
 [] spawn
 {
-	sleep 5; 
+	sleep 2; 
 	player playMove "ApanPknlMstpSnonWnonDnon_G01"; 
 	 
 };

@@ -27,7 +27,7 @@ class CfgVehicles
         editorPreview = "\ArG_TM\TM_EditorPreviews\TM_Billboard.jpg";
 		model = "\A3\Structures_F\Civ\InfoBoards\Billboard_F.p3d";
 		hiddenSelections[]={"Camo"};
-		hiddenSelectionsTextures[] = {"\ArG_TM\Manui.jpg"};
+		hiddenSelectionsTextures[] = {"\ArG_TM\Manui.paa"};
 		
 	};
 
