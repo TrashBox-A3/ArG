@@ -194,5 +194,42 @@ class CfgVehicles
         
     };
 
+
+    //Speaker Box//
+    class  Land_SatellitePhone_F;
+    
+        class ArG_BuzzerBox:  Land_SatellitePhone_F
+    {
+        scope=2;
+        author="Rodeostar42";
+        displayName="Buzzer box";
+        faction = "Empty";
+        editorCategory = "ArG_Objects";
+        editorSubcategory = "ArG_Items";
+        editorPreview = "\ArG_TM\TM_EditorPreviews\TM_Billboard.jpg";
+        model = "\A3\Structures_F\Items\Electronics\SatellitePhone_F.p3d";
+        hiddenSelections[]={};
+        hiddenSelectionsTextures[] = {};
+        
+    };
+
+    //Speaker//
+    class  Land_Loudspeakers_F;
+    
+        class ArG_Speaker:  Land_Loudspeakers_F
+    {
+        scope=2;
+        author="Rodeostar42";
+        displayName="Speaker";
+        faction = "Empty";
+        editorCategory = "ArG_Objects";
+        editorSubcategory = "ArG_Items";
+        editorPreview = "\ArG_TM\TM_EditorPreviews\TM_Billboard.jpg";
+        model = "\A3\Structures_F\Civ\Accessories\Loudspeakers_F.p3d";
+        hiddenSelections[]={};
+        hiddenSelectionsTextures[] = {};
+        
+    };
+
     
 };
