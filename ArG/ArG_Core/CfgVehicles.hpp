@@ -11,6 +11,7 @@ class CfgVehicles
 {
 
     #include "ArG_ItemBox.hpp"
+    #include "ArG_AllinOne_Weapons_Box.hpp"
 
 
 	class  B_Soldier_base_F;
@@ -206,7 +207,7 @@ class CfgVehicles
         faction = "Empty";
         editorCategory = "ArG_Objects";
         editorSubcategory = "ArG_Items";
-        editorPreview = "\ArG_TM\TM_EditorPreviews\TM_Billboard.jpg";
+        editorPreview = "\ArG_Core\Core_EditorPreviews\ArG_BuzzerBox.jpg";
         model = "\A3\Structures_F\Items\Electronics\SatellitePhone_F.p3d";
         hiddenSelections[]={};
         hiddenSelectionsTextures[] = {};
@@ -224,7 +225,7 @@ class CfgVehicles
         faction = "Empty";
         editorCategory = "ArG_Objects";
         editorSubcategory = "ArG_Items";
-        editorPreview = "\ArG_TM\TM_EditorPreviews\TM_Billboard.jpg";
+        editorPreview = "\ArG_Core\Core_EditorPreviews\ArG_Speakera.jpg";
         model = "\A3\Structures_F\Civ\Accessories\Loudspeakers_F.p3d";
         hiddenSelections[]={};
         hiddenSelectionsTextures[] = {};
