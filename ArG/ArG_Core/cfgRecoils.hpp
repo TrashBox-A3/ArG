@@ -9,15 +9,6 @@ class cfgRecoils
   temporary	= 0.01;
  };
 
- class EGRecoil
- {              //  x     y     a     b
-  muzzleOuter[]	= { 0.1,  0.1,  0.1,  0.1 };
-  muzzleInner[] = {0,0,0.1,0.1};
-  kickBack[]	= { 0.01, 0.01 };
-  permanent	= 0.1;
-  temporary	= 0.01;
- };
-
  class NextEGRecoil
  {              //  x     y     a     b
   muzzleOuter[]	= { 0.1,  0.2,  0.1,  0.1 };
@@ -35,4 +26,14 @@ class cfgRecoils
   permanent	= 0.1;
   temporary	= 0.01;
  };
+
+ class EGRecoil
+ {              //  x     y     a     b
+  muzzleOuter[] = { 0.1,  0.1,  0.1,  0.1 };
+  muzzleInner[] = {0,0,0.1,0.1};
+  kickBack[]  = { 0.01, 0.01 };
+  permanent = 0.1;
+  temporary = 0.01;
+ };
+ 
 };

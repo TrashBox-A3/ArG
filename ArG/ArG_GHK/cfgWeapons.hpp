@@ -3,9 +3,9 @@ class Mode_Burst;
 class Mode_FullAuto;
 class CfgWeapons
 {
-
-   class rhs_weap_akm;
-          ///GHKAKM///
+    
+    ///GHK AKM///
+    class rhs_weap_akm;
     class ArG_GHK_AKM: rhs_weap_akm
     {
         author="Ukedachi";
@@ -48,8 +48,7 @@ class CfgWeapons
         class Single: Mode_SemiAuto
         {
             reloadTime=0.096000001;
-            recoil="GBRecoil";
-            recoilProne="GBRecoil";
+            
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
@@ -78,8 +77,7 @@ class CfgWeapons
         {
             reloadTime=0.096000001;
             dispersion=0.00086999999;
-            recoil="GBRecoil";
-            recoilProne="GBRecoil";
+            
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;

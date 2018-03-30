@@ -2,13 +2,13 @@
 
 #include "CfgFunctions.hpp"
 
+#include "cfgRecoils.hpp"
+
 #include "CfgVehicles.hpp"
 
 #include "CfgFactionClasses.hpp"
 
 #include "CfgGroups.hpp"
-
-#include "cfgRecoils.hpp"
 
 #include "CfgAmmo.hpp"
 

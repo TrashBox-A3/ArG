@@ -51,8 +51,7 @@ class CfgWeapons
         class Single: Mode_SemiAuto
         {
             reloadTime=0.096000001;
-            recoil="GBRecoil";
-            recoilProne="GBRecoil";
+            
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
@@ -81,8 +80,7 @@ class CfgWeapons
         {
             reloadTime=0.096000001;
             dispersion=0.00086999999;
-            recoil="GBRecoil";
-            recoilProne="GBRecoil";
+            
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
@@ -248,8 +246,7 @@ class CfgWeapons
         class Single: Mode_SemiAuto
         {
             reloadTime=0.096000001;
-            recoil="GBRecoil";
-            recoilProne="GBRecoil";
+            
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
@@ -278,8 +275,7 @@ class CfgWeapons
         {
             reloadTime=0.096000001;
             dispersion=0.00086999999;
-            recoil="GBRecoil";
-            recoilProne="GBRecoil";
+            
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;

@@ -1,6 +1,6 @@
 
 
-if (!isDedicated) then {
+
 
 private "_unit";
 
@@ -44,4 +44,4 @@ Hit setVectorDirAndUp [ [0, -1, 0], [0, 0, 1]];
 
 } forEach allUnits;
 
-}; 
+ 
