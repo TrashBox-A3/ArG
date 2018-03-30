@@ -31,7 +31,13 @@ player say3D "HitCall";
 
 player switchCamera "EXTERNAL";
 
-player switchmove "Acts_JetsMarshallingRight_loop";
+player switchMove "Acts_JetsMarshallingRight_loop";
+[] spawn
+{
+	sleep 5; 
+	player playMove "ApanPknlMstpSnonWnonDnon_G01"; 
+	 
+};
 
 Hit ="Land_HumanSkull_F" createVehicle position player;
 Hit attachTo [player, [0, 0, 1.9]];
