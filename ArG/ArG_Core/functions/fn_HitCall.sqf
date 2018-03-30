@@ -1,6 +1,6 @@
+///script by Rodeostar42///
 
-
-
+if (!isDedicated) then {
 
 private "_unit";
 
@@ -24,24 +24,25 @@ _Gamer = [
 if ((typeOf _x in _Gamer)) then 
   { 
       
-_x addEventHandler ["HitPart", {
+player addEventHandler ["HitPart", {
 
-_unit say3D "HitCall";
+player setCaptive true;
 
-_unit switchCamera "EXTERNAL";
+player say3D "HitCall";
 
-_unit switchmove "Acts_JetsMarshallingClear_loop";
-_unit disableAI "ANIM";
+player switchCamera "EXTERNAL";
 
-Hit ="Land_HumanSkull_F" createVehicle position _unit;
+player switchmove "Acts_JetsMarshallingRight_loop";
+
+Hit ="Land_HumanSkull_F" createVehicle position player;
 Hit attachTo [_unit, [0, 0, 1.9]];
 Hit setVectorDirAndUp [ [0, -1, 0], [0, 0, 1]];
-
 
 }]; 
 
   }; 
 
-} forEach allUnits;
+} forEach allunits;
 
- 
+}; 
+
