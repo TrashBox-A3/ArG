@@ -34,17 +34,9 @@ player switchCamera "EXTERNAL";
 
 player switchmove "Acts_JetsMarshallingRight_loop";
 
-
-
-
-sleep 6;
-
-player playMoveNow "ApanPknlMstpSnonWnonDnon_G01";
-
 Hit ="Land_HumanSkull_F" createVehicle position player;
 Hit attachTo [_unit, [0, 0, 1.9]];
 Hit setVectorDirAndUp [ [0, -1, 0], [0, 0, 1]];
-
 
 }]; 
 
@@ -54,4 +46,3 @@ Hit setVectorDirAndUp [ [0, -1, 0], [0, 0, 1]];
 
 }; 
 
-waituntil{player switchmove "Acts_JetsMarshallingRight_loop";};
