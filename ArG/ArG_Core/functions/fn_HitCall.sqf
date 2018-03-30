@@ -26,16 +26,18 @@ if ((typeOf _x in _Gamer)) then
       
 player addEventHandler ["HitPart", {
 
+player setCaptive true;
+
 player say3D "HitCall";
 
 player switchCamera "EXTERNAL";
 
 player switchmove "Acts_JetsMarshallingClear_loop";
-player disableAI "ANIM";
 
-player setCaptive true;
 
-sleep 2;
+
+
+sleep 6;
 
 player playMoveNow "ApanPknlMstpSnonWnonDnon_G01";
 
