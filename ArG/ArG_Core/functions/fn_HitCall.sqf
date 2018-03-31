@@ -2,20 +2,16 @@
 
 if (!isDedicated) then {
 
-private "_unit";
+private ["_player"];
 
-_unit = _this select 0;
- 
+_player = _this select 0;
+
 
 _Gamer = [
 "ArG_Gamer_1",
 "ArG_Gamer_2",
 "ArG_Gamer_3",
-"ArG_Gamer_4",
-"ArG_Gamer_5",
-"ArG_Gamer_6",
-"ArG_Gamer_7",
-"ArG_Gamer_8"
+"ArG_Gamer_4"
 ];
 
 
@@ -32,11 +28,19 @@ player say3D "HitCall";
 
 player switchCamera "EXTERNAL";
 
-player switchmove "Acts_JetsMarshallingRight_loop";
+player switchMove "Acts_JetsMarshallingRight_loop";
+[] spawn
+{
+	sleep 5; 
+	player playMove "ApanPknlMstpSnonWnonDnon_G01"; 
+	 
+};
 
 Hit ="Land_HumanSkull_F" createVehicle position player;
-Hit attachTo [_unit, [0, 0, 1.9]];
+Hit attachTo [player, [0, 0, 1.9]];
 Hit setVectorDirAndUp [ [0, -1, 0], [0, 0, 1]];
+
+player removeEventHandler ["HitPart", 0];
 
 }]; 
 

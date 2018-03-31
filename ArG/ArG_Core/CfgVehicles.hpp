@@ -11,6 +11,7 @@ class CfgVehicles
 {
 
     #include "ArG_ItemBox.hpp"
+    
 
 
 	class  B_Soldier_base_F;
@@ -193,163 +194,60 @@ class CfgVehicles
         
     };
 
-    class ArG_Gamer_5:  B_Soldier_base_F
+
+    //Speaker Box//
+    class  Land_SatellitePhone_F;
+    
+        class ArG_BuzzerBox:  Land_SatellitePhone_F
     {
         scope=2;
         author="Rodeostar42";
-        displayName="AirSoft Gamer 5";
-        faction="ArG_Core";
-        icon = "iconMan";
-        editorSubcategory = "ArG_Gamers";
-        editorPreview = "\ArG_Core\Core_EditorPreviews\ArG_Gamer_5.jpg";
-        backpack="B_TacticalPack_blk";
-        nakedUniform = "U_BasicBody"; 
-        model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
-        
-        uniformClass="U_C_HunterBody_grn";
-        weapons[] = {
-        
-            "Throw",
-            "Put"
-        };
-        magazines[] = {};
-        respawnMagazines[] = {};
-        hiddenSelections[]={"Camo"};
-        hiddenSelectionsTextures[] = {"\a3\characters_f\blufor\data\clothing1_co.paa"};
-        linkedItems[] = {
-            
-            "ItemMap",
-            "ItemCompass",
-            "ItemWatch"
-        };
-        respawnLinkedItems[] = {
-            "ItemMap",
-            "ItemCompass",
-            "ItemWatch"
-        };
-
+        displayName="Buzzer box";
+        faction = "Empty";
+        editorCategory = "ArG_Objects";
+        editorSubcategory = "ArG_Items";
+        editorPreview = "\ArG_Core\Core_EditorPreviews\ArG_BuzzerBox.jpg";
+        model = "\A3\Structures_F\Items\Electronics\SatellitePhone_F.p3d";
+        hiddenSelections[]={};
+        hiddenSelectionsTextures[] = {};
         
     };
 
+    //Speaker//
+    class  Land_Loudspeakers_F;
+    
+        class ArG_Speaker:  Land_Loudspeakers_F
+    {
+        scope=2;
+        author="Rodeostar42";
+        displayName="Speaker";
+        faction = "Empty";
+        editorCategory = "ArG_Objects";
+        editorSubcategory = "ArG_Items";
+        editorPreview = "\ArG_Core\Core_EditorPreviews\ArG_Speakera.jpg";
+        model = "\A3\Structures_F\Civ\Accessories\Loudspeakers_F.p3d";
+        hiddenSelections[]={};
+        hiddenSelectionsTextures[] = {};
+        
+    };
+
+
+    class  Land_Billboard_F;
+    
+        class Core_Billboard:  Land_Billboard_F
+    {
+        scope=2;
+        author="Rodeostar42";
+        displayName="Core Billboard";
+        faction = "Empty";
+        editorCategory = "ArG_Objects";
+        editorSubcategory = "ArG_Sign";
+        editorPreview = "\ArG_Core\Core_EditorPreviews\Core_Billboard.jpg";
+        model = "\A3\Structures_F\Civ\InfoBoards\Billboard_F.p3d";
+        hiddenSelections[]={"Camo"};
+        hiddenSelectionsTextures[] = {"\ArG_Core\ArG.jpg"};
+        
+    };
 
     
-    class ArG_Gamer_6:  B_Soldier_base_F
-    {
-        scope=2;
-        author="Rodeostar42";
-        displayName="AirSoft Gamer 6";
-        faction="ArG_Core";
-        icon = "iconMan";
-        editorSubcategory = "ArG_Gamers";
-        editorPreview = "\ArG_Core\Core_EditorPreviews\ArG_Gamer_6.jpg";
-        backpack="B_Messenger_Gray_F";
-        nakedUniform = "U_BasicBody"; 
-        model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
-        
-        uniformClass="U_OrestesBody";
-        weapons[] = {
-        
-            "Throw",
-            "Put"
-        };
-        magazines[] = {};
-        respawnMagazines[] = {};
-        hiddenSelections[]={"Camo"};
-        hiddenSelectionsTextures[] = {"\a3\characters_f\blufor\data\clothing1_co.paa"};
-        linkedItems[] = {
-            
-            "ItemMap",
-            "ItemCompass",
-            "ItemWatch"
-        };
-        respawnLinkedItems[] = {
-            "ItemMap",
-            "ItemCompass",
-            "ItemWatch"
-        };
-
-        
-    };
-
-
-    class ArG_Gamer_7:  B_Soldier_base_F
-    {
-        scope=2;
-        author="Rodeostar42";
-        displayName="AirSoft Gamer 7";
-        faction="ArG_Core";
-        icon = "iconMan";
-        editorSubcategory = "ArG_Gamers";
-        editorPreview = "\ArG_Core\Core_EditorPreviews\ArG_Gamer_7.jpg";
-        backpack="B_Messenger_Black_F";
-        nakedUniform = "U_BasicBody"; 
-        model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
-        
-        uniformClass="U_C_Poor_1";
-        weapons[] = {
-        
-            "Throw",
-            "Put"
-        };
-        magazines[] = {};
-        respawnMagazines[] = {};
-        hiddenSelections[]={"Camo"};
-        hiddenSelectionsTextures[] = {"\a3\characters_f\blufor\data\clothing1_co.paa"};
-        linkedItems[] = {
-            
-            "ItemMap",
-            "ItemCompass",
-            "ItemWatch"
-        };
-        respawnLinkedItems[] = {
-            "ItemMap",
-            "ItemCompass",
-            "ItemWatch"
-        };
-
-        
-    };
-
-
-        class ArG_Gamer_8:  B_Soldier_base_F
-    {
-        scope=2;
-        author="Rodeostar42";
-        displayName="AirSoft Gamer 8";
-        faction="ArG_Core";
-        icon = "iconMan";
-        editorSubcategory = "ArG_Gamers";
-        editorPreview = "\ArG_Core\Core_EditorPreviews\ArG_Gamer_8.jpg";
-        backpack="B_Messenger_Gray_F";
-        nakedUniform = "U_BasicBody"; 
-        model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
-
-        uniformClass="U_C_Poloshirt_burgundy";
-        weapons[] = {
-        
-            "Throw",
-            "Put"
-        };
-        magazines[] = {};
-        respawnMagazines[] = {};
-        hiddenSelections[]={"Camo"};
-        hiddenSelectionsTextures[] = {"\a3\characters_f\blufor\data\clothing1_co.paa"};
-        linkedItems[] = {
-            
-            "ItemMap",
-            "ItemCompass",
-            "ItemWatch"
-        };
-        respawnLinkedItems[] = {
-            "ItemMap",
-            "ItemCompass",
-            "ItemWatch"
-        };
-
-        
-    };
-
-
-    
-
 };
