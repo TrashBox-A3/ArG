@@ -11,7 +11,7 @@ class CfgVehicles
 {
 
     #include "ArG_ItemBox.hpp"
-    
+    #include "ArG_AllinOne_ItemBox.hpp"
 
 
 	class  B_Soldier_base_F;
@@ -243,7 +243,7 @@ class CfgVehicles
         faction = "Empty";
         editorCategory = "ArG_Objects";
         editorSubcategory = "ArG_Sign";
-        editorPreview = "\ArG_TM\TM_EditorPreviews\TM_Billboard.jpg";
+        editorPreview = "\ArG_Core\Core_EditorPreviews\Core_Billboard.jpg";
         model = "\A3\Structures_F\Civ\InfoBoards\Billboard_F.p3d";
         hiddenSelections[]={"Camo"};
         hiddenSelectionsTextures[] = {"\ArG_Core\ArG.jpg"};
