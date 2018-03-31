@@ -11,7 +11,7 @@ class CfgVehicles
 {
 
     #include "ArG_ItemBox.hpp"
-    #include "ArG_AllinOne_ItemBox.hpp"
+    
 
 
 	class  B_Soldier_base_F;
