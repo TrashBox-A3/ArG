@@ -235,11 +235,11 @@ class CfgVehicles
 
     class  Land_Billboard_F;
     
-        class ArG_Billboard:  Land_Billboard_F
+        class Core_Billboard:  Land_Billboard_F
     {
         scope=2;
         author="Rodeostar42";
-        displayName="ArG Billboard";
+        displayName="Core Billboard";
         faction = "Empty";
         editorCategory = "ArG_Objects";
         editorSubcategory = "ArG_Sign";
