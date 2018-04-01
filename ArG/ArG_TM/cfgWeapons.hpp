@@ -1,6 +1,7 @@
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
+class SAFE_PISTOL;
 class CfgWeapons
 {
 
@@ -1215,26 +1216,7 @@ class ArG_M320: rhs_weap_M320
 
 	UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
 
-	//modes[] = {"this"};
 
-	weaponInfoType = "rhs_rscOptics_pistol";
-	cameraDir = "gl_look";
-	discreteDistance[] = {50, 100, 150, 200, 250, 300, 350};
-	discreteDistanceCameraPoint[] = {"gl_eye_50m", "gl_eye_100m", "gl_eye_150m", "gl_eye_200m", "gl_eye_250m", "gl_eye_300m", "gl_eye_350m"};
-	discreteDistanceInitIndex = 0;
-	maxZeroing = 350;
-
-	class WeaponSlotsInfo: WeaponSlotsInfo
-	{
-		mass = 33;
-	};
-
-	class ItemInfo
-	{
-		priority = 1;
-		RMBhint = "M320";
-		onHoverText = "M320";
-	};
 
 	magazines[] =
 	{
@@ -1267,7 +1249,7 @@ class ArG_M320: rhs_weap_M320
 		"1Rnd_SmokeOrange_Grenade_shell"
 	};
 
-	
+
 
 	optics = 0;
 
