@@ -1223,17 +1223,7 @@ class CfgWeapons
       	discreteDistanceInitIndex = 0;
       	maxZeroing = 350;
 
-      	class WeaponSlotsInfo: WeaponSlotsInfo
-      	{
-      		mass = 33;
-      	};
-
-      	class ItemInfo
-      	{
-      		priority = 1;
-      		RMBhint = "M320";
-      		onHoverText = "M320";
-      	};
+      	
 
       };
 
