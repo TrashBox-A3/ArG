@@ -2,10 +2,10 @@ class CfgPatches
 {
 	class ArG_TM_Weapons
 	{
-		
+
 		requiredAddons[]=
 		{
-			
+
 		};
 		requiredVersion=0.1;
 		units[]={
@@ -25,11 +25,8 @@ class CfgPatches
 			"ArG_520Rnd_556x45_BB",
 			"ArG_82Rnd_556x45_BB",
 			"ArG_35Rnd_556x45_NWS",
-			"ArG_30Rnd_556x45_TOP"
+			"ArG_30Rnd_556x45_TOP",
+			"ArG_M320"
 		};
 	};
 };
-
-
-
-

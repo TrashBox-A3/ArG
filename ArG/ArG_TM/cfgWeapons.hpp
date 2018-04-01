@@ -11,11 +11,11 @@ class CfgWeapons
 
     ///HK416D DEVGRU Castom///
     class rhs_weap_hk416d10;
-        
+
     class ArG_TM_HK416_DEV: rhs_weap_hk416d10
     {
         author="Rodeostar42";
-       
+
         scope=2;
         displayName="TM HK416D DEVGRU Castom";
         model = "\rhsusf\addons\rhsusf_weapons2\HK416\rhs_hk416d10.p3d";
@@ -24,7 +24,7 @@ class CfgWeapons
         UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
         descriptionShort = "HK416D DEVGRU Castom<br/>Tokyo MARUI";
         magazines[] = {
-            
+
             "ArG_520Rnd_556x45_BB",
             "ArG_82Rnd_556x45_BB"
         };
@@ -41,7 +41,7 @@ class CfgWeapons
         maxRecoilSway=0.0125;
         swayDecaySpeed=1.25;
         soundBullet[]={"emptySound",1};
-        
+
 
 
 
@@ -56,7 +56,7 @@ class CfgWeapons
         class Single: Mode_SemiAuto
         {
             reloadTime=0.096000001;
-            
+
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
@@ -79,13 +79,13 @@ class CfgWeapons
             begin1[] = {"ArG_TM\Sound\M4_SOPMOD.wss",3, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
-        };    
+        };
         };
         class FullAuto: Mode_FullAuto
         {
             reloadTime=0.096000001;
             dispersion=0.00086999999;
-            
+
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
@@ -108,7 +108,7 @@ class CfgWeapons
             begin1[] = {"ArG_TM\Sound\M4_SOPMOD.wss",3, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
-        };    
+        };
         };
         class fullauto_medium: FullAuto
         {
@@ -138,7 +138,7 @@ class CfgWeapons
             begin1[] = {"ArG_TM\Sound\M4_SOPMOD.wss",3, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
-        };    
+        };
         };
         class single_medium_optics1: Single
         {
@@ -167,7 +167,7 @@ class CfgWeapons
             begin1[] = {"ArG_TM\Sound\M4_SOPMOD.wss",3, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
-        };    
+        };
         };
         class single_far_optics2: single_medium_optics1
         {
@@ -196,21 +196,21 @@ class CfgWeapons
             begin1[] = {"ArG_TM\Sound\M4_SOPMOD.wss",3, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
-        };    
         };
-        
-        
-        
-      }; 
+        };
+
+
+
+      };
 
 
       ///SCAR L (FDE)///
     class SMA_MK16;
-        
+
     class ArG_TM_SCAR_L_TAN: SMA_MK16
     {
         author="Rodeostar42";
-       
+
         scope=2;
         displayName="TM SCAR-L(DFE)";
         model = "\Scar_Arma3\mk16.p3d";
@@ -219,7 +219,7 @@ class CfgWeapons
         UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
         descriptionShort = "SCAR-L(DFE)<br/>Tokyo MARUI";
         magazines[] = {
-            
+
             "ArG_520Rnd_556x45_BB",
             "ArG_82Rnd_556x45_BB"
         };
@@ -236,7 +236,7 @@ class CfgWeapons
         maxRecoilSway=0.0125;
         swayDecaySpeed=1.25;
         soundBullet[]={"emptySound",1};
-        
+
 
 
 
@@ -251,7 +251,7 @@ class CfgWeapons
         class Single: Mode_SemiAuto
         {
             reloadTime=0.096000001;
-            
+
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
@@ -274,13 +274,13 @@ class CfgWeapons
             begin1[] = {"ArG_TM\Sound\SCAR_H.wss",3, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
-        };    
+        };
         };
         class FullAuto: Mode_FullAuto
         {
             reloadTime=0.096000001;
             dispersion=0.00086999999;
-            
+
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
@@ -303,7 +303,7 @@ class CfgWeapons
             begin1[] = {"ArG_TM\Sound\SCAR_H.wss",3, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
-        };    
+        };
         };
         class fullauto_medium: FullAuto
         {
@@ -333,7 +333,7 @@ class CfgWeapons
             begin1[] = {"ArG_TM\Sound\SCAR_H.wss",3, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
-        };    
+        };
         };
         class single_medium_optics1: Single
         {
@@ -362,7 +362,7 @@ class CfgWeapons
             begin1[] = {"ArG_TM\Sound\SCAR_H.wss",3, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
-        };    
+        };
         };
         class single_far_optics2: single_medium_optics1
         {
@@ -391,21 +391,21 @@ class CfgWeapons
             begin1[] = {"ArG_TM\Sound\SCAR_H.wss",3, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
-        };    
         };
-        
-        
-        
+        };
+
+
+
       };
 
 
       ///SCAR H (FDE)///
     class SMA_Mk17_16;
-        
+
     class ArG_TM_SCAR_H_TAN: SMA_Mk17_16
     {
         author="Rodeostar42";
-       
+
         scope=2;
         displayName="TM SCAR-H(DFE)";
         model = "\Scar_Arma3\mk1716.p3d";
@@ -414,7 +414,7 @@ class CfgWeapons
         UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
         descriptionShort = "SCAR-H(DFE)<br/>Tokyo MARUI";
         magazines[] = {
-            
+
             "ArG_90Rnd_762x51_BB",
             "ArG_540Rnd_762x51_BB"
         };
@@ -431,7 +431,7 @@ class CfgWeapons
         maxRecoilSway=0.0125;
         swayDecaySpeed=1.25;
         soundBullet[]={"emptySound",1};
-        
+
 
 
 
@@ -446,7 +446,7 @@ class CfgWeapons
         class Single: Mode_SemiAuto
         {
             reloadTime=0.096000001;
-            
+
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
@@ -469,13 +469,13 @@ class CfgWeapons
             begin1[] = {"ArG_TM\Sound\SCAR_H.wss",3, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
-        };    
+        };
         };
         class FullAuto: Mode_FullAuto
         {
             reloadTime=0.096000001;
             dispersion=0.00086999999;
-            
+
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
@@ -498,7 +498,7 @@ class CfgWeapons
             begin1[] = {"ArG_TM\Sound\SCAR_H.wss",3, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
-        };    
+        };
         };
         class fullauto_medium: FullAuto
         {
@@ -528,7 +528,7 @@ class CfgWeapons
             begin1[] = {"ArG_TM\Sound\SCAR_H.wss",3, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
-        };    
+        };
         };
         class single_medium_optics1: Single
         {
@@ -557,7 +557,7 @@ class CfgWeapons
             begin1[] = {"ArG_TM\Sound\SCAR_H.wss",3, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
-        };    
+        };
         };
         class single_far_optics2: single_medium_optics1
         {
@@ -586,20 +586,20 @@ class CfgWeapons
             begin1[] = {"ArG_TM\Sound\SCAR_H.wss",3, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
-        };    
         };
-        
-        
-        
-      };      
+        };
+
+
+
+      };
 
       ///M4A1///
     class rhs_weap_m4a1_carryhandle;
-    
+
     class ArG_TM_M4A1: rhs_weap_m4a1_carryhandle
     {
         author="Rodeostar42";
-       
+
         scope=2;
         displayName="TM M4A1(Next Generation)";
         model = "\rhsusf\addons\rhsusf_weapons\M4\m4_ris_carryhandle.p3d";
@@ -608,7 +608,7 @@ class CfgWeapons
         UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
         descriptionShort = "M4A1(NG)<br/>Tokyo MARUI";
         magazines[] = {
-            
+
             "ArG_520Rnd_556x45_BB",
             "ArG_82Rnd_556x45_BB"
         };
@@ -625,7 +625,7 @@ class CfgWeapons
         maxRecoilSway=0.0125;
         swayDecaySpeed=1.25;
         soundBullet[]={"emptySound",1};
-       
+
 
 
 
@@ -640,7 +640,7 @@ class CfgWeapons
         class Single: Mode_SemiAuto
         {
             reloadTime=0.096000001;
-            
+
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
@@ -663,13 +663,13 @@ class CfgWeapons
             begin1[] = {"ArG_TM\Sound\M4_SOPMOD.wss",3, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
-        };    
+        };
         };
         class FullAuto: Mode_FullAuto
         {
             reloadTime=0.096000001;
             dispersion=0.00086999999;
-            
+
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
@@ -692,7 +692,7 @@ class CfgWeapons
             begin1[] = {"ArG_TM\Sound\M4_SOPMOD.wss",3, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
-        };    
+        };
         };
         class fullauto_medium: FullAuto
         {
@@ -722,7 +722,7 @@ class CfgWeapons
             begin1[] = {"ArG_TM\Sound\M4_SOPMOD.wss",3, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
-        };    
+        };
         };
         class single_medium_optics1: Single
         {
@@ -751,7 +751,7 @@ class CfgWeapons
             begin1[] = {"ArG_TM\Sound\M4_SOPMOD.wss",3, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
-        };    
+        };
         };
         class single_far_optics2: single_medium_optics1
         {
@@ -780,20 +780,20 @@ class CfgWeapons
             begin1[] = {"ArG_TM\Sound\M4_SOPMOD.wss",3, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
-        };    
         };
-        
-        
-        
-      };  
+        };
+
+
+
+      };
 
       ///M4 MWS///
-    
+
     class rhs_weap_m4a1_blockII_KAC_bk;
     class ArG_TM_M4A1_NWS: rhs_weap_m4a1_blockII_KAC_bk
     {
         author="Rodeostar42";
-       
+
         scope=2;
         displayName="TM M4A1 MWS";
         model = "\rhsusf\addons\rhsusf_weapons3\M4BII\m4a1_blockII_KACSTOCK.p3d";
@@ -802,7 +802,7 @@ class CfgWeapons
         UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
         descriptionShort = "GBB<br/>Tokyo MARUI";
         magazines[] = {
-            
+
             "ArG_35Rnd_556x45_NWS"
         };
 
@@ -818,7 +818,7 @@ class CfgWeapons
         maxRecoilSway=0.0125;
         swayDecaySpeed=1.25;
         soundBullet[]={"emptySound",1};
-        
+
 
 
 
@@ -833,7 +833,7 @@ class CfgWeapons
         class Single: Mode_SemiAuto
         {
             reloadTime=0.096000001;
-            
+
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
@@ -856,13 +856,13 @@ class CfgWeapons
             begin1[] = {"ArG_TM\Sound\M4A1_MWS.wss",4, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
-        };    
+        };
         };
         class FullAuto: Mode_FullAuto
         {
             reloadTime=0.096000001;
             dispersion=0.00086999999;
-            
+
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
@@ -885,7 +885,7 @@ class CfgWeapons
             begin1[] = {"ArG_TM\Sound\M4A1_MWS.wss",4, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
-        };    
+        };
         };
         class fullauto_medium: FullAuto
         {
@@ -915,7 +915,7 @@ class CfgWeapons
             begin1[] = {"ArG_TM\Sound\M4A1_MWS.wss",4, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
-        };    
+        };
         };
         class single_medium_optics1: Single
         {
@@ -944,7 +944,7 @@ class CfgWeapons
             begin1[] = {"ArG_TM\Sound\M4A1_MWS.wss",4, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
-        };    
+        };
         };
         class single_far_optics2: single_medium_optics1
         {
@@ -973,20 +973,20 @@ class CfgWeapons
             begin1[] = {"ArG_TM\Sound\M4A1_MWS.wss",4, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
-        };    
         };
-        
-        
-        
-      };  
+        };
+
+
+
+      };
 
       ///Glock 17///
-    
+
     class rhsusf_weap_glock17g4;
     class ArG_TM_Glock17: rhsusf_weap_glock17g4
     {
         author="Rodeostar42";
-       
+
         scope=2;
         displayName="TM Glock 17";
         model = "\rhsusf\addons\rhsusf_weapons2\glock17g4\rhs_glock17g4";
@@ -995,7 +995,7 @@ class CfgWeapons
         UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
         descriptionShort = "GBB<br/>Tokyo MARUI";
         magazines[] = {
-            
+
             "ArG_25Rnd_9mm"
         };
 
@@ -1011,7 +1011,7 @@ class CfgWeapons
         swayDecaySpeed=1.25;
         soundBullet[]={"emptySound",1};
         reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\P07\reload_P07",1,1,10};
-        
+
 
 
 
@@ -1022,7 +1022,7 @@ class CfgWeapons
         class Single: Mode_SemiAuto
         {
             reloadTime=0.096000001;
-            
+
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
@@ -1038,28 +1038,28 @@ class CfgWeapons
         {
             begin1[] = {"ArG_TM\Sound\Marui_Glock17gen3.wss",4, 1,15};
             soundBegin[] = {"begin1",1};
-            
+
         };
             class SilencedSound
         {
             begin1[] = {"ArG_TM\Sound\Marui_Glock17gen3.wss",3, 1,15};
             soundBegin[] = {"begin1",1};
-            
-        };    
+
         };
-        
-        
-        
-        
-      };  
+        };
+
+
+
+
+      };
 
       ///P226R///
-    
+
     class hlc_pistol_P226R;
     class ArG_TM_P226R: hlc_pistol_P226R
     {
         author="Rodeostar42";
-       
+
         scope=2;
         displayName="TM P226R";
         model = "\hlc_wp_p226\mesh\wpn\226_9\226R.p3d";
@@ -1068,7 +1068,7 @@ class CfgWeapons
         UiPicture = "";
         descriptionShort = "GBB<br/>Tokyo MARUI";
         magazines[] = {
-            
+
             "ArG_25Rnd_9mm"
         };
 
@@ -1084,7 +1084,7 @@ class CfgWeapons
         swayDecaySpeed=1.25;
         soundBullet[]={"emptySound",1};
         reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\P07\reload_P07",1,1,10};
-        
+
 
 
 
@@ -1095,7 +1095,7 @@ class CfgWeapons
         class Single: Mode_SemiAuto
         {
             reloadTime=0.096000001;
-            
+
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
@@ -1111,28 +1111,28 @@ class CfgWeapons
         {
             begin1[] = {"ArG_TM\Sound\Marui_P226R.wss",4, 1,15};
             soundBegin[] = {"begin1",1};
-            
+
         };
             class SilencedSound
         {
             begin1[] = {"ArG_TM\Sound\Marui_P226R.wss",3, 1,15};
             soundBegin[] = {"begin1",1};
-            
-        };    
+
         };
-        
-        
-        
-        
-      };  
+        };
+
+
+
+
+      };
 
        ///M92F///
-    
+
     class rhsusf_weap_m9;
     class ArG_TM_M92F: rhsusf_weap_m9
     {
         author="Rodeostar42";
-       
+
         scope=2;
         displayName="TM M92F";
         model = "\rhsusf\addons\rhsusf_weapons2\m9_beretta\M9";
@@ -1141,7 +1141,7 @@ class CfgWeapons
         UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
         descriptionShort = "GBB<br/>Tokyo MARUI";
         magazines[] = {
-            
+
             "ArG_25Rnd_9mm"
         };
 
@@ -1157,7 +1157,7 @@ class CfgWeapons
         swayDecaySpeed=1.25;
         soundBullet[]={"emptySound",1};
         reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\P07\reload_P07",1,1,10};
-       
+
 
 
 
@@ -1168,7 +1168,7 @@ class CfgWeapons
         class Single: Mode_SemiAuto
         {
             reloadTime=0.096000001;
-            
+
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
@@ -1184,20 +1184,199 @@ class CfgWeapons
         {
             begin1[] = {"ArG_TM\Sound\Marui_M92F.wss",4, 1,15};
             soundBegin[] = {"begin1",1};
-            
+
         };
             class SilencedSound
         {
             begin1[] = {"ArG_TM\Sound\Marui_M92F.wss",3, 1,15};
             soundBegin[] = {"begin1",1};
-            
-        };    
+
         };
-        
-        
-        
-        
-      };  
-    
-  };  
-    
+        };
+
+
+
+
+      };
+
+      ///M320///
+      class rhs_weap_M320;
+
+class ArG_M320: rhs_weap_M320
+{
+	scope = 2;
+
+	Author_Macro
+	displayName= "ArG M320";
+
+	model = "\rhsusf\addons\rhsusf_weapons\m320\M320standalone.p3d";
+  baseWeapon="ArG_M320";
+	picture = "\rhsusf\addons\rhsusf_weapons\icons\m320standalone_ca.paa";
+
+	UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
+
+	//modes[] = {"this"};
+
+	weaponInfoType = "rhs_rscOptics_pistol";
+	cameraDir = "gl_look";
+	discreteDistance[] = {50, 100, 150, 200, 250, 300, 350};
+	discreteDistanceCameraPoint[] = {"gl_eye_50m", "gl_eye_100m", "gl_eye_150m", "gl_eye_200m", "gl_eye_250m", "gl_eye_300m", "gl_eye_350m"};
+	discreteDistanceInitIndex = 0;
+	maxZeroing = 350;
+
+	class WeaponSlotsInfo: WeaponSlotsInfo
+	{
+		mass = 33;
+	};
+
+	class ItemInfo
+	{
+		priority = 1;
+		RMBhint = "M320";
+		onHoverText = "M320";
+	};
+
+	magazines[] =
+	{
+		"rhs_mag_M441_HE",
+		"rhs_mag_M433_HEDP",
+		"rhs_mag_M397_HET",
+		"rhs_mag_M4009",
+		"rhs_mag_m576",
+		"rhs_mag_M585_white",
+		"rhs_mag_M661_green",
+		"rhs_mag_M662_red",
+		"rhs_mag_M713_red",
+		"rhs_mag_M714_white",
+		"rhs_mag_M715_green",
+		"rhs_mag_M716_yellow",
+
+		//bis compatibility
+		"1Rnd_HE_Grenade_shell",
+		"UGL_FlareWhite_F",
+		"UGL_FlareGreen_F",
+		"UGL_FlareRed_F",
+		"UGL_FlareYellow_F",
+		"UGL_FlareCIR_F",
+		"1Rnd_Smoke_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell",
+		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeBlue_Grenade_shell",
+		"1Rnd_SmokeOrange_Grenade_shell"
+	};
+
+	// TODO: Librbary description required
+	class Library
+	{
+		libTextDesc = "";
+	};
+
+	optics = 0;
+
+	maxRecoilSway = 0.0125;
+	swayDecaySpeed = 1.25;
+	recoil = "recoil_mx";
+
+	class GunParticles: GunParticles
+	{
+		class SecondEffect
+		{
+			positionName = "Nabojnicestart";
+			directionName = "Nabojniceend";
+			effectName = "RifleAssaultCloud";
+		};
+	};
+
+	weaponInfoType = "rhs_rscOptics_pistol";
+	discreteDistance[] = {100, 200, 300, 400};
+	discreteDistanceInitIndex = 1;
+
+	opticsZoomMin = 0.275;
+	opticsZoomMax = 1.1;
+	opticsZoomInit = 0.75;
+	distanceZoomMin = 300;
+	distanceZoomMax = 300;
+
+
+	class WeaponSlotsInfo: WeaponSlotsInfo
+	{
+		class MuzzleSlot {};
+		class CowsSlot {};
+		holsterScale = 0;
+
+	};
+
+	reloadAction = "rhs_GestureReloadM320_pistol";
+	descriptionShort = "Grenade Launcher<br />Caliber: 6mmBB";
+	handAnim[] = {"OFP2_ManSkeleton","\rhsusf\addons\rhsusf_c_weapons\anims\rhs_hand_m320.rtm"};
+
+	dexterity = 1.8;
+	caseless[] = {"",1,1,1};
+
+	soundBullet[] = {"caseless",1};
+	modes[] = {"Single","single_medium_optics1","single_far_optics2"};
+
+	class Single: Mode_SemiAuto
+	{
+		sounds[]={"StandardSound"};
+		class StandardSound
+		{
+			weaponSoundEffect="DefaultRifle";
+
+			begin1[] = {"A3\sounds_f\weapons\M320\M320_st_1",1.4125376,1,1200};
+			begin2[] = {"A3\sounds_f\weapons\M320\M320_st_2",1.4125376,1,1200};
+			soundBegin[] = {"begin1",0.5,"begin2",0.5};
+
+			closure1[] = {"A3\sounds_f\weapons\closure\closure_rifle_6.wss",3.1622777,1,300};
+			closure2[] = {"A3\sounds_f\weapons\closure\closure_rifle_7.wss",3.1622777,1,300};
+			soundClosure[] = {"closure1",0.5,"closure2",0.5};
+		};
+		reloadTime = 0.1;
+		dispersion = 0.00093;
+		minRange = 2;
+		minRangeProbab = 0.3;
+		midRange = 250;
+		midRangeProbab = 0.7;
+		maxRange = 400;
+		maxRangeProbab = 0.04;
+	};
+	class single_medium_optics1: Single
+	{
+		requiredOpticType = 1;
+		showToPlayer = 0;
+		minRange = 2;
+		minRangeProbab = 0.2;
+		midRange = 550;
+		midRangeProbab = 0.7;
+		maxRange = 700;
+		maxRangeProbab = 0.1;
+		aiRateOfFire = 6;
+		aiRateOfFireDistance = 600;
+	};
+	class single_far_optics2: single_medium_optics1
+	{
+		requiredOpticType = 2;
+	};
+
+	aiDispersionCoefY = 10;
+	aiDispersionCoefX = 8;
+	drySound[] = {"A3\sounds_f\weapons\Other\dry_1",0.01,1};
+
+	reloadMagazineSound[] = {"A3\sounds_f\weapons\M320\M320_reload",0.1,1,30};
+
+	hiddenSelections[] = {""};
+	hiddenSelectionsTextures[] = {""};
+	muzzles[]={"this","SAFE_PISTOL"};
+	class SAFE_PISTOL: RHSUSF_SAFE_BASE
+	{
+		discreteDistanceCameraPoint[]={"gl_eye_50m"};
+		cameraDir = "gl_look";
+	};
+	//type=2;
+	magazineReloadSwitchPhase = 0.56;
+};
+
+
+  };
