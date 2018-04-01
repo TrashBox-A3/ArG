@@ -1203,109 +1203,39 @@ class CfgWeapons
       ///M320///
       class rhs_weap_M320;
 
-class ArG_M320: rhs_weap_M320
-{
+      class ArG_M320 : rhs_weap_M320
+      {
+        author="Rodeostar42";
 
-  author="Rodeostar42";
+      	scope = 2;
+      	displayName= "ArG M320";
+      	model = "\rhsusf\addons\rhsusf_weapons\m320\M320standalone.p3d";
+        baseWeapon="ArG_M320";
+      	picture = "\rhsusf\addons\rhsusf_weapons\icons\m320standalone_ca.paa";
+      	UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
 
-	scope = 2;
+      	modes[] = {"this"};
 
+      	weaponInfoType = "rhs_rscOptics_pistol";
+      	cameraDir = "gl_look";
+      	discreteDistance[] = {50, 100, 150, 200, 250, 300, 350};
+      	discreteDistanceCameraPoint[] = {"gl_eye_50m", "gl_eye_100m", "gl_eye_150m", "gl_eye_200m", "gl_eye_250m", "gl_eye_300m", "gl_eye_350m"};
+      	discreteDistanceInitIndex = 0;
+      	maxZeroing = 350;
 
-	displayName= "ArG M320";
+      	class WeaponSlotsInfo: WeaponSlotsInfo
+      	{
+      		mass = 33;
+      	};
 
-	model = "\rhsusf\addons\rhsusf_weapons\m320\M320standalone.p3d";
-  baseWeapon="ArG_M320";
-	picture = "\rhsusf\addons\rhsusf_weapons\icons\m320standalone_ca.paa";
+      	class ItemInfo
+      	{
+      		priority = 1;
+      		RMBhint = "M320";
+      		onHoverText = "M320";
+      	};
 
-	UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
-
-
-
-	magazines[] =
-	{
-		"rhs_mag_M441_HE",
-		"1Rnd_SmokeOrange_Grenade_shell"
-	};
-
-
-
-	optics = 0;
-
-	maxRecoilSway = 0.0125;
-	swayDecaySpeed = 1.25;
-	recoil = "recoil_mx";
-
-
-
-	reloadAction = "rhs_GestureReloadM320_pistol";
-	descriptionShort = "Grenade Launcher<br />Caliber: 6mmBB";
-	handAnim[] = {"OFP2_ManSkeleton","\rhsusf\addons\rhsusf_c_weapons\anims\rhs_hand_m320.rtm"};
-
-	dexterity = 1.8;
-	caseless[] = {"",1,1,1};
-
-	soundBullet[] = {"caseless",1};
-	modes[] = {"Single","single_medium_optics1","single_far_optics2"};
-
-	class Single: Mode_SemiAuto
-	{
-		sounds[]={"StandardSound"};
-		class StandardSound
-		{
-			weaponSoundEffect="DefaultRifle";
-
-			begin1[] = {"A3\sounds_f\weapons\M320\M320_st_1",1.4125376,1,1200};
-			begin2[] = {"A3\sounds_f\weapons\M320\M320_st_2",1.4125376,1,1200};
-			soundBegin[] = {"begin1",0.5,"begin2",0.5};
-
-			closure1[] = {"A3\sounds_f\weapons\closure\closure_rifle_6.wss",3.1622777,1,300};
-			closure2[] = {"A3\sounds_f\weapons\closure\closure_rifle_7.wss",3.1622777,1,300};
-			soundClosure[] = {"closure1",0.5,"closure2",0.5};
-		};
-		reloadTime = 0.1;
-		dispersion = 0.00093;
-		minRange = 2;
-		minRangeProbab = 0.3;
-		midRange = 250;
-		midRangeProbab = 0.7;
-		maxRange = 400;
-		maxRangeProbab = 0.04;
-	};
-	class single_medium_optics1: Single
-	{
-		requiredOpticType = 1;
-		showToPlayer = 0;
-		minRange = 2;
-		minRangeProbab = 0.2;
-		midRange = 550;
-		midRangeProbab = 0.7;
-		maxRange = 700;
-		maxRangeProbab = 0.1;
-		aiRateOfFire = 6;
-		aiRateOfFireDistance = 600;
-	};
-	class single_far_optics2: single_medium_optics1
-	{
-		requiredOpticType = 2;
-	};
-
-	aiDispersionCoefY = 10;
-	aiDispersionCoefX = 8;
-	drySound[] = {"A3\sounds_f\weapons\Other\dry_1",0.01,1};
-
-	reloadMagazineSound[] = {"A3\sounds_f\weapons\M320\M320_reload",0.1,1,30};
-
-	hiddenSelections[] = {""};
-	hiddenSelectionsTextures[] = {""};
-	muzzles[]={"this","SAFE_PISTOL"};
-	class SAFE_PISTOL: RHSUSF_SAFE_BASE
-	{
-		discreteDistanceCameraPoint[]={"gl_eye_50m"};
-		cameraDir = "gl_look";
-	};
-	//type=2;
-	magazineReloadSwitchPhase = 0.56;
-};
+      };
 
 
   };
