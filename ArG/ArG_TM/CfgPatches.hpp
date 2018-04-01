@@ -26,7 +26,8 @@ class CfgPatches
 			"ArG_82Rnd_556x45_BB",
 			"ArG_35Rnd_556x45_NWS",
 			"ArG_30Rnd_556x45_TOP",
-			"ArG_M320"
+			"ArG_M320",
+			"ArG_HE_Grenade_shell"
 		};
 	};
 };

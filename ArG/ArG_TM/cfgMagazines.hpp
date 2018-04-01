@@ -1,7 +1,7 @@
 class cfgMagazines
 {
-    
-    
+
+
     class rhs_mag_30Rnd_556x45_M855A1_Stanag;
     class ArG_520Rnd_556x45_BB: rhs_mag_30Rnd_556x45_M855A1_Stanag
     {
@@ -15,12 +15,12 @@ class cfgMagazines
 		class ItemInfo
         	{
             		mass = 1;
-        	}; 
+        	};
 		picture = "\A3\weapons_F\data\UI\m_30stanag_CA.paa";
 		model = "\rhsusf\addons\rhsusf_weapons\magazines\rhs_stanag_mag";
 		descriptionShort = "Caliber: 6mm BB<br/>Rounds: 520<br/>weight: 2.0g";
 		displayNameMFDFormat = "6mmBB";
-		
+
 	};
 
 	class ArG_82Rnd_556x45_BB: rhs_mag_30Rnd_556x45_M855A1_Stanag
@@ -35,12 +35,12 @@ class cfgMagazines
 		class ItemInfo
         	{
             		mass = 1;
-        	}; 
+        	};
 		picture = "\A3\weapons_F\data\UI\m_30stanag_CA.paa";
 		model = "\rhsusf\addons\rhsusf_weapons\magazines\rhs_stanag_mag";
 		descriptionShort = "Caliber: 6mm BB<br/>Rounds: 82<br/>weight: 2.0g";
 		displayNameMFDFormat = "6mmBB";
-		
+
 	};
 
 	class ArG_35Rnd_556x45_NWS: rhs_mag_30Rnd_556x45_M855A1_Stanag
@@ -55,12 +55,12 @@ class cfgMagazines
 		class ItemInfo
         	{
             		mass = 1;
-        	}; 
+        	};
 		picture = "\A3\weapons_F\data\UI\m_30stanag_CA.paa";
 		model = "\rhsusf\addons\rhsusf_weapons\magazines\rhs_stanag_mag";
 		descriptionShort = "Caliber: 6mm BB<br/>Rounds: 35<br/>weight: 2.0g";
 		displayNameMFDFormat = "6mmBB";
-		
+
 	};
 
 	class ArG_30Rnd_556x45_TOP: rhs_mag_30Rnd_556x45_M855A1_Stanag
@@ -75,12 +75,12 @@ class cfgMagazines
 		class ItemInfo
         	{
             		mass = 1;
-        	}; 
+        	};
 		picture = "\A3\weapons_F\data\UI\m_30stanag_CA.paa";
 		model = "\rhsusf\addons\rhsusf_weapons\magazines\rhs_stanag_mag";
 		descriptionShort = "Caliber: 6mm BB<br/>Rounds: 30<br/>weight: 2.0g";
 		displayNameMFDFormat = "6mmBB";
-		
+
 	};
 
 	class ArG_25Rnd_9mm: rhs_mag_30Rnd_556x45_M855A1_Stanag
@@ -95,12 +95,12 @@ class cfgMagazines
 		class ItemInfo
         	{
             		mass = 1;
-        	}; 
+        	};
 		picture = "\rhsusf\addons\rhsusf_weapons2\glock17g4\data\rhs_mag2_glock17g4_ca.paa";
 		model = "\A3\weapons_F\ammo\mag_univ.p3d";
 		descriptionShort = "Caliber: 6mm BB<br/>Rounds: 25<br/>weight: 2.0g";
 		displayNameMFDFormat = "6mmBB";
-		
+
 	};
 
 
@@ -117,12 +117,12 @@ class cfgMagazines
 		class ItemInfo
         	{
             		mass = 1;
-        	}; 
+        	};
 		picture = "\A3\weapons_f\data\UI\M_20Rnd_762x51_CA.paa";
 		model = "\rhsusf\addons\rhsusf_weapons\magazines\rhs_m14_mag";
 		descriptionShort = "Caliber: 6mm BB<br/>Rounds: 90<br/>weight: 2.0g";
 		displayNameMFDFormat = "6mmBB";
-		
+
 	};
 
 	class ArG_540Rnd_762x51_BB: rhsusf_20Rnd_762x51_m118_special_Mag
@@ -137,11 +137,32 @@ class cfgMagazines
 		class ItemInfo
         	{
             		mass = 1;
-        	}; 
+        	};
 		picture = "\A3\weapons_f\data\UI\M_20Rnd_762x51_CA.paa";
 		model = "\rhsusf\addons\rhsusf_weapons\magazines\rhs_m14_mag";
 		descriptionShort = "Caliber: 6mm BB<br/>Rounds: 540<br/>weight: 2.0g";
 		displayNameMFDFormat = "6mmBB";
-		
+
+	};
+
+  class 1Rnd_HE_Grenade_shell;
+  class ArG_HE_Grenade_shell: 1Rnd_HE_Grenade_shell
+    {
+    	author="Rodeostar42";
+		displayName = "ArG HE Grenade shell";
+		scope = 2;
+		ammo = ArG_6mm_BB_02; //eg
+		count = 60;
+		initSpeed = 100; // in case it is not in weapon
+		tracersEvery=1;
+		class ItemInfo
+        	{
+            		mass = 1;
+        	};
+		picture = "\A3\weapons_f\data\UI\M_20Rnd_762x51_CA.paa";
+		model = "\rhsusf\addons\rhsusf_weapons\magazines\rhs_m14_mag";
+		descriptionShort = "Caliber: 6mm BB<br/>Rounds: 60<br/>weight: 2.0g";
+		displayNameMFDFormat = "6mmBB";
+
 	};
 };

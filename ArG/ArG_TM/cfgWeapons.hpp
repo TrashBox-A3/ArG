@@ -1215,7 +1215,7 @@ class CfgWeapons
       	UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
 
       	modes[] = {"this"};
-
+        burst=60;
       	weaponInfoType = "rhs_rscOptics_pistol";
       	cameraDir = "gl_look";
       	discreteDistance[] = {50, 100, 150, 200, 250, 300, 350};
