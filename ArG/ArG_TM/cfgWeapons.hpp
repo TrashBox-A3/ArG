@@ -1206,7 +1206,7 @@ class ArG_M320: rhs_weap_M320
 {
 	scope = 2;
 
-	Author_Macro
+
 	displayName= "ArG M320";
 
 	model = "\rhsusf\addons\rhsusf_weapons\m320\M320standalone.p3d";
@@ -1267,11 +1267,7 @@ class ArG_M320: rhs_weap_M320
 		"1Rnd_SmokeOrange_Grenade_shell"
 	};
 
-	// TODO: Librbary description required
-	class Library
-	{
-		libTextDesc = "";
-	};
+	
 
 	optics = 0;
 
