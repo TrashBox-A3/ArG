@@ -1231,10 +1231,10 @@ class CfgWeapons
         swayDecaySpeed=1.25;
         soundBullet[]={"emptySound",1};
 
-      	modes[] = {"burst"};
-        burst=60
-        multiplier=60
-
+      	modes[] = {"this"};
+        burst=60;
+        multiplier=60;
+        dispersion=0.3;
       	weaponInfoType = "rhs_rscOptics_pistol";
       	cameraDir = "gl_look";
       	discreteDistance[] = {50, 100, 150, 200, 250, 300, 350};
