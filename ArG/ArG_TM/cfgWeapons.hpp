@@ -1232,7 +1232,8 @@ class CfgWeapons
         soundBullet[]={"emptySound",1};
 
       	modes[] = {"this"};
-        burst=60;
+        multiplier=60
+
       	weaponInfoType = "rhs_rscOptics_pistol";
       	cameraDir = "gl_look";
       	discreteDistance[] = {50, 100, 150, 200, 250, 300, 350};
