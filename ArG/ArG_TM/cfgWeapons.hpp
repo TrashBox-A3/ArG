@@ -1253,7 +1253,7 @@ class CfgWeapons
         scope=2;
         displayName="TM AK47T3";
         model = "\ArG_TM\data\AK47T3.p3d";
-        baseWeapon="ArG_TM_AKS74U";
+        baseWeapon="ArG_TM_AK47T3";
         picture = "\rhsafrf\addons\rhs_weapons2\icons\rhs_aks74u_inventory.paa";
         UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
         descriptionShort = "AKS74U<br/>Tokyo MARUI";
