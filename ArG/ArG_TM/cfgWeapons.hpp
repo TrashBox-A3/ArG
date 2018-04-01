@@ -1214,16 +1214,33 @@ class CfgWeapons
       	picture = "\rhsusf\addons\rhsusf_weapons\icons\m320standalone_ca.paa";
       	UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
 
+        magazines[] = {
+
+            "ArG_25Rnd_9mm"
+        };
+
+        initSpeed = 220; // muzzle velocity
+        maxRange = 30;
+        flash = "";
+        flashSize = 0;
+        fireLightIntensity=0;
+        recoil="HGRecoil";
+        maxZeroing=350;
+        discreteDistanceInitIndex=0;
+        maxRecoilSway=0.0125;
+        swayDecaySpeed=1.25;
+        soundBullet[]={"emptySound",1};
+
       	modes[] = {"this"};
 
       	weaponInfoType = "rhs_rscOptics_pistol";
       	cameraDir = "gl_look";
       	discreteDistance[] = {50, 100, 150, 200, 250, 300, 350};
       	discreteDistanceCameraPoint[] = {"gl_eye_50m", "gl_eye_100m", "gl_eye_150m", "gl_eye_200m", "gl_eye_250m", "gl_eye_300m", "gl_eye_350m"};
-      	discreteDistanceInitIndex = 0;
-      	maxZeroing = 350;
 
-      	
+
+
+
 
       };
 
