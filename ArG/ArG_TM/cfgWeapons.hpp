@@ -1136,7 +1136,7 @@ class CfgWeapons
 
         scope=2;
         displayName="TM M92F";
-        model = "\rhsusf\addons\rhsusf_weapons2\m9_beretta\M9";
+        model = "\ArG_TM\data\AK47T3.p3d"; ///model = "\rhsusf\addons\rhsusf_weapons2\m9_beretta\M9";
         baseWeapon="ArG_TM_M92F";
         picture = "\rhsusf\addons\rhsusf_weapons2\m9_beretta\Data\UI\M9_ca.paa";
         UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
@@ -1200,79 +1200,6 @@ class CfgWeapons
 
       };
 
-
-      ///M92F///
-
-   class rhsusf_weap_m9;
-   class ArG_TM_M92F: rhsusf_weap_m9
-   {
-       author="Rodeostar42";
-
-       scope=2;
-       displayName="TM M92F";
-       model = "\ArG_TM\data\AK47T3.p3d";
-       baseWeapon="ArG_TM_M92F";
-       picture = "\rhsusf\addons\rhsusf_weapons2\m9_beretta\Data\UI\M9_ca.paa";
-       UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
-       descriptionShort = "GBB<br/>Tokyo MARUI";
-       magazines[] = {
-
-           "ArG_25Rnd_9mm"
-       };
-
-       initSpeed = 220; // muzzle velocity
-       maxRange = 60;
-       flash = "";
-       flashSize = 0;
-       fireLightIntensity=0;
-       recoil="HGRecoil";
-       maxZeroing=200;
-       discreteDistanceInitIndex=0;
-       maxRecoilSway=0.0125;
-       swayDecaySpeed=1.25;
-       soundBullet[]={"emptySound",1};
-       reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Pistols\P07\reload_P07",1,1,10};
-
-
-
-
-       modes[]=
-       {
-           "Single"
-       };
-       class Single: Mode_SemiAuto
-       {
-           reloadTime=0.096000001;
-
-           flash = "";
-           flashSize = 0;
-           fireLightIntensity=0;
-           dispersion=0.00086999999;
-           minRange=2;
-           minRangeProbab=0.5;
-           midRange=200;
-           midRangeProbab=0.69999999;
-           maxRange=400;
-           maxRangeProbab=0.30000001;
-           drySound[] = {"ArG_TM\Sound\Marui_M92F.wss",4, 1,15};
-           class StandardSound
-       {
-           begin1[] = {"ArG_TM\Sound\Marui_M92F.wss",4, 1,15};
-           soundBegin[] = {"begin1",1};
-
-       };
-           class SilencedSound
-       {
-           begin1[] = {"ArG_TM\Sound\Marui_M92F.wss",3, 1,15};
-           soundBegin[] = {"begin1",1};
-
-       };
-       };
-
-
-
-
-     };
 
 
 
