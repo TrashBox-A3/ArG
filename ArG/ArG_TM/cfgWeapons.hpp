@@ -1216,7 +1216,7 @@ class CfgWeapons
 
         magazines[] = {
 
-            "ArG_25Rnd_9mm"
+            "ArG_HE_Grenade_shell"
         };
 
         initSpeed = 220; // muzzle velocity
