@@ -1231,7 +1231,8 @@ class CfgWeapons
         swayDecaySpeed=1.25;
         soundBullet[]={"emptySound",1};
 
-      	modes[] = {"this"};
+      	modes[] = {"burst"};
+        burst=60
         multiplier=60
 
       	weaponInfoType = "rhs_rscOptics_pistol";
