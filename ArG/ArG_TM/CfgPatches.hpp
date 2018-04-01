@@ -27,7 +27,8 @@ class CfgPatches
 			"ArG_35Rnd_556x45_NWS",
 			"ArG_30Rnd_556x45_TOP",
 			"ArG_M320",
-			"ArG_HE_Grenade_shell"
+			"ArG_HE_Grenade_shell",
+			"ArG_TM_AK47T3"
 		};
 	};
 };
