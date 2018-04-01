@@ -1200,17 +1200,18 @@ class CfgWeapons
 
       };
 
+
       ///M92F///
 
    class rhsusf_weap_m9;
-   class ArG_TM_AK47T3: rhsusf_weap_m9
+   class ArG_TM_M92F: rhsusf_weap_m9
    {
        author="Rodeostar42";
 
        scope=2;
-       displayName="TM AK47T3";
+       displayName="TM M92F";
        model = "\ArG_TM\data\AK47T3.p3d";
-       baseWeapon="ArG_TM_AK47T3";
+       baseWeapon="ArG_TM_M92F";
        picture = "\rhsusf\addons\rhsusf_weapons2\m9_beretta\Data\UI\M9_ca.paa";
        UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
        descriptionShort = "GBB<br/>Tokyo MARUI";
