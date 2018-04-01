@@ -1205,6 +1205,9 @@ class CfgWeapons
 
 class ArG_M320: rhs_weap_M320
 {
+
+  author="Rodeostar42";
+
 	scope = 2;
 
 
@@ -1221,31 +1224,6 @@ class ArG_M320: rhs_weap_M320
 	magazines[] =
 	{
 		"rhs_mag_M441_HE",
-		"rhs_mag_M433_HEDP",
-		"rhs_mag_M397_HET",
-		"rhs_mag_M4009",
-		"rhs_mag_m576",
-		"rhs_mag_M585_white",
-		"rhs_mag_M661_green",
-		"rhs_mag_M662_red",
-		"rhs_mag_M713_red",
-		"rhs_mag_M714_white",
-		"rhs_mag_M715_green",
-		"rhs_mag_M716_yellow",
-
-		//bis compatibility
-		"1Rnd_HE_Grenade_shell",
-		"UGL_FlareWhite_F",
-		"UGL_FlareGreen_F",
-		"UGL_FlareRed_F",
-		"UGL_FlareYellow_F",
-		"UGL_FlareCIR_F",
-		"1Rnd_Smoke_Grenade_shell",
-		"1Rnd_SmokeRed_Grenade_shell",
-		"1Rnd_SmokeGreen_Grenade_shell",
-		"1Rnd_SmokeYellow_Grenade_shell",
-		"1Rnd_SmokePurple_Grenade_shell",
-		"1Rnd_SmokeBlue_Grenade_shell",
 		"1Rnd_SmokeOrange_Grenade_shell"
 	};
 
@@ -1257,34 +1235,7 @@ class ArG_M320: rhs_weap_M320
 	swayDecaySpeed = 1.25;
 	recoil = "recoil_mx";
 
-	class GunParticles: GunParticles
-	{
-		class SecondEffect
-		{
-			positionName = "Nabojnicestart";
-			directionName = "Nabojniceend";
-			effectName = "RifleAssaultCloud";
-		};
-	};
 
-	weaponInfoType = "rhs_rscOptics_pistol";
-	discreteDistance[] = {100, 200, 300, 400};
-	discreteDistanceInitIndex = 1;
-
-	opticsZoomMin = 0.275;
-	opticsZoomMax = 1.1;
-	opticsZoomInit = 0.75;
-	distanceZoomMin = 300;
-	distanceZoomMax = 300;
-
-
-	class WeaponSlotsInfo: WeaponSlotsInfo
-	{
-		class MuzzleSlot {};
-		class CowsSlot {};
-		holsterScale = 0;
-
-	};
 
 	reloadAction = "rhs_GestureReloadM320_pistol";
 	descriptionShort = "Grenade Launcher<br />Caliber: 6mmBB";
