@@ -15,7 +15,7 @@ class CfgPatches
 		weapons[]=
 		{
 			"ArG_TM_HK416_DEV",
-			"ArG_TM_M4A1",
+			"ArG_TM_M4A1_NG",
 			"ArG_TM_M4A1_NWS",
 			"ArG_TM_SCAR_L_TAN",
 			"ArG_TM_SCAR_H_TAN",

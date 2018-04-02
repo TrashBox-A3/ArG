@@ -3,9 +3,9 @@
 
 
       ///AKS74U
-    class rhs_weap_aks74u;
+    class arifle_MX_F;
 
-    class ArG_TM_AK47T3: rhs_weap_aks74u
+    class ArG_TM_AK47T3: arifle_MX_F
     {
         author="Ukedachi";
 
@@ -77,7 +77,7 @@
         {
             reloadTime=0.096000001;
             dispersion=0.00086999999;
-            
+
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
