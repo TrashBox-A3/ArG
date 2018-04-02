@@ -7,6 +7,7 @@ class CfgWeapons
 
 
     #include "UKP_Weapons.hpp"
+    #include "Halal_Weapons.hpp"
 
 
 
@@ -1136,7 +1137,7 @@ class CfgWeapons
 
         scope=2;
         displayName="TM M92F";
-        model = "\ArG_TM\data\AK47T3.p3d"; ///model = "\rhsusf\addons\rhsusf_weapons2\m9_beretta\M9";
+        model = "\rhsusf\addons\rhsusf_weapons2\m9_beretta\M9"; ///model = "\rhsusf\addons\rhsusf_weapons2\m9_beretta\M9";
         baseWeapon="ArG_TM_M92F";
         picture = "\rhsusf\addons\rhsusf_weapons2\m9_beretta\Data\UI\M9_ca.paa";
         UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
