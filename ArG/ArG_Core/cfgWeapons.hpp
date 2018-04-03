@@ -17,11 +17,11 @@ class ItemCore;
 
     ///MX///
     class arifle_MX_F;
-        
+
     class ArG_MX_F: arifle_MX_F
     {
         author="Rodeostar42";
-       
+
         scope=2;
         displayName="ArG MX";
         model = "\A3\Weapons_F\Rifles\MX\MX_F.p3d";
@@ -30,7 +30,7 @@ class ItemCore;
         UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
         descriptionShort = "Replace MX Rifle to Airsoft Gun";
         magazines[] = {
-            
+
             "ArG_30Rnd_65x39_BB"
         };
 
@@ -47,7 +47,7 @@ class ItemCore;
         swayDecaySpeed=1.25;
         soundBullet[]={"emptySound",1};
         alternativeFire="Zasleh2";
-        
+
 
 
 
@@ -62,7 +62,7 @@ class ItemCore;
         class Single: Mode_SemiAuto
         {
             reloadTime=0.096000001;
-            
+
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
@@ -85,13 +85,13 @@ class ItemCore;
             begin1[] = {"ArG_Core\Sound\den_tan01.wss",3, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
-        };    
+        };
         };
         class FullAuto: Mode_FullAuto
         {
             reloadTime=0.096000001;
-            dispersion=0.00086999999;
-            
+            dispersion=0.00088000000;
+
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
@@ -114,7 +114,7 @@ class ItemCore;
             begin1[] = {"ArG_Core\Sound\den_tan01.wss",3, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
-        };    
+        };
         };
         class fullauto_medium: FullAuto
         {
@@ -144,7 +144,7 @@ class ItemCore;
             begin1[] = {"ArG_Core\Sound\den_tan01.wss",3, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
-        };    
+        };
         };
         class single_medium_optics1: Single
         {
@@ -173,7 +173,7 @@ class ItemCore;
             begin1[] = {"ArG_Core\Sound\den_tan01.wss",3, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
-        };    
+        };
         };
         class single_far_optics2: single_medium_optics1
         {
@@ -202,14 +202,10 @@ class ItemCore;
             begin1[] = {"ArG_Core\Sound\den_tan01.wss",3, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
-        };    
-        };      
+        };
+        };
     };
 
 
 
 };
-      
-    
-    
-    
