@@ -90,7 +90,7 @@ class ItemCore;
         class FullAuto: Mode_FullAuto
         {
             reloadTime=0.096000001;
-            dispersion=0.00088000000;
+            dispersion=0.001;
 
             flash = "";
             flashSize = 0;
