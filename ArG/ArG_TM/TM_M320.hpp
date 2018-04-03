@@ -1,6 +1,6 @@
 ///M320///
 
-class Mode_Burst;
+
 
 
 class rhs_weap_M320;
@@ -34,12 +34,11 @@ class ArG_TM_M320 : rhs_weap_M320
   soundBullet[]={"emptySound",1};
 
   modes[] = {
-    "Burst"
+    "this"
 
   };
 
-  class Burst: Mode_Burst
-  {
+
   burst=60;
   multiplier=60;
   dispersion=0.3;
@@ -47,5 +46,5 @@ class ArG_TM_M320 : rhs_weap_M320
   cameraDir = "gl_look";
   discreteDistance[] = {50, 100, 150, 200, 250, 300, 350};
   discreteDistanceCameraPoint[] = {"gl_eye_50m", "gl_eye_100m", "gl_eye_150m", "gl_eye_200m", "gl_eye_250m", "gl_eye_300m", "gl_eye_350m"};
-};
+
 };
