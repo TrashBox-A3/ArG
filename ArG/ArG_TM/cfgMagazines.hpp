@@ -145,24 +145,5 @@ class cfgMagazines
 
 	};
 
-  class 1Rnd_HE_Grenade_shell;
-  class ArG_HE_Grenade_shell: 1Rnd_HE_Grenade_shell
-    {
-    	author="Rodeostar42";
-		displayName = "ArG HE Grenade shell";
-		scope = 2;
-		ammo = ArG_6mm_BB_02; //eg
-		count = 60;
-		initSpeed = 100; // in case it is not in weapon
-		tracersEvery=1;
-		class ItemInfo
-        	{
-            		mass = 1;
-        	};
-		picture = "\A3\weapons_f\data\UI\M_20Rnd_762x51_CA.paa";
-		model = "\rhsusf\addons\rhsusf_weapons\magazines\rhs_m14_mag";
-		descriptionShort = "Caliber: 6mm BB<br/>Rounds: 60<br/>weight: 2.0g";
-		displayNameMFDFormat = "6mmBB";
-
-	};
+  
 };
