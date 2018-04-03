@@ -34,8 +34,8 @@ class ArG_TM_M320 : rhs_weap_M320
   soundBullet[]={"emptySound",1};
 
   modes[] = {
-    "this",
-    "Burst"
+    "this"
+    
   };
 {
   class Burst: Mode_Burst
