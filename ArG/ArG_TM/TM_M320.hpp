@@ -33,7 +33,10 @@ class ArG_TM_M320 : rhs_weap_M320
   swayDecaySpeed=1.25;
   soundBullet[]={"emptySound",1};
 
-  modes[] = {"this"};
+  modes[] = {
+    "this",
+    "Burst"
+  };
 {
   class Burst: Mode_Burst
   burst=60;
