@@ -3,9 +3,9 @@
 
 
 
-class rhs_weap_M320;
+class rhs_weap_M590_5RD;
 
-class ArG_TM_M320 : rhs_weap_M320
+class ArG_TM_M320 : rhs_weap_M590_5RD
 {
   author="Rodeostar42";
 
