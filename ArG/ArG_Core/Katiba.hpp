@@ -1,4 +1,4 @@
-{
+///Katiba///
 class arifle_Katiba_F;
 
 class ArG_Katiba_F: arifle_Katiba_F
@@ -46,5 +46,4 @@ class ArG_Katiba_F: arifle_Katiba_F
   begin1[] = {"ArG_Core\Sound\den_tan01.wss",3, 1,15};
   soundBegin[] = {"begin1",1};
   weaponSoundEffect = "DefaultRifle";
-};
 };
