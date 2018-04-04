@@ -7,7 +7,7 @@
     class rhs_30Rnd_545x39_AK;
 
 
-    
+
     class ArG_600Rnd_762x39_BB: rhs_30Rnd_762x39mm
     {
     	author="Ukedachi";
@@ -23,7 +23,7 @@
         	};
 		picture = "\rhsafrf\addons\rhs_weapons\gear_mags\rhs_gear_mag_762x39_ak_ca.paa";
 		model = "\rhsafrf\addons\rhs_weapons\magazines\rhs_ak762_steel_mag.p3d";
-		descriptionShort = "Caliber: 6mm BB<br/>Rounds: 520<br/>2.0g";
+		descriptionShort = "Caliber: 6mm BB<br/>Rounds: 520<br/>0.2g";
 		displayNameMFDFormat = "6mmBB";
 		selectionFireAnim="";
 	};
@@ -43,7 +43,7 @@
         	};
 		picture = "\rhsafrf\addons\rhs_weapons\gear_mags\rhs_gear_mag_762x39_ak_ca.paa";
 		model = "\rhsafrf\addons\rhs_weapons\magazines\rhs_ak762_steel_mag.p3d";
-		descriptionShort = "Caliber: 6mm BB<br/>Rounds: 82<br/>2.0g";
+		descriptionShort = "Caliber: 6mm BB<br/>Rounds: 82<br/>0.2g";
 		displayNameMFDFormat = "6mmBB";
 		selectionFireAnim="";
 	};
@@ -62,7 +62,7 @@
         	};
 		picture = "\rhsafrf\addons\rhs_weapons\gear_mags\rhs_gear_mag_545x39_ak_ap_ca.paa";
 		model = "\rhsafrf\addons\rhs_weapons\magazines\rhs_ak_mag.p3d";
-		descriptionShort = "Caliber: 6mm BB<br/>Rounds: 520<br/>2.0g";
+		descriptionShort = "Caliber: 6mm BB<br/>Rounds: 520<br/>0.2g";
 		displayNameMFDFormat = "6mmBB";
 		selectionFireAnim="";
 	};
@@ -82,7 +82,7 @@
         	};
 		picture = "\rhsafrf\addons\rhs_weapons\gear_mags\rhs_gear_mag_545x39_ak_ap_ca.paa";
 		model = "\rhsafrf\addons\rhs_weapons\magazines\rhs_ak_mag.p3d";
-		descriptionShort = "Caliber: 6mm BB<br/>Rounds: 82<br/>2.0g";
+		descriptionShort = "Caliber: 6mm BB<br/>Rounds: 82<br/>0.2g";
 		displayNameMFDFormat = "6mmBB";
 		selectionFireAnim="";
 	};
@@ -101,7 +101,7 @@
         	};
 		picture = "\rhsafrf\addons\rhs_weapons2\icons\rhs_pm_mag_ca.paa";
 		model = "\rhsafrf\addons\rhs_weapons2\magazines\rhs_pm_mag.p3d";
-		descriptionShort = "Caliber: 6mm BB<br/>Rounds: 82<br/>2.0g";
+		descriptionShort = "Caliber: 6mm BB<br/>Rounds: 82<br/>0.2g";
 		displayNameMFDFormat = "6mmBB";
 		selectionFireAnim="";
 	};
@@ -120,7 +120,7 @@
         	};
 		picture = "\rhsafrf\addons\rhs_weapons\gear_mags\rhs_gear_mag_762x39_ak_ca.paa";
 		model = "\rhsafrf\addons\rhs_weapons\magazines\rhs_ak762_steel_mag.p3d";
-		descriptionShort = "Caliber: 6mm BB<br/>Rounds: 82<br/>2.0g";
+		descriptionShort = "Caliber: 6mm BB<br/>Rounds: 82<br/>0.2g";
 		displayNameMFDFormat = "6mmBB";
 		selectionFireAnim="";
 	};
@@ -139,7 +139,7 @@
         	};
 		picture = "\rhsafrf\addons\rhs_weapons\gear_mags\rhs_gear_mag_762x51_svd_ca.paa";
 		model = "\rhsafrf\addons\rhs_weapons\magazines\rhs_svd_mag.p3d";
-		descriptionShort = "Caliber: 6mm BB<br/>Rounds: 82<br/>2.0g";
+		descriptionShort = "Caliber: 6mm BB<br/>Rounds: 82<br/>0.2g";
 		displayNameMFDFormat = "6mmBB";
 		selectionFireAnim="";
 	};
@@ -160,7 +160,7 @@
         model = "\rhsafrf\addons\rhs_weapons\magazines\rhs_pk_mag.p3d";
 
 
-		descriptionShort = "Caliber: 6mm BB<br/>Rounds: 82<br/>2.0g";
+		descriptionShort = "Caliber: 6mm BB<br/>Rounds: 82<br/>0.2g";
 		displayNameMFDFormat = "6mmBB";
 		selectionFireAnim="";
 	};
@@ -181,7 +181,7 @@
         model = "\rhsafrf\addons\rhs_weapons2\magazines\rhs_9x19_20mag.p3d";
 
 
-		descriptionShort = "Caliber: 6mm BB<br/>Rounds: 82<br/>2.0g";
+		descriptionShort = "Caliber: 6mm BB<br/>Rounds: 82<br/>0.2g";
 		displayNameMFDFormat = "6mmBB";
 		selectionFireAnim="";
 	};
