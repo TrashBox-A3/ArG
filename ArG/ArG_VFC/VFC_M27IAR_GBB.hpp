@@ -36,16 +36,6 @@ class ArG_VFC_M27IAR_GBB: rhs_weap_m27iar
 	};
 	discreteDistanceInitIndex=0;
 
-	class WeaponSlotsInfo
-	{
-		mass = 79.2;
-		allowedSlots[] = {901};
-		class UnderBarrelSlot: rhs_western_rifle_underbarrel_slot {};
-		class CowsSlot: rhs_western_rifle_scopes_slot_long {};
-		class PointerSlot: rhs_western_rifle_laser_slot_top {};
-		class MuzzleSlot: rhs_western_rifle_muzzle_slot {};
-		class GripodSlot: rhs_western_rifle_gripod_slot {};
-	};
 	modes[] =
 	{
 		"Single",
@@ -68,10 +58,6 @@ class ArG_VFC_M27IAR_GBB: rhs_weap_m27iar
 		aiRateOfFire= 1e-006;
 	};
 
-	rhs_grip1_change = "rhs_weap_m27iar_grip1";
-	rhs_grip2_change = "rhs_weap_m27iar_grip2";
-	rhs_grip3_change = "rhs_weap_m27iar_grip3";
-	rhsusf_acc_anpeq15 = 1; // 0 - for M4, 1 - for M27IAR/HK with higher top rail
-
+	
 	baseWeapon="ArG_VFC_M27IAR_GBB";
 };
