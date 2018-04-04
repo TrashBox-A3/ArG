@@ -26,7 +26,7 @@ class ArG_TM_M320 : rhs_weap_M320
   flash = "";
   flashSize = 0;
   fireLightIntensity=0;
-  
+  recoil="GBRecoil";
   maxZeroing=350;
   discreteDistanceInitIndex=0;
   maxRecoilSway=0.0125;
