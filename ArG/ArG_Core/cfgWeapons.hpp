@@ -4,7 +4,7 @@ class Mode_FullAuto;
 class CfgWeapons
 {
 
-  #include "ArG_Katiba.hpp"
+  #include "Katiba.hpp"
 
 class ItemCore;
     class InventoryItem_Base_F;
