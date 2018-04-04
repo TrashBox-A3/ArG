@@ -18,6 +18,7 @@ class CfgPatches
 		weapons[]=
 		{
 		"ArG_MX_F",
+		"ArG_MX_F_BLK",
 		"ArG_Katiba_F",
 		"ArG_HE_Grenade_shell",
 		"ArG_30Rnd_65x39_BB",
