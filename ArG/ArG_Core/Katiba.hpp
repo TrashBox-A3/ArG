@@ -1,13 +1,12 @@
-
+{
 class arifle_Katiba_F;
 
 class ArG_Katiba_F: arifle_Katiba_F
 {
-  author="$STR_A3_Bohemia_Interactive";
-  _generalMacro="arifle_Katiba_F";
+  author="Rodeostar42";
   baseWeapon="arifle_Katiba_F";
   scope=2;
-  displayName="$STR_A3_CfgWeapons_arifle_Katiba_F0";
+  displayName="Katiba";
   descriptionShort="Replace Katiba to Airsoft Gun";
   baseWeapon="ArG_Katiba_F";
 
@@ -26,7 +25,7 @@ class ArG_Katiba_F: arifle_Katiba_F
   flash = "";
   flashSize = 0;
   fireLightIntensity=0;
-  reloadAction="GestureReloadMX";
+
   recoil="EGRecoil";
   maxZeroing=200;
   discreteDistanceInitIndex=0;
@@ -47,4 +46,5 @@ class ArG_Katiba_F: arifle_Katiba_F
   begin1[] = {"ArG_Core\Sound\den_tan01.wss",3, 1,15};
   soundBegin[] = {"begin1",1};
   weaponSoundEffect = "DefaultRifle";
+};
 };
