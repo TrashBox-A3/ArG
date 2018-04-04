@@ -4,14 +4,16 @@ class Mode_FullAuto;
 class CfgWeapons
 {
 
+  #include "VFC_M27IAR_GBB.hpp"
+
 
     ///VFC HK416A5 GBB BLK///
     class arifle_SPAR_01_blk_F;
-        
+
     class ArG_VFC_HK416A5_GBB_BLK: arifle_SPAR_01_blk_F
     {
         author="Rodeostar42";
-       
+
         scope=2;
         displayName="VFC HK416A5 GBB (BLK)";
         model = "\A3\Weapons_F_Exp\Rifles\SPAR_01\SPAR_01_F.p3d";
@@ -20,7 +22,7 @@ class CfgWeapons
         uiPicture = "";
         descriptionShort = "VFC HK416A5 GBB (BLK)<br/>VFC";
         magazines[] = {
-            
+
             "VFC_30Rnd_556x45_M4_HK416_GBB"
         };
 
@@ -36,7 +38,7 @@ class CfgWeapons
         maxRecoilSway=0.0125;
         swayDecaySpeed=1.25;
         soundBullet[]={"emptySound",1};
-        
+
 
 
 
@@ -51,7 +53,7 @@ class CfgWeapons
         class Single: Mode_SemiAuto
         {
             reloadTime=0.096000001;
-            
+
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
@@ -74,13 +76,13 @@ class CfgWeapons
             begin1[] = {"ArG_VFC\Sound\VFC_HK416A5_GBB.wss",3, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
-        };    
+        };
         };
         class FullAuto: Mode_FullAuto
         {
             reloadTime=0.096000001;
             dispersion=0.00086999999;
-            
+
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
@@ -103,7 +105,7 @@ class CfgWeapons
             begin1[] = {"ArG_VFC\Sound\VFC_HK416A5_GBB.wss",3, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
-        };    
+        };
         };
         class fullauto_medium: FullAuto
         {
@@ -133,7 +135,7 @@ class CfgWeapons
             begin1[] = {"ArG_VFC\Sound\VFC_HK416A5_GBB.wss",3, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
-        };    
+        };
         };
         class single_medium_optics1: Single
         {
@@ -162,7 +164,7 @@ class CfgWeapons
             begin1[] = {"ArG_VFC\Sound\VFC_HK416A5_GBB.wss",3, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
-        };    
+        };
         };
         class single_far_optics2: single_medium_optics1
         {
@@ -191,22 +193,22 @@ class CfgWeapons
             begin1[] = {"ArG_VFC\Sound\VFC_HK416A5_GBB.wss",3, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
-        };    
         };
-        
-        
-        
-      }; 
+        };
+
+
+
+      };
 
 
 
       ///VFC HK416A5 GBB SAND///
     class arifle_SPAR_01_snd_F;
-        
+
     class ArG_VFC_HK416A5_GBB_SND: arifle_SPAR_01_snd_F
     {
         author="Rodeostar42";
-       
+
         scope=2;
         displayName="VFC HK416A5 GBB (SAND)";
         model = "\A3\Weapons_F_Exp\Rifles\SPAR_01\SPAR_01_F.p3d";
@@ -215,7 +217,7 @@ class CfgWeapons
         uiPicture = "";
         descriptionShort = "VFC HK416A5 GBB (SAND)<br/>VFC";
         magazines[] = {
-            
+
             "VFC_30Rnd_556x45_M4_HK416_GBB"
         };
 
@@ -231,7 +233,7 @@ class CfgWeapons
         maxRecoilSway=0.0125;
         swayDecaySpeed=1.25;
         soundBullet[]={"emptySound",1};
-        
+
 
 
 
@@ -246,7 +248,7 @@ class CfgWeapons
         class Single: Mode_SemiAuto
         {
             reloadTime=0.096000001;
-            
+
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
@@ -269,13 +271,13 @@ class CfgWeapons
             begin1[] = {"ArG_VFC\Sound\VFC_HK416A5_GBB.wss",3, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
-        };    
+        };
         };
         class FullAuto: Mode_FullAuto
         {
             reloadTime=0.096000001;
             dispersion=0.00086999999;
-            
+
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
@@ -298,7 +300,7 @@ class CfgWeapons
             begin1[] = {"ArG_VFC\Sound\VFC_HK416A5_GBB.wss",3, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
-        };    
+        };
         };
         class fullauto_medium: FullAuto
         {
@@ -328,7 +330,7 @@ class CfgWeapons
             begin1[] = {"ArG_VFC\Sound\VFC_HK416A5_GBB.wss",3, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
-        };    
+        };
         };
         class single_medium_optics1: Single
         {
@@ -357,7 +359,7 @@ class CfgWeapons
             begin1[] = {"ArG_VFC\Sound\VFC_HK416A5_GBB.wss",3, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
-        };    
+        };
         };
         class single_far_optics2: single_medium_optics1
         {
@@ -386,12 +388,11 @@ class CfgWeapons
             begin1[] = {"ArG_VFC\Sound\VFC_HK416A5_GBB.wss",3, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
-        };    
         };
-        
-        
-        
-      }; 
-    
-  };  
-    
+        };
+
+
+
+      };
+
+  };
