@@ -1,6 +1,6 @@
 ///MK20///
-class arifle_Mk20_F;
-class ArG_Mk20_F: arifle_Mk20_F
+class arifle_Mk20_plain_F;
+class ArG_Mk20_F: arifle_Mk20_plain_F
 {
   author="$STR_A3_Bohemia_Interactive";
   _generalMacro="MK20 6mmBB";
@@ -15,7 +15,8 @@ class ArG_Mk20_F: arifle_Mk20_F
 
   magazines[] = {
 
-      "ArG_30Rnd_65x39_BB"
+    "ArG_30Rnd_556x45_BB_02",
+    "ArG_30Rnd_556x45_BB_025"
   };
 
   initSpeed = 250; // muzzle velocity
