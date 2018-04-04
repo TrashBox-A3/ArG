@@ -6,9 +6,9 @@ class ArG_Katiba_F: arifle_Katiba_F
   author="Rodeostar42";
   baseWeapon="ArG_Katiba_F";
   scope=2;
-  displayName="Katiba";
+  displayName="Katiba 6mmBB";
   descriptionShort="Replace Katiba to Airsoft Gun";
-  baseWeapon="ArG_Katiba_F";
+  
 
   model="\A3\Weapons_F\Rifles\Khaybar\Khaybar_F.p3d";
   picture="\A3\weapons_F\Rifles\Khaybar\Data\UI\gear_Khaybar_X_CA.paa";
