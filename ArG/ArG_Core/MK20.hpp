@@ -2,14 +2,21 @@
 class arifle_Mk20_plain_F;
 class ArG_Mk20_F: arifle_Mk20_plain_F
 {
-  author="$STR_A3_Bohemia_Interactive";
-  _generalMacro="MK20 6mmBB";
+  author="Rodeostar42";
+
   baseWeapon="ArG_Mk20_F";
   scope=2;
   model="\A3\Weapons_F_beta\Rifles\mk20\mk20_F.p3d";
-  displayName="$STR_A3_CFGWEAPONS_ARIFLE_MK20_CAMO";
-  picture="\A3\Weapons_F_Beta\Rifles\MK20\Data\UI\gear_mk20_camo_CA.paa";
-  UiPicture="\A3\Weapons_F\data\UI\icon_regular_CA.paa";
+  displayName="ArG MK20";
+  picture="\A3\Weapons_F_Beta\Rifles\MK20\Data\UI\gear_mk20_CA.paa";
+  hiddenSelections[]=
+  {
+    "camo"
+  };
+  hiddenSelectionsTextures[]=
+  {
+    "\A3\Weapons_F_Beta\Rifles\MK20\Data\mk20_co.paa"
+  };
 
   descriptionShort="Replace MK20 to Airsoft Gun";
 
