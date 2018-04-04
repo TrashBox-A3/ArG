@@ -4,7 +4,7 @@ class arifle_Katiba_F;
 class ArG_Katiba_F: arifle_Katiba_F
 {
   author="Rodeostar42";
-  baseWeapon="arifle_Katiba_F";
+  baseWeapon="ArG_Katiba_F";
   scope=2;
   displayName="Katiba";
   descriptionShort="Replace Katiba to Airsoft Gun";
