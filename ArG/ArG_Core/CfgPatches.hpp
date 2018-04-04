@@ -17,9 +17,12 @@ class CfgPatches
 		};
 		weapons[]=
 		{
-		"ArG_MX_F",,
+		"ArG_MX_F",
+		"ArG_Katiba_F",
 		"ArG_HE_Grenade_shell",
 		"ArG_30Rnd_65x39_BB",
+		"ArG_30Rnd_556x45_BB_02",
+		"ArG_30Rnd_556x45_BB_025",
 		"ArG_BuzzerBox",
 		"ArG_Speaker",
 		"Core_Billboard"
