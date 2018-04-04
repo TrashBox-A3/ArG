@@ -5,6 +5,7 @@ class CfgWeapons
 {
 
   #include "Katiba.hpp"
+  #include "MK20.hpp"
 
 class ItemCore;
     class InventoryItem_Base_F;
