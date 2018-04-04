@@ -14,6 +14,7 @@ class Box_NATO_Equip_F;
             item10(ArG_MX_F_BLK);
             item10(ArG_Katiba_F);
             item10(ArG_Mk20_F);
+            item10(ArG_EBR_F);
             item10(ArG_30Rnd_556x45_BB_02);
             item10(ArG_30Rnd_556x45_BB_025);
             item10(ArG_30Rnd_65x39_BB);

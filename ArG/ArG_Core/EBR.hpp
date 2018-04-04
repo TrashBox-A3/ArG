@@ -1,23 +1,32 @@
-///Katiba///
-class arifle_Katiba_F;
 
-class ArG_Katiba_F: arifle_Katiba_F
+///EBR///
+class srifle_EBR_F;
+class ArG_EBR_F: srifle_EBR_F
 {
   author="Rodeostar42";
-  baseWeapon="ArG_Katiba_F";
+
+  baseWeapon="ArG_EBR_F";
   scope=2;
-  displayName="ArG Katiba";
-  descriptionShort="Replace Katiba to Airsoft Gun";
-
-
-  model="\A3\Weapons_F\Rifles\Khaybar\Khaybar_F.p3d";
-  picture="\A3\weapons_F\Rifles\Khaybar\Data\UI\gear_Khaybar_X_CA.paa";
+  model="\A3\weapons_F\LongRangeRifles\EBR\EBR_F.p3d";
+  displayName="ArG EBR";
+  picture="\A3\weapons_F\LongRangeRifles\EBR\Data\UI\gear_EBR_X_CA.paa";
   UiPicture="\A3\weapons_f\data\UI\icon_regular_CA.paa";
+  hiddenSelections[]=
+  {
+    "camo1",
+    "camo2"
+  };
+  hiddenSelectionsTextures[]=
+  {
+    "\a3\weapons_f\longrangerifles\ebr\data\m14_ebr01_co.paa",
+    "\a3\weapons_f\longrangerifles\ebr\data\m14_ebr02_co.paa"
+  };
 
+  descriptionShort="Replace EBR to Airsoft Gun";
   magazines[] = {
 
-      "ArG_30Rnd_556x45_BB_02",
-      "ArG_30Rnd_556x45_BB_025"
+    "ArG_20Rnd_762x51_BB_02",
+		"ArG_20Rnd_762x51_BB_025"
   };
 
   initSpeed = 250; // muzzle velocity
@@ -33,6 +42,9 @@ class ArG_Katiba_F: arifle_Katiba_F
   swayDecaySpeed=1.25;
   soundBullet[]={"emptySound",1};
   alternativeFire="Zasleh2";
+
+
+
 
   modes[]=
   {
