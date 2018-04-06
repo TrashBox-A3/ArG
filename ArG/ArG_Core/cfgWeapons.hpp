@@ -3,8 +3,6 @@ class Mode_Burst;
 class Mode_FullAuto;
 class manual;
 class close;
-class close;
-class medium;
 class far_optic1;
 class far_optic2;
 class CfgWeapons

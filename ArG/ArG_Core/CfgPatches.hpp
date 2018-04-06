@@ -29,6 +29,8 @@ class CfgPatches
 		"ArG_30Rnd_556x45_BB_025",
 		"ArG_20Rnd_762x51_BB_02",
 		"ArG_20Rnd_762x51_BB_025",
+		"ArG_200Rnd_65x39_cased_Box_BB_02",
+		"ArG_200Rnd_65x39_cased_Box_BB_025",
 		"ArG_BuzzerBox",
 		"ArG_Speaker",
 		"Core_Billboard"

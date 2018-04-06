@@ -9,21 +9,18 @@ class ArG_Mk200_F: LMG_Mk200_F
   scope=2;
   magazines[]=
   {
-    "ArG_20Rnd_762x51_BB_02",
-		"ArG_20Rnd_762x51_BB_025"
+    "ArG_200Rnd_65x39_cased_Box_BB_02",
+		"ArG_200Rnd_65x39_cased_Box_BB_025"
   };
   reloadAction="GestureReloadM200";
-  recoil="recoil_mk200";
-  maxZeroing=1200;
+  recoil="EGRecoil";
+  maxZeroing=200;
   handAnim[]=
   {
     "OFP2_ManSkeleton",
     "\A3\weapons_f\Machineguns\M200\data\Anim\M200.rtm"
   };
-  class ItemInfo
-  {
-    priority=1;
-  };
+
   model="\A3\weapons_f\Machineguns\M200\M200_F.p3d";
   displayName="ArG MK200";
   nameSound="Mgun";
@@ -31,7 +28,7 @@ class ArG_Mk200_F: LMG_Mk200_F
   UiPicture="\A3\weapons_f\data\UI\icon_mg_CA.paa";
 
   descriptionShort="Replace MK200 to Airsoft Gun";
-  
+
   hiddenSelections[]=
   {
     "camo",
