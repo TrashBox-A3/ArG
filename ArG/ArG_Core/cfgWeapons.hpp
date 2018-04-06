@@ -41,7 +41,8 @@ class ItemCore;
         descriptionShort = "Replace MX Rifle to Airsoft Gun";
         magazines[] = {
 
-            "ArG_30Rnd_65x39_BB"
+            "ArG_30Rnd_65x39_BB_02",
+            "ArG_30Rnd_65x39_BB_025"
         };
 
         initSpeed = 250; // muzzle velocity
@@ -241,7 +242,8 @@ class ItemCore;
         descriptionShort = "Replace MX Rifle to Airsoft Gun";
         magazines[] = {
 
-            "ArG_30Rnd_65x39_BB"
+          "ArG_30Rnd_65x39_BB_02",
+          "ArG_30Rnd_65x39_BB_025"
         };
 
         initSpeed = 250; // muzzle velocity
