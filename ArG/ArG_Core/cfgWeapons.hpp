@@ -1,12 +1,17 @@
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
+class manual;
+class close;
+class far_optic1;
+class far_optic2;
 class CfgWeapons
 {
 
   #include "Katiba.hpp"
   #include "MK20.hpp"
   #include "EBR.hpp"
+  #include "MK200.hpp"
 
 class ItemCore;
     class InventoryItem_Base_F;
@@ -36,7 +41,8 @@ class ItemCore;
         descriptionShort = "Replace MX Rifle to Airsoft Gun";
         magazines[] = {
 
-            "ArG_30Rnd_65x39_BB"
+            "ArG_30Rnd_65x39_BB_02",
+            "ArG_30Rnd_65x39_BB_025"
         };
 
         initSpeed = 250; // muzzle velocity
@@ -236,7 +242,8 @@ class ItemCore;
         descriptionShort = "Replace MX Rifle to Airsoft Gun";
         magazines[] = {
 
-            "ArG_30Rnd_65x39_BB"
+          "ArG_30Rnd_65x39_BB_02",
+          "ArG_30Rnd_65x39_BB_025"
         };
 
         initSpeed = 250; // muzzle velocity

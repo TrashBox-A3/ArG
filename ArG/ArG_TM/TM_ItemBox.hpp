@@ -2,12 +2,12 @@ class Box_NATO_Equip_F;
     class TM_Weapons_Box : Box_NATO_Equip_F
     {
         scope = 2;
-        
+
         displayName = "TM Weapons Box";
         DLC = "";
         editorSubcategory = "ArG_Weapons_Box";
         editorCategory = "ArG_Objects";
-        
+
         class TransportItems
         {
             item10(ArG_TM_HK416_DEV);
@@ -24,7 +24,7 @@ class Box_NATO_Equip_F;
             item10(ArG_25Rnd_9mm);
             item10(ArG_TM_P226R);
             item10(ArG_TM_M92F);
-            item10(G_EyeProtectors_F);
-            
+            item10(G_Combat);
+
         };
     };
