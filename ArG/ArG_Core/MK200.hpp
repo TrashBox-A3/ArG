@@ -12,6 +12,16 @@ class ArG_Mk200_F: LMG_Mk200_F
     "ArG_200Rnd_65x39_cased_Box_BB_02",
 		"ArG_200Rnd_65x39_cased_Box_BB_025"
   };
+
+  initSpeed = 250; // muzzle velocity
+  maxRange = 100;
+  flash = "";
+  flashSize = 0;
+  fireLightIntensity=0;
+  discreteDistanceInitIndex=0;
+  maxRecoilSway=0.0125;
+  swayDecaySpeed=1.25;
+  soundBullet[]={"emptySound",1};
   reloadAction="GestureReloadM200";
   recoil="EGRecoil";
   maxZeroing=200;
@@ -23,7 +33,7 @@ class ArG_Mk200_F: LMG_Mk200_F
 
   model="\A3\weapons_f\Machineguns\M200\M200_F.p3d";
   displayName="ArG MK200";
-  nameSound="Mgun";
+
   picture="\A3\weapons_F\Machineguns\M200\Data\UI\gear_m200_X_CA.paa";
   UiPicture="\A3\weapons_f\data\UI\icon_mg_CA.paa";
 
