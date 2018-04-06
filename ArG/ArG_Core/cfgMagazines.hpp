@@ -145,7 +145,7 @@ class ArG_200Rnd_65x39_cased_Box_BB_02: 200Rnd_65x39_cased_Box
               mass = 1;
         };
   model = "\A3\weapons_F\ammo\mag_univ.p3d";
-  picture = "\A3\weapons_f\data\UI\M_20Rnd_762x51_CA.paa";
+  picture = "\A3\Weapons_F\Data\UI\M_200Rnd_65x39_CA.paa";
   descriptionShort = "Caliber: 6mm BB<br/>Rounds: 200<br/>weight: 0.2g";
   displayNameMFDFormat = "6mmBB";
 
@@ -164,8 +164,8 @@ class ArG_200Rnd_65x39_cased_Box_BB_025: 200Rnd_65x39_cased_Box
         {
               mass = 1;
         };
-  model = "\A3\weapons_F\ammo\mag_univ.p3d";
-  picture = "\A3\weapons_f\data\UI\M_20Rnd_762x51_CA.paa";
+        model = "\A3\weapons_F\ammo\mag_univ.p3d";
+        picture = "\A3\Weapons_F\Data\UI\M_200Rnd_65x39_CA.paa";
   descriptionShort = "Caliber: 6mm BB<br/>Rounds: 200<br/>weight: 0.25g";
   displayNameMFDFormat = "6mmBB";
 
