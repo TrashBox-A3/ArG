@@ -1,12 +1,19 @@
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
+class manual;
+class close;
+class close;
+class medium;
+class far_optic1;
+class far_optic2;
 class CfgWeapons
 {
 
   #include "Katiba.hpp"
   #include "MK20.hpp"
   #include "EBR.hpp"
+  #include "MK200.hpp"
 
 class ItemCore;
     class InventoryItem_Base_F;

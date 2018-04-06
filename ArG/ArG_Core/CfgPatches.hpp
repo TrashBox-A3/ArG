@@ -22,6 +22,7 @@ class CfgPatches
 		"ArG_Katiba_F",
 		"ArG_Mk20_F",
 		"ArG_EBR_F",
+		"ArG_Mk200_F",
 		"ArG_HE_Grenade_shell",
 		"ArG_30Rnd_65x39_BB",
 		"ArG_30Rnd_556x45_BB_02",
