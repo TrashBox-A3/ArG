@@ -18,7 +18,7 @@
 
  {
 
-   if(_x inArea GameArea) then (
+   if(_x inArea _GameArea) then (
 
  if ((typeOf _x in _Gamer)) then
    {
