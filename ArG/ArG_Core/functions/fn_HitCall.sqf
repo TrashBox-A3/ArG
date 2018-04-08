@@ -6,7 +6,7 @@
 
    _player = _this select 0;
 
-  _gamearea = inArea "GameArea";
+  _gamearea = inArea _GameArea;
 
    _Gamer = [
    "ArG_Gamer_1",
