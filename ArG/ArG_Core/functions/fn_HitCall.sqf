@@ -6,6 +6,7 @@
 
    _player = _this select 0;
 
+  _gamearea = inArea "GameArea";
 
    _Gamer = [
    "ArG_Gamer_1",
@@ -48,6 +49,6 @@ player removeEventHandler ["HitPart", 0];
 
   };
 
-} forEach inArea GameArea;
+} forEach _gamearea;
 
 };
