@@ -18,6 +18,8 @@
 
  {
 
+   if(_x inArea GameArea) then (
+
  if ((typeOf _x in _Gamer)) then
    {
 
@@ -48,7 +50,7 @@ player removeEventHandler ["HitPart", 0];
 }];
 
   };
-
+};
 } forEach allUnits;
 
 };
