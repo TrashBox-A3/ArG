@@ -1,6 +1,6 @@
 ///script by Rodeostar42///
 
-  if (!isDedicated) then {
+
 
     private ["_player"];
 
@@ -52,5 +52,3 @@ player removeEventHandler ["HitPart", 0];
   };
 
 } forEach allUnits;
-
-};
