@@ -6,6 +6,7 @@ class close;
 class far_optic1;
 class far_optic2;
 class MuzzleSlot;
+class WeaponSlotsInfo;
 class CfgWeapons
 {
 
