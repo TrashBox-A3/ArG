@@ -45,6 +45,19 @@ class ItemCore;
             "ArG_30Rnd_65x39_BB_025"
         };
 
+        class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class MuzzleSlot: MuzzleSlot
+			{
+				compatibleItems[]=
+				{
+					"ArG_muzzle_snds_H"
+
+				};
+			};
+			mass=120;
+		};
+
         initSpeed = 250; // muzzle velocity
         maxRange = 100;
         flash = "";
