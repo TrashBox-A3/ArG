@@ -36,15 +36,14 @@ class ItemCore;
     class ArG_MX_F: arifle_MX_F
     {
         author="Rodeostar42";
-
-
-
-        
-        class LinkedItemsMuzzle
-			{
+        class LinkedItems
+        		{
+           class LinkedItemsMuzzle
+			      {
 				slot="MuzzleSlot";
 				item="ArG_muzzle_snds_H";
-			};
+			      };
+          };
 
 
         scope=2;
