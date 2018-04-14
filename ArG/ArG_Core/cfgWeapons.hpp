@@ -433,6 +433,7 @@ class ItemCore;
         };
     };
 
+///Invisible mussle///
     class muzzle_snds_H;
     class ArG_muzzle_snds_H: ItemCore
     	{
@@ -445,9 +446,9 @@ class ItemCore;
     		mFact=1;
     		tBody=100;
     		scope=2;
-    		displayName="ArG muzzle ";
+    		displayName="ArG muzzle(Invisible) ";
     		picture="\A3\weapons_F\Data\UI\gear_acca_snds_h_CA.paa";
-    		model="\A3\weapons_f\acc\acca_snds_h_F";
+    		model=;
     		class ItemInfo: InventoryMuzzleItem_Base_F
     		{
     			mass=10;
