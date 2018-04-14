@@ -38,14 +38,14 @@ class ItemCore;
         author="Rodeostar42";
 
 
-    class LinkedItems
-        {
+
+        
         class LinkedItemsMuzzle
 			{
 				slot="MuzzleSlot";
 				item="ArG_muzzle_snds_H";
 			};
-    }:
+
 
         scope=2;
         displayName="ArG MX";
