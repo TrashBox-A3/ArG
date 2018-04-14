@@ -43,6 +43,12 @@ class ItemCore;
 				slot="MuzzleSlot";
 				item="ArG_muzzle_snds_H";
 			      };
+
+            class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="optic_DMS";
+			};
           };
 
 
