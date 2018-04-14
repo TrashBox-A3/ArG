@@ -34,6 +34,12 @@ class ItemCore;
     {
         author="Rodeostar42";
 
+        class LinkedItemsMuzzle
+			{
+				slot="MuzzleSlot";
+				item="ArG_muzzle_snds_H";
+			};
+
         scope=2;
         displayName="ArG MX";
         model = "\A3\Weapons_F\Rifles\MX\MX_F.p3d";
@@ -438,7 +444,7 @@ class ItemCore;
     class ArG_muzzle_snds_H: ItemCore
     	{
     		author="Rodeostar42";
-    		_generalMacro="muzzle_snds_H";
+
     		htMin=1;
     		htMax=600;
     		afMax=0;
@@ -447,7 +453,7 @@ class ItemCore;
     		tBody=100;
     		scope=2;
     		displayName="ArG muzzle(Invisible) ";
-    		picture="\A3\weapons_F\Data\UI\gear_acca_snds_h_CA.paa";
+    		picture=;
     		model=;
     		class ItemInfo: InventoryMuzzleItem_Base_F
     		{
@@ -458,9 +464,9 @@ class ItemCore;
     			};
     			class AmmoCoef
     			{
-    				hit=1;
+    				hit=0.01;
     				typicalSpeed=1;
-    				airFriction=1;
+    				airFriction=-0.020;
     				visibleFire=0.30000001;
     				audibleFire=0.039999999;
     				visibleFireTime=0.5;
