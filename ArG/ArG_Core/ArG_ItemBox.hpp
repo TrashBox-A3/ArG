@@ -24,6 +24,7 @@ class Box_NATO_Equip_F;
             item10(ArG_30Rnd_65x39_BB_025);
             item10(ArG_200Rnd_65x39_cased_Box_BB_02);
             item10(ArG_200Rnd_65x39_cased_Box_BB_025);
+            item10(ArG_muzzle_snds_H);
             item10(G_Combat);
             item10(acc_flashlight);
             item10(optic_Hamr);
