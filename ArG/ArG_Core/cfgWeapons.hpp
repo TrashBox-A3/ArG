@@ -49,17 +49,23 @@ class ItemCore;
             "ArG_30Rnd_65x39_BB_025"
         };
 
-        class WeaponSlotsInfo: WeaponSlotsInfo
+        class LinkedItems
 		{
-			class MuzzleSlot: MuzzleSlot
+			class LinkedItemsOptic
 			{
-				compatibleItems[]=
-				{
-					"ArG_muzzle_snds_H"
-
-				};
+				slot="CowsSlot";
+				item="optic_ARCO";
 			};
-			mass=1;
+			class LinkedItemsAcc
+			{
+				slot="PointerSlot";
+				item="acc_pointer_IR";
+			};
+			class LinkedItemsMuzzle
+			{
+				slot="MuzzleSlot";
+				item="muzzle_snds_H";
+			};
 		};
 
         initSpeed = 250; // muzzle velocity
