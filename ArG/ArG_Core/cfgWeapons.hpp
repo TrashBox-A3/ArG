@@ -36,22 +36,6 @@ class ItemCore;
     class ArG_MX_F: arifle_MX_F
     {
         author="Rodeostar42";
-        class LinkedItems
-        		{
-           class LinkedItemsMuzzle
-			      {
-				slot="MuzzleSlot";
-				item="ArG_muzzle_snds_H";
-			      };
-
-            class LinkedItemsOptic
-			{
-				slot="CowsSlot";
-				item="optic_DMS";
-			};
-          };
-
-
         scope=2;
         displayName="ArG MX";
         model = "\A3\Weapons_F\Rifles\MX\MX_F.p3d";
@@ -278,6 +262,19 @@ class ItemCore;
           "ArG_30Rnd_65x39_BB_02",
           "ArG_30Rnd_65x39_BB_025"
         };
+
+        class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class MuzzleSlot: MuzzleSlot
+			{
+				compatibleItems[]=
+				{
+					"ArG_muzzle_snds_H"
+
+				};
+			};
+			mass=1;
+		};
 
         initSpeed = 250; // muzzle velocity
         maxRange = 100;
