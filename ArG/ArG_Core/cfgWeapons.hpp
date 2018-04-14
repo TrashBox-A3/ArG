@@ -5,9 +5,11 @@ class manual;
 class close;
 class far_optic1;
 class far_optic2;
+class SlotInfo;
+class CowsSlot;
 class MuzzleSlot;
+class PointerSlot;
 class WeaponSlotsInfo;
-class LinkedItems;
 class CfgWeapons
 {
 
@@ -451,7 +453,7 @@ class ItemCore;
     		author="Rodeostar42";
 
     		htMin=1;
-    		htMax=600;
+    		htMax=100;
     		afMax=0;
     		mfMax=0;
     		mFact=1;
