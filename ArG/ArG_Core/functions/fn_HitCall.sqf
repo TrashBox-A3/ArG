@@ -1,13 +1,5 @@
 ///script by Rodeostar42///
 
-
-
-  
-
-   _player = _this select 0;
-
-
-
    _Gamer = [
    "ArG_Gamer_1",
    "ArG_Gamer_2",
