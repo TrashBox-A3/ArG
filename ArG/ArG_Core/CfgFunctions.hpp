@@ -6,9 +6,9 @@ class ArG
 {
 		class script
 	{
-		file = "\ArG_Core\functions";
+		file = "\ArG_Core\initPlayerLocal.sqf";
 		class HitCall { postInit = 1; };
-		
+
 	};
 };
 

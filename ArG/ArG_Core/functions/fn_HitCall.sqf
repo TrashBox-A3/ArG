@@ -2,7 +2,7 @@
 
 
 
-    private ["_player"];
+  
 
    _player = _this select 0;
 
