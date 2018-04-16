@@ -6,7 +6,7 @@ class CfgSounds {
     titles[] = {};
   };
 
-  class HitCall {
+  class Buzzer {
     name = "";
     sound[] = {"ArG_Core\Sound\Buzzer.wss", 5, 1.1};
     titles[] = {};
