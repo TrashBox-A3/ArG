@@ -101,7 +101,7 @@ class CfgGroups {
                   };
 
 
-                  class GUER {
+                  class resistance {
 
                         class ArG_Frends_I {
                             name = "ArG Gamer Group";
