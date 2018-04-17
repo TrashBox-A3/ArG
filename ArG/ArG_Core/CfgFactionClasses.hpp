@@ -11,7 +11,7 @@ class CfgFactionClasses {
   class ArG_Gamer_O {
 
         displayName = "AirSoft Gamer(Red)";
-        side = 1;
+        side = 2;
         priority = 1;
 
   };
