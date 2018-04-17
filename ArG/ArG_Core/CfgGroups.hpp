@@ -15,7 +15,7 @@ class CfgGroups {
                 class ArG_Group_1 {
                     name = "4 Frends";
                     side = 1;
-                    faction = "ArG_Core";
+                    faction = "ArG_Gamer_F";
                     icon = "\A3\ui_f\data\map\markers\nato\b_recon.paa";
                     rarityGroup = 0.5;
 
@@ -50,7 +50,7 @@ class CfgGroups {
 
            class EAST {
 
-                 class ArG_Frends_F {
+                 class ArG_Frends_O {
                      name = "ArG Game Frends";
 
                      class Infantry {
@@ -62,8 +62,8 @@ class CfgGroups {
 
                          class ArG_Group_2 {
                              name = "4 Frends";
-                             side = 1;
-                             faction = "ArG_Core";
+                             side = 2;
+                             faction = "ArG_Gamer_O";
                              icon = "\A3\ui_f\data\map\markers\nato\b_recon.paa";
                              rarityGroup = 0.5;
 
