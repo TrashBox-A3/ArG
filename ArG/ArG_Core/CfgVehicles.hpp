@@ -184,9 +184,9 @@ class CfgVehicles
     };
 
 
-
+class  O_Soldier_base_F;
     ///Gamer#1///
-  		class ArG_Gamer_5:  B_Soldier_base_F
+  		class ArG_Gamer_5:  O_Soldier_base_F
   	{
   		scope=2;
           author="Rodeostar42";
@@ -232,7 +232,7 @@ class CfgVehicles
       };
 
 
-  	class ArG_Gamer_6:  B_Soldier_base_F
+  	class ArG_Gamer_6:  O_Soldier_base_F
       {
           scope=2;
           author="Rodeostar42";
@@ -275,7 +275,7 @@ class CfgVehicles
       };
 
 
-      class ArG_Gamer_7:  B_Soldier_base_F
+      class ArG_Gamer_7:  O_Soldier_base_F
       {
           scope=2;
           author="Rodeostar42";
@@ -314,7 +314,7 @@ class CfgVehicles
       };
 
 
-  		class ArG_Gamer_8:  B_Soldier_base_F
+  		class ArG_Gamer_8:  O_Soldier_base_F
       {
           scope=2;
           author="Rodeostar42";
