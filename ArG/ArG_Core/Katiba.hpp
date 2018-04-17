@@ -50,11 +50,11 @@ class ArG_Katiba_F: arifle_Katiba_F
       flashSize = 0;
       fireLightIntensity=0;
       dispersion=0.00086999999;
-      minRange=2;
+      minRange=0;
       minRangeProbab=0.5;
-      midRange=200;
+      midRange=40;
       midRangeProbab=0.69999999;
-      maxRange=400;
+      maxRange=80;
       maxRangeProbab=0.30000001;
       drySound[] = {"ArG_Core\Sound\den_tan01.wss",4, 1,15};
       class StandardSound
@@ -80,9 +80,9 @@ class ArG_Katiba_F: arifle_Katiba_F
       fireLightIntensity=0;
       minRange=0;
       minRangeProbab=0.89999998;
-      midRange=15;
+      midRange=40;
       midRangeProbab=0.69999999;
-      maxRange=30;
+      maxRange=80;
       maxRangeProbab=0.1;
       aiRateOfFire=1e-006;
       drySound[] = {"ArG_Core\Sound\den_tan01.wss",4, 1,15};
@@ -104,11 +104,11 @@ class ArG_Katiba_F: arifle_Katiba_F
       showToPlayer=0;
       burst=3;
       aiBurstTerminable=1;
-      minRange=2;
+      minRange=0;
       minRangeProbab=0.5;
-      midRange=75;
+      midRange=40;
       midRangeProbab=0.69999999;
-      maxRange=150;
+      maxRange=80;
       maxRangeProbab=0.050000001;
       aiRateOfFire=2;
       aiRateOfFireDistance=200;
@@ -133,11 +133,11 @@ class ArG_Katiba_F: arifle_Katiba_F
   {
       requiredOpticType=1;
       showToPlayer=0;
-      minRange=2;
+      minRange=0;
       minRangeProbab=0.2;
-      midRange=450;
+      midRange=40;
       midRangeProbab=0.69999999;
-      maxRange=600;
+      maxRange=80;
       maxRangeProbab=0.2;
       aiRateOfFire=6;
       aiRateOfFireDistance=600;
@@ -162,11 +162,11 @@ class ArG_Katiba_F: arifle_Katiba_F
   {
       requiredOpticType=2;
       showToPlayer=0;
-      minRange=100;
+      minRange=0;
       minRangeProbab=0.1;
-      midRange=500;
+      midRange=40;
       midRangeProbab=0.60000002;
-      maxRange=700;
+      maxRange=80;
       maxRangeProbab=0.050000001;
       aiRateOfFire=8;
       aiRateOfFireDistance=700;

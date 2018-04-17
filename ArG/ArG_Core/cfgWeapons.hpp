@@ -5,6 +5,11 @@ class manual;
 class close;
 class far_optic1;
 class far_optic2;
+class SlotInfo;
+class CowsSlot;
+class MuzzleSlot;
+class PointerSlot;
+class WeaponSlotsInfo;
 class CfgWeapons
 {
 
@@ -31,7 +36,6 @@ class ItemCore;
     class ArG_MX_F: arifle_MX_F
     {
         author="Rodeostar42";
-
         scope=2;
         displayName="ArG MX";
         model = "\A3\Weapons_F\Rifles\MX\MX_F.p3d";
@@ -44,6 +48,25 @@ class ItemCore;
             "ArG_30Rnd_65x39_BB_02",
             "ArG_30Rnd_65x39_BB_025"
         };
+
+        class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot="CowsSlot";
+				item="optic_ARCO";
+			};
+			class LinkedItemsAcc
+			{
+				slot="PointerSlot";
+				item="acc_pointer_IR";
+			};
+			class LinkedItemsMuzzle
+			{
+				slot="MuzzleSlot";
+				item="muzzle_snds_H";
+			};
+		};
 
         initSpeed = 250; // muzzle velocity
         maxRange = 100;
@@ -246,6 +269,19 @@ class ItemCore;
           "ArG_30Rnd_65x39_BB_025"
         };
 
+        class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class MuzzleSlot: MuzzleSlot
+			{
+				compatibleItems[]=
+				{
+					"ArG_muzzle_snds_H"
+
+				};
+			};
+			mass=1;
+		};
+
         initSpeed = 250; // muzzle velocity
         maxRange = 100;
         flash = "";
@@ -418,6 +454,60 @@ class ItemCore;
         };
     };
 
+///Invisible mussle///
+    class muzzle_snds_H;
+    class ArG_muzzle_snds_H: ItemCore
+    	{
+    		author="Rodeostar42";
+
+    		htMin=1;
+    		htMax=100;
+    		afMax=0;
+    		mfMax=0;
+    		mFact=1;
+    		tBody=100;
+    		scope=2;
+    		displayName="ArG muzzle(Invisible) ";
+    		picture=;
+    		model=;
+    		class ItemInfo: InventoryMuzzleItem_Base_F
+    		{
+    			mass=10;
+    			class MagazineCoef
+    			{
+    				initSpeed=1.05;
+    			};
+    			class AmmoCoef
+    			{
+    				hit=0.01;
+    				typicalSpeed=1;
+    				airFriction=-0.020;
+    				visibleFire=0.30000001;
+    				audibleFire=0.039999999;
+    				visibleFireTime=0.5;
+    				audibleFireTime=0.5;
+    				cost=1;
+    			};
+    			soundTypeIndex=1;
+    			muzzleEnd="zaslehPoint";
+    			alternativeFire="Zasleh2";
+    			class MuzzleCoef
+    			{
+    				dispersionCoef="0.8f";
+    				artilleryDispersionCoef="1.0f";
+    				fireLightCoef="0.1f";
+    				recoilCoef="1.0f";
+    				recoilProneCoef="1.0f";
+    				minRangeCoef="1.0f";
+    				minRangeProbabCoef="1.0f";
+    				midRangeCoef="1.0f";
+    				midRangeProbabCoef="1.0f";
+    				maxRangeCoef="1.0f";
+    				maxRangeProbabCoef="1.0f";
+    			};
+    		};
+    		inertia=0.2;
+    	};
 
 
 

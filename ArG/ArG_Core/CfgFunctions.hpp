@@ -8,7 +8,7 @@ class ArG
 	{
 		file = "\ArG_Core\functions";
 		class HitCall { postInit = 1; };
-		
+
 	};
 };
 

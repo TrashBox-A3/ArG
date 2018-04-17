@@ -3,7 +3,7 @@ class Box_NATO_Equip_F;
     {
         scope = 2;
 
-        displayName = "ArG Standard Weapons Box";
+        displayName = "ArG Weapons Box";
         DLC = "";
         editorSubcategory = "ArG_Weapons_Box";
         editorCategory = "ArG_Objects";
@@ -24,6 +24,9 @@ class Box_NATO_Equip_F;
             item10(ArG_30Rnd_65x39_BB_025);
             item10(ArG_200Rnd_65x39_cased_Box_BB_02);
             item10(ArG_200Rnd_65x39_cased_Box_BB_025);
+            item10(ArG_90Rnd_762x51_BB);
+            item10(ArG_540Rnd_762x51_BB);
+            item10(ArG_muzzle_snds_H);
             item10(G_Combat);
             item10(acc_flashlight);
             item10(optic_Hamr);
@@ -37,6 +40,6 @@ class Box_NATO_Equip_F;
             item10(optic_Aco);
             item10(acc_pointer_IR);
             item10(muzzle_snds_H);
-
+            
         };
     };
