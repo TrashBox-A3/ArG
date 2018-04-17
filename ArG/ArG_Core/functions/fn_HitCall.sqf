@@ -1,6 +1,6 @@
 ///script by Rodeostar42///
-if（isServer）exitwith {};
-  
+if (!isServer)  exitwith {};
+
    _Gamer = [
    "ArG_Gamer_1",
    "ArG_Gamer_2",
@@ -16,29 +16,29 @@ if（isServer）exitwith {};
  if ((typeOf _x in _Gamer)) then
    {
 
- player addEventHandler ["HitPart", {
+ _x addEventHandler ["HitPart", {
 
- player setCaptive true;
+ _x setCaptive true;
 
- player say3D "HitCall";
+ _x say3D "HitCall";
 
- player switchCamera "EXTERNAL";
+ _x switchCamera "EXTERNAL";
 
- player switchMove "Acts_JetsMarshallingRight_loop";
+ _x switchMove "Acts_JetsMarshallingRight_loop";
  [] spawn
  {
 	 sleep 5;
-	 player playMove "ApanPknlMstpSnonWnonDnon_G01";
+	 _x playMove "ApanPknlMstpSnonWnonDnon_G01";
 
  };
 
- player forceWalk true;
+ _x forceWalk true;
 
 Hit ="Land_HumanSkull_F" createVehicle position player;
 Hit attachTo [player, [0, 0, 1.9]];
 Hit setVectorDirAndUp [ [0, -1, 0], [0, 0, 1]];
 
-player removeEventHandler ["HitPart", 0];
+_x removeEventHandler ["HitPart", 0];
 
 }];
 
