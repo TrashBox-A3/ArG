@@ -47,6 +47,7 @@ class CfgGroups {
                  };
               };
            };
+         };
 
 
            class EAST {
@@ -97,6 +98,7 @@ class CfgGroups {
                           };
                        };
                     };
+                  };
 
 
          };
