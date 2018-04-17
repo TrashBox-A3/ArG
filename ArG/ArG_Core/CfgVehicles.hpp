@@ -55,12 +55,7 @@ class CfgVehicles
             "ItemWatch"
         };
 
-        class EventHandlers
-        {
-
-                hitPart = "_unit = (_this select 0) select 0; if ( (_unit getHitPointDamage 'Named_Selection') >= 0.2) then {hint 'Working'}";
-
-        };
+        
 
 
 
@@ -106,7 +101,7 @@ class CfgVehicles
             "ItemWatch"
         };
 
-        
+
 
     };
 
