@@ -21,7 +21,7 @@ class CfgVehicles
 	{
 		scope=2;
         author="Rodeostar42";
-        displayName="AirSoft Gamer 1";
+        displayName="Blue Gamer 1";
         faction="ArG_Gamer_F";
         icon = "iconMan";
         editorSubcategory = "ArG_Gamers";
@@ -67,7 +67,7 @@ class CfgVehicles
     {
         scope=2;
         author="Rodeostar42";
-        displayName="AirSoft Gamer 2";
+        displayName="Blue Gamer 2";
         faction="ArG_Gamer_F";
         icon = "iconMan";
         editorSubcategory = "ArG_Gamers";
@@ -110,7 +110,7 @@ class CfgVehicles
     {
         scope=2;
         author="Rodeostar42";
-        displayName="AirSoft Gamer 3";
+        displayName="Blue Gamer 3";
         faction="ArG_Gamer_F";
         icon = "iconMan";
         editorSubcategory = "ArG_Gamers";
@@ -149,7 +149,7 @@ class CfgVehicles
     {
         scope=2;
         author="Rodeostar42";
-        displayName="AirSoft Gamer 4";
+        displayName="Blue Gamer 4";
         faction="ArG_Gamer_F";
         icon = "iconMan";
         editorSubcategory = "ArG_Gamers";
@@ -190,7 +190,7 @@ class  O_Soldier_base_F;
   	{
   		scope=2;
           author="Rodeostar42";
-          displayName="AirSoft Gamer 5";
+          displayName="Red Gamer 1";
           faction="ArG_Gamer_O";
           icon = "iconMan";
           editorSubcategory = "ArG_Gamers";
@@ -236,7 +236,7 @@ class  O_Soldier_base_F;
       {
           scope=2;
           author="Rodeostar42";
-          displayName="AirSoft Gamer 6";
+          displayName="Red Gamer 2";
           faction="ArG_Gamer_O";
           icon = "iconMan";
           editorSubcategory = "ArG_Gamers";
@@ -279,7 +279,7 @@ class  O_Soldier_base_F;
       {
           scope=2;
           author="Rodeostar42";
-          displayName="AirSoft Gamer 7";
+          displayName="Red Gamer 3";
           faction="ArG_Gamer_O";
           icon = "iconMan";
           editorSubcategory = "ArG_Gamers";
@@ -318,7 +318,7 @@ class  O_Soldier_base_F;
       {
           scope=2;
           author="Rodeostar42";
-          displayName="AirSoft Gamer 8";
+          displayName="Red Gamer 4";
           faction="ArG_Gamer_O";
           icon = "iconMan";
           editorSubcategory = "ArG_Gamers";
@@ -351,6 +351,175 @@ class  O_Soldier_base_F;
 
 
       };
+
+
+      class  I_Soldier_base_F;
+          ///Gamer#1///
+        		class ArG_Gamer_9:  I_Soldier_base_F
+        	{
+        		scope=2;
+                author="Rodeostar42";
+                displayName="Green Gamer 1";
+                faction="ArG_Gamer_I";
+                icon = "iconMan";
+                editorSubcategory = "ArG_Gamers";
+                editorPreview = "\ArG_Core\Core_EditorPreviews\ArG_Gamer_1.jpg";
+                backpack="B_FieldPack_blk";
+                nakedUniform = "U_BasicBody";
+                model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
+
+                uniformClass="U_BG_Guerilla2_2";
+                weapons[] = {
+
+                    "Throw",
+                    "Put"
+                };
+                magazines[] = {};
+                respawnMagazines[] = {};
+                hiddenSelections[]={"Camo"};
+                hiddenSelectionsTextures[] = {"\a3\characters_f\blufor\data\clothing1_co.paa"};
+                linkedItems[] = {
+
+                    "ItemMap",
+                    "ItemCompass",
+
+                    "ItemWatch"
+                };
+                respawnLinkedItems[] = {
+
+                    "ItemMap",
+                    "ItemCompass",
+
+                    "ItemWatch"
+                };
+
+
+
+
+
+
+            };
+
+
+        	class ArG_Gamer_10:  I_Soldier_base_F
+            {
+                scope=2;
+                author="Rodeostar42";
+                displayName="Green Gamer 2";
+                faction="ArG_Gamer_I";
+                icon = "iconMan";
+                editorSubcategory = "ArG_Gamers";
+                editorPreview = "\ArG_Core\Core_EditorPreviews\ArG_Gamer_2.jpg";
+                backpack="B_FieldPack_blk";
+                nakedUniform = "U_BasicBody";
+                model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
+
+                uniformClass="U_BG_Guerilla2_1";
+                weapons[] = {
+
+                    "Throw",
+                    "Put"
+                };
+                magazines[] = {};
+                respawnMagazines[] = {};
+                hiddenSelections[]={"Camo"};
+                hiddenSelectionsTextures[] = {"\a3\characters_f\blufor\data\clothing1_co.paa"};
+                linkedItems[] = {
+
+                    "ItemMap",
+                    "ItemCompass",
+
+                    "ItemWatch"
+                };
+                respawnLinkedItems[] = {
+
+                    "ItemMap",
+                    "ItemCompass",
+
+                    "ItemWatch"
+                };
+
+
+
+            };
+
+
+            class ArG_Gamer_11:  I_Soldier_base_F
+            {
+                scope=2;
+                author="Rodeostar42";
+                displayName="Green Gamer 3";
+                faction="ArG_Gamer_I";
+                icon = "iconMan";
+                editorSubcategory = "ArG_Gamers";
+                editorPreview = "\ArG_Core\Core_EditorPreviews\ArG_Gamer_3.jpg";
+                backpack="B_FieldPack_cbr";
+                nakedUniform = "U_BasicBody";
+                model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
+
+                uniformClass="U_BG_Guerilla2_3";
+                weapons[] = {
+
+                    "Throw",
+                    "Put"
+                };
+                magazines[] = {};
+                respawnMagazines[] = {};
+                hiddenSelections[]={"Camo"};
+                hiddenSelectionsTextures[] = {"\a3\characters_f\blufor\data\clothing1_co.paa"};
+                linkedItems[] = {
+
+                    "ItemMap",
+                    "ItemCompass",
+                    "ItemWatch"
+                };
+                respawnLinkedItems[] = {
+                    "ItemMap",
+                    "ItemCompass",
+                    "ItemWatch"
+                };
+
+
+            };
+
+
+        		class ArG_Gamer_12:  I_Soldier_base_F
+            {
+                scope=2;
+                author="Rodeostar42";
+                displayName="Green Gamer 4";
+                faction="ArG_Gamer_I";
+                icon = "iconMan";
+                editorSubcategory = "ArG_Gamers";
+                editorPreview = "\ArG_Core\Core_EditorPreviews\ArG_Gamer_4.jpg";
+                backpack="B_FieldPack_oli";
+                nakedUniform = "U_BasicBody";
+                model="\A3\characters_F\BLUFOR\b_soldier_01.p3d";
+
+                uniformClass="U_BG_Guerilla3_1";
+                weapons[] = {
+
+                    "Throw",
+                    "Put"
+                };
+                magazines[] = {};
+                respawnMagazines[] = {};
+                hiddenSelections[]={"Camo"};
+                hiddenSelectionsTextures[] = {"\a3\characters_f\blufor\data\clothing1_co.paa"};
+                linkedItems[] = {
+
+                    "ItemMap",
+                    "ItemCompass",
+                    "ItemWatch"
+                };
+                respawnLinkedItems[] = {
+                    "ItemMap",
+                    "ItemCompass",
+                    "ItemWatch"
+                };
+
+
+            };
 
 
     //Speaker Box//

@@ -16,4 +16,12 @@ class CfgFactionClasses {
 
   };
 
+  class ArG_Gamer_I {
+
+        displayName = "AirSoft Gamer(Green)";
+        side = 3;
+        priority = 2;
+
+  };
+
 };
