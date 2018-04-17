@@ -15,7 +15,7 @@ class CfgGroups {
                 class ArG_Group_1 {
                     name = "4 Frends";
                     side = 1;
-                    faction = "ArG_Gamer_F";
+                    faction = "ArG_Frends_F";
                     icon = "\A3\ui_f\data\map\markers\nato\b_recon.paa";
                     rarityGroup = 0.5;
 
