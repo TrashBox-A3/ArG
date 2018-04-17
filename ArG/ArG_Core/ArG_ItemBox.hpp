@@ -24,6 +24,8 @@ class Box_NATO_Equip_F;
             item10(ArG_30Rnd_65x39_BB_025);
             item10(ArG_200Rnd_65x39_cased_Box_BB_02);
             item10(ArG_200Rnd_65x39_cased_Box_BB_025);
+            item10(ArG_90Rnd_762x51_BB);
+            item10(ArG_540Rnd_762x51_BB);
             item10(ArG_muzzle_snds_H);
             item10(G_Combat);
             item10(acc_flashlight);
@@ -42,7 +44,7 @@ class Box_NATO_Equip_F;
             item10(ArG_AK_PKM);
             item10(ArG_AK_SR25K);
             item10(ArG_5000Rnd_762x54_BB);
-            
+
             ///GHK///
             item10(ArG_GHK_AKM);
             item10(ArG_40Rnd_762x39_BB);
@@ -64,8 +66,6 @@ class Box_NATO_Equip_F;
             item10(ArG_82Rnd_556x45_BB);
             item10(ArG_TM_SCAR_L_TAN);
             item10(ArG_TM_SCAR_H_TAN);
-            item10(ArG_90Rnd_762x51_BB);
-            item10(ArG_540Rnd_762x51_BB);
             item10(ArG_TM_M4A1_NG);
             item10(ArG_TM_M4A1_NWS);
             item10(ArG_35Rnd_556x45_NWS);

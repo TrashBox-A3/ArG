@@ -169,6 +169,26 @@ class ArG_90Rnd_762x51_BB: 20Rnd_762x51_Mag
 
 };
 
+class ArG_540Rnd_762x51_BB: 20Rnd_762x51_Mag
+  {
+    author="Rodeostar42";
+  displayName = "540Rnd 762x51 6mmBB 0.2g";
+  scope = 2;
+  ammo = ArG_6mm_BB_02; //eg
+  count = 540;
+  initSpeed = 100; // in case it is not in weapon
+  tracersEvery=1;
+  class ItemInfo
+        {
+              mass = 1;
+        };
+        model = "\A3\weapons_F\ammo\mag_univ.p3d";
+        picture = "\A3\weapons_f\data\UI\M_20Rnd_762x51_CA.paa";
+  descriptionShort = "Caliber: 6mm BB<br/>Rounds: 540<br/>weight: 2.0g";
+  displayNameMFDFormat = "6mmBB";
+
+};
+
 
 class 200Rnd_65x39_cased_Box;
 class ArG_200Rnd_65x39_cased_Box_BB_02: 200Rnd_65x39_cased_Box
