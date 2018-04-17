@@ -53,7 +53,7 @@ class CfgGroups {
            class EAST {
 
                  class ArG_Frends_O {
-                     name = "ArG Game Frends";
+                     name = "ArG Gamer Group";
 
                      class Infantry {
                          name = "Infantry";
@@ -99,6 +99,57 @@ class CfgGroups {
                        };
                     };
                   };
+
+
+                  class GUER {
+
+                        class ArG_Frends_I {
+                            name = "ArG Gamer Group";
+
+                            class Infantry {
+                                name = "Infantry";
+
+                            };
+
+                            class ArG_Player {
+                                name = "Frends";
+
+
+                                class ArG_Group_3 {
+                                    name = "4 Frends";
+                                    side = 3;
+                                    faction = "ArG_Gamer_I";
+                                    icon = "\A3\ui_f\data\map\markers\nato\b_recon.paa";
+                                    rarityGroup = 0.5;
+
+                                    class Unit8 {
+                                        position[] = { 0 , 0 , 0 };
+                                        rank = "LIEUTENANT";
+                                        side = 1;
+                                        vehicle = "ArG_Gamer_9";
+                                    };
+                                    class Unit9 {
+                                        position[] = { 5 , -5 , 0 };
+                                        rank = "SERGEANT";
+                                        side = 1;
+                                        vehicle = "ArG_Gamer_10";
+                                    };
+                                    class Unit10 {
+                                        position[] = { -5 , -5 , 0 };
+                                        rank = "SERGEANT";
+                                        side = 1;
+                                        vehicle = "ArG_Gamer_11";
+                                    };
+                                    class Unit11 {
+                                        position[] = { 10 , -10 , 0 };
+                                        rank = "SERGEANT";
+                                        side = 1;
+                                        vehicle = "ArG_Gamer_12";
+                                    };
+                                 };
+                              };
+                           };
+                         };
 
 
          };
