@@ -2,7 +2,7 @@ class CfgFactionClasses {
 
   class ArG_Gamer_F {
 
-        displayName = "AirSoft Gamer";
+        displayName = "AirSoft Gamer(Blue)";
         side = 1;
         priority = 0;
 
@@ -10,9 +10,9 @@ class CfgFactionClasses {
 
   class ArG_Gamer_O {
 
-        displayName = "AirSoft Gamer";
-        side = 2;
-        priority = 0;
+        displayName = "AirSoft Gamer(Red)";
+        side = 1;
+        priority = 1;
 
   };
 
