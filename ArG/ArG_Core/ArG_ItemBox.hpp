@@ -38,7 +38,11 @@ class Box_NATO_Equip_F;
             item10(optic_Aco);
             item10(acc_pointer_IR);
             item10(muzzle_snds_H);
-
+            ///A&K///
+            item10(ArG_AK_PKM);
+            item10(ArG_AK_SR25K);
+            item10(ArG_5000Rnd_762x54_BB);
+            item10(ArG_90Rnd_762x51_BB);
             ///GHK///
             item10(ArG_GHK_AKM);
             item10(ArG_40Rnd_762x39_BB);
