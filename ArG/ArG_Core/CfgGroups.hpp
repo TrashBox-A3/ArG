@@ -3,14 +3,15 @@ class CfgGroups {
   class WEST {
 
         class ArG_Frends_F {
-            name = "ArG Game Frends";
+            name = "ArG Gamer Group";
 
             class Infantry {
                 name = "Infantry";
 
             };
 
-
+            class ArG_Player {
+                name = "Frends";
 
                 class ArG_Group_1 {
                     name = "4 Frends";
@@ -58,6 +59,8 @@ class CfgGroups {
 
                      };
 
+                     class ArG_Player {
+                         name = "Frends";
 
 
                          class ArG_Group_2 {
