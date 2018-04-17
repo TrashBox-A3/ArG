@@ -1,22 +1,21 @@
 class CfgGroups {
-    
+
   class WEST {
 
-        class ArG_Core {
-            name = "Survival Game";
+        class ArG_Frends_F {
+            name = "ArG Game Frends";
 
             class Infantry {
                 name = "Infantry";
 
             };
 
-            class ArG_Player {
-                name = "Game Player";
+
 
                 class ArG_Group_1 {
                     name = "4 Frends";
                     side = 1;
-                    faction = "ArG_Core";
+                    faction = "ArG_Gamer_F";
                     icon = "\A3\ui_f\data\map\markers\nato\b_recon.paa";
                     rarityGroup = 0.5;
 
@@ -44,15 +43,9 @@ class CfgGroups {
                         side = 1;
                         vehicle = "ArG_Gamer_4";
                     };
-                    
-                };
+                 };
+              };
+           };
 
-                
 
-            };
-
-            
-
-        };
-    };
-};
+         };
