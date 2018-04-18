@@ -541,7 +541,7 @@ class  O_Soldier_base_F;
 
           class eventHandlers
 	{
-		init = "buzz = _this addAction ['<t color=''#FF4500''>Buzzer Switch','_this say3D 'Switch', '0 = [0] execVM 'BuzzerBox.sqf''];";
+		init = "buzz = _this addAction ['<t color=''#FF4500''>Buzzer Switch', '0 = [0] execVM 'BuzzerBox.sqf''];";
 
 
 	};
