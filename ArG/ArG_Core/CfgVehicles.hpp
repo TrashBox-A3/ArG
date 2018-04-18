@@ -544,7 +544,7 @@ class  O_Soldier_base_F;
   class Action
   {
     displayName = "<img image='\ArG_Core\ArG.jpg' size='1' shadow='false' /> Buzzer Switch";
-    displayNameDefault = "<img image='\ArG_Core\ArG.jpg' size='3' shadow='false' />";
+    displayNameDefault = "<img image='\ArG_Core\ArG.jpg' size='3' shadow='false' />Buzzer Switch";
     priority = 3;
     radius = 20;
     position = "camera";
