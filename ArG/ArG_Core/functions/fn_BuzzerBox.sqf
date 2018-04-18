@@ -7,12 +7,12 @@ _types = [
 
 if (STATE) then
 {
-    STATE = false;
-    _BuzzOff setVariable ["BuzzOff", 123, true];
+    STATE = false;PublicVariable "BuzzOff";
+
 
 }else{
-    STATE = true;
-    _BuzzOn setVariable ["BuzzOn", 123, true];
+    STATE = true;PublicVariable "BuzzOn";
+
 };
 
 for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
