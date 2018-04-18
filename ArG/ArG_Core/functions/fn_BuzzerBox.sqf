@@ -17,7 +17,7 @@ if (STATE) then
 for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
 {
 
-    _Speakers = getMarkerPos "GameArea" nearObjects [_types select _i , 200];
+    _Speakers = getMarkerPos "GameArea" nearObjects [_types select _i , 300];
     sleep 0.7;
 
     while {STATE} do
