@@ -8,10 +8,10 @@ _types = [
 if (STATE) then
 {
     STATE = false;
-BZ say3D "Switch";
+
 }else{
     STATE = true;
-BZ say3D "Switch";
+
 };
 
 for [{_i=0},{_i < (count _types)},{_i=_i+1}] do

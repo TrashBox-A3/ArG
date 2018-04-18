@@ -553,7 +553,7 @@ class  O_Soldier_base_F;
     onlyForPlayer = 1;
     shortcut = "reloadMagazine";
     condition = "true";
-    statement = "0 = [0] execVM 'ArG_Core\functions\fn_BuzzerBox.sqf'";
+    statement = "this say3D 'Switch',0 = [0] execVM 'ArG_Core\functions\fn_BuzzerBox.sqf'";
   };
 };
 
