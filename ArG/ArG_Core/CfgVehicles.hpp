@@ -543,13 +543,13 @@ class  O_Soldier_base_F;
 {
   class Action
   {
-    displayName = "<img image='\someAddon\images\icon1.paa' size='1' shadow='false' /> Buzzer Switch";
-    displayNameDefault = "<img image='\someAddon\images\icon1.paa' size='3' shadow='false' />";
+    displayName = "<img image='\ArG_Core\ArG.jpg' size='1' shadow='false' /> Buzzer Switch";
+    displayNameDefault = "<img image='\ArG_Core\ArG.jpg' size='3' shadow='false' />";
     priority = 3;
-    radius = 5;
+    radius = 20;
     position = "camera";
     showWindow = 0;
-    hideOnUse = 1;
+    hideOnUse = 0;
     onlyForPlayer = 1;
     shortcut = "reloadMagazine";
     condition = "true";
