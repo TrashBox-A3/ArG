@@ -8,10 +8,11 @@ _types = [
 if (STATE) then
 {
     STATE = false;
+    _BuzzOff setVariable ["BuzzOff", 123, true];
 
 }else{
     STATE = true;
-
+    _BuzzOn setVariable ["BuzzOn", 123, true];
 };
 
 for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
