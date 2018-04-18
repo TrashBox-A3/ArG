@@ -18,12 +18,6 @@ class ArG
 
 };
 
-class Buzzer
-{
-file = "\ArG_Core\functions";
-class BuzzerBox { postInit = 1; };
-
-};
 
 };
 
