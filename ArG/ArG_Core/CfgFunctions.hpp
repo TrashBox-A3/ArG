@@ -11,12 +11,13 @@ class ArG
 
 	};
 
-	class init
+	class Buzzer
 {
-	file = "\ArG_Core\init.sqf";
-	class Buzzer { postInit = 1; };
+	file = "\ArG_Core\functions";
+	class init { postInit = 1; };
 
 };
+
 };
 
 };
