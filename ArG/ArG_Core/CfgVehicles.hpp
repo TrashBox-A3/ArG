@@ -539,13 +539,7 @@ class  O_Soldier_base_F;
         hiddenSelections[]={};
         hiddenSelectionsTextures[] = {};
 
-          class eventHandlers
-	{
-		init = "buzz = this addAction ['<t color=''#FF4500''>Buzzer Switch', '0 = [0] execVM 'BuzzerBox.sqf'']; ";
-
-
-	};
-
+        
     };
 
     //Speaker//
