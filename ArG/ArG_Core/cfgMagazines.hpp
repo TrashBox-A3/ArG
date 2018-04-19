@@ -28,7 +28,7 @@ class cfgMagazines
     author="Rodeostar42";
   displayName = "30Rnd 65x39 6mmBB 0.25g";
   scope = 2;
-  ammo = ArG_6mm_BB_025; //eg
+  ammo = ArG_20mm_Test_Trace; //eg
   count = 30;
   initSpeed = 100; // in case it is not in weapon
   tracersEvery=1;
