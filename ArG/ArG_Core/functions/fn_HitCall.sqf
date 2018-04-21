@@ -1,5 +1,5 @@
 ///script by Rodeostar42///
-if (!isServer)  exitwith {};
+
 
    _Gamer = [
    "ArG_Gamer_1",
