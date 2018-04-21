@@ -27,10 +27,9 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
 
     {
 
-      if(isServer)then {
-        {_x say3D "Buzzer"} forEach _Speakers;
+        [{_x say3D "Buzzer"} forEach _Speakers;] call BIS_fnc_MP;
         sleep 5;
-      };
+
     };
 
 };
