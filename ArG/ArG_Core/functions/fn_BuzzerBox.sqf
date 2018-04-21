@@ -27,7 +27,7 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
 
     {
 
-        [{_x say3D "Buzzer"} forEach _Speakers;] call BIS_fnc_MP;
+        [] remoteExec[{_x say3D "Buzzer"} forEach _Speakers];
         sleep 5;
 
     };
