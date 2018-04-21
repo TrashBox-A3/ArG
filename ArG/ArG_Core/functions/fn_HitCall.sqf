@@ -1,5 +1,5 @@
 ///script by Rodeostar42///
-
+if (isServer) then {
 
    _Gamer = [
    "ArG_Gamer_1",
@@ -53,3 +53,4 @@ player removeEventHandler ["HitPart", 0];
   };
 
 } forEach allUnits;
+};
