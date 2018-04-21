@@ -1,4 +1,4 @@
-if (!isServer)  exitwith {};
+if (isServer)  exitwith {};
 
 _types = [
 "ArG_Speaker",
