@@ -1,3 +1,5 @@
+if (!isServer)  exitwith {};
+
 _types = [
 "ArG_Speaker",
 "ArG_BuzzerBox"
