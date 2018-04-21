@@ -1,5 +1,5 @@
 
-if(isServer) then{
+if(isDedicated) then{
 _types = [
 "ArG_Speaker",
 "ArG_BuzzerBox"
