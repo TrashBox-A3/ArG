@@ -1,4 +1,4 @@
-if (isServer)  exitwith {};
+
 
 _types = [
 "ArG_Speaker",
@@ -24,6 +24,9 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
     sleep 0.7;
 
     while {STATE} do
+
+    if (!isServer)  exitwith {};
+    	
     {
         {_x say3D "Buzzer"} forEach _Speakers;
         sleep 5;
