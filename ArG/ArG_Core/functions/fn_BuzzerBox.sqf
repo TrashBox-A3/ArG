@@ -27,7 +27,7 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
 
     {
 
-        [] remoteExec[{_x say3D "Buzzer"} forEach _Speakers];
+        {_x say3D "Buzzer"} forEach _Speakers;
         sleep 5;
 
     };
