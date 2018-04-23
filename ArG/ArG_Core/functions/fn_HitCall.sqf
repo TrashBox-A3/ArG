@@ -55,5 +55,3 @@ while{((damage player)>0.1)}do
 setDamage 0;
 systemChat "damage0";
 };
-
-waituntil{((damage player)>0.1)};
