@@ -48,12 +48,8 @@ onEachFrame {
     ];
 };
 
-
-
-
-
 }];
 
-
+player removeAllMPEventHandlers "MPHit";
 };
 } forEach allUnits;
