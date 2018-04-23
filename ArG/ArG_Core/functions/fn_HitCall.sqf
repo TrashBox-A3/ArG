@@ -6,7 +6,7 @@ player addEventHandler ["HitPart", {
 
  player setCaptive true;
 
-
+player say3D "HitCall";
 
  player switchCamera "EXTERNAL";
 

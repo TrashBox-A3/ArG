@@ -5,7 +5,3 @@ _unit switchMove "Acts_JetsMarshallingRight_loop";
 
 sleep 0.2;
 _unit playMoveNow "ApanPknlMstpSnonWnonDnon_G01";
-
-
-
-
