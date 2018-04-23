@@ -45,11 +45,13 @@ onEachFrame {
         0,
         0.08,
         "TahomaB"
-    ];
+        ];
 };
+
+player removeAllMPEventHandlers "MPHit";
 
 }];
 
-player removeAllMPEventHandlers "MPHit";
+
 };
 } forEach allUnits;
