@@ -9,11 +9,7 @@ if(isServer)then{
 
         _ap setCaptive true;
 
-        if((damage _ap)>0.1)then{
-
-       _ap setDamage 0;
-
-       };
+        _ap addEventHandler ["HandleDamage", {0}];
 
         _ap switchMove "Acts_JetsMarshallingRight_loop";
 
@@ -25,7 +21,7 @@ if(isServer)then{
 
     }];
 
-    _ap addEventHandler ["HandleDamage", {0}];
+    
 
      _x setUnitPos "UP";
     };

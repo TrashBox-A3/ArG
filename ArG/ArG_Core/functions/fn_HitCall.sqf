@@ -17,11 +17,8 @@ player say3D "HitCall";
 
  player switchCamera "EXTERNAL";
 
- if((damage player)>0.1)then{
+ player addEventHandler ["HandleDamage", {0}];
 
-player setDamage 0;
-
-};
 
  player switchMove "Acts_JetsMarshallingRight_loop";
 
@@ -57,7 +54,6 @@ onEachFrame {
 
 }];
 
-player addEventHandler ["HandleDamage", {0}];
 
 };
 } forEach allUnits;
