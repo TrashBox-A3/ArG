@@ -18,13 +18,6 @@ class ArG
 
 };
 
-class Hit
-{
-file = "\ArG_Core\functions";
-class initPlayerLocal { postInit = 1; };
-
-};
-
 
 };
 

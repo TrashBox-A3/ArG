@@ -20,7 +20,7 @@ player addEventHandler ["HitPart", {
 
  };
 
- 
+
 onEachFrame {
     private "_private";
     _playerPos = getPosATL player;
@@ -44,7 +44,7 @@ player removeEventHandler ["HitPart", 0];
 
 }];
 
-  
+
 } forEach allUnits;
 
 
@@ -52,9 +52,8 @@ player removeEventHandler ["HitPart", 0];
   if (side _x isEqualTo EAST) then
   {
       _x addEventHandler ["Hit", {[_this select 0, _this select 3] execVM "hit.sqf";}];
-   
+
    _x setUnitPos "UP";
   };
 } forEach allUnits-switchableUnits-playableUnits;
-   
    
