@@ -31,7 +31,7 @@ onEachFrame {
         5,
         5,
         direction player,
-        "HIT",
+        "HIT!",
         0,
         0.08,
         "TahomaB"
