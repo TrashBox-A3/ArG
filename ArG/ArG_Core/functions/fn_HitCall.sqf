@@ -1,5 +1,7 @@
 ///script by Rodeostar42///
 
+if (!isServer) then {
+
  {
 
 player addEventHandler ["HitPart", {
@@ -46,3 +48,4 @@ player removeEventHandler ["HitPart", 0];
 
 
 } forEach allUnits;
+};
