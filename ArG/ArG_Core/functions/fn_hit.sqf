@@ -5,14 +5,14 @@ if(isServer)then{
     {
         _x addEventHandler ["Hit", {
 
-        _unit=_this select 0;
+        _ap=_this select 0;
 
-        _unit setCaptive true;
+        _ap setCaptive true;
 
-        _unit switchMove "Acts_JetsMarshallingRight_loop";
+        _ap switchMove "Acts_JetsMarshallingRight_loop";
 
-        
-        _unit playMoveNow "ApanPknlMstpSnonWnonDnon_G01";
+
+        _ap playMoveNow "ApanPknlMstpSnonWnonDnon_G01";
 
       player removeEventHandler ["Hit", 0];
 

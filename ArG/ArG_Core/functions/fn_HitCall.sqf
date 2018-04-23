@@ -8,6 +8,8 @@ player addEventHandler ["HitPart", {
 
  player setCaptive true;
 
+ player setDamage 0;
+
 player say3D "HitCall";
 
  player switchCamera "EXTERNAL";
@@ -48,10 +50,3 @@ player removeEventHandler ["HitPart", 0];
 
 
 } forEach allUnits;
-
-while{((damage player)>0.1)}do
-{
-
-player setDamage 0;
-systemChat "damage0";
-};
