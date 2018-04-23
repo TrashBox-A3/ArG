@@ -1,6 +1,6 @@
 ///script by Rodeostar42///
 
-if (!isServer) then {
+
 
  {
 
@@ -48,4 +48,3 @@ player removeEventHandler ["HitPart", 0];
 
 
 } forEach allUnits;
-};
