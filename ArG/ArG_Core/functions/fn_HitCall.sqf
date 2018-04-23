@@ -52,6 +52,6 @@ player removeEventHandler ["HitPart", 0];
 while{((damage player)>0.1)}do
 {
 
-setDamage 0;
+player setDamage 0;
 systemChat "damage0";
 };
