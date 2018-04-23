@@ -25,8 +25,8 @@ class CfgAmmo
 	{
 		author="Rodeostar42";
 		typicalSpeed=300; // speed at 100% hit (m/s)
-		caliber=0.80000001;
-		hit = 0.01;
+		caliber=0;
+		hit = 1;
 		airFriction = -0.015;
 		cartridge = "";
 		supersonicCrackNear[] = {"", 0, 0};
@@ -44,8 +44,8 @@ class CfgAmmo
 	{
 		author="Rodeostar42";
 		typicalSpeed=300; // speed at 100% hit (m/s)
-		caliber=0.80000001;
-		hit = 0.01;
+		caliber=0;
+		hit = 1;
 		airFriction = -0.020;
 		selectionFireAnim="";
 		supersonicCrackNear[] = {"", 0, 0};
@@ -63,8 +63,8 @@ class CfgAmmo
 	{
 		author="Rodeostar42";
 		typicalSpeed=300; // speed at 100% hit (m/s)
-		caliber=0.80000001;
-		hit = 0.01;
+		caliber=0;
+		hit = 1;
 		airFriction = -0.015;
 		selectionFireAnim="";
 		supersonicCrackNear[] = {"", 0, 0};
@@ -83,8 +83,8 @@ class CfgAmmo
 	{
 		author="Rodeostar42";
 		typicalSpeed=200; // speed at 100% hit (m/s)
-		caliber=0.80000001;
-		hit = 0.01;
+		caliber=0;
+		hit = 1;
 		airFriction = -0.050;
 		sideAirFriction = 0.9;
 		cartridge = "";
@@ -104,8 +104,8 @@ class CfgAmmo
 	{
 		author="Rodeostar42";
 		typicalSpeed=300; // speed at 100% hit (m/s)
-		caliber=0.80000001;
-		hit = 0.01;
+		caliber=0;
+		hit = 1;
 		airFriction = -0.020;
 		cartridge = "";
 		supersonicCrackNear[] = {"", 0, 0};
@@ -123,8 +123,8 @@ class CfgAmmo
 	{
 		author="Rodeostar42";
 		typicalSpeed=300; // speed at 100% hit (m/s)
-		caliber=0.80000001;
-		hit = 0.01;
+		caliber=0;
+		hit = 1;
 		airFriction = -0.020;
 		cartridge = "";
 		supersonicCrackNear[] = {"", 0, 0};

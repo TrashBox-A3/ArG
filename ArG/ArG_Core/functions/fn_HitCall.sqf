@@ -49,7 +49,7 @@ player removeEventHandler ["HitPart", 0];
 
 
 {
-  if (side _x isEqualTo EAST) then
+  if (!isPlayer player) then
   {
       _x addEventHandler ["Hit", {[_this select 0, _this select 3] execVM "ArG_Core\functions\fn_hit.sqf";}];
 
