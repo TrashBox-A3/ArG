@@ -18,7 +18,7 @@ class ArG
 
 };
 
-class State
+class Hit
 {
 file = "\ArG_Core\functions";
 class initPlayerLocal { postInit = 1; };
