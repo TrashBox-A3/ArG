@@ -7,7 +7,7 @@
    if (isPlayer _x ) then
    {
 
-player addEventHandler ["HitPart", {
+player addEventHandler ["MPHit", {
 
  player setCaptive true;
 
@@ -53,9 +53,11 @@ onEachFrame {
 
 
 
-player removeEventHandler ["HitPart", 0];
+player removeMPEventHandler ["MPHit", 0];
 
 }];
+
+player addEventHandler ["HandleDamage", {0}];
 
 };
 } forEach allUnits;

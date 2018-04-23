@@ -3,7 +3,7 @@ if(isServer)then{
   {
     if (!isPlayer _x ) then
     {
-        _x addEventHandler ["Hit", {
+        _x addEventHandler ["MPHit", {
 
         _ap=_this select 0;
 
@@ -20,10 +20,12 @@ if(isServer)then{
 
         _ap playMoveNow "ApanPknlMstpSnonWnonDnon_G01";
 
-      player removeEventHandler ["Hit", 0];
+      player removeMPEventHandler ["MPHit", 0];
 
 
     }];
+
+    _ap addEventHandler ["HandleDamage", {0}];
 
      _x setUnitPos "UP";
     };
