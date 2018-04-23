@@ -52,4 +52,4 @@ player removeEventHandler ["HitPart", 0];
 }];
 
 };
-} forEach playableUnits;
+} forEach allUnits;
