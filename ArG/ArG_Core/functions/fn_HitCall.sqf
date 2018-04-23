@@ -4,6 +4,9 @@
 
  {
 
+   if (isPlayer _x ) then
+   {
+
 player addEventHandler ["HitPart", {
 
  player setCaptive true;
@@ -48,5 +51,5 @@ player removeEventHandler ["HitPart", 0];
 
 }];
 
-
-} forEach allUnits;
+};
+} forEach playableUnits;
