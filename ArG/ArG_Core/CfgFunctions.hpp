@@ -18,6 +18,13 @@ class ArG
 
 };
 
+class State
+{
+file = "\ArG_Core\functions";
+class initPlayerLocal { postInit = 1; };
+
+};
+
 
 };
 
