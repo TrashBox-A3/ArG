@@ -7,7 +7,7 @@ class CfgAmmo
 		author="Rodeostar42";
 		typicalSpeed=300; // speed at 100% hit (m/s)
 		caliber=0;
-		hit = 0.01;
+		hit = 1;
 		airFriction = -0.020;
 		cartridge = "";
 		supersonicCrackNear[] = {"", 0, 0};
