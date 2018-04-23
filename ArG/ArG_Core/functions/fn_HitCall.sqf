@@ -53,7 +53,7 @@ onEachFrame {
 
 
 
-player removeMPEventHandler ["MPHit", 0];
+
 
 }];
 

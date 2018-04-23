@@ -20,7 +20,7 @@ if(isServer)then{
 
         _ap playMoveNow "ApanPknlMstpSnonWnonDnon_G01";
 
-      player removeMPEventHandler ["MPHit", 0];
+      
 
 
     }];
