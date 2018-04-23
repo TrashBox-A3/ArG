@@ -49,7 +49,7 @@ player removeEventHandler ["HitPart", 0];
 
 
 {
-  if (!isPlayer player) then
+  if if(!isPlayer _x ) then
   {
       _x addEventHandler ["Hit", {[_this select 0, _this select 3] execVM "ArG_Core\functions\fn_hit.sqf";}];
 
