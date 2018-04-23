@@ -7,7 +7,7 @@
    if (isPlayer _x ) then
    {
 
-player addEventHandler ["MPHit", {
+player addMPEventHandler ["MPHit", {
 
  player setCaptive true;
 

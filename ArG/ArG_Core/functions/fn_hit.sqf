@@ -3,7 +3,7 @@ if(isServer)then{
   {
     if (!isPlayer _x ) then
     {
-        _x addEventHandler ["MPHit", {
+        _x addMPEventHandler ["MPHit", {
 
         _ap=_this select 0;
 
