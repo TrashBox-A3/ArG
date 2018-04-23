@@ -48,7 +48,8 @@ onEachFrame {
         ];
 };
 
-player removeAllMPEventHandlers "MPHit";
+
+player removeMPEventHandler ["MPHit", 0];
 
 }];
 
