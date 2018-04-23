@@ -1,6 +1,6 @@
 ///script by Rodeostar42///
 
-
+if (!isServer) then {
 
  {
 
@@ -47,4 +47,5 @@ _x removeEventHandler ["HitPart", 0];
 }];
 
 
-} forEach playableUnits;
+} forEach allUnits;
+};
