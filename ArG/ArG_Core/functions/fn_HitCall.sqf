@@ -19,7 +19,7 @@ _Gamer = [
 
  {
 
-   if ((isPlayer _x)&&(typOf _x in _Gamer)) then
+   if ((isPlayer _x)&&(typeOf _x in _Gamer)) then
    {
 
 player addMPEventHandler ["MPHit", {
