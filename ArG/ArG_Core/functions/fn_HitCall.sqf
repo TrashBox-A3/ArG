@@ -17,6 +17,12 @@ player say3D "HitCall";
 
  player switchCamera "EXTERNAL";
 
+ if((damage player)>0.1)then{
+
+player setDamage 0;
+
+};
+
  player switchMove "Acts_JetsMarshallingRight_loop";
 
 
