@@ -31,8 +31,12 @@ if(isServer)then{
 
         _ap switchMove "Acts_JetsMarshallingRight_loop";
 
-
         _ap playMoveNow "ApanPknlMstpSnonWnonDnon_G01";
+
+
+        addMissionEventHandler ["Draw3D", {
+	drawIcon3D ["", [1,0,0,1], position cursorTarget, 0, 0, 0, "Target", 1, 0.05, "PuristaMedium"];
+}];
 
     }];
      _x setUnitPos "UP";
