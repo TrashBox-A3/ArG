@@ -24,8 +24,8 @@ class CfgAmmo
 	class ArG_6mm_BB_025 : BulletBase
 	{
 		author="Rodeostar42";
-		typicalSpeed=300; // speed at 100% hit (m/s)
-		caliber=0;
+		typicalSpeed=180; // speed at 100% hit (m/s)
+		caliber=0.80000001;
 		hit = 1;
 		airFriction = -0.015;
 		cartridge = "";
@@ -43,8 +43,8 @@ class CfgAmmo
 	class ArG_6mm_BB_02_TOP : BulletBase
 	{
 		author="Rodeostar42";
-		typicalSpeed=300; // speed at 100% hit (m/s)
-		caliber=0;
+		typicalSpeed=180; // speed at 100% hit (m/s)
+		caliber=0.80000001;
 		hit = 1;
 		airFriction = -0.020;
 		selectionFireAnim="";
@@ -62,8 +62,8 @@ class CfgAmmo
 	class ArG_6mm_BB_025_TOP : BulletBase
 	{
 		author="Rodeostar42";
-		typicalSpeed=300; // speed at 100% hit (m/s)
-		caliber=0;
+		typicalSpeed=180; // speed at 100% hit (m/s)
+		caliber=0.80000001;
 		hit = 1;
 		airFriction = -0.015;
 		selectionFireAnim="";
@@ -82,8 +82,8 @@ class CfgAmmo
 	class ArG_6mm_BB_02_GL : BulletBase
 	{
 		author="Rodeostar42";
-		typicalSpeed=200; // speed at 100% hit (m/s)
-		caliber=0;
+		typicalSpeed=180; // speed at 100% hit (m/s)
+		caliber=0.80000001;
 		hit = 1;
 		airFriction = -0.050;
 		sideAirFriction = 0.9;
@@ -103,8 +103,8 @@ class CfgAmmo
 	class ArG_20mm_Test : BulletBase
 	{
 		author="Rodeostar42";
-		typicalSpeed=300; // speed at 100% hit (m/s)
-		caliber=0;
+		typicalSpeed=180; // speed at 100% hit (m/s)
+		caliber=0.80000001;
 		hit = 1;
 		airFriction = -0.020;
 		cartridge = "";
@@ -122,8 +122,8 @@ class CfgAmmo
 	class ArG_20mm_Test_Trace : BulletBase
 	{
 		author="Rodeostar42";
-		typicalSpeed=300; // speed at 100% hit (m/s)
-		caliber=0;
+		typicalSpeed=180; // speed at 100% hit (m/s)
+		caliber=0.80000001;
 		hit = 1;
 		airFriction = -0.020;
 		cartridge = "";
