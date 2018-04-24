@@ -68,7 +68,7 @@ class ItemCore;
 			};
 		};
 
-        initSpeed = 250; // muzzle velocity
+        initSpeed = 200; // muzzle velocity
         maxRange = 100;
         flash = "";
         flashSize = 0;
