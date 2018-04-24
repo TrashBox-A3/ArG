@@ -1,5 +1,5 @@
 
-class Arg_Func
+class CfgFunctions
 {
 tag = "ArG";
 class ArG
