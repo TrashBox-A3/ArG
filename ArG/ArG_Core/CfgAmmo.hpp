@@ -5,10 +5,10 @@ class CfgAmmo
 	class ArG_6mm_BB_02 : BulletBase
 	{
 		author="Rodeostar42";
-		typicalSpeed=300; // speed at 100% hit (m/s)
+		typicalSpeed=180; // speed at 100% hit (m/s)
 		caliber=0;
 		hit = 1;
-		airFriction = -0.020;
+		airFriction = -0.050;
 		cartridge = "";
 		supersonicCrackNear[] = {"", 0, 0};
 		supersonicCrackFar[] = {"", 0, 0};
