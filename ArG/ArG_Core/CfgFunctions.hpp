@@ -1,12 +1,12 @@
 
-class CfgFunctions
+class Arg_Func
 {
 tag = "ArG";
 class ArG
 {
 	file = "\ArG_Core\functions";
-	class HitCall {};
-	class init {};
-	class Ai_HitCall {};
+	class HitCall { postInit = 1; };
+	class init { postInit = 1; };
+	class Ai_HitCall { postInit = 1; };
 };
 };
