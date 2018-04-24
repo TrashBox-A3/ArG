@@ -21,7 +21,7 @@ class ArG
 class Hit
 {
 file = "\ArG_Core\functions";
-class hit { postInit = 1; };
+class fn_Ai_HitCall { postInit = 1; };
 
 };
 

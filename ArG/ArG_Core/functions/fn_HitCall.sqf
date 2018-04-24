@@ -15,8 +15,6 @@ _Gamer = [
 "ArG_Gamer_12"
 ];
 
-
-
  {
 
    if ((isPlayer _x)&&(typeOf _x in _Gamer)) then
