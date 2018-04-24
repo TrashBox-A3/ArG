@@ -34,8 +34,8 @@ if(isServer)then{
         _ap playMoveNow "ApanPknlMstpSnonWnonDnon_G01";
 
 
-        
-}];
+
+
 
     }];
      _x setUnitPos "UP";
