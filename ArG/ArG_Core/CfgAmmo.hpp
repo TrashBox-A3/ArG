@@ -8,7 +8,7 @@ class CfgAmmo
 		typicalSpeed=180; // speed at 100% hit (m/s)
 		caliber=0.80000001;
 		hit = 1;
-		airFriction = -0.050;
+		airFriction = -0.020;
 		cartridge = "";
 		supersonicCrackNear[] = {"", 0, 0};
 		supersonicCrackFar[] = {"", 0, 0};
