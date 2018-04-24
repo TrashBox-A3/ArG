@@ -34,10 +34,7 @@ if(isServer)then{
 
         _ap playMoveNow "ApanPknlMstpSnonWnonDnon_G01";
 
-        addMissionEventHandler ["Draw3D", {
- _pos = getPosWorld _ap; 
- drawIcon3D ["a3\ui_f\data\gui\Rsc\RscDisplayArsenal\radio_ca.paa", [1,1,1,1], [(_pos select 0),(_pos select 1), 1], 0.8, 0.8, 0, (name player), 1, 0.0315, "EtelkaMonospacePro"];
-}];
+        
     }];
      _x setUnitPos "UP";
     };
