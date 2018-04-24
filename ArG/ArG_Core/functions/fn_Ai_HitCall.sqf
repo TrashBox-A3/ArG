@@ -35,7 +35,7 @@ if(isServer)then{
         _ap playMoveNow "ApanPknlMstpSnonWnonDnon_G01";
 
         onEachFrame {
-	drawIcon3D ["", [1,1,1,1], getPos _ap, 1, 1, 45, "Hit!", 1, 0.05, "TahomaB"];
+	drawIcon3D ["", [1,1,1,1], getPos (_this select 0), 1, 1, 45, "Hit!", 1, 0.05, "TahomaB"];
 };
     }];
      _x setUnitPos "UP";
