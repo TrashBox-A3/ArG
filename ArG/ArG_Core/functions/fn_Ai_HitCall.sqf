@@ -21,7 +21,7 @@ if(isServer)then{
     {
         _x addMPEventHandler ["MPHit", {
 
-        _ap=_this select 0;
+        _ap = _this select 0;
 
         _ap say3D "HitCall";
 
@@ -34,7 +34,9 @@ if(isServer)then{
 
         _ap playMoveNow "ApanPknlMstpSnonWnonDnon_G01";
 
-        
+        onEachFrame {
+	drawIcon3D ["", [1,1,1,1], getPos _ap, 1, 1, 45, "Hit!", 1, 0.05, "TahomaB"];
+};
     }];
      _x setUnitPos "UP";
     };
