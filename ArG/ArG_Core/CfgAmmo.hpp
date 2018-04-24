@@ -6,7 +6,7 @@ class CfgAmmo
 	{
 		author="Rodeostar42";
 		typicalSpeed=180; // speed at 100% hit (m/s)
-		caliber=0;
+		caliber=0.80000001;
 		hit = 1;
 		airFriction = -0.050;
 		cartridge = "";
