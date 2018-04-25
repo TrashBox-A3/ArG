@@ -25,7 +25,7 @@ _Gamer = [
    if ((isPlayer _x)&&(typeOf _x in _Gamer)) then
    {
 
-_Hited addMPEventHandler ["MPHit", {
+_x addMPEventHandler ["MPHit", {
 
  _Hited setCaptive true;
 
