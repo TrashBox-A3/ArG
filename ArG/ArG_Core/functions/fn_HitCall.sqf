@@ -1,8 +1,8 @@
 ///script by Rodeostar42///
 
-params ["_Gamer","_Hit"];
+params ["_Gamer","_Hited"];
 
-_Hit = _this select 0;
+_Hited = _this select 0;
 _Gamer = _this select 1;
 
 _Gamer = [
@@ -20,45 +20,45 @@ _Gamer = [
 "ArG_Gamer_12"
 ];
 
-
+ {
 
    if ((isPlayer _x)&&(typeOf _x in _Gamer)) then
    {
 
-_Hit addMPEventHandler ["MPHit", {
+_Hited addMPEventHandler ["MPHit", {
 
- _Hit setCaptive true;
+ _Hited setCaptive true;
 
- _Hit setDamage 0;
+ _Hited setDamage 0;
 
-_Hit say3D "HitCall";
+_Hited say3D "HitCall";
 
- _Hit switchCamera "EXTERNAL";
+ _Hited switchCamera "EXTERNAL";
 
- _Hit addEventHandler ["HandleDamage", {0}];
+ _Hited addEventHandler ["HandleDamage", {0}];
 
 
- _Hit switchMove "Acts_JetsMarshallingRight_loop";
+ _Hited switchMove "Acts_JetsMarshallingRight_loop";
 
 
 [] spawn
  {
 	 sleep 2;
-	 _Hit switchMove "ApanPknlMstpSnonWnonDnon_G01";
+	 _Hited switchMove "ApanPknlMstpSnonWnonDnon_G01";
 
  };
 
 
 onEachFrame {
     private "_private";
-    _playerPos = getPosATL _Hit;
+    _playerPos = getPosATL _Hited;
     drawIcon3D [
         "",
         [153,0,0,0.5],
         [_playerPos select 0,_playerPos select 1,2.3],
         5,
         5,
-        direction _Hit,
+        direction _Hited,
         "HIT!",
         0,
         0.08,
@@ -67,9 +67,10 @@ onEachFrame {
 };
 
 
-_Hit removeMPEventHandler ["MPHit", 0];
+_Hited removeMPEventHandler ["MPHit", 0];
 
 }];
 
 
 };
+} forEach allUnits;
