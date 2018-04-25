@@ -1,4 +1,7 @@
+params ["_BuzzOff","_BuzzOn","_types"];
 
+_BuzzOff = STATE = false;
+_BuzzOn = STATE = true;
 
 _types = [
 "ArG_Speaker",
@@ -9,11 +12,11 @@ _types = [
 
 if (STATE) then
 {
-    STATE = false;PublicVariable "BuzzOff";
+    STATE = false;
 
 
 }else{
-    STATE = true;PublicVariable "BuzzOn";
+    STATE = true;
 
 };
 
