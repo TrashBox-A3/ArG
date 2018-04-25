@@ -1,6 +1,6 @@
 ///script by Rodeostar42///
 
-params ["_Gamer","_Hited"];
+private ["_Hited","_Gamer"];
 
 _Hited = _this select 0;
 _Gamer = _this select 1;
