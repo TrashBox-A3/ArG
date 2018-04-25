@@ -1,9 +1,9 @@
 params ["_text"];
 
-_text = _this select 0;
+
 
 onEachFrame {
-
+    _text = _this select 0;
     _HitPos = getPosATL _text;
     drawIcon3D [
         "",
