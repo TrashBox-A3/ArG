@@ -1,5 +1,7 @@
 params ["_text"];
 
+_text = _this select 0;
+
 onEachFrame {
 
     _HitPos = getPosATL _text;
