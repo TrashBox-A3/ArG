@@ -3,7 +3,7 @@ class CfgFunctions
 {
 
 tag = "ArG";
-class ArG_Func
+class ArG
 {
 
 	class State
