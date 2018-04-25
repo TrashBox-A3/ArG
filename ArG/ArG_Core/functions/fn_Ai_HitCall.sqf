@@ -1,6 +1,6 @@
 params ["_AiGamer","_Hited"];
 
-_Hited = _this select 0;
+
 _AiGamer = _this select 1;
 
 
@@ -27,7 +27,7 @@ if(isServer)then{
         _x addMPEventHandler ["MPHit", {
         remoteExec ["ArG_fnc_Hit_drawIcon3D",0];
 
-
+        _Hited = _this select 0;
 
         _Hited say3D "HitCall";
 
