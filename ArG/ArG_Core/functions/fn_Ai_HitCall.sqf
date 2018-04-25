@@ -1,3 +1,6 @@
+params ["_AiGamer"];
+
+_AiGamer = _this select 0;
 
 _AiGamer = [
 "ArG_Gamer_1",
@@ -20,14 +23,7 @@ if(isServer)then{
     if ((!isPlayer _x)&&(typeOf _x in _AiGamer)) then
     {
         _x addMPEventHandler ["MPHit", {
-
-
-
-         remoteExec ["ArG_fnc_Hit_drawIcon3D",0];
-
-
-
-
+        remoteExec ["ArG_fnc_Hit_drawIcon3D",0];
     }];
      _x setUnitPos "UP";
     };
