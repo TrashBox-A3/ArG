@@ -1,4 +1,4 @@
-private ["_BuzzOff","_BuzzOn","_types","_Speakers"];
+private ["_Buzz","_types","_Speakers"];
 
 
 
@@ -12,11 +12,11 @@ _types = [
 if (STATE) then
 {
     STATE = false;
-    player setVariable ["BuzzOff",true];
+    player setVariable ["Buzz",false];
 
 }else{
     STATE = true;
-    player setVariable ["BuzzOn",true];
+    player setVariable ["Buzz",true];
 };
 
 for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
@@ -28,7 +28,7 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
     while {STATE} do
 
     {
-        
+
         {_x say3D "Buzzer"} forEach _Speakers;
         sleep 5;
 
