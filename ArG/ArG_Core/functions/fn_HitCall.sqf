@@ -1,5 +1,10 @@
 ///script by Rodeostar42///
 
+params ["_Gamer","_Hited"];
+
+_Hited = _this select 0;
+_Gamer = _this select 1;
+
 _Gamer = [
 "ArG_Gamer_1",
 "ArG_Gamer_2",
@@ -20,40 +25,40 @@ _Gamer = [
    if ((isPlayer _x)&&(typeOf _x in _Gamer)) then
    {
 
-player addMPEventHandler ["MPHit", {
+_Hited addMPEventHandler ["MPHit", {
 
- player setCaptive true;
+ _Hited setCaptive true;
 
- player setDamage 0;
+ _Hited setDamage 0;
 
-player say3D "HitCall";
+_Hited say3D "HitCall";
 
- player switchCamera "EXTERNAL";
+ _Hited switchCamera "EXTERNAL";
 
- player addEventHandler ["HandleDamage", {0}];
+ _Hited addEventHandler ["HandleDamage", {0}];
 
 
- player switchMove "Acts_JetsMarshallingRight_loop";
+ _Hited switchMove "Acts_JetsMarshallingRight_loop";
 
 
 [] spawn
  {
 	 sleep 2;
-	 player switchMove "ApanPknlMstpSnonWnonDnon_G01";
+	 _Hited switchMove "ApanPknlMstpSnonWnonDnon_G01";
 
  };
 
 
 onEachFrame {
     private "_private";
-    _playerPos = getPosATL player;
+    _playerPos = getPosATL _Hited;
     drawIcon3D [
         "",
         [153,0,0,0.5],
         [_playerPos select 0,_playerPos select 1,2.3],
         5,
         5,
-        direction player,
+        direction _Hited,
         "HIT!",
         0,
         0.08,
@@ -62,7 +67,7 @@ onEachFrame {
 };
 
 
-player removeMPEventHandler ["MPHit", 0];
+_Hited removeMPEventHandler ["MPHit", 0];
 
 }];
 
