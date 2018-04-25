@@ -12,11 +12,11 @@ _types = [
 if (STATE) then
 {
     STATE = false;
-    _BuzzOff setVariable ["BuzzOff",true];
+    player setVariable ["BuzzOff",true];
 
 }else{
     STATE = true;
-    _BuzzOn setVariable ["BuzzOn",true];
+    player setVariable ["BuzzOn",true];
 };
 
 for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
