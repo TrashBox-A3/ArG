@@ -23,7 +23,7 @@ if(isServer)then{
 
         _ap = _this select 0;
 
-        _ap say3D "HitCall";
+        
 
         _ap setCaptive true;
 
@@ -33,7 +33,7 @@ if(isServer)then{
 
         _ap playMoveNow "ApanPknlMstpSnonWnonDnon_G01";
 
-         remoteExec ["ArG_fnc_Hit_drawIcon3D"];
+         remoteExec ["ArG_fnc_Hit_drawIcon3D"-2];
 
 
 
