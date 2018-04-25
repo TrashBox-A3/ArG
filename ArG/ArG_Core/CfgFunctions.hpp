@@ -3,7 +3,7 @@ class CfgFunctions
 {
 
 tag = "ArG";
-class ArG
+class ArG_Func
 {
 		file = "\ArG_Core\functions";
 		class init {preInit = 1;};
