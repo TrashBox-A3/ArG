@@ -1,4 +1,5 @@
 ///script by Rodeostar42///
+if (!isServer) exitWith {};
 
 private ["_Hited","_Gamer"];
 
@@ -25,7 +26,7 @@ _Gamer = [
    if ((isPlayer _x)&&(typeOf _x in _Gamer)) then
    {
 
-_x addMPEventHandler ["MPHit", {
+_Hited addMPEventHandler ["MPHit", {
 
  _Hited setCaptive true;
 
@@ -73,4 +74,4 @@ _Hited removeMPEventHandler ["MPHit", 0];
 
 
 };
-} forEach allUnits;
+} forEach _Gamer;
