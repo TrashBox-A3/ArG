@@ -1,5 +1,7 @@
 private ["_BuzzOff","_BuzzOn","_types","_Speakers"];
 
+_BuzzOn = {_x say3D "Buzzer"} forEach _Speakers;
+
 _types = [
 "ArG_Speaker",
 "ArG_BuzzerBox"
