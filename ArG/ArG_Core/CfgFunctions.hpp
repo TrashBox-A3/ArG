@@ -8,7 +8,7 @@ class ArG
 		class init { postInit = 1; };
 		class HitCall {};
 		class Ai_HitCall {};
-		class BuzzerBox　{};
+		class BuzzerBox {};
 
 	};
 };
