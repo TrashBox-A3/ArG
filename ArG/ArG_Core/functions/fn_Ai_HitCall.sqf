@@ -1,7 +1,8 @@
 params ["_AiGamer","_Hited"];
 
-_AiGamer = _this select 0;
-_Hited = _this select 1;
+_Hited = _this select 0;
+_AiGamer = _this select 1;
+
 
 _AiGamer = [
 "ArG_Gamer_1",
