@@ -1,4 +1,4 @@
-
+params ["BuzzOff","BuzzOn"];
 
 _types = [
 "ArG_Speaker",
