@@ -1,11 +1,14 @@
 ///script by Rodeostar42///
 if (!isServer) exitWith {};
 
+<<<<<<< HEAD
 private ["_Hited","_Gamer"];
 
 _Hited = _this select 0;
 _Gamer = _this select 1;
 
+=======
+>>>>>>> parent of e9fe898... dwdwdwdwd
 _Gamer = [
 "ArG_Gamer_1",
 "ArG_Gamer_2",
@@ -26,40 +29,40 @@ _Gamer = [
    if ((isPlayer _x)&&(typeOf _x in _Gamer)) then
    {
 
-_Hited addMPEventHandler ["MPHit", {
+player addMPEventHandler ["MPHit", {
 
- _Hited setCaptive true;
+ player setCaptive true;
 
- _Hited setDamage 0;
+ player setDamage 0;
 
-_Hited say3D "HitCall";
+player say3D "HitCall";
 
- _Hited switchCamera "EXTERNAL";
+ player switchCamera "EXTERNAL";
 
- _Hited addEventHandler ["HandleDamage", {0}];
+ player addEventHandler ["HandleDamage", {0}];
 
 
- _Hited switchMove "Acts_JetsMarshallingRight_loop";
+ player switchMove "Acts_JetsMarshallingRight_loop";
 
 
 [] spawn
  {
 	 sleep 2;
-	 _Hited switchMove "ApanPknlMstpSnonWnonDnon_G01";
+	 player switchMove "ApanPknlMstpSnonWnonDnon_G01";
 
  };
 
 
 onEachFrame {
     private "_private";
-    _playerPos = getPosATL _Hited;
+    _playerPos = getPosATL player;
     drawIcon3D [
         "",
         [153,0,0,0.5],
         [_playerPos select 0,_playerPos select 1,2.3],
         5,
         5,
-        direction _Hited,
+        direction player,
         "HIT!",
         0,
         0.08,
@@ -68,7 +71,7 @@ onEachFrame {
 };
 
 
-_Hited removeMPEventHandler ["MPHit", 0];
+player removeMPEventHandler ["MPHit", 0];
 
 }];
 
