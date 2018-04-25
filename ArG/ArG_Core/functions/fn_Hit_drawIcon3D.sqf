@@ -1,8 +1,8 @@
-params ["_position"];
+private ["_position"];
 
 
 
-_position = ArG_fnc_Hit_drawIcon3D select 0;
+_position = _this select 0;
 
 _position say3D "HitCall";
 
