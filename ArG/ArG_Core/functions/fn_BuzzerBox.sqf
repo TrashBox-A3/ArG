@@ -1,6 +1,6 @@
 private ["_BuzzOff","_BuzzOn","_types","_Speakers"];
 
-_BuzzOn = {_x say3D "Buzzer"} forEach _Speakers;
+
 
 _types = [
 "ArG_Speaker",
@@ -28,7 +28,7 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
     while {STATE} do
 
     {
-
+        _BuzzOn = {_x say3D "Buzzer"} forEach _Speakers;
         {_x say3D "Buzzer"} forEach _Speakers;
         sleep 5;
 
