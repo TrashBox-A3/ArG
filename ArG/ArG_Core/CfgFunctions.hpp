@@ -6,10 +6,10 @@ tag = "ArG";
 class ArG_Func
 {
 		file = "\ArG_Core\functions";
-		class init {preInit = 1;};
-		class HitCall {preInit = 1;};
-		class Ai_HitCall {preInit = 1;};
-		class BuzzerBox {postInit = 1;};
+		class init {};
+		class HitCall {};
+		class Ai_HitCall {};
+		class BuzzerBox {};
 
 	};
 };
