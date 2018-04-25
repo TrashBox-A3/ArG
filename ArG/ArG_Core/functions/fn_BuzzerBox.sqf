@@ -12,11 +12,11 @@ _types = [
 if (STATE) then
 {
     STATE = false;
-
+    _BuzzOff setVariable ["BuzzOff",true];
 
 }else{
     STATE = true;
-
+    _BuzzOn setVariable ["BuzzOn",true];
 };
 
 for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
@@ -24,7 +24,7 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
 
     _Speakers = getMarkerPos "GameArea" nearObjects [_types select _i , 300];
     sleep 0.7;
-    
+
     while {STATE} do
 
     {
