@@ -24,4 +24,12 @@ class CfgFactionClasses {
 
   };
 
+
+	class NO_CATEGORY;
+	class myTag_explosions: NO_CATEGORY
+	{
+		displayName = "Explosions";
+	};
+
+
 };

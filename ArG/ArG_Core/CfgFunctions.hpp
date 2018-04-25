@@ -19,8 +19,16 @@ class ArG
 		class HitCall {postInit = 1;};
 		class Ai_HitCall {postInit = 1;};
 		class BuzzerBox {};
-		class Hit_drawIcon3D {};	
+		class Hit_drawIcon3D {};
 	};
+
+
+		class Effects
+		{
+			file = "\ArG_Core\functions";
+			class moduleNuke{};
+		};
+
 
 	};
 };
