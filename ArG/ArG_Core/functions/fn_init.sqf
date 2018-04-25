@@ -1,4 +1,3 @@
 
 STATE = false;
-
-BuzzOn = false;
+player setVariable ["Buzz",false];
