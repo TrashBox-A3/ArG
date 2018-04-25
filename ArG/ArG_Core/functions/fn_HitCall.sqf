@@ -1,5 +1,5 @@
 ///script by Rodeostar42///
-if (!isServer) exitWith {};
+
 
 _Gamer = [
 "ArG_Gamer_1",
@@ -69,4 +69,4 @@ player removeMPEventHandler ["MPHit", 0];
 
 
 };
-} forEach _Gamer;
+} forEach allUnits;
