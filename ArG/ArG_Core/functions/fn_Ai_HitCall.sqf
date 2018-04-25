@@ -33,7 +33,7 @@ if(isServer)then{
 
         _ap playMoveNow "ApanPknlMstpSnonWnonDnon_G01";
 
-         remoteExec ["ArG_fnc_Hit_drawIcon3D",_ap,2];
+         remoteExec ["ArG_fnc_Hit_drawIcon3D"];
 
 
 
