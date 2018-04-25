@@ -9,16 +9,16 @@ class ArG
 	class State
   {
 	file = "\ArG_Core\functions";
-	class init { postInit = 1; };
+	class init {postInit = 1;};
 
   };
 
 	class Script
 	{
 		file = "\ArG_Core\functions";
-		class HitCall {};
-		class Ai_HitCall {};
-		class BuzzerBox {};
+		class HitCall {postInit = 1;};
+		class Ai_HitCall {postInit = 1;};
+		class BuzzerBox {postInit = 1;};
 	};
 
 	};
