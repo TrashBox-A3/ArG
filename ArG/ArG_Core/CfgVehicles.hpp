@@ -548,7 +548,7 @@ class  O_Soldier_base_F;
     priority = 3;
     radius = 20;
     position = "camera";
-    showWindow = 0;
+    showWindow = true;
     hideOnUse = 0;
     onlyForPlayer = 1;
     shortcut = "reloadMagazine";
