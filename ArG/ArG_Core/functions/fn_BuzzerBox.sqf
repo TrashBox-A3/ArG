@@ -1,4 +1,4 @@
-params ["_BuzzOff","_BuzzOn","_types","_Speakers"];
+private ["_BuzzOff","_BuzzOn","_types","_Speakers"];
 
 _types = [
 "ArG_Speaker",
