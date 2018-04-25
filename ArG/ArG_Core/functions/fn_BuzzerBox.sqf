@@ -1,7 +1,4 @@
-params ["_BuzzOff","_BuzzOn","_types"];
-
-_BuzzOff = STATE = false;
-_BuzzOn = STATE = true;
+params ["_BuzzOff","_BuzzOn","_types","_Speakers"];
 
 _types = [
 "ArG_Speaker",
