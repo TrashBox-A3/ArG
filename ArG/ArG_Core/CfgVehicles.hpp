@@ -548,12 +548,12 @@ class  O_Soldier_base_F;
     priority = 3;
     radius = 20;
     position = "camera";
-    showWindow = 0;
+    showWindow = true;
     hideOnUse = 0;
     onlyForPlayer = 1;
     shortcut = "reloadMagazine";
     condition = "true";
-    statement = "this say3D 'Switch',0 = [0] execVM 'ArG_Core\functions\fn_BuzzerBox.sqf'";
+    statement = "this say3D 'Switch',[[[],'ArG_Core\functions\fn_BuzzerBox.sqf'], 'BIS_fnc_execVM', true,true] call BIS_fnc_MP;";
   };
 };
 
