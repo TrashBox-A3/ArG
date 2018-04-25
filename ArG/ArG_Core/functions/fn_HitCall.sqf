@@ -1,14 +1,6 @@
 ///script by Rodeostar42///
 if (!isServer) exitWith {};
 
-<<<<<<< HEAD
-private ["_Hited","_Gamer"];
-
-_Hited = _this select 0;
-_Gamer = _this select 1;
-
-=======
->>>>>>> parent of e9fe898... dwdwdwdwd
 _Gamer = [
 "ArG_Gamer_1",
 "ArG_Gamer_2",
