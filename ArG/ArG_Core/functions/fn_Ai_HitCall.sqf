@@ -1,6 +1,7 @@
-params ["_AiGamer"];
+params ["_AiGamer","_Hited"];
 
 _AiGamer = _this select 0;
+_Hited = this select 1;
 
 _AiGamer = [
 "ArG_Gamer_1",
@@ -24,6 +25,18 @@ if(isServer)then{
     {
         _x addMPEventHandler ["MPHit", {
         remoteExec ["ArG_fnc_Hit_drawIcon3D",0];
+
+
+
+        _Hited say3D "HitCall";
+
+        _Hited setCaptive true;
+
+        _Hited addEventHandler ["HandleDamage", {0}];
+
+        _Hited switchMove "Acts_JetsMarshallingRight_loop";
+
+        _Hited playMoveNow "ApanPknlMstpSnonWnonDnon_G01";
     }];
      _x setUnitPos "UP";
     };
