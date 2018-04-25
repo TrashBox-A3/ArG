@@ -28,7 +28,7 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
     while {STATE} do
 
     {
-        BuzzOn = true;
+        
         {_x say3D "Buzzer"} forEach _Speakers;
         sleep 5;
 
