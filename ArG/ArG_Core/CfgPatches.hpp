@@ -3,7 +3,7 @@ class CfgPatches
 	class ArG_Core
 	{
 
-		requiredAddons[]=
+		requiredAddons["A3_Modules_F"]=
 		{
 
 		};
@@ -20,8 +20,8 @@ class CfgPatches
 			"ArG_Gamer_9",
 			"ArG_Gamer_10",
 			"ArG_Gamer_11",
-			"ArG_Gamer_12"
-
+			"ArG_Gamer_12",
+      "ArG_ModuleNuke"
 		};
 		weapons[]=
 		{
