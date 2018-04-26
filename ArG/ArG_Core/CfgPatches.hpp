@@ -3,9 +3,9 @@ class CfgPatches
 	class ArG_Core
 	{
 
-		requiredAddons["A3_Modules_F"]=
+		requiredAddons[]=
 		{
-
+    "A3_Modules_F"
 		};
 		requiredVersion=0.1;
 		units[]={
