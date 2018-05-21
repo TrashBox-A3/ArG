@@ -14,8 +14,6 @@
 
 #include "cfgWeapons.hpp"
 
-#include "M24.hpp"
-
 #include "cfgMagazines.hpp"
 
 #include "CfgSounds.hpp"
