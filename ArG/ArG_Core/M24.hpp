@@ -31,7 +31,7 @@ class ArG_M24: LMG_Mk200_F
     "\A3\weapons_f\Machineguns\M200\data\Anim\M200.rtm"
   };
 
-  model="\A3\Weapons_F_beta\Rifles\mk20\mk20_F.p3d";
+  model="\ArG_Core\Data\Weapon\M24\JSDF_M24R.p3d";
   displayName="ArG M24";
 
   picture="\A3\weapons_F\Machineguns\M200\Data\UI\gear_m200_X_CA.paa";
