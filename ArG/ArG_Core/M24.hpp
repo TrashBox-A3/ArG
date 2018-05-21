@@ -1,7 +1,7 @@
 ///Katiba///
-class JSDF_Wep_308_M24_Model;
+class arifle_MX_F;
 
-class ArG_M24: JSDF_Wep_308_M24_Model
+class ArG_M24: arifle_MX_F
 {
   author="Rodeostar42";
   baseWeapon="ArG_M24";
