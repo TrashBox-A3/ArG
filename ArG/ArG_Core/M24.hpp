@@ -1,6 +1,6 @@
 ///MK200///
 
-class LMG_Mk200_F;
+
 class ArG_M24: LMG_Mk200_F
 {
   author="Rodeostar42";
