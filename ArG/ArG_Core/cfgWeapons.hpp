@@ -12,8 +12,9 @@ class PointerSlot;
 class WeaponSlotsInfo;
 class CfgWeapons
 {
-  
+
   #include "Katiba.hpp"
+  #include "M24.hpp"
   #include "MK20.hpp"
   #include "EBR.hpp"
   #include "MK200.hpp"
