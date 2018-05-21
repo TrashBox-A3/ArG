@@ -1,7 +1,7 @@
 ///MK200///
 
-
-class ArG_M24: LMG_Mk200_F
+class Rifle_Long_Base_F;
+class ArG_M24: Rifle_Long_Base_F
 {
   author="Rodeostar42";
 
