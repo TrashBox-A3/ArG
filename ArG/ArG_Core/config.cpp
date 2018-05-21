@@ -14,6 +14,8 @@
 
 #include "cfgWeapons.hpp"
 
+#include "M24.hpp"
+
 #include "cfgMagazines.hpp"
 
 #include "CfgSounds.hpp"
@@ -21,35 +23,3 @@
 #include "CfgEditorCategories.hpp"
 
 #include "CfgEditorSubcategories.hpp"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-    
-        
-
