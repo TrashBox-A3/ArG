@@ -18,7 +18,6 @@ class CfgWeapons
   #include "EBR.hpp"
   #include "MK200.hpp"
   #include "M24.hpp"
-
 class ItemCore;
     class InventoryItem_Base_F;
     class InventoryMuzzleItem_Base_F;
