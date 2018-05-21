@@ -1,18 +1,17 @@
-///Katiba///
-class arifle_MX_F;
 
-class ArG_M24: arifle_MX_F
-{
-  author="Rodeostar42";
-  baseWeapon="ArG_M24";
-  scope=2;
-  displayName="ArG M24";
-  descriptionShort="Replace Katiba to Airsoft Gun";
+  class arifle_MX_F;
 
+  class ArG_M24: arifle_MX_F
+  {
+      author="Rodeostar42";
 
-  model="\ArG_Core\Data\Weapon\M24\JSDF_M24R.p3d";
-  picture="\A3\weapons_F\Rifles\Khaybar\Data\UI\gear_Khaybar_X_CA.paa";
-  UiPicture="\A3\weapons_f\data\UI\icon_regular_CA.paa";
+      scope=2;
+      displayName="ArG M24";
+      model="\ArG_Core\Data\Weapon\M24\JSDF_M24R.p3d";
+      baseWeapon="ArG_M24";
+      picture = "\rhsafrf\addons\rhs_weapons2\icons\rhs_aks74u_inventory.paa";
+      UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
+      descriptionShort = "AKS74U<br/>Tokyo MARUI";
 
   magazines[] = {
 
