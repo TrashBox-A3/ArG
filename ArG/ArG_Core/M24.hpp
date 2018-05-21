@@ -1,7 +1,7 @@
 ///Katiba///
-class JSDF_Wep_308_M24_Skeleton;
+class JSDF_Wep_308_M24_Model;
 
-class ArG_M24: JSDF_Wep_308_M24_Skeleton
+class ArG_M24: JSDF_Wep_308_M24_Model
 {
   author="Rodeostar42";
   baseWeapon="ArG_M24";
