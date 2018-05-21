@@ -48,7 +48,7 @@ class ArG_M24: Rifle_Long_Base_F
   hiddenSelectionsTextures[]=
   {
     "\A3\Weapons_F\Machineguns\M200\data\1st_person_co",
-    "\A3\Weapons_F\Machineguns\M200\data\body_co",
+    "\ArG_Core\Data\Weapon\M24\m24_00_co",
     "\A3\Weapons_F\Machineguns\M200\data\grip_co"
   };
 
