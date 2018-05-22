@@ -1,7 +1,7 @@
 ///MK200///
 
-class JSDF_M24R;
-class ArG_M24: JSDF_M24R
+class Rifle_Long_Base_F;
+class ArG_M24: Rifle_Long_Base_F
 {
   author="Rodeostar42";
 

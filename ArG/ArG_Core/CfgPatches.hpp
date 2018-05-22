@@ -31,7 +31,7 @@ class CfgPatches
 		"ArG_Mk20_F",
 		"ArG_EBR_F",
 		"ArG_Mk200_F",
-		"ArG_M24",
+		"JSDF_M24R",
 		"ArG_HE_Grenade_shell",
 		"ArG_30Rnd_65x39_BB_02",
 		"ArG_30Rnd_65x39_BB_025",
