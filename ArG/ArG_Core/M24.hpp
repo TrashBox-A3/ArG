@@ -1,11 +1,11 @@
 ///MK200///
 
 class Rifle_Long_Base_F;
-class ArG_M24: Rifle_Long_Base_F
+class JSDF_M24R: Rifle_Long_Base_F
 {
   author="Rodeostar42";
 
-  baseWeapon="ArG_M24";
+  baseWeapon="JSDF_M24R";
   scope=2;
   magazines[] = {
 
