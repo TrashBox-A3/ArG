@@ -15,6 +15,6 @@ class CfgWeapons
     #include "TM_M4A1_NWS.hpp"
     #include "TM_Pistol.hpp"
     #include "TM_M320.hpp"
-
+    #include "TM_VSR10_G.hpp"
 
 };

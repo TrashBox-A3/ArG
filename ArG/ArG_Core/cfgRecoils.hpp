@@ -35,5 +35,14 @@ class cfgRecoils
   permanent = 0.1;
   temporary = 0.01;
  };
- 
+
+ class NoRecoil
+ {              //  x     y     a     b
+  muzzleOuter[] = { 0.0,  0.0,  0.0,  0.0 };
+  muzzleInner[] = {0,0,0.0,0.0};
+  kickBack[]  = { 0.00, 0.00 };
+  permanent = 0.1;
+  temporary = 0.01;
+ };
+
 };
