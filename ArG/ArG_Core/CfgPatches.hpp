@@ -5,7 +5,7 @@ class CfgPatches
 
 		requiredAddons[]=
 		{
-    "A3_Modules_F"
+
 		};
 		requiredVersion=0.1;
 		units[]={
@@ -20,8 +20,7 @@ class CfgPatches
 			"ArG_Gamer_9",
 			"ArG_Gamer_10",
 			"ArG_Gamer_11",
-			"ArG_Gamer_12",
-      "ArG_ModuleNuke"
+			"ArG_Gamer_12"
 		};
 		weapons[]=
 		{
@@ -31,7 +30,6 @@ class CfgPatches
 		"ArG_Mk20_F",
 		"ArG_EBR_F",
 		"ArG_Mk200_F",
-		"ArG_VSR10_G",
 		"ArG_HE_Grenade_shell",
 		"ArG_30Rnd_65x39_BB_02",
 		"ArG_30Rnd_65x39_BB_025",

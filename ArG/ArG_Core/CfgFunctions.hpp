@@ -22,13 +22,5 @@ class ArG
 		class Hit_drawIcon3D {};
 	};
 
-
-		class Effects
-		{
-			file = "\ArG_Core\functions";
-			class moduleNuke{};
-		};
-
-
 	};
 };
