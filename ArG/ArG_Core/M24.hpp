@@ -1,11 +1,11 @@
 ///MK200///
 
-class Rifle_Long_Base_F;
-class JSDF_M24R: Rifle_Long_Base_F
+class JSDF_M24R;
+class ArG_VSR10_G: JSDF_M24R
 {
   author="Rodeostar42";
 
-  baseWeapon="JSDF_M24R";
+  baseWeapon="ArG_VSR10_G";
   scope=2;
   magazines[] = {
 
@@ -22,17 +22,17 @@ class JSDF_M24R: Rifle_Long_Base_F
   maxRecoilSway=0.0125;
   swayDecaySpeed=1.25;
   soundBullet[]={"emptySound",1};
-  reloadAction="GestureReloadM200";
+
   recoil="EGRecoil";
   maxZeroing=200;
 
 
   model="\ArG_Core\Data\Weapon\M24\JSDF_M24R.p3d";
-  displayName="ArG M24";
+  displayName="ArG VSR10 G";
 
 
 
-  descriptionShort="Replace MK200 to Airsoft Gun";
+  descriptionShort="Tokyo Marui VSR10 Gspec";
 
 
 
@@ -49,6 +49,6 @@ class JSDF_M24R: Rifle_Long_Base_F
       begin1[] = {"ArG_Core\Sound\den_tan01.wss",3, 1,15};
       soundBegin[] = {"begin1",1};
       weaponSoundEffect = "DefaultRifle";
-  
+
   };
   };
