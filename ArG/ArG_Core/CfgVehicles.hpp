@@ -12,7 +12,7 @@ class CfgVehicles
 
     #include "ArG_ItemBox.hpp"
     #include "ArG_AllinOne_ItemBox.hpp"
-    #include "Module.hpp"
+    
 
 
 
