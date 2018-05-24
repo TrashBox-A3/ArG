@@ -24,10 +24,10 @@ class CfgFactionClasses {
 
   };
 
-  class ArG_Module;
-  class ArG: ArG_Module
-  {
-      displayName = "ArG_Module";
+
+  class ArG_Module {
+    
+      displayName = "ArG Module";
   };
 
 
