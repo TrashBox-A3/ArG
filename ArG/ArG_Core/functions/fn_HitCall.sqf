@@ -23,6 +23,11 @@ _Gamer = [
 
 player addMPEventHandler ["MPHit", {
 
+
+  inGameUISetEventHandler ["PrevAction", "hint str _this; false"];
+  inGameUISetEventHandler ["NextAction", "hint str _this; false"];
+  inGameUISetEventHandler ["Action", "hint str _this; false"];
+
  player setCaptive true;
 
  player setDamage 0;
