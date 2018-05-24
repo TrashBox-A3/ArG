@@ -18,6 +18,7 @@ if (missionNamespace getvariable "Buzz" == 0) then {
   if (_time <= 0) then {
 
     hint "GameOver! Win to CountDown";
+    CountDown = true;PublicVariable"CountDown";
     sleep 5;
 
       cuttext ["Enjoy it even if you win or lose!","PLAIN",10];
@@ -43,7 +44,7 @@ if ((missionNamespace getvariable "Buzz" == 1)&&(_time < 180)) then {
 if ((_time >= 180)) then {
 
   hint"GameOver! Win to CountUp";
-
+  CountUp = true;PublicVariable"CountUp";
   sleep 5;
 
     cuttext ["Enjoy it even if you win or lose!","PLAIN",10];
