@@ -12,6 +12,12 @@ class CfgSounds {
     titles[] = {};
   };
 
+  class Buzzer2 {
+    name = "";
+    sound[] = {"ArG_Core\Sound\Buzzer_02.wss", 3, 1.1};
+    titles[] = {};
+  };
+
   class Switch {
     name = "";
     sound[] = {"ArG_Core\Sound\Switch.wss", 2, 1.1};

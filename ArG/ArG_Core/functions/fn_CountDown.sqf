@@ -17,7 +17,7 @@ if (missionNamespace getvariable "Buzz" == 0) then {
 
   if (_time <= 0) then {
 
-    hint "GameOver! Win to CountDown";
+    
     CountDown = true;PublicVariable"CountDown";
 
   };
@@ -34,7 +34,7 @@ if ((missionNamespace getvariable "Buzz" == 1)&&(_time < 240)) then {
 
   if ((_time >= 240)) then {
 
-    hint"GameOver! Win to CountUp";
+
     CountUp = true;PublicVariable"CountUp";
   };
 };

@@ -12,6 +12,23 @@ if (STATE) then
     STATE = false;
     missionNamespace setVariable ["Buzz",1,true];
 
+    for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
+    {
+
+        _Speakers = getPos player nearObjects [_types select _i , 300];
+        sleep 0.7;
+
+        while {STATE} do
+
+        {
+
+            {_x say3D "Buzzer2"} forEach _Speakers;
+            sleep 5;
+
+        };
+
+    };
+
 }else{
     STATE = true;
     missionNamespace setVariable ["Buzz",0,true];
