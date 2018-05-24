@@ -22,14 +22,14 @@ class ArG_Module : Module_F
     author = "Rodeostar42";
     displayName = "ArG Module";
     category = "Effects";
-    function = "ArG_Module";
-    icon = "\tf_kss\icon.paa";
+    function = "fn_CountDown";
+    icon = ;
     functionPriority = 2;
     isGlobal = 1;
     isTriggerActivated = 0;
     class Arguments : Module_F
     {
-        class PoolTime
+        class _time
         {
             displayName = "PoolTime";
             description = "CountDown PoolTime";
