@@ -28,7 +28,7 @@ if (STATE) then
 
     while {_time > 0} do {
 
-  if (missionNamespace getVariable ["Buzz","BuzzOn",true]) then {
+
 
 
   	_time = _time - 1;
@@ -43,7 +43,7 @@ if (STATE) then
         cuttext ["防ぎ切れなかった......","PLAIN",10];
 
         "Looser" call BIS_fnc_endMission;ForceEND;
-    };
+    
 
 };
 
