@@ -1,24 +1,7 @@
-systemChat"script done";
 
-private "_time";
-// True when the module was activated, false when it's deactivated (i.e., synced triggers are no longer active)
-_activated = param [2,true,[true]];
-
-// Module specific behavior. Function can extract arguments from logic and use them.
-if (_activated) then {
-	 _time = _logic getVariable ["Time",-1]; //(as per the previous example, but you can define your own.)
-	};
-
-// Module function is executed by spawn command, so returned value is not necessary.
-// However, it's a good practice to include one.
-true;
 
 private "_time";
 _time = 180;
-
-
-
-
 
 while {true} do {
 
@@ -64,6 +47,8 @@ if (_time <= 0) then {
 
     cuttext ["Enjoy it even if you win or lose!","PLAIN",10];
 
+    sleep 5;
+
     "end1" call BIS_fnc_endMission;ForceEND;
 };
 
@@ -76,5 +61,7 @@ if ((_time >= 180)) then {
   sleep 5;
 
     cuttext ["Enjoy it even if you win or lose!","PLAIN",10];
+
+    sleep 5;
 
     "end1" call BIS_fnc_endMission;ForceEND;
