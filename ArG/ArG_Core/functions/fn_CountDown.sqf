@@ -9,13 +9,16 @@ _activated = param [2,true,[true]];
 
 // Module specific behavior. Function can extract arguments from logic and use them.
 if (_activated) then {
-	 _time = _logic getVariable ["Time",-1]; //(as per the previous example, but you can define your own.)
+	 _time = _logic getVariable ["Time",300]; //(as per the previous example, but you can define your own.)
 	};
 
 // Module function is executed by spawn command, so returned value is not necessary.
 // However, it's a good practice to include one.
 true;
 
+
+private "_time";
+_time = 20;
 
 
 

@@ -24,10 +24,10 @@ class CfgFactionClasses {
 
   };
 
-  class NO_CATEGORY;
-  class ArG: NO_CATEGORY
+  class ArG_Module;
+  class ArG: ArG_Module
   {
-      displayName = "ArG";
+      displayName = "ArG_Module";
   };
 
 

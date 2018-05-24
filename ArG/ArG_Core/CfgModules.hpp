@@ -16,14 +16,14 @@ class Module_F : Logic
     };
 };
 
-class ArG_Module : Module_F
+class ArG_BuzzerBox : Module_F
 {
     scope = 2;
     author = "Rodeostar42";
     displayName = "ArG Module";
     category = "ArG_Module";
     function = "fn_CountDown";
-    
+
     functionPriority = 2;
     isGlobal = 1;
     isTriggerActivated = 0;
