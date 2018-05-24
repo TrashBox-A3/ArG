@@ -31,7 +31,7 @@ else
 
 {
 
-if ((missionNamespace getVariable ["Buzz",nil])&&(_time < 600)) then {
+if ((missionNamespace getvariable "Buzz" == 1)&&(_time < 600)) then {
 
   _time = _time + 1;
   hintSilent format["侵入者は排除した \n %1", [((_time)/60)+.01,"HH:MM"] call BIS_fnc_timetostring];

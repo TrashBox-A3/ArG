@@ -10,7 +10,7 @@ _types = [
 if (STATE) then
 {
     STATE = false;
-    missionNamespace setVariable ["Buzz",nil];
+    missionNamespace setVariable ["Buzz",1,true];
 
 }else{
     STATE = true;
