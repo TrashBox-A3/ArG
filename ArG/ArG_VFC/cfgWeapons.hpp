@@ -5,6 +5,7 @@ class CfgWeapons
 {
 
   #include "VFC_M27IAR_GBB.hpp"
+  #include "VFC_MP7A2_GBB.hpp"
 
 
     ///VFC HK416A5 GBB BLK///
@@ -23,7 +24,8 @@ class CfgWeapons
         descriptionShort = "VFC HK416A5 GBB (BLK)<br/>VFC";
         magazines[] = {
 
-            "VFC_30Rnd_556x45_M4_HK416_GBB"
+          "VFC_30Rnd_556x45_M4_HK416_02",
+          "VFC_30Rnd_556x45_M4_HK416_025"
         };
 
         initSpeed = 250; // muzzle velocity
@@ -218,7 +220,8 @@ class CfgWeapons
         descriptionShort = "VFC HK416A5 GBB (SAND)<br/>VFC";
         magazines[] = {
 
-            "VFC_30Rnd_556x45_M4_HK416_GBB"
+          "VFC_30Rnd_556x45_M4_HK416_02",
+          "VFC_30Rnd_556x45_M4_HK416_025"
         };
 
         initSpeed = 250; // muzzle velocity
