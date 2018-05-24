@@ -13,7 +13,8 @@ if (_activated) then {
 // However, it's a good practice to include one.
 true;
 
-
+private "_time";
+_time = 180;
 
 
 
