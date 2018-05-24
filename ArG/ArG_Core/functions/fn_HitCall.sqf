@@ -24,9 +24,8 @@ _Gamer = [
 player addMPEventHandler ["MPHit", {
 
 
-  inGameUISetEventHandler ["PrevAction", "hint str _this; false"];
-  inGameUISetEventHandler ["NextAction", "hint str _this; false"];
-  inGameUISetEventHandler ["Action", "hint str _this; false"];
+  inGameUISetEventHandler ["Action", "if ((_this select 3 == 'Buzzer Switch')) then
+                     {hint 'あなたはHeli Pilotでは無いのでこの操作は無効です';true}"];
 
  player setCaptive true;
 
