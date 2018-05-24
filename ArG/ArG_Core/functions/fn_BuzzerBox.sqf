@@ -12,12 +12,12 @@ _types = [
 if (STATE) then
 {
     STATE = false;
-    Buzzer = false;PublicVariable"BuzzerOff";
+    missionNamespace setVariable ["Buzz",nil];
 
 
 }else{
     STATE = true;
-    Buzzer = true;PublicVariable"BuzzerOn";
+    missionNamespace setVariable ["Buzz",2,true];
 
 };
 

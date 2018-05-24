@@ -8,7 +8,7 @@ while {true} do {
 
   while {_time > 0} do {
 
-if (PublicVariable"BuzzerOn") then {
+if (missionNamespace getVariable ["Buzz",2,true]) then {
 
 
 	_time = _time - 1;
@@ -31,7 +31,7 @@ else
 
 {
 
-if ((PublicVariable"BuzzerOff")&&(_time < 600)) then {
+if ((missionNamespace setVariable ["Buzz",nil])&&(_time < 600)) then {
 
   _time = _time + 1;
   hintSilent format["侵入者は排除した \n %1", [((_time)/60)+.01,"HH:MM"] call BIS_fnc_timetostring];
