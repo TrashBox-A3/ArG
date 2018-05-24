@@ -31,7 +31,7 @@ else
 
 {
 
-if ((missionNamespace getvariable "Buzz" == 1)&&(_time < 300)) then {
+if ((missionNamespace getvariable "Buzz" == 1)&&(_time < 600)) then {
 
   _time = _time + 1;
   hintSilent format["Recovered \n %1", [((_time)/60)+.01,"HH:MM"] call BIS_fnc_timetostring];
@@ -40,6 +40,10 @@ if ((missionNamespace getvariable "Buzz" == 1)&&(_time < 300)) then {
 
 };
 
+if ((_time >= 600)) then {
+
+  hint"win";
+};
 
 
 };
