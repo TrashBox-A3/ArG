@@ -27,7 +27,7 @@ class ArG_Module : Module_F
     functionPriority = 2;
     isGlobal = 1;
     isTriggerActivated = 0;
-    class Arguments : ArgumentsBaseUnits
+    class Arguments : ArG_Module
     {
         class PoolTime
         {
