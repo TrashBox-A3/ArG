@@ -27,5 +27,6 @@ class CfgWeapons
     #include "TM_Pistol.hpp"
     #include "TM_M320.hpp"
     #include "TM_VSR10_G.hpp"
+    #include "TM_HK417_AEG.hpp"
 
 };

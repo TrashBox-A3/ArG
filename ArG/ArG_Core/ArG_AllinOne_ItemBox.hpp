@@ -65,6 +65,8 @@ class Box_NATO_AmmoVeh_F;
             item10(ArG_TM_HK416_DEV);
             item10(ArG_520Rnd_556x45_BB);
             item10(ArG_82Rnd_556x45_BB);
+            item10(ArG_TM_VSR10_G);
+            item10(ArG_TM_HK417_AEG);
             item10(ArG_TM_SCAR_L_TAN);
             item10(ArG_TM_SCAR_H_TAN);
             item10(ArG_TM_M4A1_NG);

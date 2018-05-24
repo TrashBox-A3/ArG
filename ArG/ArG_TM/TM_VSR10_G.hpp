@@ -1,7 +1,7 @@
 ///VSR10 Gspec///
-class rhs_weap_m24sws;
+class rhs_weap_m24sws_blk;
 
-class ArG_TM_VSR10_G: rhs_weap_m24sws
+class ArG_TM_VSR10_G: rhs_weap_m24sws_blk
 {
   author="Rodeostar42";
 
@@ -65,7 +65,7 @@ class ArG_TM_VSR10_G: rhs_weap_m24sws
       weaponSoundEffect = "DefaultRifle";
   };
   };
-  
+
   class single_medium_optics1: Single
   {
       requiredOpticType=1;

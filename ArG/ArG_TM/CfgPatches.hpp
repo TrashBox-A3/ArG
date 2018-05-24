@@ -28,7 +28,8 @@ class CfgPatches
 			"ArG_30Rnd_556x45_TOP",
 			"ArG_M320",
 			"ArG_TM_AK47T3",
-			"ArG_TM_VSR10_G"
+			"ArG_TM_VSR10_G",
+		  "ArG_TM_HK417_AEG"
 		};
 	};
 };

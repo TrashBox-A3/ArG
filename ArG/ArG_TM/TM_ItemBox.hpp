@@ -18,6 +18,8 @@ class Box_NATO_Equip_F;
             item10(ArG_90Rnd_762x51_BB);
             item10(ArG_540Rnd_762x51_BB);
             item10(ArG_TM_M4A1_NG);
+            item10(ArG_TM_VSR10_G);
+            item10(ArG_TM_HK417_AEG);
             item10(ArG_TM_M4A1_NWS);
             item10(ArG_35Rnd_556x45_NWS);
             item10(ArG_TM_Glock17);
