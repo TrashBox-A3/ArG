@@ -16,6 +16,7 @@ class CfgWeapons
           model="A3\weapons_f\data\zaslehsdl_proxy.p3d";
       };
 
+
     ///PKM///
     class rhs_weap_pkm;
 
