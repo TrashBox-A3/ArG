@@ -17,7 +17,7 @@ if (STATE) then
 
 }else{
     STATE = true;
-    missionNamespace setVariable ["Buzz",true];
+    missionNamespace setVariable ["Buzz","BuzzOn",true];
 
 };
 
