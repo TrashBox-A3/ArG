@@ -8,7 +8,7 @@ class Module_F : Logic
 {
     class AttributesBase
     {
-        class Edit;
+        class Units;
     };
     class ModuleDescription
     {
