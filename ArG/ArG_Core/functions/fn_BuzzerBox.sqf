@@ -14,7 +14,7 @@ if (STATE) then
 
 }else{
     STATE = true;
-    missionNamespace setVariable ["Buzz",true];
+    missionNamespace setVariable ["Buzz",0,true];
 
 };
 for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
