@@ -2,7 +2,7 @@
 STATE = false;
 
 params [
-    ["_time", objNull],
+    ["_logic", objNull],
     "",
     ["_activated", true]
 ];
