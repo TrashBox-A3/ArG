@@ -1,8 +1,8 @@
 private ["_Buzz","_types","_Speakers"];
 
 _types = [
-"ArG_Speaker",
-"ArG_BuzzerBox"
+"ArG_Speaker"
+
 ];
 
 
