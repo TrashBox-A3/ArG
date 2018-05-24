@@ -8,7 +8,7 @@ while {true} do {
 
   while {_time > 0} do {
 
-if (missionNamespace getvariable "Buzz" == 1) then {
+if (missionNamespace getvariable "Buzz" == 0) then {
 
 
 	_time = _time - 1;
