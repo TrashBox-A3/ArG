@@ -118,7 +118,7 @@ class cfgMagazines
                 mass = 1;
           };
     model = "\A3\weapons_F\ammo\mag_univ.p3d";
-    picture = "\SMA_Weapons\magazines\ui\7621.paa";
+    picture = "\SMA_Weapons\magazines\ui\7622.paa";
     descriptionShort = "Caliber: 6mm BB<br/>Rounds: 70<br/>weight: 0.2g";
     displayNameMFDFormat = "6mmBB";
 
@@ -138,7 +138,7 @@ class cfgMagazines
                 mass = 1;
           };
     model = "\A3\weapons_F\ammo\mag_univ.p3d";
-    picture = "\SMA_Weapons\magazines\ui\7621.paa";
+    picture = "\SMA_Weapons\magazines\ui\7622.paa";
     descriptionShort = "Caliber: 6mm BB<br/>Rounds: 70<br/>weight: 0.25g";
     displayNameMFDFormat = "6mmBB";
 
@@ -185,7 +185,7 @@ class cfgMagazines
 
   };
 
-  
+
   class ArG_30Rnd_VSR_BB_02: 20Rnd_762x51_Mag
     {
       author="Rodeostar42";
