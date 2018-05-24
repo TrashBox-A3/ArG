@@ -7,6 +7,18 @@ class CfgWeapons
   #include "VFC_M27IAR_GBB.hpp"
   #include "VFC_MP7A2_GBB.hpp"
 
+  class ItemCore;
+      class InventoryItem_Base_F;
+      class InventoryMuzzleItem_Base_F;
+      class InventoryUnderItem_Base_F;
+      class InventoryOpticsItem_Base_F;
+      class InventoryFlashLightItem_Base_F;
+      class Zasleh2: ItemCore
+      {
+          scope=2;
+          model="A3\weapons_f\data\zaslehsdl_proxy.p3d";
+      };
+
 
     ///VFC HK416A5 GBB BLK///
     class arifle_SPAR_01_blk_F;

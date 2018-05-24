@@ -29,4 +29,16 @@ class CfgWeapons
     #include "TM_VSR10_G.hpp"
     #include "TM_HK417_AEG.hpp"
 
+    class ItemCore;
+        class InventoryItem_Base_F;
+        class InventoryMuzzleItem_Base_F;
+        class InventoryUnderItem_Base_F;
+        class InventoryOpticsItem_Base_F;
+        class InventoryFlashLightItem_Base_F;
+        class Zasleh2: ItemCore
+        {
+            scope=2;
+            model="A3\weapons_f\data\zaslehsdl_proxy.p3d";
+        };
+
 };

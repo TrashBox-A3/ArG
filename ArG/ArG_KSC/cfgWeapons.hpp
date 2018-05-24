@@ -4,6 +4,18 @@ class Mode_FullAuto;
 class CfgWeapons
 {
 
+  class ItemCore;
+      class InventoryItem_Base_F;
+      class InventoryMuzzleItem_Base_F;
+      class InventoryUnderItem_Base_F;
+      class InventoryOpticsItem_Base_F;
+      class InventoryFlashLightItem_Base_F;
+      class Zasleh2: ItemCore
+      {
+          scope=2;
+          model="A3\weapons_f\data\zaslehsdl_proxy.p3d";
+      };
+
         ///PM///
     class rhs_weap_makarov_pm;
 
@@ -45,7 +57,7 @@ class CfgWeapons
         class Single: Mode_SemiAuto
         {
             reloadTime=0.096000001;
-            
+
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
@@ -119,7 +131,7 @@ class CfgWeapons
         class Single: Mode_SemiAuto
         {
             reloadTime=0.096000001;
-            
+
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
@@ -148,7 +160,7 @@ class CfgWeapons
         {
             reloadTime=0.096000001;
             dispersion=0.00086999999;
-            
+
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
