@@ -14,8 +14,8 @@ class ArG_TM_VSR10_G: rhs_weap_m24sws_blk
   descriptionShort = "VSR10 Gspec<br/>Tokyo MARUI";
   magazines[] = {
 
-      "ArG_20Rnd_762x51_BB_02",
-      "ArG_20Rnd_762x51_BB_025"
+      "ArG_30Rnd_VSR_BB_02",
+      "ArG_30Rnd_VSR_BB_025"
   };
 
   initSpeed = 250; // muzzle velocity

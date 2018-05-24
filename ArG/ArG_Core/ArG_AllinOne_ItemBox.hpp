@@ -76,6 +76,10 @@ class Box_NATO_AmmoVeh_F;
             item10(ArG_25Rnd_9mm);
             item10(ArG_TM_P226R);
             item10(ArG_TM_M92F);
+            item10(ArG_70Rnd_HK417_BB_02);
+            item10(ArG_70Rnd_HK417_BB_025);
+            item10(ArG_600Rnd_HK417_BB_02);
+            item10(ArG_600Rnd_HK417_BB_025);
             ///VFC///
             item10(ArG_VFC_HK416A5_GBB_BLK);
             item10(ArG_VFC_HK416A5_GBB_SND);

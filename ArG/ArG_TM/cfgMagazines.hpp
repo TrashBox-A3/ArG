@@ -103,8 +103,129 @@ class cfgMagazines
 
 	};
 
+  class 20Rnd_762x51_Mag;
+  class ArG_70Rnd_HK417_BB_02: 20Rnd_762x51_Mag
+    {
+      author="Rodeostar42";
+    displayName = "70Rnd 762x51 6mmBB 0.2g";
+    scope = 2;
+    ammo = ArG_6mm_BB_02; //eg
+    count = 70;
+    initSpeed = 100; // in case it is not in weapon
+    tracersEvery=1;
+    class ItemInfo
+          {
+                mass = 1;
+          };
+    model = "\A3\weapons_F\ammo\mag_univ.p3d";
+    picture = "\SMA_Weapons\magazines\ui\7621.paa";
+    descriptionShort = "Caliber: 6mm BB<br/>Rounds: 70<br/>weight: 0.2g";
+    displayNameMFDFormat = "6mmBB";
 
-    
+  };
+
+  class ArG_70Rnd_HK417_BB_025: 20Rnd_762x51_Mag
+    {
+      author="Rodeostar42";
+    displayName = "70Rnd 762x51 6mmBB 0.25g";
+    scope = 2;
+    ammo = ArG_6mm_BB_025; //eg
+    count = 70;
+    initSpeed = 100; // in case it is not in weapon
+    tracersEvery=1;
+    class ItemInfo
+          {
+                mass = 1;
+          };
+    model = "\A3\weapons_F\ammo\mag_univ.p3d";
+    picture = "\SMA_Weapons\magazines\ui\7621.paa";
+    descriptionShort = "Caliber: 6mm BB<br/>Rounds: 70<br/>weight: 0.25g";
+    displayNameMFDFormat = "6mmBB";
+
+  };
+
+
+  class ArG_600Rnd_HK417_BB_02: 20Rnd_762x51_Mag
+    {
+      author="Rodeostar42";
+    displayName = "600Rnd 762x51 6mmBB 0.2g";
+    scope = 2;
+    ammo = ArG_6mm_BB_02; //eg
+    count = 600;
+    initSpeed = 100; // in case it is not in weapon
+    tracersEvery=1;
+    class ItemInfo
+          {
+                mass = 1;
+          };
+    model = "\A3\weapons_F\ammo\mag_univ.p3d";
+    picture = "\SMA_Weapons\magazines\ui\7621.paa";
+    descriptionShort = "Caliber: 6mm BB<br/>Rounds: 600<br/>weight: 0.2g";
+    displayNameMFDFormat = "6mmBB";
+
+  };
+
+  class ArG_600Rnd_HK417_BB_025: 20Rnd_762x51_Mag
+    {
+      author="Rodeostar42";
+    displayName = "600Rnd 762x51 6mmBB 0.25g";
+    scope = 2;
+    ammo = ArG_6mm_BB_025; //eg
+    count = 600;
+    initSpeed = 100; // in case it is not in weapon
+    tracersEvery=1;
+    class ItemInfo
+          {
+                mass = 1;
+          };
+    model = "\A3\weapons_F\ammo\mag_univ.p3d";
+    picture = "\SMA_Weapons\magazines\ui\7621.paa";
+    descriptionShort = "Caliber: 6mm BB<br/>Rounds: 600<br/>weight: 0.25g";
+    displayNameMFDFormat = "6mmBB";
+
+  };
+
+  
+  class ArG_30Rnd_VSR_BB_02: 20Rnd_762x51_Mag
+    {
+      author="Rodeostar42";
+    displayName = "30Rnd 762x51 6mmBB 0.2g";
+    scope = 2;
+    ammo = ArG_6mm_BB_02; //eg
+    count = 20;
+    initSpeed = 100; // in case it is not in weapon
+    tracersEvery=1;
+    class ItemInfo
+          {
+                mass = 1;
+          };
+    model = "\A3\weapons_F\ammo\mag_univ.p3d";
+    picture = "\A3\weapons_f\data\UI\M_20Rnd_762x51_CA.paa";
+    descriptionShort = "Caliber: 6mm BB<br/>Rounds: 30<br/>weight: 0.2g";
+    displayNameMFDFormat = "6mmBB";
+
+  };
+
+  class ArG_30Rnd_VSR_BB_025: 20Rnd_762x51_Mag
+    {
+      author="Rodeostar42";
+    displayName = "30Rnd 762x51 6mmBB 0.25g";
+    scope = 2;
+    ammo = ArG_6mm_BB_025; //eg
+    count = 20;
+    initSpeed = 100; // in case it is not in weapon
+    tracersEvery=1;
+    class ItemInfo
+          {
+                mass = 1;
+          };
+    model = "\A3\weapons_F\ammo\mag_univ.p3d";
+    picture = "\A3\weapons_f\data\UI\M_20Rnd_762x51_CA.paa";
+    descriptionShort = "Caliber: 6mm BB<br/>Rounds: 30<br/>weight: 0.25g";
+    displayNameMFDFormat = "6mmBB";
+
+  };
+
 
 
 };

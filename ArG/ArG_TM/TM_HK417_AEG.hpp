@@ -14,8 +14,10 @@ class ArG_TM_HK417_AEG: SMA_HK417_16in
   descriptionShort = "HK417 EARLY VARIANT<br/>Tokyo MARUI";
   magazines[] = {
 
-      "ArG_90Rnd_762x51_BB",
-      "ArG_540Rnd_762x51_BB"
+      "ArG_70Rnd_HK417_BB_02",
+      "ArG_70Rnd_HK417_BB_025",
+      "ArG_600Rnd_HK417_BB_02",
+      "ArG_600Rnd_HK417_BB_025"
   };
 
   initSpeed = 250; // muzzle velocity
