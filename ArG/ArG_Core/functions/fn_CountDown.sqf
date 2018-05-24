@@ -12,17 +12,17 @@ if (missionNamespace getvariable "Buzz" == 0) then {
 
 
 	_time = _time - 1;
-	hintSilent format["Remaining \n %1", [((_time)/60)+.01,"HH:MM"] call BIS_fnc_timetostring];
+	hintSilent format["Time Remaining \n %1", [((_time)/60)+.01,"HH:MM"] call BIS_fnc_timetostring];
 	sleep 1;
 
   if (_time <= 0) then {
 
-    hint "もう無理です母上様";
+    hint "GameOver";
     sleep 5;
 
       cuttext ["could not recover.......","PLAIN",10];
 
-      "Looser" call BIS_fnc_endMission;ForceEND;
+      "end1" call BIS_fnc_endMission;ForceEND;
   };
 
 }
