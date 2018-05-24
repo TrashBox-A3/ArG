@@ -7,7 +7,7 @@ _types = [
 "ArG_BuzzerBox"
 ];
 
-while {true} do {
+
 
 if (STATE) then
 {
@@ -15,7 +15,6 @@ if (STATE) then
     missionNamespace setVariable ["Buzz",nil];
 
     if ((_time < 600)) then {
-
       _time = _time + 1;
       hintSilent format["侵入者は排除した \n %1", [((_time)/60)+.01,"HH:MM"] call BIS_fnc_timetostring];
       sleep 1;
@@ -26,11 +25,8 @@ if (STATE) then
     STATE = true;
     missionNamespace setVariable ["Buzz",true];
 
+
     while {_time > 0} do {
-
-
-
-
   	_time = _time - 1;
   	hintSilent format["Defence Areaに侵入されている!! \n %1", [((_time)/60)+.01,"HH:MM"] call BIS_fnc_timetostring];
   	sleep 1;
@@ -43,11 +39,9 @@ if (STATE) then
         cuttext ["防ぎ切れなかった......","PLAIN",10];
 
         "Looser" call BIS_fnc_endMission;ForceEND;
-    
+    };
 
-};
 
-};
 
 for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
 {
