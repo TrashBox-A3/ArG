@@ -20,7 +20,7 @@ class ArG_BuzzerBox : Module_F
 {
     scope = 2;
     author = "Rodeostar42";
-    displayName = "ArG Module";
+    displayName = "ArG BuzzerBox";
     category = "ArG_Module";
     function = "fn_CountDown";
 
