@@ -46,6 +46,6 @@ if(isServer)then{
     }];
      _x setUnitPos "UP";
     };
-  } forEach allUnits-switchableUnits-playableUnits;
+  } forEach allUnits;
 
 };
