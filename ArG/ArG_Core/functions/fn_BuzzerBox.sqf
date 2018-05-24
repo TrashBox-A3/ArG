@@ -11,11 +11,11 @@ _types = [
 
 if (STATE) then
 {
-    STATE = false;
+    STATE = false;PublicVariable"BuzzerOff";
     player setVariable ["Buzz",false];
 
 }else{
-    STATE = true;
+    STATE = true;PublicVariable"BuzzerOn";
     player setVariable ["Buzz",true];
 };
 
