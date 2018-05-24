@@ -12,6 +12,8 @@ if (STATE) then
     STATE = false;
     missionNamespace setVariable ["Buzz",1,true];
 
+  };
+
     for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
     {
 
@@ -27,7 +29,7 @@ if (STATE) then
 
         };
 
-    };
+
 
 }else{
     STATE = true;
