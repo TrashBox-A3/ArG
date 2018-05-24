@@ -1,7 +1,5 @@
 private ["_Buzz","_types","_Speakers"];
 
-
-
 _types = [
 "ArG_Speaker",
 "ArG_BuzzerBox"
@@ -18,7 +16,7 @@ if (STATE) then
     STATE = true;
     missionNamespace setVariable ["Buzz",true];
 
-
+};
 for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
 {
 
