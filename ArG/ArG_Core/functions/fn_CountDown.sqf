@@ -9,17 +9,14 @@ _activated = param [2,true,[true]];
 
 // Module specific behavior. Function can extract arguments from logic and use them.
 if (_activated) then {
-	 // Attribute values are saved in module's object space under their class names
 	 _time = _logic getVariable ["Time",-1]; //(as per the previous example, but you can define your own.)
-	 hint format ["Bomb yield is: %1", _time ]; // will display the bomb yield, once the game is started 
-};
+	};
 
 // Module function is executed by spawn command, so returned value is not necessary.
 // However, it's a good practice to include one.
-true
+true;
 
-private "_time";
-_time = 20;
+
 
 
 while {true} do {

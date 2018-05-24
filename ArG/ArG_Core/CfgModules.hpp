@@ -21,18 +21,18 @@ class ArG_Module : Module_F
     scope = 2;
     author = "Rodeostar42";
     displayName = "ArG Module";
-    category = "Effects";
+    category = "ArG_Module";
     function = "fn_CountDown";
-    icon = ;
+    
     functionPriority = 2;
     isGlobal = 1;
     isTriggerActivated = 0;
     class Arguments : Module_F
     {
-        class _time
+        class Initial_count
         {
-            displayName = "PoolTime";
-            description = "CountDown PoolTime";
+            displayName = "Initial count";
+            description = "Initial count";
             typeName = "NUMBER";
             defaultValue = 300;
         };
