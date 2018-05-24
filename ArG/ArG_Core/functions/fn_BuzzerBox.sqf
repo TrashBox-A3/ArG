@@ -37,7 +37,7 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
     {
 
         {_x say3D "Buzzer2"} forEach _Speakers;
-        sleep 5;
+        sleep 15;
 
     };
 
