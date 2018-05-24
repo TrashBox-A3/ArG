@@ -45,45 +45,5 @@ class ArG_Module : Module_F
             defaultValue = 60;
         };
 
-        class drawHUD
-        {
-            displayName = "$STR_KSS_moduleHUDName";
-            description = "";
-            typeName = "BOOL";
-            class values
-            {
-                class Enable
-                {
-                    name = "$STR_KSS_Enabled";
-                    value = true;
-                };
-                class Disable
-                {
-                    name = "$STR_KSS_Disabled";
-                    value = false;
-                    default = true;
-                };
-            };
-        };
-        class enableHints
-        {
-            displayName = "$STR_KSS_moduleHintsName";
-            description = "";
-            typeName = "BOOL";
-            class values
-            {
-                class Enable
-                {
-                    name = "$STR_KSS_Enabled";
-                    value = true;
-                    default = true;
-                };
-                class Disable
-                {
-                    name = "$STR_KSS_Disabled";
-                    value = false;
-                };
-            };
-        };
     };
 };
