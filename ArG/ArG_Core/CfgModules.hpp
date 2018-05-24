@@ -37,13 +37,5 @@ class ArG_Module : Module_F
             defaultValue = 300;
         };
 
-        class thirstDelay
-        {
-            displayName = "$STR_KSS_moduleThirstName";
-            description = "$STR_KSS_moduleThirstDescription";
-            typeName = "NUMBER";
-            defaultValue = 60;
-        };
-
     };
 };
