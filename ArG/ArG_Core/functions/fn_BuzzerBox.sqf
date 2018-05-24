@@ -11,12 +11,12 @@ _types = [
 
 if (STATE) then
 {
-    STATE = false;
+    STATE = false;PublicVariable"BuzzerOff";
 
 
 
 }else{
-    STATE = true;
+    STATE = true;PublicVariable"BuzzerOn"
 
 
 };
