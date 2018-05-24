@@ -14,7 +14,7 @@ class CfgSounds {
 
   class Buzzer2 {
     name = "";
-    sound[] = {"ArG_Core\Sound\Buzzer_02.wss", 3, 1.1};
+    sound[] = {"ArG_Core\Sound\Buzzer_02.wss", 4, 1.1};
     titles[] = {};
   };
 
