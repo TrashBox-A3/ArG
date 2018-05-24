@@ -11,12 +11,14 @@ _types = [
 
 if (STATE) then
 {
-    STATE = false;PublicVariable"BuzzerOff";
-    player setVariable ["Buzz",false];
+    STATE = false;
+    BuzzerOff = true;PublicVariable"BuzzerOff";
+
 
 }else{
-    STATE = true;PublicVariable"BuzzerOn";
-    player setVariable ["Buzz",true];
+    STATE = true;
+    BuzzerOn = true;PublicVariable"BuzzerOn";
+  
 };
 
 for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
