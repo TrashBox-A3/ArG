@@ -24,8 +24,7 @@ _Gamer = [
 player addMPEventHandler ["MPHit", {
 
 
-  inGameUISetEventHandler ["Action", "if ((_this select 6 == false)) then
-                     {hint 'あなたはHeli Pilotでは無いのでこの操作は無効です';true}"];
+  inGameUISetEventHandler ["Action","false "];
 
  player setCaptive true;
 
