@@ -1,4 +1,4 @@
-
+systemChat"script done";
 private "_time";
 _time = 600;
 
@@ -8,7 +8,7 @@ while {true} do {
 
   while {_time > 0} do {
 
-if (missionNamespace getVariable ["Buzz",2,true]) then {
+if (missionNamespace getVariable ["Buzz",true]) then {
 
 
 	_time = _time - 1;
