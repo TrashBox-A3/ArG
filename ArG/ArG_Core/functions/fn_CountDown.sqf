@@ -1,9 +1,4 @@
 
-
-
-
-
-
 private "_time";
 _time = 600;
 
@@ -13,7 +8,7 @@ while {true} do {
 
   while {_time > 0} do {
 
-if (triggerActivated trg) then {
+if (STATE = true) then {
 
 
 	_time = _time - 1;
@@ -36,7 +31,7 @@ else
 
 {
 
-if ((!(triggerActivated trg))&&(_time < 600)) then {
+if ((STATE = false)&&(_time < 600)) then {
 
   _time = _time + 1;
   hintSilent format["侵入者は排除した \n %1", [((_time)/60)+.01,"HH:MM"] call BIS_fnc_timetostring];
@@ -45,12 +40,7 @@ if ((!(triggerActivated trg))&&(_time < 600)) then {
 
 };
 
-if (triggerActivated FIN_TR) then {
 
-_time = 600 ;
-hintSilent format["敵が撤退していく \n %1", [((_time)/60)+.01,"HH:MM"] call BIS_fnc_timetostring];
-deletevehicle trg;
-};
 
 };
 };
