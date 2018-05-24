@@ -21,3 +21,5 @@
 #include "CfgEditorCategories.hpp"
 
 #include "CfgEditorSubcategories.hpp"
+
+#include "CfgModules.hpp"

@@ -17,10 +17,10 @@ if (missionNamespace getvariable "Buzz" == 0) then {
 
   if (_time <= 0) then {
 
-    hint "GameOver";
+    hint "GameOver!";
     sleep 5;
 
-      cuttext ["could not recover.......","PLAIN",10];
+      cuttext ["Enjoy it even if you win or lose!","PLAIN",10];
 
       "end1" call BIS_fnc_endMission;ForceEND;
   };
