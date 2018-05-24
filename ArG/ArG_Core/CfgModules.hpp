@@ -6,9 +6,9 @@ class Logic;
 
 class Module_F : Logic
 {
-    class ArgumentsBaseUnits
+    class AttributesBase
     {
-        class Units;
+        class Edit;
     };
     class ModuleDescription
     {
@@ -21,20 +21,20 @@ class ArG_Module : Module_F
     scope = 2;
     author = "Rodeostar42";
     displayName = "ArG Module";
-    category = "KSS";
-    function = "KSS_fnc_init";
+    category = "Effects";
+    function = "ArG_Module";
     icon = "\tf_kss\icon.paa";
     functionPriority = 2;
     isGlobal = 1;
     isTriggerActivated = 0;
     class Arguments : ArgumentsBaseUnits
     {
-        class hungerDelay
+        class PoolTime
         {
-            displayName = "$STR_KSS_moduleHungerName";
-            description = "$STR_KSS_moduleHungerDescription";
+            displayName = "PoolTime";
+            description = "CountDown PoolTime";
             typeName = "NUMBER";
-            defaultValue = 60;
+            defaultValue = 300;
         };
 
         class thirstDelay
