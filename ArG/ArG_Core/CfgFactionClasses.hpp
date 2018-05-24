@@ -24,5 +24,11 @@ class CfgFactionClasses {
 
   };
 
+  class NO_CATEGORY;
+  class ArG: NO_CATEGORY
+  {
+      displayName = "ArG";
+  };
+
 
 };

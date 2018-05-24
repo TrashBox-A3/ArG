@@ -16,11 +16,11 @@ class Module_F : Logic
     };
 };
 
-class KSS_Module : Module_F
+class ArG_Module : Module_F
 {
     scope = 2;
-    author = "Kurt";
-    displayName = "$STR_KSS_ModuleName";
+    author = "Rodeostar42";
+    displayName = "ArG Module";
     category = "KSS";
     function = "KSS_fnc_init";
     icon = "\tf_kss\icon.paa";
