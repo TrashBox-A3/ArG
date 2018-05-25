@@ -7,17 +7,17 @@ _types = [
 
 
 
-if (STATE) then
+if (Buzz) then
 {
-    STATE = 0;
+
     missionNamespace setVariable ["Buzz",1,true];
 
 }else{
-    STATE = 1;
+
     missionNamespace setVariable ["Buzz",0,true];
 
 }else{
-    STATE = 2;
+    
     missionNamespace setVariable ["Buzz",2,true];
 
 };

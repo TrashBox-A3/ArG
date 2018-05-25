@@ -1,2 +1,2 @@
 
-STATE = 0;
+missionNamespace setVariable ["Buzz",1,true];
