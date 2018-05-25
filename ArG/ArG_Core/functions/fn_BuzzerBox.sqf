@@ -1,7 +1,7 @@
 private ["_Buzz","_types","_Speakers"];
 
 _types = [
-"ArG_Speaker"
+"ArG_Buzzer_Sound_Source"
 
 ];
 
@@ -24,7 +24,7 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
     sleep 0.7;
 
     while {missionNamespace getvariable "Buzz" == 0} do
-    
+
     {
 
         {

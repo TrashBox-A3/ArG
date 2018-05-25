@@ -579,6 +579,24 @@ class  O_Soldier_base_F;
 
     };
 
+    //Buzzer Sound Source//
+    class  Land_HelipadEmpty_F;
+
+        class ArG_Buzzer_Sound_Source:  Land_HelipadEmpty_F
+    {
+        scope=2;
+        author="Rodeostar42";
+        displayName="Buzzer Sound Source";
+        faction = "Empty";
+        editorCategory = "ArG_Objects";
+        editorSubcategory = "ArG_Items";
+        editorPreview = "\ArG_Core\Core_EditorPreviews\ArG_Speaker.jpg";
+        model = "\A3\Structures_F\Mil\Helipads\HelipadEmpty_F.p3d";
+        hiddenSelections[]={};
+        hiddenSelectionsTextures[] = {};
+
+    };
+
 
     class  Land_Billboard_F;
 

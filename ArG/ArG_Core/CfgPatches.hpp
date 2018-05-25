@@ -43,7 +43,8 @@ class CfgPatches
 		"ArG_BuzzerBox",
 		"ArG_Speaker",
 		"Core_Billboard",
-		"ArG_muzzle_snds_H"
+		"ArG_muzzle_snds_H",
+		"ArG_Buzzer_Sound_Source"
 		};
 	};
 };
