@@ -42,7 +42,6 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
     {
 
        {
-         deleteVehicle say3D "Buzzer";
          _x setDamage 1;
          sleep 0.1;
          _x setDamage 0;
