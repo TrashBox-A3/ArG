@@ -572,7 +572,7 @@ class  O_Soldier_base_F;
         faction = "Empty";
         editorCategory = "ArG_Objects";
         editorSubcategory = "ArG_Items";
-        editorPreview = "\ArG_Core\Core_EditorPreviews\ArG_Speakera.jpg";
+        editorPreview = "\ArG_Core\Core_EditorPreviews\ArG_Speaker.jpg";
         model = "\A3\Structures_F\Civ\Accessories\Loudspeakers_F.p3d";
         hiddenSelections[]={};
         hiddenSelectionsTextures[] = {};
