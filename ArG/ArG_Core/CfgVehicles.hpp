@@ -567,8 +567,8 @@ class  O_Soldier_base_F;
 	5,
 	0,
 	false,
-	false
-] cal BIS_fnc_holdActionAdd; ";
+	false"
+] cal BIS_fnc_holdActionAdd; 
   };
 };
 
