@@ -28,23 +28,7 @@ hideOnUse = 0;
 onlyForPlayer = 1;
 shortcut = "reloadMagazine";
 condition = "true";
-statement = "[
-_object,                                                                           // Object the action is attached to
-"Open Door",                                                                       // Title of the action
-"\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",                      // Idle icon shown on screen
-"\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",                      // Progress icon shown on screen
-"((_target animationPhase 'Door_1_rot') < 0.5) && ((_target getVariable ['bis_disabled_Door_1',0]) != 1) && (cameraOn isKindOf 'CAManBase') ",                                                        // Condition for the action to be shown
-"_caller distance _target < 3",                                                      // Condition for the action to progress
-{},                                                                                  // Code executed when action starts
-{},                                                                                  // Code executed on every progress tick
-{ (_this select 3) call BIS_fnc_DoorNoHandleOpen },                                                //     Code executed on completion
-{},                                                                                  // Code executed on interrupted
-[_object, _door],                                                                                  // Arguments passed to the scripts as _this select 3
-2,                                                                                  // Action duration [s]
-0,                                                                                   // Priority
-false,                                                                                // Remove on completion
-   false                                                                                    // Show in unconscious state
-    ] call BIS_fnc_holdActionAdd";
+statement = "";
 };
 };
 
