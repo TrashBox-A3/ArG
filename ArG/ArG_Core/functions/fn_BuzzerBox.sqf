@@ -26,12 +26,10 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
     while {missionNamespace getvariable "Buzz" == 0} do
 
     {
+          _x setDamage 1;
 
-        { _x enableSimulationGlobal false;
-               sleep 0.1;
-               _x setDamage 1;
-               sleep 0.1;
-               _x setDamage 0;
+        {
+          _x setDamage 0;
           _x say3D "Buzzer"
         } forEach _Speakers;
         sleep 5;
@@ -41,13 +39,11 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
     while {missionNamespace getvariable "Buzz" == 1} do
 
     {
+      _x setDamage 1;
 
-      { _x enableSimulationGlobal false;
-             sleep 0.1;
-             _x setDamage 1;
-             sleep 0.1;             
-             _x setDamage 0;
-        _x say3D "Buzzer2"
+      {
+      _x setDamage 0;
+      _x say3D "Buzzer2"
       } forEach _Speakers;
         sleep 10;
 
