@@ -561,14 +561,14 @@ class  O_Soldier_base_F;
 '_caller distance _target < 3',
 	{},
 	{},
-	{ ArG_Core\functions\fn_BuzzerBox.sqf },
+	{ 'ArG_Core\functions\fn_BuzzerBox.sqf' },
 	{},
 	[],
 	5,
 	0,
 	false,
-	false"
-] cal BIS_fnc_holdActionAdd; 
+	false
+] cal BIS_fnc_holdActionAdd;";
   };
 };
 
