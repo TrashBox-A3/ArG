@@ -554,10 +554,10 @@ class  O_Soldier_base_F;
     onlyForPlayer = 1;
     shortcut = "reloadMagazine";
     condition = "true";
-    statement = "[_this,'Test','\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa',
-'\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa',
-'_this distance _target < 3',
-'_caller distance _target < 3',
+    statement = "[this,"Hack Laptop","\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",
+"\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",
+"_this distance _target < 3",
+"_caller distance _target < 3",
 	{},
 	{},
 	{ ArG_Core\functions\fn_BuzzerBox.sqf },
@@ -567,7 +567,7 @@ class  O_Soldier_base_F;
 	0,
 	false,
 	false
-] remoteExec ['BIS_fnc_holdActionAdd', [0,2] select isDedicated, _this]; ";
+] cal BIS_fnc_holdActionAdd; ";
   };
 };
 
