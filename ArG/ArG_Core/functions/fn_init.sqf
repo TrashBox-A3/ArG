@@ -1,2 +1,2 @@
 
-STATE = 0;
+STATE = false;
