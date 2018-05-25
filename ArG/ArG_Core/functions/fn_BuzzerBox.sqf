@@ -9,12 +9,16 @@ _types = [
 
 if (STATE) then
 {
-    STATE = false;
+    STATE = 0;
     missionNamespace setVariable ["Buzz",1,true];
 
 }else{
-    STATE = true;
+    STATE = 1;
     missionNamespace setVariable ["Buzz",0,true];
+
+}else{
+    STATE = 2;
+    missionNamespace setVariable ["Buzz",2,true];
 
 };
 for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
@@ -37,6 +41,15 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
     {
 
         {_x say3D "Buzzer2"} forEach _Speakers;
+        sleep 10;
+
+    };
+
+    while {missionNamespace getvariable "Buzz" == 2} do
+
+    {
+
+        {_x setDamage 1} forEach _Speakers;
         sleep 10;
 
     };
