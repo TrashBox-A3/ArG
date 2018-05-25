@@ -554,7 +554,24 @@ class  O_Soldier_base_F;
     onlyForPlayer = 1;
     shortcut = "reloadMagazine";
     condition = "true";
-    statement = "this say3D 'Switch',[[[],'ArG_Core\functions\fn_BuzzerBox.sqf'], 'BIS_fnc_execVM', true,true] call BIS_fnc_MP;";
+    statement = "this say3D 'Switch',
+[
+this,
+'Hack Laptop',
+'\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa',
+'\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa',
+'_this distance _target < 3',
+'_caller distance _target < 3',
+{},
+	{},
+	{ ArG_Dev\ArG_Core\functions\fn_BuzzerBox.sqf },
+	{},
+	[],
+	5,
+	0,
+	false,
+	false
+] remoteExec ['BIS_fnc_holdActionAdd', [0,2] select isDedicated, this]; "; 
   };
 };
 
