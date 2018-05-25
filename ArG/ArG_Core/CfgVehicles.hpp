@@ -544,7 +544,7 @@ class  O_Soldier_base_F;
 {
   class Action
   {
-    displayName = "<img image='\ArG_Core\push.png' size='1' shadow='false' /> <t color=""#FF4500"">Buzzer Switch";
+    displayName = "<img image='\ArG_Core\push.paa' size='1' shadow='false' /> <t color=""#FF4500"">Buzzer Switch";
     displayNameDefault = "<img image='\ArG_Core\ArG.jpg' size='3' shadow='false' /><t color=""#FF4500"">Buzzer Switch";
     priority = 3;
     radius = 20;
