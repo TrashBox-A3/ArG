@@ -7,7 +7,7 @@ _types = [
 
 
 
-if ("Buzz") then
+if (missionNamespace getvariable "Buzz" == 2) then
 {
 
     missionNamespace setVariable ["Buzz",1,true];
