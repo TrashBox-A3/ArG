@@ -12,7 +12,7 @@ if (missionNamespace getvariable "Buzz" == 0) then {
 
 
 	_time = _time - 1;
-	hintSilent format["CountDown Time Remaining \n %1", [((_time)/60)+.01,"MM:SS"] call BIS_fnc_timetostring];
+	hintSilent format["CountDown Time Remaining \n %1", [((_time)/60)+.01,"HH:MM"] call BIS_fnc_timetostring];
 	sleep 1;
 
   if (_time <= 0) then {
@@ -29,7 +29,7 @@ else
 if ((missionNamespace getvariable "Buzz" == 1)&&(_time < 600)) then {
 
   _time = _time + 1;
-  hintSilent format["CountUp Time Remaining \n %1", [((_time)/60)+.01,"MM:SS"] call BIS_fnc_timetostring];
+  hintSilent format["CountUp Time Remaining \n %1", [((_time)/60)+.01,"HH:MM"] call BIS_fnc_timetostring];
   sleep 1;
 
   if ((_time >= 600)) then {
