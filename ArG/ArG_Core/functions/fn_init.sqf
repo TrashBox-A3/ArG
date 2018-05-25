@@ -1,2 +1,2 @@
 
-missionNamespace setVariable ["Buzz",1,true];
+missionNamespace setVariable ["Buzz",2,true];
