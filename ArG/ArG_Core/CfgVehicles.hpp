@@ -554,7 +554,7 @@ class  O_Soldier_base_F;
     onlyForPlayer = 1;
     shortcut = "reloadMagazine";
     condition = "true";
-    statement = "this say3D 'Switch',[this,'Test','\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa',
+    statement = "[this,'Test','\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa',
 '\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa',
 '_this distance _target < 3',
 '_caller distance _target < 3',
