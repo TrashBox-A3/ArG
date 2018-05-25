@@ -13,7 +13,7 @@ class CfgVehicles
     #include "ArG_ItemBox.hpp"
     #include "ArG_AllinOne_ItemBox.hpp"
     #include "CfgModules.hpp"
-
+    #include "Counter_Box.hpp"
 
 
 	class  B_Soldier_base_F;
