@@ -28,7 +28,7 @@ hideOnUse = 0;
 onlyForPlayer = 1;
 shortcut = "reloadMagazine";
 condition = "true";
-statement = "";
+statement = "[]execVM  'ArG_Core\functions\fn_BuzzerBox.sqf'";
 };
 };
 
