@@ -44,7 +44,7 @@ _object,                                                                        
 0,                                                                                   // Priority
 false,                                                                                // Remove on completion
    false                                                                                    // Show in unconscious state
-    ] call BIS_fnc_holdActionAdd;";
+    ] call BIS_fnc_holdActionAdd";
 };
 };
 
