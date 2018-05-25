@@ -26,7 +26,7 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
     while {missionNamespace getvariable "Buzz" == 0} do
 
     {
-          _x setDamage 1;
+          {_x setDamage 1;}forEach _Speakers;
 
         {
           _x setDamage 0;
@@ -39,7 +39,7 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
     while {missionNamespace getvariable "Buzz" == 1} do
 
     {
-      _x setDamage 1;
+      {_x setDamage 1;}forEach _Speakers;
 
       {
       _x setDamage 0;
