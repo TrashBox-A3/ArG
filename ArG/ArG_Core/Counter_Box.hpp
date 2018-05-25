@@ -28,7 +28,7 @@ hideOnUse = 0;
 onlyForPlayer = 1;
 shortcut = "reloadMagazine";
 condition = "true";
-statement = "[this,"Time Counter",
+statement = [this,'Time Counter',
 '\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa',
 '\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_hack_ca.paa',
 '_this distance _target < 3',
@@ -37,7 +37,7 @@ statement = "[this,"Time Counter",
 {},[],2,0,
 false,
 false
-] remoteExec ['BIS_fnc_holdActionAdd', [0,2] select isDedicated, this];";
+] remoteExec ['BIS_fnc_holdActionAdd', [0,2] select isDedicated, this];;
 };
 };
 
