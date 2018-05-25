@@ -571,7 +571,7 @@ this,
 	0,
 	false,
 	false
-] remoteExec ['BIS_fnc_holdActionAdd', [0,2] select isDedicated, this]; "; 
+] remoteExec ["BIS_fnc_holdActionAdd", [0,2] select isDedicated, this]; "; 
   };
 };
 
