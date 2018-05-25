@@ -36,7 +36,7 @@ statement = "this say3D 'Switch',[this,'Time Counter',
 {},
 {},
 {[]execVM  'ArG_Core\functions\fn_BuzzerBox.sqf'},
-{},[],2,0,false,false] remoteExec ['BIS_fnc_holdActionAdd', [0,2] select isDedicated, this]";
+{},[],2,0,true,false] remoteExec ['BIS_fnc_holdActionAdd', [0,2] select isDedicated, this]";
 };
 };
 
