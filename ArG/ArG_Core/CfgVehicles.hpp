@@ -590,7 +590,7 @@ class  O_Soldier_base_F;
         faction = "Empty";
         editorCategory = "ArG_Objects";
         editorSubcategory = "ArG_Items";
-        editorPreview = "\ArG_Core\Core_EditorPreviews\ArG_Speaker.jpg";
+
         model = "\A3\Structures_F\Mil\Helipads\HelipadEmpty_F.p3d";
         hiddenSelections[]={};
         hiddenSelectionsTextures[] = {};
