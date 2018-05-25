@@ -9,8 +9,8 @@ class  Land_Laptop_unfolded_F;
     faction = "Empty";
     editorCategory = "ArG_Objects";
     editorSubcategory = "ArG_Items";
-    editorPreview = "\ArG_Core\Core_EditorPreviews\ArG_BuzzerBox.jpg";
-    model = "\A3\Structures_F\Items\Electronics\SatellitePhone_F.p3d";
+
+    model = "\A3\Structures_F\Items\Electronics\Laptop_unfolded_F.p3d";
     hiddenSelections[]={};
     hiddenSelectionsTextures[] = {};
 
@@ -28,7 +28,22 @@ hideOnUse = 0;
 onlyForPlayer = 1;
 shortcut = "reloadMagazine";
 condition = "true";
-statement = "this say3D 'Switch',[[[],'ArG_Core\functions\fn_BuzzerBox.sqf'], 'BIS_fnc_execVM', true,true] call BIS_fnc_MP;";
+statement = "[this,'Time Counter',
+'\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa',
+'\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_hack_ca.paa',
+
+'_this distance _target < 3',
+'_caller distance _target < 3',
+{},
+{},
+{ []execVM  'ArG_Core\functions\fn_BuzzerBox.sqf' },
+{},
+[],
+2,
+0,
+false,
+false
+] remoteExec ['BIS_fnc_holdActionAdd', [0,2] select isDedicated, this];";
 };
 };
 
