@@ -25,7 +25,7 @@ player addMPEventHandler ["MPHit", {
 
 
   inGameUISetEventHandler ["Action", "
- 	if (_this select 4 == 'Buzzer Switch') then {
+ 	if (_this select 3 == 'reloadMagazine') then {
  		hint 'You are not allowed to do this';
  		true
  	}
