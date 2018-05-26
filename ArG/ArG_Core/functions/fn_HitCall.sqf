@@ -20,17 +20,11 @@ _Gamer = [
    if ((isPlayer _x)&&(typeOf _x in _Gamer)&&(missionNamespace getvariable "Hited" == 0)) then
    {
 
-player addEventHandler ["Hit", {{
+player addMPEventHandler ["MPHit", {{
 
+player setCaptive true;
 
-  inGameUISetEventHandler ["Action", "if ((_this select 3 == 'BuzzerAction') or (_this select 3 == 'MoveToPilot')) then
-                   {hint 'あなたはJet Pilotでは無いのでこの操作は無効です';true}"];
-
- player setCaptive true;
-
- missionNamespace setVariable ["Hited",1,true];
-
- player setDamage 0;
+missionNamespace setVariable ["Hited",1,true];
 
 player say3D "HitCall";
 
@@ -50,8 +44,10 @@ player say3D "HitCall";
  };
 
   [player, "Move Safety zone", "", "", "true", "true",
- {},{},{player setPos (getPos BlueSafty)},
- { hint "Afraid of death?" }, [], 3, nil, true, false
+ {},{},{
+   titletext ["","BLACK IN",2];
+   player setPos (getPos BlueSafty)},
+ {}, [], 3, nil, true, false
  ] call BIS_fnc_holdActionAdd;
 } remoteExec ["call", _this select 3];
 
