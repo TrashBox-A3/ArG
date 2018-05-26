@@ -6,7 +6,7 @@ _counter = [
 
 ];
 
-for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
+for [{_i=0},{_i < (count _counter)},{_i=_i+1}] do
 {
 {[_x,"Time Counter",
 "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",
