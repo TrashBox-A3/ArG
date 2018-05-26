@@ -544,8 +544,8 @@ class  O_Soldier_base_F;
 {
   class Action
   {
-    displayName = "<img image='\ArG_Core\push.paa' size='1' shadow='false' /> <t color=""#FF4500"">Buzzer Switch";
-    displayNameDefault = "<img image='\ArG_Core\push.paa' size='3' shadow='false' /><t color=""#FF4500"">Buzzer Switch";
+    displayName = "<img image='\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa' size='1' shadow='false' /> <t color=""#FF4500"">Buzzer Switch";
+    displayNameDefault = "<img image='\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa' size='3' shadow='false' /><t color=""#FF4500"">Buzzer Switch";
     priority = 3;
     radius = 20;
     position = "camera";
