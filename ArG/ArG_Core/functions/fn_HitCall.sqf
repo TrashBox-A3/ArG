@@ -17,7 +17,7 @@ _Gamer = [
 
  {
 
-   if ((isPlayer _x)&&(typeOf _x in _Gamer)&&(missionNamespace getvariable "Hited" == 0)) then
+   if ((isPlayer _x)&&(typeOf _x in _Gamer)) then
    {
 
 player addEventHandler ["Hit", {{
@@ -47,12 +47,15 @@ player say3D "HitCall";
 	 sleep 2;
 	 player switchMove "ApanPknlMstpSnonWnonDnon_G01";
 
+if ((missionNamespace getvariable "Hited" == 1))then {
 
- [player, "Move Safety zone", "", "", "true", "true",
+  [player, "Move Safety zone", "", "", "true", "true",
  {},{},{player setPos (getPos BlueSafty)},
  { hint "Afraid of death?" }, [], 3, nil, true, false
  ] call BIS_fnc_holdActionAdd;
 } remoteExec ["call", _this select 3];
+
+};
 
 
 
