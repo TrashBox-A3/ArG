@@ -1,7 +1,7 @@
 
 _obj = "ArG_CounterBox";
 
-_Counter = (typeOf _x  == _obj);
+_Counter = ( typeOf _x isEqualTo _obj );
 
 [_Counter,"Time Counter",
 "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",
