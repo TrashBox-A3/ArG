@@ -29,6 +29,8 @@ player addEventHandler ["Hit", {{
 
  player setCaptive true;
 
+ [player, [missionNamespace, "inv"]] call BIS_fnc_saveInventory;
+
  player setDamage 0;
 
 player say3D "HitCall";
@@ -66,7 +68,16 @@ player say3D "HitCall";
  };
 
 
-
+[player, "Move Safety zone",
+"",
+"",
+"true",
+"true",
+{},
+{},
+{ player setDamage 1 },
+{ hint "Afraid of death?" },
+[], 3, nil, true, false] call BIS_fnc_holdActionAdd;
 
 } remoteExec ["call", _this select 3]
 
