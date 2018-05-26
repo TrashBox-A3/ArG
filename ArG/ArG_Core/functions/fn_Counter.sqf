@@ -16,4 +16,4 @@ _Counter = [configfile >> "CfgVehicles" >> "ArG_CounterBox"];
 0,
 false,
 false
-] remoteExec ["BIS_fnc_holdActionAdd", [0,2] select isDedicated, _Counter];
+] call BIS_fnc_holdActionAdd;
