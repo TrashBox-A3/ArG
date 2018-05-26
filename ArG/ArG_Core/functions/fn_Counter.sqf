@@ -1,6 +1,9 @@
 
 _obj = "ArG_CounterBox";
-[_obj,"Time Counter",
+
+_Counter = (typeOf _x  == _obj);
+
+[_Counter,"Time Counter",
 "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",
 "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_hack_ca.paa",
 
@@ -15,4 +18,4 @@ _obj = "ArG_CounterBox";
 0,
 false,
 false
-] remoteExec ["BIS_fnc_holdActionAdd", [0,2] select isDedicated, _obj];
+] remoteExec ["BIS_fnc_holdActionAdd", [0,2] select isDedicated, _Counter];
