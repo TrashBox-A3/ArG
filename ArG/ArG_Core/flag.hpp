@@ -1,6 +1,6 @@
-class  FlagCarrier;
+class  Flag_Blue_F;
 
-  class ArG_Blue_Flag:  FlagCarrier
+  class ArG_Blue_Flag:  Flag_Blue_F
 {
 
           eden=0;
