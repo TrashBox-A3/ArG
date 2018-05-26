@@ -44,7 +44,9 @@ class CfgPatches
 		"ArG_Speaker",
 		"Core_Billboard",
 		"ArG_muzzle_snds_H",
-		"ArG_Blue_Flag"
+		"ArG_Blue_Flag",
+		"ArG_Red_Flag",
+		"ArG_Green_Flag"
 		};
 	};
 };
