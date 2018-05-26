@@ -18,4 +18,4 @@ _Counter = [
 0,
 false,
 false
-] remoteExec ["BIS_fnc_holdActionAdd", [0,2] select isDedicated, _x]}count _Counter ;
+] remoteExec ["BIS_fnc_holdActionAdd", [0,2] select isDedicated, _x]} count _Counter  > 0 ;
