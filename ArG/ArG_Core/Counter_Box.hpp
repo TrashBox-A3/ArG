@@ -14,4 +14,22 @@ class  Land_Laptop_unfolded_F;
     hiddenSelections[]={};
     hiddenSelectionsTextures[] = {};
 
+      class UserActions
+{
+class Action
+{
+displayName = "<img image='\ArG_Core\push.paa' size='1' shadow='false' /> <t color=""#FF4500"">Buzzer Switch";
+displayNameDefault = "<img image='\ArG_Core\push.paa' size='3' shadow='false' /><t color=""#FF4500"">Buzzer Switch";
+priority = 3;
+radius = 20;
+position = "camera";
+showWindow = true;
+hideOnUse = 0;
+onlyForPlayer = 1;
+shortcut = "reloadMagazine";
+condition = "true";
+statement = "[]execVM  'ArG_Core\functions\fn_BuzzerBox.sqf'";
+};
+};
+
 };

@@ -11,11 +11,11 @@ if (STATE) then
 {
     STATE = false;
     missionNamespace setVariable ["Buzz",1,true];
-    systemChat"Count Down";
+    systemChat"Count Up Start";
 }else{
     STATE = true;
     missionNamespace setVariable ["Buzz",0,true];
-    systemChat"Count Up";
+    systemChat"Count Down Start";
 };
 for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
 {
