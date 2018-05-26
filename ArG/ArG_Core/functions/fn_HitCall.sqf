@@ -55,17 +55,6 @@ if (side _x == west)then {
 } remoteExec ["call", _this select 3]
 };
 
-if (side _x == east)then
-{  [player, "Move Safety zone", "", "", "true", "true",
- {},{},{
-   titletext ["","BLACK IN",4];
-   player setPos (getMarkerPos "R_Safe")},
- {}, [], 3, nil, true, false
- ] call BIS_fnc_holdActionAdd;
-} remoteExec ["call", _this select 3]
-
-};
-
 }];
 
 
