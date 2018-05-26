@@ -69,12 +69,12 @@ player say3D "HitCall";
 
 
  _nObject = nearestObject [player, "Land_Sunshade_01_F"];
- 
+
  [player, "Move Safety zone", "", "", "true", "true",
  {},{},{player setPos (getPos _nObject)},
  { hint "Afraid of death?" }, [], 3, nil, true, false
  ] call BIS_fnc_holdActionAdd;
-
+} remoteExec ["call", _this select 3]
 }];
 
 
