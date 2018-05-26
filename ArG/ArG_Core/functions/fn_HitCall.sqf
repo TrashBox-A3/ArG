@@ -49,7 +49,7 @@ player say3D "HitCall";
   [player, "Move Safety zone", "", "", "true", "true",
  {},{},{
    titletext ["","WHITE IN",6];
-   player setPos (getMarkerPos "B_Safe";
+   player setPos (getMarkerPos "B_Safe");
    sleep 0.2;
    player switchMove "";
    player setCaptive false;
