@@ -1,4 +1,6 @@
-[player,"Time Counter",
+
+_obj = "ArG_CounterBox";
+[_obj,"Time Counter",
 "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",
 "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_hack_ca.paa",
 
