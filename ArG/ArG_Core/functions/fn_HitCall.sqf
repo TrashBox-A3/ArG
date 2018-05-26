@@ -44,14 +44,24 @@ player say3D "HitCall";
 	 player switchMove "ApanPknlMstpSnonWnonDnon_G01";
 
  };
- _nObject = nearestObjects [player, ["ArG_Blue_Flag","Flag_Red_F","Flag_Green_F"], 200];
-  [player, "Move Safety zone", "", "", "true", "true",
+
+if (side _x == west)then
+{  [player, "Move Safety zone", "", "", "true", "true",
  {},{},{
    titletext ["","BLACK IN",4];
-   player setPos (getPos nearestObjects [player, ["ArG_Blue_Flag","Flag_Red_F","Flag_Green_F"], 200] select 0)},
+   player setPos (getMarkerPos "B_Safe"},
  {}, [], 3, nil, true, false
  ] call BIS_fnc_holdActionAdd;
-} remoteExec ["call", _this select 3];
+} remoteExec ["call", _this select 3];};
+
+if (side _x == east)then
+{  [player, "Move Safety zone", "", "", "true", "true",
+ {},{},{
+   titletext ["","BLACK IN",4];
+   player setPos (getMarkerPos "R_Safe"},
+ {}, [], 3, nil, true, false
+ ] call BIS_fnc_holdActionAdd;
+} remoteExec ["call", _this select 3];};
 
 }];
 
