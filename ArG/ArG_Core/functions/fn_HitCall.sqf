@@ -49,14 +49,16 @@ player say3D "HitCall";
   [player, "Move Safety zone", "", "", "true", "true",
  {},{},{
    titletext ["","WHITE IN",6];
+   if(side _x == west)then {
    player setPos (getMarkerPos "B_Safe");
+   };
    sleep 0.2;
    player switchMove "";
    player setCaptive false;
    player setVariable ["Hited",0,true];
 
 
-   )},
+   },
  {}, [], 3, nil, true, false
  ] call BIS_fnc_holdActionAdd;
 } remoteExec ["call", _this select 3]
