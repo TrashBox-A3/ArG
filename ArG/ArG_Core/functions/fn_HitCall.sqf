@@ -17,7 +17,7 @@ _Gamer = [
 
  {
 
-   if ((isPlayer _x)&&(typeOf _x in _Gamer)&&(missionNamespace getvariable 'Hited' == 0)) then
+   if ((isPlayer _x)&&(typeOf _x in _Gamer)&&(missionNamespace getvariable "Hited" == 0)) then
    {
 
 player addEventHandler ["Hit", {{
@@ -54,7 +54,7 @@ player say3D "HitCall";
  ] call BIS_fnc_holdActionAdd;
 } remoteExec ["call", _this select 3];
 
- 
+
 
 }];
 
