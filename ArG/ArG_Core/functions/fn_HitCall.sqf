@@ -47,6 +47,8 @@ player say3D "HitCall";
 	 sleep 2;
 	 player switchMove "ApanPknlMstpSnonWnonDnon_G01";
 
+ };
+
 if ((missionNamespace getvariable "Hited" == 1))then {
 
   [player, "Move Safety zone", "", "", "true", "true",
