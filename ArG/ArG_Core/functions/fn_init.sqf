@@ -17,7 +17,7 @@ player setVariable ['Hited',0,true];","hint ''","hint ''"];
 
 G_Safe_trg = createTrigger ["EmptyDetector", getMarkerPos "G_Safe"];
 G_Safe_trg setTriggerArea [10, 10, 0, true];
-G_Safe_trg setTriggerActivation ["resistance", "PRESENT", true];
+G_Safe_trg setTriggerActivation ["GUER", "PRESENT", true];
 G_Safe_trg setTriggerStatements ["this && player switchMove "";
 player setCaptive false;
 player setVariable ['Hited',0,true];","hint ''","hint ''"];
