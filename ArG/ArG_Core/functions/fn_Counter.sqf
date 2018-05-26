@@ -1,12 +1,10 @@
+private ["Counter"];
+
 _Counter = [
 "ArG_CounterBox"
-
 ];
 
-
-{
-
-[_x,"Time Counter",
+[_Counter,"Time Counter",
 "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",
 "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_hack_ca.paa",
 "_this distance _target < 3",
@@ -20,6 +18,4 @@ _Counter = [
 0,
 false,
 false
-] remoteExec ["BIS_fnc_holdActionAdd", [0,2] select isDedicated, _x]
-
-} forEach _Counter;
+] remoteExec ["BIS_fnc_holdActionAdd", [0,2] select isDedicated, _Counter];
