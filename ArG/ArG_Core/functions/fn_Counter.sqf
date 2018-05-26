@@ -13,4 +13,4 @@
 0,
 false,
 false
-] remoteExec ["BIS_fnc_holdActionAdd", [0,2] select isDedicated, _this];
+] call BIS_fnc_holdActionAdd;
