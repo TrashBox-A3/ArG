@@ -21,7 +21,7 @@ _Gamer = [
    if ((isPlayer _x)&&(typeOf _x in _Gamer)) then
    {
 
-player addMPEventHandler ["MPHit", {
+player addEventHandler ["Hit", {[_this select 3],
 
 
   inGameUISetEventHandler ["Action", "if ((_this select 3 == 'BuzzerAction') or (_this select 3 == 'MoveToPilot')) then
