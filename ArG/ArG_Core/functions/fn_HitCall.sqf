@@ -21,7 +21,7 @@ _Gamer = [
    if ((isPlayer _x)&&(typeOf _x in _Gamer)) then
    {
 
-player addEventHandler ["Hit", {[_this select 3],
+player addEventHandler ["Hit", {{
 
 
   inGameUISetEventHandler ["Action", "if ((_this select 3 == 'BuzzerAction') or (_this select 3 == 'MoveToPilot')) then
@@ -68,7 +68,7 @@ player say3D "HitCall";
 
 
 
-player removeMPEventHandler ["MPHit", 0];
+} remoteExec ["call", _this select 3]
 
 }];
 
