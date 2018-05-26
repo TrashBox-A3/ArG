@@ -1,5 +1,5 @@
 ///script by Rodeostar42///
-missionNamespace setVariable ["Hited",0,true];
+player setVariable ["Hited",0,true];
 _Gamer = [
 "ArG_Gamer_1",
 "ArG_Gamer_2",
@@ -17,14 +17,16 @@ _Gamer = [
 
  {
 
-   if ((isPlayer _x)&&(typeOf _x in _Gamer)&&(missionNamespace getvariable "Hited" == 0)) then
+   if ((isPlayer _x)&&(typeOf _x in _Gamer)&&(player getvariable "Hited" == 0)) then
    {
 
 player addMPEventHandler ["MPHit", {{
 
 player setCaptive true;
 
-missionNamespace setVariable ["Hited",1,true];
+
+
+player setVariable ["Hited",1,true];
 
 player say3D "HitCall";
 
@@ -42,11 +44,11 @@ player say3D "HitCall";
 	 player switchMove "ApanPknlMstpSnonWnonDnon_G01";
 
  };
- _nObject = nearestObjects [player, ["ArG_Blue_Flag"], 200] select 0;
+ _nObject = nearestObjects [player, ["ArG_Blue_Flag","Flag_Red_F","Flag_Green_F"], 200];
   [player, "Move Safety zone", "", "", "true", "true",
  {},{},{
    titletext ["","BLACK IN",4];
-   player setPos (getPos _nObject)},
+   player setPos (getPos _nObject select 0)},
  {}, [], 3, nil, true, false
  ] call BIS_fnc_holdActionAdd;
 } remoteExec ["call", _this select 3];
