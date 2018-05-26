@@ -45,13 +45,14 @@ player say3D "HitCall";
 
  };
 
+  []execVM  "ArG_Core\functions\fn_BuzzerBox.sqf";
 
   [player, "Move Safety zone", "", "", "true", "true",
  {},{},{
-   titletext ["","WHITE IN",6];
+   titletext ["","WHITE IN",2];
+   []execVM  "ArG_Core\functions\fn_Safty.sqf";
 
-   player setPos (getMarkerPos "B_Safe");
-   
+
    sleep 0.2;
    player switchMove "";
    player setCaptive false;
