@@ -24,12 +24,8 @@ _Gamer = [
 player addMPEventHandler ["MPHit", {
 
 
-  inGameUISetEventHandler ["Action", "
- 	if (_this select 3 == 'reloadMagazine') then {
- 		hint 'You are not allowed to do this';
- 		true
- 	}
- "];
+  inGameUISetEventHandler ["Action", "if ((_this select 3 == 'BuzzerAction') or (_this select 3 == 'MoveToPilot')) then
+                   {hint 'あなたはJet Pilotでは無いのでこの操作は無効です';true}"];
 
  player setCaptive true;
 

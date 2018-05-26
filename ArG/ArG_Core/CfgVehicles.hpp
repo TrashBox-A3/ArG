@@ -542,7 +542,7 @@ class  O_Soldier_base_F;
 
           class UserActions
 {
-  class Action
+  class BuzzerAction
   {
     displayName = "<img image='\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa' size='1' shadow='false' /> <t color=""#FF4500"">Buzzer Switch";
     displayNameDefault = "<img image='\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa' size='3' shadow='false' /><t color=""#FF4500"">Buzzer Switch";
@@ -552,7 +552,7 @@ class  O_Soldier_base_F;
     showWindow = true;
     hideOnUse = 0;
     onlyForPlayer = 1;
-    shortcut = "reloadMagazine";
+    shortcut = "";
     condition = "true";
     statement = "this say3D 'Switch',[[[],'ArG_Core\functions\fn_BuzzerBox.sqf'], 'BIS_fnc_execVM', true,true] call BIS_fnc_MP;";
   };
