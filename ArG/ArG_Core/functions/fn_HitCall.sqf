@@ -29,8 +29,8 @@ player addEventHandler ["Hit", {{
 
  player setCaptive true;
 
- [player, [missionNamespace, "inv"]] call BIS_fnc_saveInventory;
-
+ missionNamespace setVariable ["Hited",1,true];
+ 
  player setDamage 0;
 
 player say3D "HitCall";
