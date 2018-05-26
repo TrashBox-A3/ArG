@@ -15,7 +15,7 @@ sleep 0.7;
 
   {
 
-[_counter,"Time Counter",
+[_Box,"Time Counter",
 "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",
 "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_hack_ca.paa",
 "_this distance _target < 3",
@@ -29,6 +29,6 @@ sleep 0.7;
 0,
 false,
 false
-] remoteExec ["BIS_fnc_holdActionAdd", [0,2] select isDedicated, _counter];
+] remoteExec ["BIS_fnc_holdActionAdd", [0,2] select isDedicated, _Box];
 };
 };

@@ -1,7 +1,7 @@
 private ["_Buzz","_types","_Speakers"];
 
 _types = [
-"ArG_Buzzer_Sound_Source"
+"ArG_Speaker"
 
 ];
 
