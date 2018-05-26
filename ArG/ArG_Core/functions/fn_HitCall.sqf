@@ -45,8 +45,6 @@ player say3D "HitCall";
 
  };
 
-  []execVM  "ArG_Core\functions\fn_BuzzerBox.sqf";
-
   [player, "Move Safety zone", "", "", "true", "true",
  {},{},{
    []execVM  "ArG_Core\functions\fn_Safty.sqf";

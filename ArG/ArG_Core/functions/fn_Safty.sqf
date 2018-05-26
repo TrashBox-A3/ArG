@@ -1,5 +1,6 @@
 
-if(side _x == west) then {
+{
+  if(side _x == west) then {
   titletext ["","WHITE IN",2];
   player setPos (getMarkerPos "B_Safe");
   sleep 0.2;
@@ -25,3 +26,4 @@ if(side _x == resistance) then {
   player setCaptive false;
   player setVariable ["Hited",0,true];
 };
+}foreach allunits;
