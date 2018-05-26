@@ -73,7 +73,7 @@ player say3D "HitCall";
  {},{},{player setPos (getPos BlueSafty)},
  { hint "Afraid of death?" }, [], 3, nil, true, false
  ] call BIS_fnc_holdActionAdd;
-} remoteExec ["call", _this select 3]
+} remoteExec ["call", _this select 3];
 
  player removeAllEventHandlers "Hit";
 
