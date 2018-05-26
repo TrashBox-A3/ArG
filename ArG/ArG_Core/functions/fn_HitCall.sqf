@@ -24,7 +24,12 @@ _Gamer = [
 player addMPEventHandler ["MPHit", {
 
 
- inGameUISetEventHandler ["Action","false "];
+  inGameUISetEventHandler ["Action", "
+ 	if (_this select 2 == 'Buzzer Switch') then {
+ 		hint 'You are not allowed to do this';
+ 		true
+ 	}
+ "];
 
  player setCaptive true;
 
@@ -46,7 +51,7 @@ player say3D "HitCall";
 	 player switchMove "ApanPknlMstpSnonWnonDnon_G01";
 
  };
- 
+
  onEachFrame {
      private "_private";
      _playerPos = getPosATL player;
