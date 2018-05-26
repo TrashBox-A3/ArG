@@ -48,7 +48,7 @@ player say3D "HitCall";
   [player, "Move Safety zone", "", "", "true", "true",
  {},{},{
    titletext ["","BLACK IN",4];
-   player setPos (getPos _nObject select 0)},
+   player setPos (getPos nearestObjects [player, ["ArG_Blue_Flag","Flag_Red_F","Flag_Green_F"], 200] select 0)},
  {}, [], 3, nil, true, false
  ] call BIS_fnc_holdActionAdd;
 } remoteExec ["call", _this select 3];
