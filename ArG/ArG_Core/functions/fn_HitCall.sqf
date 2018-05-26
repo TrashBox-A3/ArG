@@ -42,11 +42,11 @@ player say3D "HitCall";
 	 player switchMove "ApanPknlMstpSnonWnonDnon_G01";
 
  };
- _nObject = nearestObjects [player, ["ArG_Blue_Flag"], 200];
+ _nObject = nearestObjects [player, ["ArG_Blue_Flag"], 200] select 0;
   [player, "Move Safety zone", "", "", "true", "true",
  {},{},{
    titletext ["","BLACK IN",4];
-   player setPos (getPos _nObject select 0)},
+   player setPos (getPos _nObject)},
  {}, [], 3, nil, true, false
  ] call BIS_fnc_holdActionAdd;
 } remoteExec ["call", _this select 3];
