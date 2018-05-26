@@ -1,6 +1,5 @@
 ///script by Rodeostar42///
-
-
+missionNamespace setVariable ["Hited",0,true];
 _Gamer = [
 "ArG_Gamer_1",
 "ArG_Gamer_2",
@@ -30,7 +29,7 @@ player addEventHandler ["Hit", {{
  player setCaptive true;
 
  missionNamespace setVariable ["Hited",1,true];
- 
+
  player setDamage 0;
 
 player say3D "HitCall";
@@ -75,6 +74,9 @@ player say3D "HitCall";
  { hint "Afraid of death?" }, [], 3, nil, true, false
  ] call BIS_fnc_holdActionAdd;
 } remoteExec ["call", _this select 3]
+
+ player removeAllEventHandlers "Hit";
+
 }];
 
 
