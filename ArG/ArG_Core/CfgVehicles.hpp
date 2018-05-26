@@ -561,7 +561,7 @@ class  O_Soldier_base_F;
 
     };
 
-    Buzzer Sound Source
+    ///Buzzer Sound Source///
     class  Land_Loudspeakers_F;
 
         class ArG_Speaker:  Land_Loudspeakers_F
