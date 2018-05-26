@@ -13,7 +13,7 @@ class CfgVehicles
     #include "ArG_ItemBox.hpp"
     #include "ArG_AllinOne_ItemBox.hpp"
     #include "CfgModules.hpp"
-    #include "Counter_Box.hpp"
+
 
 
 	class  B_Soldier_base_F;
@@ -531,7 +531,7 @@ class  O_Soldier_base_F;
     {
         scope=2;
         author="Rodeostar42";
-        displayName="Buzzer box";
+        displayName="Buzzer box(Time Counter)";
         faction = "Empty";
         editorCategory = "ArG_Objects";
         editorSubcategory = "ArG_Items";

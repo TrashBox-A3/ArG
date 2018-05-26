@@ -41,7 +41,6 @@ class CfgPatches
 		"ArG_200Rnd_65x39_cased_Box_BB_02",
 		"ArG_200Rnd_65x39_cased_Box_BB_025",
 		"ArG_BuzzerBox",
-		"ArG_CounterBox",
 		"ArG_Speaker",
 		"Core_Billboard",
 		"ArG_muzzle_snds_H",
