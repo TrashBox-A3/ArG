@@ -20,7 +20,7 @@ class ArG
 		class Ai_HitCall {postInit = 1;};
 		class BuzzerBox {};
 		class CountDown {postInit = 1;};
-		class Counter {postInit = 1;};
+		class Counter {};
 		class Hit_drawIcon3D {};
 	};
 
