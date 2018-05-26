@@ -15,4 +15,4 @@ _obj = "ArG_CounterBox";
 0,
 false,
 false
-] call BIS_fnc_holdActionAdd;
+] remoteExec ["BIS_fnc_holdActionAdd", [0,2] select isDedicated, _obj];
