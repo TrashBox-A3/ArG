@@ -45,11 +45,11 @@ player say3D "HitCall";
 
  };
 
-  [player, "Move Safety zone", "", "", "true", "true",
+  [player, "Back to Safety zone", "", "", "true", "true",
  {},{},{
    []execVM  "ArG_Core\functions\fn_Safty.sqf";
    },
- {}, [], 3, nil, true, false
+ {}, [], 5, nil, true, false
  ] call BIS_fnc_holdActionAdd;
 } remoteExec ["call", _this select 3]
 
