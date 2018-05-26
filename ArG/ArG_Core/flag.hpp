@@ -19,9 +19,9 @@ class  Flag_Blue_F;
 };
 
 
-class  "Flag_Red_F";
+class  Flag_Red_F;
 
-  class ArG_Red_Flag:  "Flag_Red_F"
+  class ArG_Red_Flag:  Flag_Red_F
 {
 
   scope=2;
