@@ -17,7 +17,7 @@ _Gamer = [
 
  {
 
-   if ((isPlayer _x)&&(typeOf _x in _Gamer)) then
+   if ((isPlayer _x)&&(typeOf _x in _Gamer)&&(missionNamespace getvariable 'Hited' == 0)) then
    {
 
 player addEventHandler ["Hit", {{
@@ -47,27 +47,6 @@ player say3D "HitCall";
 	 sleep 2;
 	 player switchMove "ApanPknlMstpSnonWnonDnon_G01";
 
- };
-
- onEachFrame {
-     private "_private";
-     _playerPos = getPosATL player;
-     drawIcon3D [
-         "",
-         [153,0,0,0.5],
-         [_playerPos select 0,_playerPos select 1,2.3],
-         5,
-         5,
-         direction player,
-         "HIT!",
-         0,
-         0.08,
-         "TahomaB"
-         ];
- };
-
-
-
 
  [player, "Move Safety zone", "", "", "true", "true",
  {},{},{player setPos (getPos BlueSafty)},
@@ -75,7 +54,7 @@ player say3D "HitCall";
  ] call BIS_fnc_holdActionAdd;
 } remoteExec ["call", _this select 3];
 
- player removeAllEventHandlers "Hit";
+ 
 
 }];
 
