@@ -1,6 +1,6 @@
 
 
-_Counter = (typeOf Counter == "ArG_CounterBox");
+_Counter = [configfile >> "CfgVehicles" >> "ArG_CounterBox"];
 
 [_Counter,"Time Counter",
 "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",
