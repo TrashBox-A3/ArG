@@ -12,6 +12,9 @@ class CowsSlot;
 class MuzzleSlot;
 class PointerSlot;
 class WeaponSlotsInfo;
+class LinkedItems;
+
+
 class CfgWeapons
 {
 
