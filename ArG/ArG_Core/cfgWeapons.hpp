@@ -272,18 +272,24 @@ class ItemCore;
           "ArG_30Rnd_65x39_BB_025"
         };
 
-        class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			class MuzzleSlot: MuzzleSlot
-			{
-				compatibleItems[]=
-				{
-					"ArG_muzzle_snds_H"
-
-				};
-			};
-			mass=1;
-		};
+        class LinkedItems
+        {
+            class LinkedItemsOptic //Attachment: Optics
+            {
+                slot = "CowsSlot";
+                item = "rhsusf_acc_eotech_552";
+            };
+            class LinkedItemsMuzzle //Attachment: Barrel
+            {
+                slot = "MuzzleSlot";
+                item = "ArG_muzzle_snds_H";
+            };
+            class LinkedItemsAcc //Attachment: Accessory
+            {
+                slot = "PointerSlot";
+                item = "acc_pointer_IR";
+            };
+        };
 
         initSpeed = 250; // muzzle velocity
         maxRange = 100;
