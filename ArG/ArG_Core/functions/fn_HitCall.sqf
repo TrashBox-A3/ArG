@@ -47,16 +47,25 @@ _Gamer = [
   "true", "true",
  {},{},{
 
-
+   switch (playerSide) do {
+ case west: {
      player setPos (getMarkerPos "B_Safe");
+ };
+ case east: {
+     player setPos (getMarkerPos "R_Safe");
+ };
+ case resistance: {
+     player setPos (getMarkerPos "G_Safe");
+ };
+};
      sleep 0.2;
      player switchMove "";
      player allowDamage true;
      player setCaptive false;
      player setVariable ["Hited",0,true];
-     [ player,0 ] call BIS_fnc_holdActionRemove;
+     [ player,nil ] call BIS_fnc_holdActionRemove;
 
-   
+
    },
  {}, [], 5, nil, true, false
  ] call BIS_fnc_holdActionAdd;
