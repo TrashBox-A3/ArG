@@ -46,7 +46,7 @@ _Gamer = [
   "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",
   "true", "true",
  {},{},{
-   {
+
 
      player setPos (getMarkerPos "B_Safe");
      sleep 0.2;
@@ -56,7 +56,7 @@ _Gamer = [
      player setVariable ["Hited",0,true];
      [ player,0 ] call BIS_fnc_holdActionRemove;
 
-   }foreach allunits;
+   
    },
  {}, [], 5, nil, true, false
  ] call BIS_fnc_holdActionAdd;
