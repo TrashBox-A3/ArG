@@ -41,10 +41,13 @@ _Gamer = [
 	     player switchMove "ApanPknlMstpSnonWnonDnon_G01";
       };
 
-  [player, "Back to Safety zone", "", "", "true", "true",
+  [player, "Back to Safety zone",
+  "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_forceRespawn_ca.paa",
+  "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",
+  "true", "true",
  {},{},{
    {
-     titletext ["","Black IN",2];
+
      player setPos (getMarkerPos "B_Safe");
      sleep 0.2;
      player switchMove "";
