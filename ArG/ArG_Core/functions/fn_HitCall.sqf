@@ -48,36 +48,46 @@ _Gamer = [
  {},{},{
 
    switch (playerSide) do {
+
  case west: {
+   if(!isnil "B_Safe")then{
      titletext ["","BLACK IN",2];
      if(!isnil "B_Safe")then{
-     hint "SIt can not teleport because Safty Marker does not exist"
-     };
      player setPos (getMarkerPos "B_Safe");
- };
- case east: {
-     titletext ["","BLACK IN",2];
-     if(!isnil "R_Safe")then{
-     hint "SIt can not teleport because Safty Marker does not exist"
-     };
-     player setPos (getMarkerPos "R_Safe");
- };
- case resistance: {
-     titletext ["","BLACK IN",2];
-     if(!isnil "G_Safe")then{
-     hint "SIt can not teleport because Safty Marker does not exist"
-     };
-     player setPos (getMarkerPos "G_Safe");
- };
-};
      sleep 0.2;
      player switchMove "";
      player allowDamage true;
      player setCaptive false;
      player setVariable ["Hited",0,true];
      [ player,SaftyID ] call BIS_fnc_holdActionRemove;
+   };
+ };
+ case east: {
 
-
+   if(!isnil "R_Safe")then{
+     titletext ["","BLACK IN",2];
+     player setPos (getMarkerPos "R_Safe");
+     sleep 0.2;
+     player switchMove "";
+     player allowDamage true;
+     player setCaptive false;
+     player setVariable ["Hited",0,true];
+     [ player,SaftyID ] call BIS_fnc_holdActionRemove;
+     };
+ };
+ case resistance: {
+   if(!isnil "G_Safe")then{
+     titletext ["","BLACK IN",2];
+     player setPos (getMarkerPos "G_Safe");
+     sleep 0.2;
+     player switchMove "";
+     player allowDamage true;
+     player setCaptive false;
+     player setVariable ["Hited",0,true];
+     [ player,SaftyID ] call BIS_fnc_holdActionRemove;
+     };
+};
+};
    },
  {}, [], 5, nil, true, false
  ] call BIS_fnc_holdActionAdd;
