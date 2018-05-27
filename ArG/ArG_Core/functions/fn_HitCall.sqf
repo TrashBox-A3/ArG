@@ -50,21 +50,21 @@ _Gamer = [
    switch (playerSide) do {
  case west: {
      titletext ["","BLACK IN",2];
-     if(isnil "B_Safe")then{
+     if(!isnil "B_Safe")then{
      hint "SIt can not teleport because Safty Marker does not exist"
      };
      player setPos (getMarkerPos "B_Safe");
  };
  case east: {
      titletext ["","BLACK IN",2];
-     if(isnil "R_Safe")then{
+     if(!isnil "R_Safe")then{
      hint "SIt can not teleport because Safty Marker does not exist"
      };
      player setPos (getMarkerPos "R_Safe");
  };
  case resistance: {
      titletext ["","BLACK IN",2];
-     if(isnil "G_Safe")then{
+     if(!isnil "G_Safe")then{
      hint "SIt can not teleport because Safty Marker does not exist"
      };
      player setPos (getMarkerPos "G_Safe");
