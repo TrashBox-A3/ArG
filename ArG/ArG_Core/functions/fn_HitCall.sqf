@@ -41,7 +41,7 @@ _Gamer = [
 	     player switchMove "ApanPknlMstpSnonWnonDnon_G01";
       };
 
-  [player, "Back to Safety zone",
+  SaftyID = [player, "Back to Safety zone",
   "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_forceRespawn_ca.paa",
   "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",
   "true", "true",
@@ -49,12 +49,15 @@ _Gamer = [
 
    switch (playerSide) do {
  case west: {
+     titletext ["","BLACK IN",2];
      player setPos (getMarkerPos "B_Safe");
  };
  case east: {
+     titletext ["","BLACK IN",2];
      player setPos (getMarkerPos "R_Safe");
  };
  case resistance: {
+     titletext ["","BLACK IN",2];
      player setPos (getMarkerPos "G_Safe");
  };
 };
@@ -63,7 +66,7 @@ _Gamer = [
      player allowDamage true;
      player setCaptive false;
      player setVariable ["Hited",0,true];
-     [ player,nil ] call BIS_fnc_holdActionRemove;
+     [ player,SaftyID ] call BIS_fnc_holdActionRemove;
 
 
    },
