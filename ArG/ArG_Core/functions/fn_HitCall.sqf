@@ -21,6 +21,8 @@ _Gamer = [
    {
       player addMPEventHandler ["MPHit", {{
 
+      player allowDamage false;  
+
       player setCaptive true;
 
       player setVariable ["Hited",1,true];
