@@ -50,7 +50,6 @@ _Gamer = [
    switch (playerSide) do {
 
  case west: {
-   if(!isnil "B_Safe")then{
      titletext ["","BLACK IN",2];
      if(isnil "B_Safe")then{
      player setPos (getMarkerPos "B_Safe");
@@ -85,7 +84,8 @@ _Gamer = [
      player setVariable ["Hited",0,true];
      [ player,SaftyID ] call BIS_fnc_holdActionRemove;
      };
-};
+   };
+
 };
    },
  {}, [], 5, nil, true, false
