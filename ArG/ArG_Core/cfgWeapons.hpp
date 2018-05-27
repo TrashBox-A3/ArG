@@ -70,7 +70,7 @@ class ItemCore;
 			class LinkedItemsMuzzle
 			{
 				slot="MuzzleSlot";
-				item="muzzle_snds_H";
+				item="ArG_muzzle_snds_H";
 			};
 		};
 
