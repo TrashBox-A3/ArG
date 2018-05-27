@@ -51,7 +51,7 @@ _Gamer = [
 
  case west: {
      titletext ["","BLACK IN",2];
-     if(isnil "B_Safe")then{
+     if(!isnil "B_Safe")then{
      player setPos (getMarkerPos "B_Safe");
      sleep 0.2;
      player switchMove "";
@@ -63,7 +63,7 @@ _Gamer = [
  };
  case east: {
      titletext ["","BLACK IN",2];
-     if(isnil "R_Safe")then{
+     if(!isnil "R_Safe")then{
      player setPos (getMarkerPos "R_Safe");
      sleep 0.2;
      player switchMove "";
@@ -75,7 +75,7 @@ _Gamer = [
  };
  case resistance: {
      titletext ["","BLACK IN",2];
-     if(isnil "G_Safe")then{
+     if(!isnil "G_Safe")then{
      player setPos (getMarkerPos "G_Safe");
      sleep 0.2;
      player switchMove "";
