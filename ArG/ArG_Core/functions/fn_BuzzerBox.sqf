@@ -5,7 +5,7 @@ _types = [
 
 ];
 
-
+[]execVM "ArG_Core\functions\fn_CountDown.sqf";
 
 if (STATE) then
 {
