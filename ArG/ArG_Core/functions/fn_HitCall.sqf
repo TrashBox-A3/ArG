@@ -19,31 +19,25 @@ _Gamer = [
 
    if ((isPlayer _x)&&(typeOf _x in _Gamer)&&(player getvariable "Hited" == 0)) then
    {
+      player addMPEventHandler ["MPHit", {{
 
-player addMPEventHandler ["MPHit", {{
+      player setCaptive true;
 
-player setCaptive true;
+      player setVariable ["Hited",1,true];
 
+      player say3D "HitCall";
 
+      player switchCamera "EXTERNAL";
 
-player setVariable ["Hited",1,true];
+      player addEventHandler ["HandleDamage", {0}];
 
-player say3D "HitCall";
+      player switchMove "Acts_JetsMarshallingRight_loop";
 
- player switchCamera "EXTERNAL";
-
- player addEventHandler ["HandleDamage", {0}];
-
-
- player switchMove "Acts_JetsMarshallingRight_loop";
-
-
-[] spawn
- {
-	 sleep 2;
-	 player switchMove "ApanPknlMstpSnonWnonDnon_G01";
-
- };
+     [] spawn
+      {
+	     sleep 2;
+	     player switchMove "ApanPknlMstpSnonWnonDnon_G01";
+      };
 
   [player, "Back to Safety zone", "", "", "true", "true",
  {},{},{
