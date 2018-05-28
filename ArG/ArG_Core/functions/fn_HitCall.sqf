@@ -1,5 +1,7 @@
 ///script by Rodeostar42///
-player setVariable ["Hited",0,true];
+private "_Hited";
+
+player setVariable ["_Hited",0,false];
 _Gamer = [
 "ArG_Gamer_1",
 "ArG_Gamer_2",
@@ -17,7 +19,7 @@ _Gamer = [
 
  {
 
-   if ((isPlayer _x)&&(typeOf _x in _Gamer)&&(player getvariable "Hited" == 0)) then
+   if ((isPlayer _x)&&(typeOf _x in _Gamer)&&(player getvariable "_Hited" == 0)) then
    {
       player addMPEventHandler ["MPHit", {{
 
@@ -25,7 +27,7 @@ _Gamer = [
 
       player setCaptive true;
 
-      player setVariable ["Hited",1,true];
+      player setVariable ["_Hited",1,false];
 
       player say3D "HitCall";
 
@@ -58,7 +60,7 @@ _Gamer = [
      player switchMove "";
      player allowDamage true;
      player setCaptive false;
-     player setVariable ["Hited",0,true];
+     player setVariable ["_Hited",0,false];
      [ player,SaftyID ] call BIS_fnc_holdActionRemove;
    };
  };
@@ -71,7 +73,7 @@ _Gamer = [
      player switchMove "";
      player allowDamage true;
      player setCaptive false;
-     player setVariable ["Hited",0,true];
+     player setVariable ["_Hited",0,false];
      [ player,SaftyID ] call BIS_fnc_holdActionRemove;
      };
  };
@@ -84,7 +86,7 @@ _Gamer = [
      player switchMove "";
      player allowDamage true;
      player setCaptive false;
-     player setVariable ["Hited",0,true];
+     player setVariable ["_Hited",0,false];
      [ player,SaftyID ] call BIS_fnc_holdActionRemove;
      };
    };
