@@ -28,11 +28,11 @@ _Gamer = [
 
       player allowDamage false;
 
-      {player disableAI _x} forEach [
-"TARGET", "AUTOTARGET", "FSM",
-"SUPPRESSION", "COMBAT",
-"CHECKVISIBLE", "AUTOCOMBAT",
-"COVER"];
+      player disableAI "TARGET";
+      player disableAI "AUTOTARGET";
+
+
+
 
 
 
@@ -43,7 +43,7 @@ _Gamer = [
       player switchCamera "EXTERNAL";
 
       player addEventHandler ["HandleDamage", {0}];
-
+      player disableAI "ANIM";
       player switchMove "Acts_JetsMarshallingRight_loop";
 
      [] spawn
