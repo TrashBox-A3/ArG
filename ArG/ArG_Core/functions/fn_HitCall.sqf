@@ -1,7 +1,7 @@
 ///script by Rodeostar42///
 
 private "_Hited";
-player setVariable ["Hited",0,false];
+player setVariable ["_Hited",0,false];
 
 _Gamer = [
 "ArG_Gamer_1",
