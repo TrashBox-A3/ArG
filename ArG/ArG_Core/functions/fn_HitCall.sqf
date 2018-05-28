@@ -1,5 +1,8 @@
 ///script by Rodeostar42///
-private ["_unit","_Hited"];
+private ["_unit","_Gamer","_Hited"];
+  _unit = _this select 0;
+	_Gamer = _this select 1;
+  _Hited = _this select 2;
 
 _this setVariable ["_Hited",0,false];
 _Gamer = [
