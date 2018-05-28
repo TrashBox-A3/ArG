@@ -28,7 +28,13 @@ _Gamer = [
 
       player allowDamage false;
 
-      player setCaptive true;
+      {player disableAI _x} forEach [
+"TARGET", "AUTOTARGET", "FSM",
+"SUPPRESSION", "COMBAT",
+"CHECKVISIBLE", "AUTOCOMBAT",
+"COVER"];
+
+
 
       player setVariable ["_Hited",1,false];
 

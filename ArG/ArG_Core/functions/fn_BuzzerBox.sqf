@@ -48,7 +48,7 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
          _x setDamage 0;
          sleep 0.1;
          _x say3D "Buzzer2"
-       } count _types;
+       } count _types > 0;
          sleep 16;
 
     };
