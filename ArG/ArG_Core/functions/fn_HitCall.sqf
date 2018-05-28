@@ -1,10 +1,14 @@
 ///script by Rodeostar42///
+<<<<<<< HEAD
 private ["_unit","_Gamer","_Hited"];
   _unit = _this select 0;
 	_Gamer = _this select 1;
   _Hited = _this select 2;
 
 _this setVariable ["_Hited",0,false];
+=======
+player setVariable ["Hited",0,true];
+>>>>>>> parent of a6bd019... dwdwddw
 _Gamer = [
 "ArG_Gamer_1",
 "ArG_Gamer_2",
@@ -22,7 +26,11 @@ _Gamer = [
 
  {
 
+<<<<<<< HEAD
    if ((isPlayer _x)&&(typeOf _x in _Gamer)&&(_this getvariable "_Hited" == 0)) then
+=======
+   if ((isPlayer _x)&&(typeOf _x in _Gamer)&&(player getvariable "Hited" == 0)) then
+>>>>>>> parent of a6bd019... dwdwddw
    {
       _this addMPEventHandler ["MPHit", {{
 
@@ -30,7 +38,11 @@ _Gamer = [
 
       _this setCaptive true;
 
+<<<<<<< HEAD
       _this setVariable ["_Hited",1,false];
+=======
+      player setVariable ["Hited",1,true];
+>>>>>>> parent of a6bd019... dwdwddw
 
       _this say3D "HitCall";
 
@@ -60,11 +72,19 @@ _Gamer = [
      if(isnil (_Bmarker))then{
      _this setPos (getMarkerPos "B_Safe");
      sleep 0.2;
+<<<<<<< HEAD
      _this switchMove "";
      _this allowDamage true;
      _this setCaptive false;
      _this setVariable ["_Hited",0,false];
      [ _this,SaftyID ] call BIS_fnc_holdActionRemove;
+=======
+     player switchMove "";
+     player allowDamage true;
+     player setCaptive false;
+     player setVariable ["Hited",0,true];
+     [ player,SaftyID ] call BIS_fnc_holdActionRemove;
+>>>>>>> parent of a6bd019... dwdwddw
    };
  };
  case east: {
@@ -73,11 +93,19 @@ _Gamer = [
      if(isnil (_Rmarker))then{
      _this setPos (getMarkerPos "R_Safe");
      sleep 0.2;
+<<<<<<< HEAD
      _this switchMove "";
      _this allowDamage true;
      _this setCaptive false;
      _this setVariable ["_Hited",0,false];
      [ _this,SaftyID ] call BIS_fnc_holdActionRemove;
+=======
+     player switchMove "";
+     player allowDamage true;
+     player setCaptive false;
+     player setVariable ["Hited",0,true];
+     [ player,SaftyID ] call BIS_fnc_holdActionRemove;
+>>>>>>> parent of a6bd019... dwdwddw
      };
  };
  case resistance: {
@@ -86,11 +114,19 @@ _Gamer = [
      if(isnil (_Gmarker))then{
      _this setPos (getMarkerPos "G_Safe");
      sleep 0.2;
+<<<<<<< HEAD
      _this switchMove "";
      _this allowDamage true;
      _this setCaptive false;
      _this setVariable ["_Hited",0,false];
      [ _this,SaftyID ] call BIS_fnc_holdActionRemove;
+=======
+     player switchMove "";
+     player allowDamage true;
+     player setCaptive false;
+     player setVariable ["Hited",0,true];
+     [ player,SaftyID ] call BIS_fnc_holdActionRemove;
+>>>>>>> parent of a6bd019... dwdwddw
      };
    };
 
