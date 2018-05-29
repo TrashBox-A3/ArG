@@ -29,8 +29,7 @@ _Gamer = [
       player allowDamage false;
 
 
-          player disableAi "TARGET";
-          player disableAi "AUTOTARGET";
+          player setCaptive true;
 
       player setVariable ["_Hited",1,false];
 
