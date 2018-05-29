@@ -28,12 +28,10 @@ _Gamer = [
 
       player allowDamage false;
 
-      {
-        if(side _x == West)then{
-        _x disableAI "TARGET"
-      };
 
-        }forEach allUnits ;
+          player disableAi "TARGET";
+          player disableAi "AUTOTARGET";
+
 
 
 
