@@ -4,16 +4,14 @@ _types = [
 "ArG_Speaker"
 ];
 
-_Box = ["ArG_BuzzerBox"];
+
 {
+  _Box = ["ArG_BuzzerBox"];
 	if（typeOf _x in _Box）then
+
 	{
-		_marker = createMarkerLocal ["Counter",getPos _x];
-		_marker setMarkerShapeLocal "ICON";
-		_marker setMarkerTypeLocal "loc_Tourism";
-		_marker setMarkerColorLocal "ColorGreen";
-		_marker setMarkerSizeLocal [2,2];
-		_marker setMarkerTextLocal "ATM";
+		_marker = createMarker ["Counter",getPos _x];
+		
 	};
 }
 forEach allMissionObjects "All";
