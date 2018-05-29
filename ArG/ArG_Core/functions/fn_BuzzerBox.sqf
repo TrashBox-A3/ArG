@@ -12,6 +12,10 @@ if (STATE) then
 
 }else{
 
+        missionNamespace setVariable ["Stop",1,true];
+        systemChat"Count Stop";
+}else{
+
     missionNamespace setVariable ["Buzz",0,true];
     systemChat"Count Down Start";
 };
@@ -37,7 +41,7 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
      waituntil{missionNamespace getvariable "Buzz" == 0};
     };
 
-    while {missionNamespace getvariable "Buzz" == 2} do
+    while {missionNamespace getvariable "Stop" == 1} do
 
     {
 
@@ -49,7 +53,7 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
 
         } forEach _Speakers;
         sleep 5;
-     waituntil{missionNamespace getvariable "Buzz" == 2};
+     waituntil{missionNamespace getvariable "Stop" == 1};
     };
 
     while {missionNamespace getvariable "Buzz" == 1} do
