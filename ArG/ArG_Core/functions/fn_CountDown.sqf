@@ -1,5 +1,11 @@
+params [
+    ["_logic", objNull, [objNull]],
+    "_time","_MaxTime"
+    ];
 
-params ["_time","_MaxTime"];
+    // Define variables
+_time = _logic getVariable [""];
+_MaxTime = _logic getVariable [""];
 
 _time = 300;
 _MaxTime = 600;
