@@ -43,6 +43,8 @@ if(isServer)then{
         _Hited switchMove "Acts_JetsMarshallingRight_loop";
 
         _Hited playMoveNow "ApanPknlMstpSnonWnonDnon_G01";
+
+        _Hited allowfleeing 1;
     }];
      _x setUnitPos "UP";
     };
