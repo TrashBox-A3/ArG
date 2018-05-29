@@ -16,7 +16,7 @@ class  Land_Laptop_unfolded_F;
 
       class EventHandlers
     {
-      init = "[player, "Kill", "", "", "true", "true", { hint 'Started!' }, { systemChat str (_this select 3) }, { player setDamage 1 }, { hint 'Afraid of death?' }, [], 10, nil, true, false] call BIS_fnc_holdActionAdd;";
+      init = [player, "Kill", "", "", "true", "true", { hint 'Started!' }, { systemChat str (_this select 3) }, { player setDamage 1 }, { hint 'Afraid of death?' }, [], 10, nil, true, false] call BIS_fnc_holdActionAdd;
     };
 
 };
