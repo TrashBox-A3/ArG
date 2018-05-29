@@ -28,7 +28,7 @@ _Gamer = [
 
       player allowDamage false;
 
-      {_x disableAI "AUTOTARGET"}forEach sideEnemy ;
+      {_x disableAI "AUTOTARGET"}forEach allUnits ;
 
 
 
