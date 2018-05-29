@@ -11,10 +11,10 @@ if (STATE) then
     systemChat"Count Up Start";
 }else{
 
-    missionNamespace setVariable ["Buzz",2,true];
+    
     systemChat"Count Stop";
 }else{
-    
+
     missionNamespace setVariable ["Buzz",0,true];
     systemChat"Count Down Start";
 };
