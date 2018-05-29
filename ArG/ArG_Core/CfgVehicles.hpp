@@ -15,7 +15,7 @@ class CfgVehicles
     #include "CfgModules.hpp"
     #include "flag.hpp"
     #include "TimeCounter.hpp"
-
+    #include "Counter_Box.hpp"
 
 	class  B_Soldier_base_F;
 
