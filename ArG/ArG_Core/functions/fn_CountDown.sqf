@@ -6,9 +6,6 @@ params [
     #define Def_Time 300
     #define Def_Max 600
 
-    private _logic = [_this,0,objNull,[objNull]] call BIS_fnc_param;
-    private _activated = [_this,2,true,[true]] call BIS_fnc_param;
-
     // Define variables
 _time = _logic getVariable ["Def_Time",Def_Time];
 _MaxTime = _logic getVariable ["Def_Max",Def_Max];
