@@ -3,12 +3,14 @@ params [
     "_time","_MaxTime"
     ];
 
-    // Define variables
-_time = _logic getVariable [""];
-_MaxTime = _logic getVariable [""];
+    #define Def_Time 300
+    #define Def_Max 600
 
-_time = 300;
-_MaxTime = 600;
+    // Define variables
+_time = _logic getVariable ["Def_Time",Def_Time];
+_MaxTime = _logic getVariable ["Def_Max",Def_Max];
+
+
 while {true} do {
 
 
