@@ -10,6 +10,8 @@ _Box = [
 
 ];
 
+_Box setVehicleVarName "CounterBox";
+CounterBox = _Box;
 
 
 if (STATE) then
@@ -25,7 +27,7 @@ if (STATE) then
 for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
 {
 
-    _Speakers = getMarkerPos "Counter" nearObjects [_types select _i , 300];
+    _Speakers = getPos CounterBox nearObjects [_types select _i , 300];
     sleep 0.7;
 
     while {missionNamespace getvariable "Buzz" == 0} do
@@ -34,7 +36,7 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
 
         {
           _x setDamage 1;
-
+          sleep 0.1;
           _x setDamage 0;
           sleep 0.1;
           _x say3D "Buzzer"
@@ -49,7 +51,7 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
 
        {
          _x setDamage 1;
-
+         sleep 0.1;
          _x setDamage 0;
          sleep 0.1;
          _x say3D "Buzzer2"
