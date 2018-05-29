@@ -98,7 +98,7 @@ _Gamer = [
 
 };
    },
- {}, [], 5, nil, true, false
+ {}, [], 10, nil, true, false
  ] call BIS_fnc_holdActionAdd;
 
 

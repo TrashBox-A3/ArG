@@ -4,7 +4,19 @@ _types = [
 "ArG_Speaker"
 ];
 
-
+_Box = ["ArG_BuzzerBox"];
+{
+	if（typeOf _x in _Box）then
+	{
+		_marker = createMarkerLocal ["cashpoint" + str（_forEachIndex）、getPos _x];
+		_marker setMarkerShapeLocal "ICON";
+		_marker setMarkerTypeLocal "loc_Tourism";
+		_marker setMarkerColorLocal "ColorGreen";
+		_marker setMarkerSizeLocal [2,2];
+		_marker setMarkerTextLocal "ATM";
+	};
+}
+forEach allMissionObjects "All";
 
 
 if (STATE) then
@@ -20,7 +32,7 @@ if (STATE) then
 for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
 {
 
-    _Speakers = getMarkerPos "Counter" nearObjects [_types select _i , 300];
+    _Speakers = getMarkerPos "Counter" nearObjects [_types select _i , 1000];
     sleep 0.7;
 
     while {missionNamespace getvariable "Buzz" == 0} do
@@ -49,7 +61,7 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
          sleep 0.1;
          _x say3D "Buzzer2"
        } forEach _Speakers;
-         sleep 12;
+         sleep 14;
 
     };
 
