@@ -24,7 +24,7 @@ _Gamer = [
    if ((isPlayer _x)&&(typeOf _x in _Gamer)&&(player getvariable "_Hited" == 0)) then
 
    {
-      player addMPEventHandler ["MPHit", {{
+      player addMPEventHandler ["MPHit", {
 
       player allowDamage false;
 
@@ -56,7 +56,7 @@ _Gamer = [
 	     sleep 2;
 	     player switchMove "ApanPknlMstpSnonWnonDnon_G01";
       };
-
+{
   SaftyID = [player, "Back to Safety zone",
   "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_forceRespawn_ca.paa",
   "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",
