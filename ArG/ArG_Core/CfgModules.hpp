@@ -37,5 +37,13 @@ class ArG_Buzzer : Module_F
             defaultValue = 300;
         };
 
+        class Max_count
+        {
+            displayName = "Max count";
+            description = "Max count";
+            typeName = "NUMBER";
+            defaultValue = 600;
+        };
+
     };
 };
