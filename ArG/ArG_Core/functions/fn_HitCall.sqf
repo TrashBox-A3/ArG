@@ -28,8 +28,9 @@ _Gamer = [
 
       player allowDamage false;
 
-      player disableAI "TARGET";
-      player disableAI "AUTOTARGET";
+      player disableAI "CHECKVISIBLE";
+
+      
 
 
 

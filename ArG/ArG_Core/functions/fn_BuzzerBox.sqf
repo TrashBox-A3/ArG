@@ -4,7 +4,7 @@ _types = [
 "ArG_Speaker"
 ];
 
-_Box = ( typeOf _x isEqualTo "ArG_BuzzerBox" );
+_Box = allMissionObjects "ArG_BuzzerBox";
 
 
 if (STATE) then
