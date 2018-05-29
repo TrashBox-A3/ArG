@@ -11,10 +11,10 @@ _time = _logic getVariable ["Def_Time",Def_Time];
 _MaxTime = _logic getVariable ["Def_Max",Def_Max];
 
 ArG_DefTime = _logic call {
-    ArG_Def = _this getVariable ["Def_Time",Def_Time];
+    ArG_Def = _this getVariable ["Def_Time",Def_Time];};
 
     ArG_MaxTime = _logic call {
-        ArG_Max = _this getVariable ["Def_Max",Def_Max];
+        ArG_Max = _this getVariable ["Def_Max",Def_Max];};
 
 while {true} do {
 
