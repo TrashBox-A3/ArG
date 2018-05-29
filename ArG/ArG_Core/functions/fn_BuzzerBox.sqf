@@ -17,7 +17,7 @@ if (STATE) then
 for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
 {
 
-    _Speakers = getPos tt nearObjects [_types select _i , 1000];
+    _Speakers = getMarkerPos "GameArea" nearObjects [_types select _i , 1000];
     sleep 0.7;
 
     while {missionNamespace getvariable "Buzz" == 0} do
@@ -30,7 +30,7 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
           _x setDamage 0;
           sleep 0.1;
           _x say3D "Buzzer"
-        } forEach _types select 0;
+        } forEach _Speakers;
         sleep 5;
 
     };
@@ -45,7 +45,7 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
          _x setDamage 0;
          sleep 0.1;
          _x say3D "Buzzer2"
-       } forEach _types select 0;
+       } forEach _Speakers;
          sleep 14;
 
     };
