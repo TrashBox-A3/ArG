@@ -1,4 +1,4 @@
-private ["_Buzz","_types","_Box","_Speakers"];
+private ["_types","_Speakers"];
 
 _types = [
 "ArG_Speaker"
@@ -24,7 +24,6 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
 
     {
 
-
       {
           _x setDamage 1;
           sleep 0.1;
@@ -34,13 +33,11 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
         } forEach _Speakers;
         sleep 5;
      waituntil{missionNamespace getvariable "Buzz" == 0};
-
     };
 
     while {missionNamespace getvariable "Buzz" == 1} do
 
     {
-
 
       {
          _x setDamage 1;
