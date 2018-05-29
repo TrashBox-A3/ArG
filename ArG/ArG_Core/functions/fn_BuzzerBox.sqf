@@ -4,19 +4,6 @@ _types = [
 "ArG_Speaker"
 ];
 
-
-{
-  _Box = ["ArG_BuzzerBox"];
-	if（typeOf _x in _Box）then
-
-	{
-		_marker = createMarker ["Counter",getPos _x];
-		
-	};
-}
-forEach allMissionObjects "All";
-
-
 if (STATE) then
 {
     STATE = false;
@@ -29,8 +16,8 @@ if (STATE) then
 };
 for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
 {
-
-    _Speakers = getMarkerPos "Counter" nearObjects [_types select _i , 1000];
+    _Box = (typeOf _x == "ArG_BuzzerBox");
+    _Speakers = getMarkerPos _Box nearObjects [_types select _i , 1000];
     sleep 0.7;
 
     while {missionNamespace getvariable "Buzz" == 0} do
