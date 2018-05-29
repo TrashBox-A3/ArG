@@ -2,16 +2,9 @@ private ["_Buzz","_types","_Box","_Speakers"];
 
 _types = [
 "ArG_Speaker"
-
 ];
 
-_Box = [
-"ArG_BuzzerBox"
-
-];
-
-_Box setVehicleVarName "CounterBox";
-CounterBox = _Box;
+_Box = ( typeOf _x isEqualTo "ArG_BuzzerBox" );
 
 
 if (STATE) then
@@ -27,7 +20,7 @@ if (STATE) then
 for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
 {
 
-    _Speakers = getPos CounterBox nearObjects [_types select _i , 300];
+    _Speakers = getPos _Box nearObjects [_types select _i , 300];
     sleep 0.7;
 
     while {missionNamespace getvariable "Buzz" == 0} do
