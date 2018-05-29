@@ -34,9 +34,10 @@ _Gamer = [
       player setVariable ["_Hited",1,false];
 
       player say3D "HitCall";
-
-      player switchCamera "EXTERNAL";
-
+      if ( (difficultyOption "thirdPersonView")isEqualTo 1) then
+      	  {
+            player switchCamera "EXTERNAL";
+          };
       player addEventHandler ["HandleDamage", {0}];
       player disableAI "ANIM";
       player switchMove "Acts_JetsMarshallingRight_loop";
