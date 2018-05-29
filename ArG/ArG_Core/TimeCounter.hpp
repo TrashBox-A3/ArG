@@ -51,19 +51,4 @@ class  Land_Loudspeakers_F;
     hiddenSelections[]={};
     hiddenSelectionsTextures[] = {};
 
-      class EventHandlers
-    {
-      init = "while {missionNamespace getvariable 'Buzz' == 0} do
-
-      {
-
-
-        {
-
-
-      };
-
-      "
-    };
-
 };
