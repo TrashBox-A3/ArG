@@ -29,7 +29,7 @@ _Gamer = [
       player allowDamage false;
 
       {
-        if(side _x == East)then{
+        if(side _x == West)then{
         _x disableAI "TARGET"
       };
 
