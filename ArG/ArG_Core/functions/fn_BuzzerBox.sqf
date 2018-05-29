@@ -4,7 +4,7 @@ _types = [
 "ArG_Speaker"
 ];
 
-_Box = allMissionObjects "ArG_BuzzerBox";
+
 
 
 if (STATE) then
@@ -20,7 +20,7 @@ if (STATE) then
 for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
 {
 
-    _Speakers = getPos _Box nearObjects [_types select _i , 300];
+    _Speakers = getPos ( typeOf _x isEqualTo "ArG_BuzzerBox" ) nearObjects [_types select _i , 300];
     sleep 0.7;
 
     while {missionNamespace getvariable "Buzz" == 0} do

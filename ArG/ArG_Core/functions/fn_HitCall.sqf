@@ -28,9 +28,9 @@ _Gamer = [
 
       player allowDamage false;
 
-      player disableAI "CHECKVISIBLE";
+      {_x disableAI "AUTOTARGET"}forEach sideEnemy ;
 
-      
+
 
 
 
