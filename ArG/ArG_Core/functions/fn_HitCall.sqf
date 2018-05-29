@@ -27,7 +27,7 @@ _Gamer = [
    if ((isPlayer _x)&&(typeOf _x in _Gamer)&&(player getvariable "_Hited" == 0)) then
 
    {
-      player addMPEventHandler ["MPHit", {
+      _unit addMPEventHandler ["MPHit", {
 
       player allowDamage false;
 
