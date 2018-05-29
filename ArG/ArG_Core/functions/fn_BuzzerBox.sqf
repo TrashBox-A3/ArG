@@ -17,7 +17,7 @@ if (STATE) then
 for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
 {
     _Box = (typeOf _x == "ArG_BuzzerBox");
-    _Speakers = getMarkerPos _Box nearObjects [_types select _i , 1000];
+    _Speakers = getPos _Box nearObjects [_types select _i , 1000];
     sleep 0.7;
 
     while {missionNamespace getvariable "Buzz" == 0} do
