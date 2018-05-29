@@ -16,7 +16,7 @@ if (STATE) then
 };
 for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
 {
-                _Speakers = {typeOf _x == "ArG_Speaker"}forEach  allMissionObjects;
+    _Speakers = (typeOf _x == _types);
 
     sleep 0.7;
 
@@ -24,14 +24,14 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
 
     {
 
-        {
+        {{
           _x setDamage 1;
           sleep 0.1;
           _x setDamage 0;
           sleep 0.1;
           _x say3D "Buzzer"
         } forEach _Speakers;
-        sleep 5;
+        sleep 5;}forEach  allMissionObjects;
 
     };
 
@@ -39,14 +39,14 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
 
     {
 
-       {
+       {{
          _x setDamage 1;
          sleep 0.1;
          _x setDamage 0;
          sleep 0.1;
          _x say3D "Buzzer2"
        } forEach _Speakers;
-         sleep 14;
+         sleep 14;}forEach  allMissionObjects;
 
     };
 
