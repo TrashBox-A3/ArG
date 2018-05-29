@@ -1,6 +1,6 @@
 params [
     ["_logic", objNull, [objNull]],
-    "Def_Time","MaxTime"
+    "_time","_MaxTime"
     ];
 
     #define Def_Time 300
@@ -8,23 +8,27 @@ params [
 
     // Define variables
 _time = _logic getVariable ["Def_Time",Def_Time];
-_MaxTime = _logic getVariable ["MaxTime",Def_Max];
+_MaxTime = _logic getVariable ["Def_Max",Def_Max];
 
+ArG_DefTime = _logic call {
+    ArG_Def = _this getVariable ["Def_Time",Def_Time];};
 
+    ArG_MaxTime = _logic call {
+        ArG_Max = _this getVariable ["Def_Max",Def_Max];};
 
 while {true} do {
 
 
-  while {Def_Time > 0} do {
+  while {_time > 0} do {
 
 if (missionNamespace getvariable "Buzz" == 0) then {
 
 
-	Def_Time = Def_Time - 1;
-	hintSilent format["CountDown Time Remaining \n %1", [((Def_Time)/60)+.01,"HH:MM"] call BIS_fnc_timetostring];
+	_time = _time - 1;
+	hintSilent format["CountDown Time Remaining \n %1", [((_time)/60)+.01,"HH:MM"] call BIS_fnc_timetostring];
 	sleep 1;
 
-  if (Def_Time <= 0) then {
+  if (_time <= 0) then {
 
 
     CountDown = true;PublicVariable"CountDown";
@@ -35,13 +39,13 @@ if (missionNamespace getvariable "Buzz" == 0) then {
 else
 {
 
-if ((missionNamespace getvariable "Buzz" == 1)&&(Def_Time < MaxTime)) then {
+if ((missionNamespace getvariable "Buzz" == 1)&&(_time < _MaxTime)) then {
 
-  Def_Time = Def_Time + 1;
-  hintSilent format["CountUp Time Remaining \n %1", [((Def_Time)/60)+.01,"HH:MM"] call BIS_fnc_timetostring];
+  _time = _time + 1;
+  hintSilent format["CountUp Time Remaining \n %1", [((_time)/60)+.01,"HH:MM"] call BIS_fnc_timetostring];
   sleep 1;
 
-  if ((Def_Time >= MaxTime)) then {
+  if ((_time >= _MaxTime)) then {
 
 
     CountUp = true;PublicVariable"CountUp";
