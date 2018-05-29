@@ -17,11 +17,7 @@ if (STATE) then
 
 for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
 {
-    _Speakers = {
-
-(typeOf _x == "ArG_Speaker")
-
-} foreach (allMissionObjects "All");
+    _Speakers = getMarkerPos "GameArea" nearObjects [_types select _i , 1000];
 
     sleep 0.7;
 
