@@ -28,7 +28,12 @@ _Gamer = [
 
       player allowDamage false;
 
-      {_x disableAI "AUTOTARGET"}forEach allUnits ;
+      {
+        if(side _x == East)then{
+        _x disableAI "TARGET"
+      };
+
+        }forEach allUnits ;
 
 
 
