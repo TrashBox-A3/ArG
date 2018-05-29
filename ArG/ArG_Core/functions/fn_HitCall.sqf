@@ -32,15 +32,6 @@ _Gamer = [
           player disableAi "TARGET";
           player disableAi "AUTOTARGET";
 
-
-
-
-
-
-
-
-
-
       player setVariable ["_Hited",1,false];
 
       player say3D "HitCall";
