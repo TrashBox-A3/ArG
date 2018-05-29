@@ -1,7 +1,5 @@
 ///script by Rodeostar42///
 
-if（isDedicated）exitWith {};
-  
 private ["_unit","_Hited"];
 
 _unit = _this select 0;
@@ -24,7 +22,6 @@ _Gamer = [
 ];
 
  {
-
 
    if ((isPlayer _x)&&(typeOf _x in _Gamer)&&(player getvariable "_Hited" == 0)) then
 
