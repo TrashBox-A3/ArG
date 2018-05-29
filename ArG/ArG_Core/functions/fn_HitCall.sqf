@@ -47,7 +47,7 @@ _Gamer = [
 	     sleep 2;
 	     player switchMove "ApanPknlMstpSnonWnonDnon_G01";
       };
-{
+
   SaftyID = [player, "Back to Safety zone",
   "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_forceRespawn_ca.paa",
   "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",
@@ -100,7 +100,7 @@ _Gamer = [
    },
  {}, [], 5, nil, true, false
  ] call BIS_fnc_holdActionAdd;
-} remoteExec ["call", _this select 3]
+
 
 }];
 
