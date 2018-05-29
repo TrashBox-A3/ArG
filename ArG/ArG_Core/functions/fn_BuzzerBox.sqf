@@ -8,7 +8,7 @@ _Box = ["ArG_BuzzerBox"];
 {
 	if（typeOf _x in _Box）then
 	{
-		_marker = createMarkerLocal ["cashpoint" + str（_forEachIndex）、getPos _x];
+		_marker = createMarkerLocal ["Counter",getPos _x];
 		_marker setMarkerShapeLocal "ICON";
 		_marker setMarkerTypeLocal "loc_Tourism";
 		_marker setMarkerColorLocal "ColorGreen";
