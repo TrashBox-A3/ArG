@@ -1,6 +1,9 @@
 ///script by Rodeostar42///
 
-private "_Hited";
+private ["_unit","_Hited"];
+
+_unit = _this select 0;
+
 player setVariable ["_Hited",0,false];
 
 _Gamer = [
