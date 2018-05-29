@@ -1,7 +1,12 @@
-private ["_Buzz","_types","_Speakers"];
+private ["_Buzz","_types","_Box","_Speakers"];
 
 _types = [
 "ArG_Speaker"
+
+];
+
+_Box = [
+"ArG_BuzzerBox"
 
 ];
 
@@ -20,7 +25,7 @@ if (STATE) then
 for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
 {
 
-    _Speakers = getPos player nearObjects [_types select _i , 300];
+    _Speakers = getPos _Box nearObjects [_types select _i , 300];
     sleep 0.7;
 
     while {missionNamespace getvariable "Buzz" == 0} do
@@ -48,7 +53,7 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
          _x setDamage 0;
          sleep 0.1;
          _x say3D "Buzzer2"
-       } count _types > 0;
+       } forEach _Speakers;
          sleep 16;
 
     };
