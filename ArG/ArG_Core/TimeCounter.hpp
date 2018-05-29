@@ -27,7 +27,7 @@ showWindow = true;
 hideOnUse = 0;
 onlyForPlayer = 1;
 shortcut = "";
-condition = "(player getvariable 'Hited' == 0)";
+condition = "(player getvariable '_Hited' == 0)";
 statement = "this say3D 'Switch',[[[],'ArG_Core\functions\fn_BuzzerBox.sqf'], 'BIS_fnc_execVM', true,true] call BIS_fnc_MP;";
 };
 };
