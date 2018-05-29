@@ -22,7 +22,7 @@ class ArG_Buzzer : Module_F
     author = "Rodeostar42";
     displayName = "ArG Buzzer";
     category = "ArG_Module";
-    function = "fn_CountDown";
+    function = "CountDown";
 
     functionPriority = 2;
     isGlobal = 1;
