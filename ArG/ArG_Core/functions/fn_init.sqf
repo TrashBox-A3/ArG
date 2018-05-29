@@ -1,5 +1,5 @@
 if (!isDedicated) then {waitUntil {!isNull player && isPlayer player};};
 
-STATE = 0;
+STATE = false;
 
 []execVM "ArG_Core\functions\fn_CountDown.sqf";
