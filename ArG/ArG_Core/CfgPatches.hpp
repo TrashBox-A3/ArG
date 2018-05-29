@@ -46,8 +46,7 @@ class CfgPatches
 		"ArG_muzzle_snds_H",
 		"ArG_Blue_Flag",
 		"ArG_Red_Flag",
-		"ArG_Green_Flag",
-		"ArG_CounterBox"
+		"ArG_Green_Flag"
 		};
 	};
 };
