@@ -16,7 +16,7 @@ _ArGGamer = [
 "ArG_Gamer_12"
 ];
 
-while{alive player}do{
+while{weapons player}do{
 
 {
   if ((isPlayer _x)&&(typeOf _x in _ArGGamer)) then {
