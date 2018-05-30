@@ -29,24 +29,30 @@ class MuzzleSlot: rhs_western_rifle_muzzle_slot{};
 class GripodSlot: rhs_western_rifle_gripod_slot{};
 };
 
-  class WeaponSlotsInfo: WeaponSlotsInfo
+class WeaponSlotsInfo: WeaponSlotsInfo
+{
+  class MuzzleSlot: MuzzleSlot
   {
-    class MuzzleSlot: MuzzleSlot
+    linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
+    compatibleItems[]=
     {
-      linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
-      compatibleItems[]=
-      {
-        "muzzle_snds_h",
-        "ArG_muzzle_snds_H"
-      };
-      iconPosition[]={0,0.44999999};
-      iconScale=0.2;
+      "muzzle_snds_h",
+      "ArG_muzzle_snds_H"
     };
-    class UnderBarrelSlot: rhs_western_rifle_underbarrel_slot{};
-    class CowsSlot: rhs_western_rifle_scopes_slot_short{};
-    class PointerSlot: rhs_western_rifle_laser_slot_top{};
-    class GripodSlot: rhs_western_rifle_gripod_slot{};
+    iconPosition[]={0,0.44999999};
+    iconScale=0.2;
   };
+  class CowsSlot: CowsSlot
+  {
+    iconPosition[]={0.5,0.34999999};
+    iconScale=0.2;
+  };
+  class PointerSlot: PointerSlot
+  {
+    iconPosition[]={0.2,0.44999999};
+    iconScale=0.25;
+  };
+};
 
   initSpeed = 250; // muzzle velocity
   maxRange = 100;
