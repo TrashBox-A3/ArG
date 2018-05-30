@@ -536,7 +536,7 @@ class ItemCore;
     		model=;
     		class ItemInfo: InventoryMuzzleItem_Base_F
     		{
-    			mass=10;
+    			mass=0.1;
     			class MagazineCoef
     			{
     				initSpeed=1.05;
