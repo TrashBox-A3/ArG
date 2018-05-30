@@ -6,8 +6,8 @@ class CfgPatches
 		requiredAddons[]=
 		{
     "rhsusf_c_weapons",
-		"SMA_HK416",
-		"SMA_HK417"
+		"scar_arma3"
+
 		};
 		requiredVersion=0.1;
 		units[]={
