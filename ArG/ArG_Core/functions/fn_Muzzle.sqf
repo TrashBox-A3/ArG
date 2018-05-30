@@ -16,16 +16,19 @@ _ArGGamer = [
 "ArG_Gamer_12"
 ];
 
-while{primaryWeaponItems player select 0 == ""}do{
+while{alive player}do{
 
 {
   if ((isPlayer _x)&&(typeOf _x in _ArGGamer)) then {
 
+    if(primaryWeaponItems _x select 0 == "")then{
+
     systemChat"do";
     player addPrimaryWeaponItem "ArG_muzzle_snds_H";
     };
-
+};
  }forEach allUnits;
 
  waituntil{primaryWeaponItems player select 0 == ""};
 };
+sleep 0.2;
