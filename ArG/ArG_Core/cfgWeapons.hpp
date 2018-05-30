@@ -79,6 +79,7 @@ class ItemCore;
     				iconPosition[]={0.2,0.44999999};
     				iconScale=0.25;
     			};
+          class UnderBarrelSlot {};
         };
 
         class LinkedItems
