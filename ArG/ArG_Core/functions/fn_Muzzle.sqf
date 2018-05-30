@@ -15,18 +15,19 @@ _ArGGamer = [
 "ArG_Gamer_11",
 "ArG_Gamer_12"
 ];
-
+{
 _Gamer = ((isPlayer _x)&&(typeOf _x in _ArGGamer));
 
 if (_Gamer) then {
 
-  while{primaryWeaponItems _Gamer select 0 == ""}do{
+  while{primaryWeaponItems _x select 0 == ""}do{
 
 
     systemChat"do";
-    _Gamer addPrimaryWeaponItem "ArG_muzzle_snds_H";
+    _x addPrimaryWeaponItem "ArG_muzzle_snds_H";
 
-     waituntil{primaryWeaponItems _Gamer select 0 == ""};
+     waituntil{primaryWeaponItems _x select 0 == ""};
     };
 
  };
+}forEach allUnits;
