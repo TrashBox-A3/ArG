@@ -36,6 +36,6 @@ while{alive player}do{
 };
  }forEach allUnits;
 
- waituntil{primaryWeaponItems player select 0 == ""};
+ waituntil{((primaryWeaponItems player select 0 == "")or(secondaryWeaponItems player select 0 == ""))};
 };
 sleep 0.2;
