@@ -80,6 +80,25 @@ class ItemCore;
     			};
         };
 
+        class LinkedItems
+    		{
+    			class LinkedItemsOptic
+    			{
+    				slot="CowsSlot";
+    				item="optic_Holosight";
+    			};
+    			class LinkedItemsMuzzle
+    			{
+    				slot="MuzzleSlot";
+    				item="ArG_muzzle_snds_H";
+    			};
+    			class LinkedItemsAcc
+    			{
+    				slot="PointerSlot";
+    				item="acc_pointer_IR";
+    			};
+    		};
+
         initSpeed = 250; // muzzle velocity
         maxRange = 100;
         flash = "";
