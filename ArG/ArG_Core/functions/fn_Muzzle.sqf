@@ -1,4 +1,4 @@
-
+if!(isServer)then{
 params ["_ArGGamer","_AIHited"];
 
 _ArGGamer = [
@@ -16,7 +16,7 @@ _ArGGamer = [
 "ArG_Gamer_12"
 ];
 
-while{weapons player}do{
+while{alive player}do{
 
 {
   if ((isPlayer _x)&&(typeOf _x in _ArGGamer)) then {
@@ -32,3 +32,4 @@ while{weapons player}do{
  waituntil{primaryWeaponItems player select 0 == ""};
 };
 sleep 0.2;
+};
