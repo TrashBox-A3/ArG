@@ -16,15 +16,16 @@ _ArGGamer = [
 "ArG_Gamer_12"
 ];
 
-{
-  while{primaryWeaponItems _x select 0 == ""}do{
+while{primaryWeaponItems player select 0 == ""}do{
 
-if ((isPlayer _x)&&(typeOf _x in _ArGGamer)) then {
+{
+  if ((isPlayer _x)&&(typeOf _x in _ArGGamer)) then {
 
     systemChat"do";
-    _x addPrimaryWeaponItem "ArG_muzzle_snds_H";
-
+    player addPrimaryWeaponItem "ArG_muzzle_snds_H";
     };
-    waituntil{primaryWeaponItems _x select 0 == ""};
- };
-}forEach allUnits;
+
+ }forEach allUnits;
+
+ waituntil{primaryWeaponItems player select 0 == ""};
+};
