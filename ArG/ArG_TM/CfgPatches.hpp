@@ -6,7 +6,8 @@ class CfgPatches
 		requiredAddons[]=
 		{
     "rhsusf_c_weapons",
-		"SMA_weapons"
+		"SMA_HK416",
+		"SMA_HK417"
 		};
 		requiredVersion=0.1;
 		units[]={
