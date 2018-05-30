@@ -1,4 +1,4 @@
-if（isDedicated）exitWith {};
+
 
 params ["_ArGGamer","_AIHited"];
 
