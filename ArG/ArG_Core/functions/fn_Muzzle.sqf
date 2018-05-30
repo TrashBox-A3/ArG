@@ -1,10 +1,15 @@
 
 while{true}do{
 
-{while {primaryWeaponItems player select 0 == ""}do{
+hint"do";
+  if (primaryWeaponItems player select 0 == "")then{
 player addPrimaryWeaponItem "ArG_muzzle_snds_H";
+
+};
 
 
 waituntil{primaryWeaponItems player select 0 == ""};
-};}forEach allUnits;
+
+
+
 };
