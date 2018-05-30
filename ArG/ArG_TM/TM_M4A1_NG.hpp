@@ -18,16 +18,6 @@ class ArG_TM_M4A1_NG: rhs_weap_m4a1_carryhandle
       "ArG_82Rnd_556x45_BB"
   };
 
-  class WeaponSlotsInfo
-{
-mass = 60;
-allowedSlots[] = {901};
-class UnderBarrelSlot: rhs_western_rifle_underbarrel_slot{};
-class CowsSlot: rhs_western_rifle_scopes_slot_short{};
-class PointerSlot: rhs_western_rifle_laser_slot_top{};
-class MuzzleSlot: rhs_western_rifle_muzzle_slot{};
-class GripodSlot: rhs_western_rifle_gripod_slot{};
-};
 
 class WeaponSlotsInfo: WeaponSlotsInfo
 {
