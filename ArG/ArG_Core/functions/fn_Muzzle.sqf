@@ -16,17 +16,17 @@ _ArGGamer = [
 "ArG_Gamer_12"
 ];
 
+_Gamer = ((isPlayer _x)&&(typeOf _x in _ArGGamer));
 
-if ((typeOf _x in _ArGGamer)) then {
+if (_Gamer) then {
 
-  while{primaryWeaponItems _ArGGamer select 0 == ""}do{
+  while{primaryWeaponItems _Gamer select 0 == ""}do{
 
-    _AIHited = _this select 0;
-    _ArGGamer = _this select 1;
+
     systemChat"do";
-    _ArGGamer addPrimaryWeaponItem "ArG_muzzle_snds_H";
+    _Gamer addPrimaryWeaponItem "ArG_muzzle_snds_H";
 
-     waituntil{primaryWeaponItems _ArGGamer select 0 == ""};
+     waituntil{primaryWeaponItems _Gamer select 0 == ""};
     };
 
  };
