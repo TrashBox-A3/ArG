@@ -11,14 +11,12 @@ class CfgPatches
 		units[]={};
 		weapons[]=
 		{
-			
+
 			"ArG_VFC_HK416A5_GBB_BLK",
-			"ArG_VFC_HK416A5_GBB_SND"
-			
+			"ArG_VFC_HK416A5_GBB_SND",
+			"ArG_VFC_M27IAR_GBB",
+			"ArG_VFC_MP7A1_GBB"
+
 		};
 	};
 };
-
-
-
-
