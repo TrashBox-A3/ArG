@@ -2,10 +2,11 @@ class CfgPatches
 {
 	class ArG_Core
 	{
-
+    addonRootClass="A3_Weapons_F";
 		requiredAddons[]=
 		{
-
+			"A3_Weapons_F",
+			"A3_Weapons_F_Items"
 		};
 		requiredVersion=0.1;
 		units[]={
