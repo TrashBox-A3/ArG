@@ -13,6 +13,8 @@ class MuzzleSlot;
 class PointerSlot;
 class WeaponSlotsInfo;
 class SAFE_PISTOL;
+class UnderBarrelSlot;
+class GripodSlot;
 class CfgWeapons
 {
 
