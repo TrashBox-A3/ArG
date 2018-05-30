@@ -1,6 +1,20 @@
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
+class manual;
+class close;
+class Mode_Optics;
+class Mode_eye;
+class far_optic1;
+class far_optic2;
+class SlotInfo;
+class CowsSlot;
+class MuzzleSlot;
+class PointerSlot;
+class WeaponSlotsInfo;
+class LinkedItems;
+class UnderBarrelSlot;
+class GripodSlot;
 class CfgWeapons
 {
 
