@@ -22,10 +22,16 @@ while{alive player}do{
 {
   if ((isPlayer _x)&&(typeOf _x in _ArGGamer)) then {
 
-    if(primaryWeaponItems _x select 0 == "")then{
+    if(primaryWeaponItems _x select 0 == ""))then{
 
-    systemChat"do";
+    systemChat"do primary";
     player addPrimaryWeaponItem "ArG_muzzle_snds_H";
+    };
+
+    if(secondaryWeaponItems _x select 0 == ""))then{
+
+    systemChat"do secondary";
+    player addSecondaryWeaponItem "ArG_muzzle_snds_H";
     };
 };
  }forEach allUnits;
