@@ -18,6 +18,31 @@ class ArG_TM_VSR10_G: rhs_weap_m24sws_blk
       "ArG_30Rnd_VSR_BB_025"
   };
 
+  class WeaponSlotsInfo: WeaponSlotsInfo
+  {
+    class MuzzleSlot: MuzzleSlot
+    {
+      linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
+      compatibleItems[]=
+      {
+        "muzzle_snds_h",
+        "ArG_muzzle_snds_H"
+      };
+      iconPosition[]={0,0.44999999};
+      iconScale=0.2;
+    };
+    class CowsSlot: CowsSlot
+    {
+      iconPosition[]={0.5,0.34999999};
+      iconScale=0.2;
+    };
+    class PointerSlot: PointerSlot
+    {
+      iconPosition[]={0.2,0.44999999};
+      iconScale=0.25;
+    };
+  };
+
   initSpeed = 250; // muzzle velocity
   maxRange = 100;
   flash = "";
