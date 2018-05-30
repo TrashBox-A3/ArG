@@ -1,4 +1,4 @@
-if!(isServer)then{
+if(isServer)then{
 params ["_ArGGamer","_AIHited"];
 
 _ArGGamer = [
