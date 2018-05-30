@@ -23,7 +23,14 @@ class ArG_TM_VSR10_G: rhs_weap_m24sws_blk
 		class MuzzleSlot: SlotInfo
 		{
 			linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
-			compatibleItems[] = {"ArG_muzzle_snds_H","rhsusf_acc_M2010S","rhsusf_acc_M2010S_d","rhsusf_acc_M2010S_sa","rhsusf_acc_M2010S_wd"};
+			compatibleItems[] =
+      {
+        "ArG_muzzle_snds_H",
+        "rhsusf_acc_M2010S",
+        "rhsusf_acc_M2010S_d",
+        "rhsusf_acc_M2010S_sa",
+        "rhsusf_acc_M2010S_wd"
+      };
 		};
 		class CowsSlot: rhs_western_rifle_scopes_slot_long {};
 		class PointerSlot: rhs_western_rifle_laser_slot {};

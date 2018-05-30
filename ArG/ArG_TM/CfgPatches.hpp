@@ -5,7 +5,7 @@ class CfgPatches
 
 		requiredAddons[]=
 		{
-
+    "rhsusf_c_weapons"
 		};
 		requiredVersion=0.1;
 		units[]={
