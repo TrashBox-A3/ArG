@@ -1,5 +1,11 @@
 class CfgPatches
 {
+
+	class asdg_OpticRail1913_short;
+class rhs_western_rifle_scopes_slot_short: asdg_OpticRail1913_short
+{
+class compatibleItems;　
+};
 	class ArG_TM_Weapons
 	{
 
