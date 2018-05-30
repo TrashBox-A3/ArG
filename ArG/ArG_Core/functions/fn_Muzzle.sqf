@@ -39,4 +39,4 @@ while{!(currentWeapon player isEqualTo "")}do{
 
     waituntil{((primaryWeaponItems player select 0 == "")or(handgunItems player select 0 == ""))};
    };
-sleep 0.2;
+sleep 2;
