@@ -1,15 +1,17 @@
 
-while{true}do{
+private "_EV";
+_EV = _this select 0;
 
-hint"do";
-  if (primaryWeaponItems player select 0 == "")then{
-player addPrimaryWeaponItem "ArG_muzzle_snds_H";
-
-};
+  while{primaryWeaponItems _EV select 0 == ""}do{
 
 
-waituntil{primaryWeaponItems player select 0 == ""};
+   systemChat"do";
 
 
 
-};
+     _EV addPrimaryWeaponItem "ArG_muzzle_snds_H";
+
+     waituntil{primaryWeaponItems _EV select 0 == ""};
+
+
+ };
