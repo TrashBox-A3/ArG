@@ -1,4 +1,7 @@
-
+if ((!isServer) && (player != player)) then
+{
+  waitUntil {player == player};
+};
 
 params ["_ArGGamer","_AIHited"];
 
@@ -24,14 +27,12 @@ while{alive player}do{
 
     if(!(primaryWeapon player isEqualTo "")&&(primaryWeaponItems _x select 0 == ""))then{
 
-    systemChat"do primary";
     player addPrimaryWeaponItem "ArG_muzzle_snds_H";
     };
 
 
    if(!(handgunWeapon player isEqualTo "")&&(handgunItems _x select 0 == ""))then{
-
-     systemChat"do secondary";
+    
      player addHandgunItem "ArG_muzzle_snds_H";
  };
 };
