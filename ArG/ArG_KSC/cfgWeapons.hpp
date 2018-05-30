@@ -1,6 +1,20 @@
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
+class manual;
+class close;
+class Mode_Optics;
+class Mode_eye;
+class far_optic1;
+class far_optic2;
+class SlotInfo;
+class CowsSlot;
+class MuzzleSlot;
+class PointerSlot;
+class WeaponSlotsInfo;
+class LinkedItems;
+class UnderBarrelSlot;
+class GripodSlot;
 class CfgWeapons
 {
 
@@ -33,6 +47,31 @@ class CfgWeapons
         magazines[] = {
 
             "ArG_10Rnd_9x18_BB"
+        };
+
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+          class MuzzleSlot: MuzzleSlot
+          {
+            linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
+            compatibleItems[]=
+            {
+              "muzzle_snds_h",
+              "ArG_muzzle_snds_H"
+            };
+            iconPosition[]={0,0.44999999};
+            iconScale=0.2;
+          };
+          class CowsSlot: CowsSlot
+          {
+            iconPosition[]={0.5,0.34999999};
+            iconScale=0.2;
+          };
+          class PointerSlot: PointerSlot
+          {
+            iconPosition[]={0.2,0.44999999};
+            iconScale=0.25;
+          };
         };
 
         initSpeed = 220; // muzzle velocity
