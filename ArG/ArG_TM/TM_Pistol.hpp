@@ -24,7 +24,7 @@ class ArG_TM_Glock17: rhsusf_weap_glock17g4
       linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
       compatibleItems[]=
       {
-        "ArG_Invisible_muzzle_Second"
+        "ArG_muzzle_snds_H"
       };
       iconPosition[]={0,0.44999999};
       iconScale=0.2;
@@ -121,7 +121,7 @@ class ArG_TM_P226R: hlc_pistol_P226R
       linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
       compatibleItems[]=
       {
-        "ArG_Invisible_muzzle_Second"
+        "ArG_muzzle_snds_H"
       };
       iconPosition[]={0,0.44999999};
       iconScale=0.2;
@@ -218,7 +218,7 @@ class ArG_TM_M92F: rhsusf_weap_m9
       linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
       compatibleItems[]=
       {
-        "ArG_Invisible_muzzle_Second"
+        "ArG_muzzle_snds_H"
       };
       iconPosition[]={0,0.44999999};
       iconScale=0.2;

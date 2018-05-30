@@ -56,7 +56,7 @@ class CfgWeapons
             linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
             compatibleItems[]=
             {
-              "ArG_Invisible_muzzle_Second"
+              "ArG_muzzle_snds_H"
             };
             iconPosition[]={0,0.44999999};
             iconScale=0.2;
