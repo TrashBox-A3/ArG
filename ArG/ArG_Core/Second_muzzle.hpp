@@ -1,7 +1,7 @@
 
 
 class muzzle_snds_acp:
-class ArG_Invisible_muzzle_Second: muzzle_snds_acp
+class ArG_Invisible_muzzle_Second: ItemCore
 {
   author="Rodeostar42";
 
@@ -15,7 +15,7 @@ class ArG_Invisible_muzzle_Second: muzzle_snds_acp
   displayName="Invisible muzzle";
   picture=;
   model=;
-  class ItemInfo: InventoryMuzzleItem_Base_F
+  class ItemInfo: ItemInfo
   {
     mass=6;
     class MagazineCoef
