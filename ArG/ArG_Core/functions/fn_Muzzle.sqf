@@ -1,4 +1,5 @@
-if(isServer)then{
+if（isDedicated）exitWith {};
+
 params ["_ArGGamer","_AIHited"];
 
 _ArGGamer = [
@@ -32,4 +33,3 @@ while{alive player}do{
  waituntil{primaryWeaponItems player select 0 == ""};
 };
 sleep 0.2;
-};
