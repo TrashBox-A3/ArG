@@ -15,10 +15,9 @@ _ArGGamer = [
 "ArG_Gamer_11",
 "ArG_Gamer_12"
 ];
-{
-_Gamer = ((isPlayer _x)&&(typeOf _x in _ArGGamer));
 
-if (_Gamer) then {
+{
+if ((isPlayer _x)&&(typeOf _x in _ArGGamer)) then {
 
   while{primaryWeaponItems _x select 0 == ""}do{
 
