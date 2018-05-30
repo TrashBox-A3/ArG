@@ -34,6 +34,8 @@ if(isServer)then{
         _AIHited = _this select 0;
         _AiGamer = _this select 1;
 
+        _AIHited allowDamage false;
+
         _AIHited say3D "HitCall";
 
         _AIHited setCaptive true;

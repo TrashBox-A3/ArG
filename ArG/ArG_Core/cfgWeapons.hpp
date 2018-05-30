@@ -23,6 +23,7 @@ class CfgWeapons
   #include "MK20.hpp"
   #include "EBR.hpp"
   #include "MK200.hpp"
+  #include "Second_muzzle.hpp"
 
 class ItemCore;
     class InventoryItem_Base_F;
@@ -531,7 +532,7 @@ class ItemCore;
     		mFact=1;
     		tBody=100;
     		scope=2;
-    		displayName="ArG muzzle(Invisible) ";
+    		displayName="Invisible muzzle";
     		picture=;
     		model=;
     		class ItemInfo: InventoryMuzzleItem_Base_F
