@@ -55,24 +55,20 @@ class ItemCore;
             "ArG_30Rnd_65x39_BB_025"
         };
 
-        class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot="CowsSlot";
-				item="optic_ARCO";
-			};
-			class LinkedItemsAcc
-			{
-				slot="PointerSlot";
-				item="acc_pointer_IR";
-			};
-			class LinkedItemsMuzzle
-			{
-				slot="MuzzleSlot";
-				item="ArG_muzzle_snds_H";
-			};
-		};
+        class WeaponSlotsInfo: WeaponSlotsInfo
+    		{
+    			class MuzzleSlot: MuzzleSlot
+    			{
+    				linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
+    				compatibleItems[]=
+    				{
+    					"muzzle_snds_h",
+              "ArG_muzzle_snds_H"
+    				};
+    				iconPosition[]={0,0.44999999};
+    				iconScale=0.2;
+    			};
+        };
 
         initSpeed = 250; // muzzle velocity
         maxRange = 100;
