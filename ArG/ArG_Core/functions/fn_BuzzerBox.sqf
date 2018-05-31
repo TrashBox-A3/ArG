@@ -8,11 +8,11 @@ _types = [
 
 if (STATE) then
 {
-    STATE = false;
+    STATE = 1;
     missionNamespace setVariable ["Buzz",1,true];
     systemChat"Count Up Start";
 }else{
-    STATE = true;
+    STATE = 0;
     missionNamespace setVariable ["Buzz",0,true];
     systemChat"Count Down Start";
 };
