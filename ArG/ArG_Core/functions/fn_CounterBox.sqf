@@ -1,6 +1,8 @@
 
 while{alive player}do{
 
+  missionNamespace setVariable ["Counter",0,false];
+
 if(typeOf cursorObject == "ArG_BuzzerBox")then{
 
   missionNamespace setVariable ["Counter",1,false];
