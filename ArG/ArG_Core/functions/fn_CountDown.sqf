@@ -42,9 +42,23 @@ if ((missionNamespace getvariable "Buzz" == 1)&&(_time < _MaxTime)) then {
 
     CountUp = true;PublicVariable"CountUp";
   };
-};
-};
+}
+else
+{
 
+  if ((missionNamespace getvariable "Wait" == 1)) then {
+
+    _time = _time + 0;
+    hintSilent format["CountUp  \n %1", [((_time)/60)+.01,"HH:MM"] call BIS_fnc_timetostring];
+    sleep 1;
+
+
+
+      CountWait = true;PublicVariable"CountWait";
+    
+
+};
+};
 
 };
 };
