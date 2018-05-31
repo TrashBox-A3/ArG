@@ -1,4 +1,4 @@
-if (!isDedicated) then {waitUntil {!isNull player && isPlayer player};};
+
 
 
 params [
@@ -15,7 +15,7 @@ _MaxTime = _logic getVariable ["Def_Max",Def_Max];
 
 _box = ["ArG_BuzzerBox"];
 while {(!isNil "_box")} do {
-
+systemChat"loop";
 
   while {_time > 0} do {
 
