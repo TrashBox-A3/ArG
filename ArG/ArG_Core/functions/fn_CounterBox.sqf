@@ -39,3 +39,5 @@ else
 
 waituntil{missionNamespace getvariable "Counter" == 0};
 }:
+
+sleep 2;
