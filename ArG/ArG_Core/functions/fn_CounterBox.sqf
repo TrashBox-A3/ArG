@@ -6,7 +6,7 @@ trg setTriggerStatements ["(typeOf cursorObject == 'ArG_BuzzerBox')",
 "switch (playerSide) do {
 
  case west: {
-if ((missionNamespace getvariable 'Buzz' == 0)&&(player getvariable '_Hited' == 0)) then{
+if (((missionNamespace getvariable 'Buzz' == 0)or(missionNamespace getvariable 'Wait' == 1))&&(player getvariable '_Hited' == 0)) then{
      Hold = [player,'Time Counter',
 '\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa',
 '\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_hack_ca.paa',
@@ -34,7 +34,7 @@ false
  };
  case east: {
 
-if ((missionNamespace getvariable 'Buzz' == 1)&&(player getvariable '_Hited' == 0)) then{
+if (((missionNamespace getvariable 'Buzz' == 1)or(missionNamespace getvariable 'Wait' == 1))&&(player getvariable '_Hited' == 0)) then{
      Hold = [player,'Time Counter',
 '\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa',
 '\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_hack_ca.paa',
