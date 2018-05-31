@@ -1,5 +1,5 @@
 
-if(isServer)then{
+
 
 params [
     ["_logic", objNull, [objNull]],
@@ -14,7 +14,7 @@ _time = _logic getVariable ["Def_Time",Def_Time];
 _MaxTime = _logic getVariable ["Def_Max",Def_Max];
 
 
-while {true} do {
+while {(!isNil "ArG_BuzzerBox")} do {
 
 
   while {_time > 0} do {
@@ -60,4 +60,3 @@ while {true} do {
 };
 };
 sleep 0.1;
-};
