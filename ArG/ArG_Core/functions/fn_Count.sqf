@@ -15,6 +15,20 @@ while {true} do {
 
   while {_time > 0} do {
 
+    if (missionNamespace getvariable "Buzz" == 2) then {
+
+    	_time = _time - 0;
+    	hintSilent format["Count Stop \n %1", [((_time)/60)+.01,"HH:MM"] call BIS_fnc_timetostring];
+    	sleep 1;
+
+
+
+        CountStop = true;PublicVariable"CountStop";
+
+
+
+    };
+
 if (missionNamespace getvariable "Buzz" == 0) then {
 
 	_time = _time - 1;
