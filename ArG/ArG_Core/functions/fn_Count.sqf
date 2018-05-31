@@ -1,3 +1,6 @@
+
+if(isServer)then{
+
 params [
     ["_logic", objNull, [objNull]],
     "_time","_MaxTime"
@@ -57,3 +60,4 @@ while {true} do {
 };
 };
 sleep 0.1;
+};
