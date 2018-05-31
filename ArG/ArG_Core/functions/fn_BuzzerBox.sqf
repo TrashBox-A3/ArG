@@ -44,7 +44,7 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
 
          } forEach _Speakers;
          sleep 2;
-     waituntil{(missionNamespace getvariable "Buzz" == 2)};
+     waituntil{((missionNamespace getvariable "Buzz" == 0)or(missionNamespace getvariable "Buzz" == 1))};
     };
 
 };
