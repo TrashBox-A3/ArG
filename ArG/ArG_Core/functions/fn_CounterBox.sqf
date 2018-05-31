@@ -3,9 +3,7 @@ trg = createTrigger ["EmptyDetector", getPos player];
 trg setTriggerArea [0, 0, 0, false];
 trg setTriggerActivation ["NONE", "PRESENT", true];
 trg setTriggerStatements ["(typeOf cursorObject == 'ArG_BuzzerBox')",
-
-"
-_Blue = [
+"_Blue = [
 'ArG_Gamer_1',
 'ArG_Gamer_2',
 'ArG_Gamer_3',
@@ -26,7 +24,7 @@ _Green = [
 'ArG_Gamer_12'
 ];
 
-if ((isPlayer _x)&&(typeOf _x in _Brue)&&
+if ((isPlayer _x)&&(typeOf _x in _Brue))&&
 (missionNamespace getvariable 'Buzz' == 0)or
 (missionNamespace getvariable 'Wait' == 1)) then{
 
@@ -49,7 +47,7 @@ false
   [ player,Hold ] call BIS_fnc_holdActionRemove;
   };
 
-  if ((isPlayer _x)&&(typeOf _x in _Red)&&
+  if ((isPlayer _x)&&(typeOf _x in _Red))&&
   (missionNamespace getvariable 'Buzz' == 1)or
   (missionNamespace getvariable 'Wait' == 1)) then{
 
@@ -72,7 +70,7 @@ false
     [ player,Hold ] call BIS_fnc_holdActionRemove;
   };
 
-  if ((isPlayer _x)&&(typeOf _x in _Green)&&
+  if ((isPlayer _x)&&(typeOf _x in _Green))&&
   (missionNamespace getvariable 'Buzz' == 0)or
   (missionNamespace getvariable 'Wait' == 1)) then{
 
