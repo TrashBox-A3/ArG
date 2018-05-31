@@ -4,6 +4,8 @@ _types = [
 "ArG_Speaker"
 ];
 
+missionNamespace getvariable "Wait" == 1;
+
 if (STATE) then
 {
     STATE = false;
