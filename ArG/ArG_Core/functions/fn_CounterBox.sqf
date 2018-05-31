@@ -17,4 +17,4 @@ trg setTriggerStatements ["(typeOf cursorObject == 'ArG_BuzzerBox')",
 0,
 false,
 false
-]call BIS_fnc_holdActionAdd;","[ player,Hold ] call BIS_fnc_holdActionRemove;"];
+]call BIS_fnc_holdActionAdd;","if(typeOf cursorObject == '')then{[ player,Hold ] call BIS_fnc_holdActionRemove;}"];
