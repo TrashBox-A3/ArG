@@ -1,8 +1,8 @@
 if (!isDedicated) then {waitUntil {!isNull player && isPlayer player};};
 
 STATE = false;
+missionNamespace setVariable ["Wait",1,true];
 
-missionNamespace getvariable "Wait" == 1;
 
 []execVM "ArG_Core\functions\fn_Muzzle.sqf";
 
