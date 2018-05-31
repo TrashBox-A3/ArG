@@ -49,4 +49,15 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
      waituntil{missionNamespace getvariable "Buzz" == 1};
     };
 
+    while {missionNamespace getvariable "Wait" == 1} do
+    {
+         {
+         _x setDamage 1;
+         sleep 0.1;
+
+         } forEach _Speakers;
+         sleep 2;
+     waituntil{((missionNamespace getvariable "Buzz" == 1)or(missionNamespace getvariable "Buzz" == 0))};
+    };
+
 };
