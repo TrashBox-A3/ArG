@@ -11,7 +11,7 @@ _time = _logic getVariable ["Def_Time",Def_Time];
 _MaxTime = _logic getVariable ["Def_Max",Def_Max];
 
 _Box = "ArG_BuzzerBox";
-while {(!isnil "_Box")} do {
+while {(isnil "_Box")} do {
 
 
   while {_time > 0} do {
