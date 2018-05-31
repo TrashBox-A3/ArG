@@ -24,9 +24,9 @@ _Green = [
 'ArG_Gamer_12'
 ];
 
-if ((isPlayer _x)&&(typeOf _x in _Brue))&&
-(missionNamespace getvariable 'Buzz' == 0)or
-(missionNamespace getvariable 'Wait' == 1)) then{
+if (((isPlayer _x)&&(typeOf _x in _Brue))&&
+((missionNamespace getvariable 'Buzz' == 0)or
+(missionNamespace getvariable 'Wait' == 1))) then{
 
 Hold = [player,'Time Counter',
 '\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa',
@@ -42,14 +42,11 @@ Hold = [player,'Time Counter',
 0,
 false,
 false
-]call BIS_fnc_holdActionAdd;}",
-"if(typeOf cursorObject != 'ArG_BuzzerBox')then{
-  [ player,Hold ] call BIS_fnc_holdActionRemove;
-  };
+]call BIS_fnc_holdActionAdd;};
 
-  if ((isPlayer _x)&&(typeOf _x in _Red))&&
-  (missionNamespace getvariable 'Buzz' == 1)or
-  (missionNamespace getvariable 'Wait' == 1)) then{
+  if (((isPlayer _x)&&(typeOf _x in _Red))&&
+  ((missionNamespace getvariable 'Buzz' == 1)or
+  (missionNamespace getvariable 'Wait' == 1))) then{
 
   Hold = [player,'Time Counter',
   '\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa',
@@ -65,14 +62,11 @@ false
   0,
   false,
   false
-  ]call BIS_fnc_holdActionAdd;}",
-  "if(typeOf cursorObject != 'ArG_BuzzerBox')then{
-    [ player,Hold ] call BIS_fnc_holdActionRemove;
-  };
+  ]call BIS_fnc_holdActionAdd;};
 
-  if ((isPlayer _x)&&(typeOf _x in _Green))&&
-  (missionNamespace getvariable 'Buzz' == 0)or
-  (missionNamespace getvariable 'Wait' == 1)) then{
+  if (((isPlayer _x)&&(typeOf _x in _Green))&&
+  ((missionNamespace getvariable 'Buzz' == 0)or
+  (missionNamespace getvariable 'Wait' == 1))) then{
 
   Hold = [player,'Time Counter',
   '\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa',
