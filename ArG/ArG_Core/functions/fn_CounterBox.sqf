@@ -1,4 +1,4 @@
-while{true}do{
+
 
 if ((typeOf cursorObject == "ArG_BuzzerBox")) then {
 
@@ -34,7 +34,5 @@ else
   [ player,0] call BIS_fnc_holdActionRemove;
 };
 
-waituntil{((typeOf cursorObject != "ArG_BuzzerBox"))};
 
-};
 sleep 2;
