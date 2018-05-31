@@ -1,5 +1,5 @@
 
-while{true}do{
+while{alive player}do{
 
 if(typeOf cursorObject == "ArG_BuzzerBox")then{
 
