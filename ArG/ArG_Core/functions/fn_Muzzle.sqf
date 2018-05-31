@@ -20,7 +20,7 @@ _ArGGamer = [
 "ArG_Gamer_12"
 ];
 
-while{alive player}do{
+while{!(player hasweapon "")}do{
 
 {
   if ((isPlayer _x)&&(typeOf _x in _ArGGamer)) then {
@@ -32,7 +32,7 @@ while{alive player}do{
 
 
    if(!(handgunWeapon player isEqualTo "")&&(handgunItems _x select 0 == ""))then{
-    
+
      player addHandgunItem "ArG_muzzle_snds_H";
  };
 };
