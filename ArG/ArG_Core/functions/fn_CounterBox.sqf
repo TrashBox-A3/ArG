@@ -1,6 +1,6 @@
+while{(typeOf cursorObject == "ArG_BuzzerBox")}do{
 
 
-if ((typeOf cursorObject == "ArG_BuzzerBox")) then {
 
 0 = [player,"Time Counter",
 
@@ -28,11 +28,12 @@ false
 ]
 remoteExec ["BIS_fnc_holdActionAdd", [0,2] select isDedicated, player];
 
+
+
+waituntil{(typeOf cursorObject != "ArG_BuzzerBox")};
+
 }
 else
 {
   [ player,0] call BIS_fnc_holdActionRemove;
 };
-
-
-sleep 2;
