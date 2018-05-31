@@ -33,5 +33,8 @@ else
 {
   [ player,0] call BIS_fnc_holdActionRemove;
 };
+
+waituntil{((typeOf cursorObject == "ArG_BuzzerBox"))};
+
 };
 sleep 2;
