@@ -16,6 +16,5 @@ trg setTriggerStatements ["(typeOf cursorObject == 'ArG_BuzzerBox')" ,"0 = [play
 0,
 false,
 false
-]
-remoteExec ['BIS_fnc_holdActionAdd', [0,2] select isDedicated, player];
-};","hint ''"];
+]call BIS_fnc_holdActionAdd;
+};","[ player,0 ] call BIS_fnc_holdActionRemove;"];
