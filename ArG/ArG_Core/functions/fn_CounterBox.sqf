@@ -1,7 +1,5 @@
 
-while{alive player}do{
 
-  missionNamespace setVariable ["Counter",0,false];
 
 if(typeOf cursorObject == "ArG_BuzzerBox")then{
 
@@ -38,8 +36,3 @@ else
   [ player,0] call BIS_fnc_holdActionRemove;
   missionNamespace setVariable ["Counter",0,false];
 };
-
-waituntil{typeOf cursorObject != "ArG_BuzzerBox"};
-}:
-
-sleep 2;
