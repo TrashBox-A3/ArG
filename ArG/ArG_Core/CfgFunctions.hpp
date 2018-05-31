@@ -20,7 +20,7 @@ class ArG
 		class Ai_HitCall {postInit = 1;};
 		class Muzzle {};
 		class BuzzerBox {};
-		class CountDown {};
+		class Count {};
 		class CounterBox {};
 
 	};
