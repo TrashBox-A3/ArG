@@ -21,6 +21,7 @@ class ArG
 		class Muzzle {};
 		class BuzzerBox {};
 		class CountDown {};
+		class CounterBox {};
 
 	};
 
