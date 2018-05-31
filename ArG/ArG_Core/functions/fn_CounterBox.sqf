@@ -2,7 +2,8 @@
 trg = createTrigger ["EmptyDetector", getPos player];
 trg setTriggerArea [0, 0, 0, false];
 trg setTriggerActivation ["NONE", "PRESENT", true];
-trg setTriggerStatements ["(typeOf cursorObject == 'ArG_BuzzerBox')" ,"0 = [player,'Time Counter',
+trg setTriggerStatements ["(typeOf cursorObject == 'ArG_BuzzerBox')",
+"Hold = [player,'Time Counter',
 '\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa',
 '\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_hack_ca.paa',
 '_this distance _target < 3',
@@ -16,4 +17,4 @@ trg setTriggerStatements ["(typeOf cursorObject == 'ArG_BuzzerBox')" ,"0 = [play
 0,
 false,
 false
-]call BIS_fnc_holdActionAdd;","[ player,0 ] call BIS_fnc_holdActionRemove;"];
+]call BIS_fnc_holdActionAdd;","[ player,Hold ] call BIS_fnc_holdActionRemove;"];
