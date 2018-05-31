@@ -42,7 +42,7 @@ if ((missionNamespace getvariable "Buzz" == 1)&&(_time < _MaxTime)) then {
 
     CountUp = true;PublicVariable"CountUp";
   };
-
+};
 
 }
 else
@@ -59,7 +59,6 @@ else
       CountWait = true;PublicVariable"CountWait";
 };
 };
-
 
 };
 };
