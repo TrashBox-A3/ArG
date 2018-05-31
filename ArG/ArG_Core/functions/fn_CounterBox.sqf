@@ -3,7 +3,7 @@
 
 if(typeOf cursorObject == "ArG_BuzzerBox")then{
 
-  missionNamespace setVariable ["Counter",1,false];
+
 0 = [player,"Time Counter",
 
 "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",
@@ -34,5 +34,5 @@ remoteExec ["BIS_fnc_holdActionAdd", [0,2] select isDedicated, player];
 else
 {
   [ player,0] call BIS_fnc_holdActionRemove;
-  missionNamespace setVariable ["Counter",0,false];
+
 };
