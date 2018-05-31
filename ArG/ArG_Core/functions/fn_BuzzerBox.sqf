@@ -36,7 +36,7 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
      waituntil{missionNamespace getvariable "Buzz" == 1};
     };
 
-    while {missionNamespace getvariable "Wait" == 1} do
+    while {missionNamespace getvariable "Buzz" == 2} do
     {
          {
          _x setDamage 1;

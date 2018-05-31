@@ -20,7 +20,7 @@ if (((true))&&(player getvariable '_Hited' == 0)) then{
    systemChat'Count Up Start';
    },
 {
-  missionNamespace setVariable ['Wait',1,true];
+  missionNamespace setVariable ['Buzz',2,true];
   systemChat'Wait';
   },
 [],
@@ -47,7 +47,7 @@ if (((true))&&(player getvariable '_Hited' == 0)) then{
   []execVM  'ArG_Core\functions\fn_BuzzerBox.sqf';
   systemChat'Count Down Start';
   },
-{missionNamespace setVariable ['Wait',1,true];
+{missionNamespace setVariable ['Buzz',2,true];
 systemChat'Wait';
 },
 [],
