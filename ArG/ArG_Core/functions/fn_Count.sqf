@@ -13,8 +13,8 @@ params [
 _time = _logic getVariable ["Def_Time",Def_Time];
 _MaxTime = _logic getVariable ["Def_Max",Def_Max];
 
-
-while {(!isNil "ArG_BuzzerBox")} do {
+_box = ["ArG_BuzzerBox"];
+while {(!isNil "_box")} do {
 
 
   while {_time > 0} do {
