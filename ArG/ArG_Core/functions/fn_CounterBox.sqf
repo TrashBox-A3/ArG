@@ -6,7 +6,7 @@ trg setTriggerStatements ["(typeOf cursorObject == 'ArG_BuzzerBox')",
 "switch (playerSide) do {
 
  case west: {
-if ((missionNamespace getvariable 'Buzz' == 0)or(missionNamespace getvariable 'Wait' == 1)) then{
+if ((missionNamespace getvariable "Buzz" == 0)or(missionNamespace getvariable "Wait" == 1)) then{
      Hold = [player,'Time Counter',
 '\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa',
 '\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_hack_ca.paa',
@@ -15,7 +15,7 @@ if ((missionNamespace getvariable 'Buzz' == 0)or(missionNamespace getvariable 'W
 {},
 {},
 { []execVM  'ArG_Core\functions\fn_BuzzerBox.sqf'},
-{missionNamespace setVariable ['Wait',1,true];},
+{missionNamespace setVariable ["Wait",1,true];},
 [],
 2,
 0,
@@ -27,7 +27,7 @@ false
  };
  case east: {
 
-if ((missionNamespace getvariable 'Buzz' == 1)or(missionNamespace getvariable 'Wait' == 1)) then{
+if ((missionNamespace getvariable "Buzz" == 1)or(missionNamespace getvariable "Wait" == 1)) then{
      Hold = [player,'Time Counter',
 '\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa',
 '\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_hack_ca.paa',
@@ -36,7 +36,7 @@ if ((missionNamespace getvariable 'Buzz' == 1)or(missionNamespace getvariable 'W
 {},
 {},
 { []execVM  'ArG_Core\functions\fn_BuzzerBox.sqf'},
-{missionNamespace setVariable ['Wait',1,true];},
+{missionNamespace setVariable ["Wait",1,true];},
 [],
 2,
 0,
