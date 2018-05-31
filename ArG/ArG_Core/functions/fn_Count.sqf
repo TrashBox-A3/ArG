@@ -14,7 +14,7 @@ _time = _logic getVariable ["Def_Time",Def_Time];
 _MaxTime = _logic getVariable ["Def_Max",Def_Max];
 
 _box = ["ArG_BuzzerBox"];
-while {(!isNil "_box")} do {
+while {(isNil "_box")} do {
 systemChat"loop";
 
   while {_time > 0} do {
