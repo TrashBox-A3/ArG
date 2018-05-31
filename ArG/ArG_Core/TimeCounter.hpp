@@ -18,8 +18,8 @@ class  Land_SatellitePhone_F;
 {
 class BuzzerAction
 {
-displayName = "<img image='\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa' size='1' shadow='false' /> <t color=""#FF4500"">Buzzer Switch";
-displayNameDefault = "<img image='\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa' size='3' shadow='false' /><t color=""#FF4500"">Buzzer Switch";
+displayName = ;
+displayNameDefault = ;
 priority = 3;
 radius = 20;
 position = "camera";
@@ -28,7 +28,7 @@ hideOnUse = 0;
 onlyForPlayer = 1;
 shortcut = "";
 condition = "(player getvariable '_Hited' == 0)";
-statement = "this say3D 'Switch',[[[],'ArG_Core\functions\fn_BuzzerBox.sqf'], 'BIS_fnc_execVM', true,true] call BIS_fnc_MP;";
+statement = "this say3D 'Switch',[[[],'ArG_Core\functions\fn_CounterBox.sqf'], 'BIS_fnc_execVM', true,true] call BIS_fnc_MP;";
 };
 };
 

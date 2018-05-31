@@ -1,7 +1,7 @@
-while{(typeOf cursorObject == "ArG_BuzzerBox")}do{
 
 
 
+if(typeOf cursorObject == "ArG_BuzzerBox")then{
 0 = [player,"Time Counter",
 
 "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",
@@ -27,10 +27,6 @@ false,
 false
 ]
 remoteExec ["BIS_fnc_holdActionAdd", [0,2] select isDedicated, player];
-
-
-
-waituntil{(typeOf cursorObject != "ArG_BuzzerBox")};
 
 }
 else
