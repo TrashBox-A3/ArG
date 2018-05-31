@@ -1,6 +1,3 @@
-
-
-
 params [
     ["_logic", objNull, [objNull]],
     "_time","_MaxTime"
@@ -13,50 +10,41 @@ params [
 _time = _logic getVariable ["Def_Time",Def_Time];
 _MaxTime = _logic getVariable ["Def_Max",Def_Max];
 
-_box = "ArG_BuzzerBox";
-while {(!isNil "_box")} do {
-systemChat"loop";
+
+while {true} do {
+
 
   while {_time > 0} do {
 
-    call {
-    	if (missionNamespace getvariable "Buzz" == 0) exitWith {
+if (missionNamespace getvariable "Buzz" == 0) then {
 
-    	_time = _time - 1;
-    	hintSilent format["CountDown Time Remaining \n %1", [((_time)/60)+.01,"HH:MM"] call BIS_fnc_timetostring];
-    	sleep 1;
+	_time = _time - 1;
+	hintSilent format["CountDown Time Remaining \n %1", [((_time)/60)+.01,"HH:MM"] call BIS_fnc_timetostring];
+	sleep 1;
 
-           if (_time <= 0) then {
+  if (_time <= 0) then {
 
-           CountDown = true;PublicVariable"CountDown";
+    CountDown = true;PublicVariable"CountDown";
 
-             };
-    	};
+  };
 
-    	if (((missionNamespace getvariable "Buzz" == 1)&&(_time < _MaxTime))) exitWith {
+}
+else
+{
 
-    	  _time = _time + 1;
-              hintSilent format["CountUp  \n %1", [((_time)/60)+.01,"HH:MM"] call BIS_fnc_timetostring];
-              sleep 1;
+if ((missionNamespace getvariable "Buzz" == 1)&&(_time < _MaxTime)) then {
 
-             if ((_time >= _MaxTime)) then {
+  _time = _time + 1;
+  hintSilent format["CountUp  \n %1", [((_time)/60)+.01,"HH:MM"] call BIS_fnc_timetostring];
+  sleep 1;
 
-             CountUp = true;PublicVariable"CountUp";
-             };
-    	};
+  if ((_time >= _MaxTime)) then {
 
-    	if (((missionNamespace getvariable "Wait" == 1))) exitWith {
+    CountUp = true;PublicVariable"CountUp";
+  };
+};
+};
 
-             _time = _time + 0;
-             hintSilent format["CountWait  \n %1", [((_time)/60)+.01,"HH:MM"] call BIS_fnc_timetostring];
-             sleep 1;
-             systemChat "wait";
-
-             CountWait = true;PublicVariable"CountWait";
-    	};
-
-        };
 
 };
 };
-sleep 0.1;
