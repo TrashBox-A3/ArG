@@ -2,7 +2,7 @@ if (!isDedicated) then {waitUntil {!isNull player && isPlayer player};};
 
 STATE = false;
 
-
+missionNamespace getvariable "Wait" == 1;
 
 []execVM "ArG_Core\functions\fn_Muzzle.sqf";
 
