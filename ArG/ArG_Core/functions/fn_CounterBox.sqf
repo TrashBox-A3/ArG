@@ -15,7 +15,10 @@ if ((missionNamespace getvariable 'Buzz' == 0)) then{
 {},
 {},
 { []execVM  'ArG_Core\functions\fn_BuzzerBox.sqf'},
-{missionNamespace setVariable ['Wait',1,true];},
+{
+  missionNamespace setVariable ['Wait',1,true];
+  systemChat'Wait';
+  },
 [],
 2,
 0,
