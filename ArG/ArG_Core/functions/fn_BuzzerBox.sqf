@@ -4,19 +4,6 @@ _types = [
 "ArG_Speaker"
 ];
 
-
-
-if (STATE) then
-{
-    STATE = 1;
-    missionNamespace setVariable ["Buzz",1,true];
-    systemChat"Count Up Start";
-}else{
-    STATE = 0;
-    missionNamespace setVariable ["Buzz",0,true];
-    systemChat"Count Down Start";
-};
-
 for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
 {
     _Speakers = getMarkerPos "GameArea" nearObjects [_types select _i , 1000];

@@ -14,7 +14,11 @@ if ((missionNamespace getvariable 'Buzz' == 0)&&(player getvariable '_Hited' == 
 '_caller distance _target < 3',
 {},
 {},
-{ []execVM  'ArG_Core\functions\fn_BuzzerBox.sqf'},
+{
+   missionNamespace setVariable ['Buzz',1,true];
+   []execVM  'ArG_Core\functions\fn_BuzzerBox.sqf'
+   systemChat'Count Up Start';
+   },
 {
   missionNamespace setVariable ['Wait',1,true];
   systemChat'Wait';
@@ -38,7 +42,11 @@ if ((missionNamespace getvariable 'Buzz' == 1)&&(player getvariable '_Hited' == 
 '_caller distance _target < 3',
 {},
 {},
-{ []execVM  'ArG_Core\functions\fn_BuzzerBox.sqf'},
+{
+  missionNamespace setVariable ['Buzz',0,true];
+  []execVM  'ArG_Core\functions\fn_BuzzerBox.sqf'
+  systemChat'Count Down Start';
+  },
 {missionNamespace setVariable ['Wait',1,true];},
 [],
 2,
