@@ -1,8 +1,9 @@
 
-
+while{true}do{
 
 if(typeOf cursorObject == "ArG_BuzzerBox")then{
 
+missionNamespace setVariable ["Hold",1,false];
 
 0 = [player,"Time Counter",
 
@@ -29,10 +30,18 @@ false,
 false
 ]
 remoteExec ["BIS_fnc_holdActionAdd", [0,2] select isDedicated, player];
-
-}
-else
-{
-  [ player,0] call BIS_fnc_holdActionRemove;
-
 };
+
+waituntil {missionNamespace getvariable "Hold" == 0}
+};
+sleep 0.2;
+
+while{missionNamespace getvariable "Hold" == 1}do{
+  if(typeOf cursorObject != "ArG_BuzzerBox")then{
+  [ player,0] call BIS_fnc_holdActionRemove;
+  missionNamespace getvariable "Hold" == 0;
+};
+
+waituntil {missionNamespace getvariable "Hold" == 1};
+};
+sleep 0.2;
