@@ -16,49 +16,43 @@ while {true} do {
 
   while {_time > 0} do {
 
-if (missionNamespace getvariable "Buzz" == 0) then {
+    call {
+    	if (missionNamespace getvariable "Buzz" == 0) exitWith {
 
-	_time = _time - 1;
-	hintSilent format["CountDown Time Remaining \n %1", [((_time)/60)+.01,"HH:MM"] call BIS_fnc_timetostring];
-	sleep 1;
+    	_time = _time - 1;
+    	hintSilent format["CountDown Time Remaining \n %1", [((_time)/60)+.01,"HH:MM"] call BIS_fnc_timetostring];
+    	sleep 1;
 
-  if (_time <= 0) then {
+           if (_time <= 0) then {
 
-    CountDown = true;PublicVariable"CountDown";
+           CountDown = true;PublicVariable"CountDown";
 
-  };
+             };
+    	};
 
-}
-else
-{
+    	if (((missionNamespace getvariable "Buzz" == 1)&&(_time < _MaxTime))) exitWith {
 
-if ((missionNamespace getvariable "Buzz" == 1)&&(_time < _MaxTime)) then {
+    	  _time = _time + 1;
+              hintSilent format["CountUp  \n %1", [((_time)/60)+.01,"HH:MM"] call BIS_fnc_timetostring];
+              sleep 1;
 
-  _time = _time + 1;
-  hintSilent format["CountUp  \n %1", [((_time)/60)+.01,"HH:MM"] call BIS_fnc_timetostring];
-  sleep 1;
+             if ((_time >= _MaxTime)) then {
 
-  if ((_time >= _MaxTime)) then {
+             CountUp = true;PublicVariable"CountUp";
+             };
+    	};
 
-    CountUp = true;PublicVariable"CountUp";
-  };
+    	if (((missionNamespace getvariable "Wait" == 1))) exitWith {
 
+             _time = _time + 0;
+             hintSilent format["CountWait  \n %1", [((_time)/60)+.01,"HH:MM"] call BIS_fnc_timetostring];
+             sleep 1;
+             systemChat "wait";
 
-}
-else
-{
+             CountWait = true;PublicVariable"CountWait";
+    	};
 
-  if ((missionNamespace getvariable "Wait" == 1)) then {
-
-    _time = _time + 0;
-    hintSilent format["CountWait  \n %1", [((_time)/60)+.01,"HH:MM"] call BIS_fnc_timetostring];
-    sleep 1;
-   systemChat "wait";
-
-
-      CountWait = true;PublicVariable"CountWait";
-};
-};
+        };
 
 };
 };
