@@ -61,6 +61,6 @@ false
  };
 
 };",
-"if(typeOf cursorObject != 'ArG_BuzzerBox')then{
+"if((typeOf cursorObject != 'ArG_BuzzerBox')or(missionNamespace getvariable 'Buzz' == 2))then{
 [ player,Hold ] call BIS_fnc_holdActionRemove;}"
   ];
