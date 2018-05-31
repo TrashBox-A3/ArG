@@ -13,8 +13,9 @@ class CfgVehicles
     #include "ArG_ItemBox.hpp"
     #include "ArG_AllinOne_ItemBox.hpp"
     #include "CfgModules.hpp"
-
-
+    #include "flag.hpp"
+    #include "TimeCounter.hpp"
+    
 
 	class  B_Soldier_base_F;
 
@@ -522,62 +523,6 @@ class  O_Soldier_base_F;
 
 
             };
-
-
-    //Speaker Box//
-    class  Land_SatellitePhone_F;
-
-        class ArG_BuzzerBox:  Land_SatellitePhone_F
-    {
-        scope=2;
-        author="Rodeostar42";
-        displayName="Buzzer box";
-        faction = "Empty";
-        editorCategory = "ArG_Objects";
-        editorSubcategory = "ArG_Items";
-        editorPreview = "\ArG_Core\Core_EditorPreviews\ArG_BuzzerBox.jpg";
-        model = "\A3\Structures_F\Items\Electronics\SatellitePhone_F.p3d";
-        hiddenSelections[]={};
-        hiddenSelectionsTextures[] = {};
-
-          class UserActions
-{
-  class Action
-  {
-    displayName = "<img image='\ArG_Core\ArG.jpg' size='1' shadow='false' /> <t color=""#FF4500"">Buzzer Switch";
-    displayNameDefault = "<img image='\ArG_Core\ArG.jpg' size='3' shadow='false' /><t color=""#FF4500"">Buzzer Switch";
-    priority = 3;
-    radius = 20;
-    position = "camera";
-    showWindow = true;
-    hideOnUse = 0;
-    onlyForPlayer = 1;
-    shortcut = "reloadMagazine";
-    condition = "true";
-    statement = "this say3D 'Switch',[[[],'ArG_Core\functions\fn_BuzzerBox.sqf'], 'BIS_fnc_execVM', true,true] call BIS_fnc_MP;";
-  };
-};
-
-
-    };
-
-    //Speaker//
-    class  Land_Loudspeakers_F;
-
-        class ArG_Speaker:  Land_Loudspeakers_F
-    {
-        scope=2;
-        author="Rodeostar42";
-        displayName="Speaker";
-        faction = "Empty";
-        editorCategory = "ArG_Objects";
-        editorSubcategory = "ArG_Items";
-        editorPreview = "\ArG_Core\Core_EditorPreviews\ArG_Speakera.jpg";
-        model = "\A3\Structures_F\Civ\Accessories\Loudspeakers_F.p3d";
-        hiddenSelections[]={};
-        hiddenSelectionsTextures[] = {};
-
-    };
 
 
     class  Land_Billboard_F;

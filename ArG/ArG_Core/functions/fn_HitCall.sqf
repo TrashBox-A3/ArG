@@ -1,5 +1,10 @@
 ///script by Rodeostar42///
 
+private ["_unit","_Hited"];
+
+_unit = _this select 0;
+
+player setVariable ["_Hited",0,false];
 
 _Gamer = [
 "ArG_Gamer_1",
@@ -18,59 +23,88 @@ _Gamer = [
 
  {
 
-   if ((isPlayer _x)&&(typeOf _x in _Gamer)) then
+   if ((isPlayer _x)&&(typeOf _x in _Gamer)&&(player getvariable "_Hited" == 0)) then
+
    {
+      player addMPEventHandler ["MPHit", {
 
-player addMPEventHandler ["MPHit", {
-
-
- inGameUISetEventHandler ["Action","false "];
-
- player setCaptive true;
-
- player setDamage 0;
-
-player say3D "HitCall";
-
- player switchCamera "EXTERNAL";
-
- player addEventHandler ["HandleDamage", {0}];
+      player allowDamage false;
 
 
- player switchMove "Acts_JetsMarshallingRight_loop";
+          player setCaptive true;
 
+      player setVariable ["_Hited",1,false];
 
-[] spawn
- {
-	 sleep 2;
-	 player switchMove "ApanPknlMstpSnonWnonDnon_G01";
+      player say3D "HitCall";
+      if ( (difficultyOption "thirdPersonView")isEqualTo 1) then
+      	  {
+            player switchCamera "EXTERNAL";
+          };
+      player addEventHandler ["HandleDamage", {0}];
+      player disableAI "ANIM";
+      player switchMove "Acts_JetsMarshallingRight_loop";
 
+     [] spawn
+      {
+	     sleep 2;
+	     player switchMove "ApanPknlMstpSnonWnonDnon_G01";
+      };
+
+  SaftyID = [player, "Back to Safety zone",
+  "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_forceRespawn_ca.paa",
+  "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",
+  "true", "true",
+ {},{},{
+
+   switch (playerSide) do {
+
+ case west: {
+     titletext ["","BLACK IN",2];
+     _Bmarker = getMarkerType "B_Safe";
+     if(isnil (_Bmarker))then{
+     player setPos (getMarkerPos "B_Safe");
+     sleep 0.2;
+     player switchMove "";
+     player allowDamage true;
+     player setCaptive false;
+     player setVariable ["_Hited",0,false];
+     [ player,SaftyID ] call BIS_fnc_holdActionRemove;
+   };
  };
- 
- onEachFrame {
-     private "_private";
-     _playerPos = getPosATL player;
-     drawIcon3D [
-         "",
-         [153,0,0,0.5],
-         [_playerPos select 0,_playerPos select 1,2.3],
-         5,
-         5,
-         direction player,
-         "HIT!",
-         0,
-         0.08,
-         "TahomaB"
-         ];
+ case east: {
+     titletext ["","BLACK IN",2];
+     _Rmarker = getMarkerType "R_Safe";
+     if(isnil (_Rmarker))then{
+     _this setPos (getMarkerPos "R_Safe");
+     sleep 0.2;
+     player switchMove "";
+     player allowDamage true;
+     player setCaptive false;
+     player setVariable ["_Hited",0,false];
+     [ player,SaftyID ] call BIS_fnc_holdActionRemove;
+     };
  };
+ case resistance: {
+     titletext ["","BLACK IN",2];
+     _Gmarker = getMarkerType "G_Safe";
+     if(isnil (_Gmarker))then{
+     player setPos (getMarkerPos "G_Safe");
+     sleep 0.2;
+     player switchMove "";
+     player allowDamage true;
+     player setCaptive false;
+     player setVariable ["_Hited",0,false];
+     [ player,SaftyID ] call BIS_fnc_holdActionRemove;
+     };
+   };
 
+};
+   },
+ {}, [], 10, nil, true, false
+ ] call BIS_fnc_holdActionAdd;
 
-
-
-player removeMPEventHandler ["MPHit", 0];
 
 }];
-
 
 };
 } forEach allUnits;

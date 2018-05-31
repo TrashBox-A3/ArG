@@ -2,10 +2,11 @@ class CfgPatches
 {
 	class ArG_Core
 	{
-
+    addonRootClass="A3_Weapons_F";
 		requiredAddons[]=
 		{
-
+			"A3_Weapons_F",
+			"A3_Weapons_F_Items"
 		};
 		requiredVersion=0.1;
 		units[]={
@@ -43,7 +44,10 @@ class CfgPatches
 		"ArG_BuzzerBox",
 		"ArG_Speaker",
 		"Core_Billboard",
-		"ArG_muzzle_snds_H"
+		"ArG_muzzle_snds_H",
+		"ArG_Blue_Flag",
+		"ArG_Red_Flag",
+		"ArG_Green_Flag"
 		};
 	};
 };

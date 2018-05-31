@@ -17,6 +17,30 @@ class ArG_TM_Glock17: rhsusf_weap_glock17g4
       "ArG_25Rnd_9mm"
   };
 
+  class WeaponSlotsInfo: WeaponSlotsInfo
+  {
+    class MuzzleSlot: MuzzleSlot
+    {
+      linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
+      compatibleItems[]=
+      {
+        "ArG_muzzle_snds_H"
+      };
+      iconPosition[]={0,0.44999999};
+      iconScale=0.2;
+    };
+    class CowsSlot: CowsSlot
+    {
+      iconPosition[]={0.5,0.34999999};
+      iconScale=0.2;
+    };
+    class PointerSlot: PointerSlot
+    {
+      iconPosition[]={0.2,0.44999999};
+      iconScale=0.25;
+    };
+  };
+
   initSpeed = 220; // muzzle velocity
   maxRange = 60;
   flash = "";
@@ -90,6 +114,30 @@ class ArG_TM_P226R: hlc_pistol_P226R
       "ArG_25Rnd_9mm"
   };
 
+  class WeaponSlotsInfo: WeaponSlotsInfo
+  {
+    class MuzzleSlot: MuzzleSlot
+    {
+      linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
+      compatibleItems[]=
+      {
+        "ArG_muzzle_snds_H"
+      };
+      iconPosition[]={0,0.44999999};
+      iconScale=0.2;
+    };
+    class CowsSlot: CowsSlot
+    {
+      iconPosition[]={0.5,0.34999999};
+      iconScale=0.2;
+    };
+    class PointerSlot: PointerSlot
+    {
+      iconPosition[]={0.2,0.44999999};
+      iconScale=0.25;
+    };
+  };
+
   initSpeed = 220; // muzzle velocity
   maxRange = 60;
   flash = "";
@@ -161,6 +209,30 @@ class ArG_TM_M92F: rhsusf_weap_m9
   magazines[] = {
 
       "ArG_25Rnd_9mm"
+  };
+
+  class WeaponSlotsInfo: WeaponSlotsInfo
+  {
+    class MuzzleSlot: MuzzleSlot
+    {
+      linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
+      compatibleItems[]=
+      {
+        "ArG_muzzle_snds_H"
+      };
+      iconPosition[]={0,0.44999999};
+      iconScale=0.2;
+    };
+    class CowsSlot: CowsSlot
+    {
+      iconPosition[]={0.5,0.34999999};
+      iconScale=0.2;
+    };
+    class PointerSlot: PointerSlot
+    {
+      iconPosition[]={0.2,0.44999999};
+      iconScale=0.25;
+    };
   };
 
   initSpeed = 220; // muzzle velocity

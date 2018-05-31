@@ -22,7 +22,7 @@ class ArG_Buzzer : Module_F
     author = "Rodeostar42";
     displayName = "ArG Buzzer";
     category = "ArG_Module";
-    function = "fn_CountDown";
+    function = "ArG_fnc_CountDown";
 
     functionPriority = 2;
     isGlobal = 1;
@@ -35,6 +35,14 @@ class ArG_Buzzer : Module_F
             description = "Initial count";
             typeName = "NUMBER";
             defaultValue = 300;
+        };
+
+        class Max_count
+        {
+            displayName = "Max count";
+            description = "Max count";
+            typeName = "NUMBER";
+            defaultValue = 600;
         };
 
     };

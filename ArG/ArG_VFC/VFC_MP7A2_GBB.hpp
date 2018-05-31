@@ -16,6 +16,31 @@ class ArG_VFC_MP7A1_GBB: rhsusf_weap_MP7A2
 			"VFC_40Rnd_46x30_025"
 	};
 
+	class WeaponSlotsInfo: WeaponSlotsInfo
+  {
+    class MuzzleSlot: MuzzleSlot
+    {
+      linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
+      compatibleItems[]=
+      {
+        "muzzle_snds_h",
+        "ArG_muzzle_snds_H"
+      };
+      iconPosition[]={0,0.44999999};
+      iconScale=0.2;
+    };
+    class CowsSlot: CowsSlot
+    {
+      iconPosition[]={0.5,0.34999999};
+      iconScale=0.2;
+    };
+    class PointerSlot: PointerSlot
+    {
+      iconPosition[]={0.2,0.44999999};
+      iconScale=0.25;
+    };
+  };
+
 
 	reloadTime = 0.070;
 
