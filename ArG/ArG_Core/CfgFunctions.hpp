@@ -21,7 +21,7 @@ class ArG
 		class Muzzle {};
 		class BuzzerBox {};
 		class Count {};
-		class CounterBox {postInit = 1};
+		class CounterBox {};
 
 	};
 
