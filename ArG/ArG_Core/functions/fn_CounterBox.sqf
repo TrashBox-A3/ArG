@@ -16,7 +16,7 @@ if (((missionNamespace getvariable 'Buzz' == 0)or(missionNamespace getvariable '
 {},
 {
    missionNamespace setVariable ['Buzz',1,true];
-   []execVM  'ArG_Core\functions\fn_BuzzerBox.sqf'
+   []execVM  'ArG_Core\functions\fn_BuzzerBox.sqf';
    systemChat'Count Up Start';
    },
 {
@@ -44,10 +44,12 @@ if (((missionNamespace getvariable 'Buzz' == 1)or(missionNamespace getvariable '
 {},
 {
   missionNamespace setVariable ['Buzz',0,true];
-  []execVM  'ArG_Core\functions\fn_BuzzerBox.sqf'
+  []execVM  'ArG_Core\functions\fn_BuzzerBox.sqf';
   systemChat'Count Down Start';
   },
-{missionNamespace setVariable ['Wait',1,true];},
+{missionNamespace setVariable ['Wait',1,true];
+systemChat'Wait';
+},
 [],
 2,
 0,
