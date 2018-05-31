@@ -37,7 +37,7 @@ else
   missionNamespace setVariable ["Counter",0,false];
 };
 
-waituntil{missionNamespace getvariable "Counter" == 0};
+waituntil{typeOf cursorObject != "ArG_BuzzerBox"};
 }:
 
 sleep 2;
