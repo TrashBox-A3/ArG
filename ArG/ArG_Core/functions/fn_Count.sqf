@@ -13,7 +13,7 @@ params [
 _time = _logic getVariable ["Def_Time",Def_Time];
 _MaxTime = _logic getVariable ["Def_Max",Def_Max];
 
-_box = [typOf _x isEqualTo "ArG_BuzzerBox"];
+_box = [typeOf _x isEqualTo "ArG_BuzzerBox"];
 while {(!isNil "_box")} do {
 systemChat"loop";
 
