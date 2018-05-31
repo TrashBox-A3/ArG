@@ -21,7 +21,7 @@ if ((missionNamespace getvariable 'Buzz' == 0)or(missionNamespace getvariable 'W
 0,
 false,
 false
-]call BIS_fnc_holdActionAdd;};};
+]call BIS_fnc_holdActionAdd;};
 
 
    };
@@ -43,7 +43,7 @@ if ((missionNamespace getvariable 'Buzz' == 1)or(missionNamespace getvariable 'W
 0,
 false,
 false
-]call BIS_fnc_holdActionAdd;};};
+]call BIS_fnc_holdActionAdd;};
 
 
      };
@@ -65,7 +65,7 @@ if ((missionNamespace getvariable 'Buzz' == 0)or(missionNamespace getvariable 'W
 0,
 false,
 false
-]call BIS_fnc_holdActionAdd;};};
+]call BIS_fnc_holdActionAdd;};
      };
    };
 
