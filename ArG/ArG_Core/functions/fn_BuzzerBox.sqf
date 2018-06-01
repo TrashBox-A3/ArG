@@ -35,10 +35,11 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
 
     sleep 0.1;
 
-    call {
+  call {
+
     	if (missionNamespace getvariable "Buzz" == 0) exitWith
     	{
-    	         {
+
         while {true} do
         {
              {
@@ -55,6 +56,9 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
     	};
     	if (missionNamespace getvariable "Buzz" == 1) exitWith
     	{
+
+        while {true} do
+        {
     	        {
              _x setDamage 1;
              sleep 0.1;
@@ -68,5 +72,5 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
         };
     	};
 
-    };
+};
 };
