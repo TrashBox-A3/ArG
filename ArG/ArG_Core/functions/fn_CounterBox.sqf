@@ -5,13 +5,13 @@ trg setTriggerActivation ["NONE", "PRESENT", true];
 trg setTriggerStatements ["(typeOf cursorObject == 'ArG_BuzzerBox')",
 "switch (playerSide) do {
 
-
-counter = nearestObjects [player, ['ArG_BuzzerBox'], 50];
+  _Box = 'ArG_BuzzerBox';
+  _counter  = typeOf _Box;
 
  case west: {
 if (((true))&&(player getvariable '_Hited' == 0)) then{
 
-     Hold = [counter,'Time Counter',
+     Hold = [_counter,'Time Counter',
 '\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa',
 '\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_hack_ca.paa',
 '_this distance _target < 3',
@@ -41,7 +41,7 @@ false
 if (((true))&&(player getvariable '_Hited' == 0)) then{
 
 
-     Hold = [counter,'Time Counter',
+     Hold = [_counter,'Time Counter',
 '\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa',
 '\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_hack_ca.paa',
 '_this distance _target < 3',
