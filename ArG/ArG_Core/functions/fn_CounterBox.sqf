@@ -5,7 +5,7 @@ trg setTriggerActivation ["NONE", "PRESENT", true];
 trg setTriggerStatements ["(typeOf cursorObject == 'ArG_BuzzerBox')",
 "switch (playerSide) do {
 
-  _Box = typeOf cursorObject;
+  _Box = cursorObject;
   counter  = ( (typeOf _Box) in ['ArG_BuzzerBox','ArG_BuzzerBox'] );
 
  case west: {
