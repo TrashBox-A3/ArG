@@ -6,7 +6,7 @@ trg setTriggerStatements ["(typeOf cursorObject == 'ArG_BuzzerBox')",
 "switch (playerSide) do {
 
   _Box = ['ArG_BuzzerBox','ArG_BuzzerBox'];
-  _counter  = {_x isKindOf 'All'}count _Box > 0;
+  _counter  = ({cursortarget isKindOf _x } count _Box > 0);
 
  case west: {
 if (((true))&&(player getvariable '_Hited' == 0)) then{
