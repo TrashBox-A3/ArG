@@ -16,7 +16,7 @@ class  Land_SatellitePhone_F;
 
       class EventHandlers
           {
-               init = "_this execVM 'ArG_Core\functions\fn_CounterBox.sqf'";
+               init = "(_this select 0) execVM 'ArG_Core\functions\fn_CounterBox.sqf'";
 
           };
 
