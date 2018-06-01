@@ -4,6 +4,10 @@ _types = [
 "ArG_Speaker"
 ];
 
+if(STATE)then{
+
+  STATE = true;
+
 for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
 {
     _Speakers = getMarkerPos "GameArea" nearObjects [_types select _i , 1000];
@@ -47,4 +51,5 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
      waituntil{((missionNamespace getvariable "Buzz" == 0)or(missionNamespace getvariable "Buzz" == 1))};
     };
 
+};
 };
