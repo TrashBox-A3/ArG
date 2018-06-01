@@ -14,9 +14,11 @@ class  Land_SatellitePhone_F;
     hiddenSelections[]={};
     hiddenSelectionsTextures[] = {};
 
-      class EventHandlers : EventHandlers {
-      		init = "(_this select 0) execVM ""ArG_Core\functions\fn_Count.sqf";
-      	};
+      class EventHandlers
+          {
+               init = "_this execVM 'ArG_Core\functions\fn_CounterBox.sqf'";
+
+          };
 
 
 
