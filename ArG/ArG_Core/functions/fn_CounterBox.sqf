@@ -6,7 +6,7 @@ trg setTriggerStatements ["(typeOf cursorObject == 'ArG_BuzzerBox')",
 "switch (playerSide) do {
 
 
-counter = 'ArG_BuzzerBox' isKindOf 'All';
+counter = nearestObjects [player, ['ArG_BuzzerBox'], 50];
 
  case west: {
 if (((true))&&(player getvariable '_Hited' == 0)) then{
