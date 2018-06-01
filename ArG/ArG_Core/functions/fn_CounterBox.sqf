@@ -1,4 +1,4 @@
-
+private ["_Box","_counter"];
 trg = createTrigger ["EmptyDetector", getPos player];
 trg setTriggerArea [0, 0, 0, false];
 trg setTriggerActivation ["NONE", "PRESENT", true];
