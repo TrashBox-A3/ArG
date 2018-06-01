@@ -35,7 +35,9 @@ false
  case east: {
 
 if (((true))&&(player getvariable '_Hited' == 0)) then{
-     Hold = [player,'Time Counter',
+
+  _box = typeOf cursorObject != 'ArG_BuzzerBox';
+     Hold = [_box,'Time Counter',
 '\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa',
 '\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_hack_ca.paa',
 '_this distance _target < 3',
