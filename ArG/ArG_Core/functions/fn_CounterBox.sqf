@@ -5,8 +5,8 @@ trg setTriggerActivation ["NONE", "PRESENT", true];
 trg setTriggerStatements ["(typeOf cursorObject == 'ArG_BuzzerBox')",
 "switch (playerSide) do {
 
-  _Box = cursorObject;
-  counter  = ( (typeOf _Box) in ['ArG_BuzzerBox','ArG_BuzzerBox'] );
+  
+  counter  = isClass (configfile >> 'CfgVehicles' >> 'ArG_BuzzerBox');
 
  case west: {
 if (((true))&&(player getvariable '_Hited' == 0)) then{
