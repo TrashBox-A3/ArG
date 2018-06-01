@@ -5,8 +5,14 @@ _types = [
 ];
 
 if(STATE)then{
-
+STATE = false;
+missionNamespace setVariable ["Buzz",0,true];
+}
+else
+{
   STATE = true;
+  missionNamespace setVariable ["Buzz",1,true];
+};
 
 for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
 {
@@ -17,8 +23,7 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
     while {missionNamespace getvariable "Buzz" == 0} do
     {
         {
-          _x setDamage 1;
-          sleep 0.1;
+
           _x setDamage 0;
           sleep 0.1;
           _x say3D "Buzzer"
@@ -30,8 +35,7 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
     while {missionNamespace getvariable "Buzz" == 1} do
     {
          {
-         _x setDamage 1;
-         sleep 0.1;
+
          _x setDamage 0;
          sleep 0.1;
          _x say3D "Buzzer2"
@@ -48,8 +52,7 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
 
          } forEach _Speakers;
          sleep 2;
-     waituntil{((missionNamespace getvariable "Buzz" == 0)or(missionNamespace getvariable "Buzz" == 1))};
+     waituntil{(missionNamespace getvariable "Buzz" == 2)};
     };
 
-};
 };
