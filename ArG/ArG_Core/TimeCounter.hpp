@@ -17,7 +17,7 @@ class  Land_SatellitePhone_F;
       class EventHandlers
           {
                init = "this say3D 'Buzzer2'
-                      hint "hello";
+                      hint ""hello"";
                ";
 
           };
