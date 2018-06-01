@@ -4,7 +4,8 @@ trg setTriggerArea [0, 0, 0, false];
 trg setTriggerActivation ["NONE", "PRESENT", true];
 trg setTriggerStatements ["(typeOf cursorObject == 'ArG_BuzzerBox')",
 "switch (playerSide) do {
-_count = 'ArG_BuzzerBox' countType cursorObject;
+_Box =  'ArG_BuzzerBox';
+_count = 'All' countType _Box;
  case west: {
 if (((true))&&(player getvariable '_Hited' == 0)) then{
 
