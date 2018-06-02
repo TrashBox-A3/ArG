@@ -105,7 +105,7 @@ _Gamer = [
    };
 
 
-}forEach allUnits;
+}forEach allPlayers;
 };
    },
  {}, [], 2, nil, true, false
@@ -116,4 +116,4 @@ _Gamer = [
 
 };
 
-} forEach allUnits;
+} forEach allPlayers;
