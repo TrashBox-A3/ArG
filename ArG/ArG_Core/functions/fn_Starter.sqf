@@ -37,7 +37,7 @@ _tr1 setTriggerStatements [
         if (floor triggerTimeoutCurrent _this <= 0) exitWith {true};
         sleep 0.2;
         hintSilent parseText format [
-            "<t size='5' color='##FFFF00' shadow='2'>%1</t>",
+            "<t size='5' color='#FFFF00' shadow='2'>%1</t>",
             floor triggerTimeoutCurrent _this
         ];
         false
@@ -45,9 +45,7 @@ _tr1 setTriggerStatements [
     hint "Go";
     []execVM "ArG_Core\functions\fn_Count.sqf";
 
-   sleep 10;
 
-   ["epicFail",false,2] call BIS_fnc_endMission;
 
 };
 
