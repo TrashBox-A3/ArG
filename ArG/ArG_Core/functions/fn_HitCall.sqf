@@ -2,7 +2,7 @@
 
 private ["_unit","_Hited"];
 
-_unit = _this select 0;
+_unit = player;
 
 player setVariable ["_Hited",0,false];
 
@@ -19,6 +19,20 @@ _Gamer = [
 "ArG_Gamer_10",
 "ArG_Gamer_11",
 "ArG_Gamer_12"
+];
+
+_BGamer = [
+"ArG_Gamer_1",
+"ArG_Gamer_2",
+"ArG_Gamer_3",
+"ArG_Gamer_4"
+];
+
+_RGamer = [
+"ArG_Gamer_5",
+"ArG_Gamer_6",
+"ArG_Gamer_7",
+"ArG_Gamer_8"
 ];
 
  {
@@ -56,9 +70,10 @@ _Gamer = [
   "true", "true",
  {},{},{
 
-   switch (playerSide) do {
+   switch ((isPlayer _x)&&(typeOf _x in _Gamer)) do {
 
  case west: {
+   if ((isPlayer _x)&&(typeOf _x in _BGamer))then{
      titletext ["","BLACK IN",2];
      _Bmarker = getMarkerType "B_Safe";
      if(isnil (_Bmarker))then{
@@ -69,9 +84,11 @@ _Gamer = [
      player setCaptive false;
      player setVariable ["_Hited",0,false];
      [ player,SaftyID ] call BIS_fnc_holdActionRemove;
+    };
    };
  };
  case east: {
+   if ((isPlayer _x)&&(typeOf _x in _RGamer))then{
      titletext ["","BLACK IN",2];
      _Rmarker = getMarkerType "R_Safe";
      if(isnil (_Rmarker))then{
@@ -82,21 +99,9 @@ _Gamer = [
      player setCaptive false;
      player setVariable ["_Hited",0,false];
      [ player,SaftyID ] call BIS_fnc_holdActionRemove;
-     };
- };
- case resistance: {
-     titletext ["","BLACK IN",2];
-     _Gmarker = getMarkerType "G_Safe";
-     if(isnil (_Gmarker))then{
-     player setPos (getMarkerPos "G_Safe");
-     sleep 0.2;
-     player switchMove "";
-     player allowDamage true;
-     player setCaptive false;
-     player setVariable ["_Hited",0,false];
-     [ player,SaftyID ] call BIS_fnc_holdActionRemove;
-     };
+    };
    };
+ };
 
 };
    },
