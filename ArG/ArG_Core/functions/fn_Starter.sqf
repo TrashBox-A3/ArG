@@ -1,4 +1,4 @@
-
+if(isServer)then{
 
 if(Ready)then{
 
@@ -24,4 +24,5 @@ if((missionNamespace getvariable "ST1" == 1)&&(missionNamespace getvariable "ST2
 
 systemChat "Game Ready!";
 
+};
 };
