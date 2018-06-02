@@ -35,7 +35,7 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
 
     sleep 0.1;
 
-  call {
+
 
 
     if (missionNamespace getvariable "Buzz" == 2) exitWith
@@ -52,10 +52,11 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
     	{
        {
 
-
+        breakOut "UP";
 
         while {true} do
         {
+            scopeName "Down";
             _x setDamage 0;
             _x say3D "Buzzer";
             sleep 5;
@@ -70,10 +71,11 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
     	{
         {
 
-
+        breakOut "Down";
 
         while {true} do
         {
+            scopeName "UP";
             _x setDamage 0;
             _x say3D "Buzzer2";
             sleep 11;
@@ -83,5 +85,5 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
         }forEach _Speakers;
     	};
 
-};
+
 };
