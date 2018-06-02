@@ -21,25 +21,14 @@ _Gamer = [
 "ArG_Gamer_12"
 ];
 
-_BGamer = [
-"ArG_Gamer_1",
-"ArG_Gamer_2",
-"ArG_Gamer_3",
-"ArG_Gamer_4"
-];
 
-_RGamer = [
-"ArG_Gamer_5",
-"ArG_Gamer_6",
-"ArG_Gamer_7",
-"ArG_Gamer_8"
-];
 
  {
 
-   if ((isPlayer _x)&&(typeOf _x in _Gamer)&&(player getvariable "_Hited" == 0)) then
+   if ((isPlayer _x)&&(typeOf _x in _Gamer)&&(player getvariable "_Hited" == 0)) then{
 
-   {
+
+
       player addMPEventHandler ["MPHit", {
 
       player allowDamage false;
@@ -64,19 +53,33 @@ _RGamer = [
 	     player switchMove "ApanPknlMstpSnonWnonDnon_G01";
       };
 
+      if((MarkerType "B_Safe" != "")or(MarkerType "R_Safe" != ""))then{
+
   SaftyID = [player, "Back to Safety zone",
   "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_forceRespawn_ca.paa",
   "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",
   "true", "true",
  {},{},{
 
-   switch ((isPlayer _x)&&(typeOf _x in _Gamer)) do {
+   _BGamer = [
+   "ArG_Gamer_1",
+   "ArG_Gamer_2",
+   "ArG_Gamer_3",
+   "ArG_Gamer_4"
+   ];
 
- case west: {
-   if ((isPlayer _x)&&(typeOf _x in _BGamer))then{
+   _RGamer = [
+   "ArG_Gamer_5",
+   "ArG_Gamer_6",
+   "ArG_Gamer_7",
+   "ArG_Gamer_8"
+   ];
+
+   switch (true) do {
+{
+ case ((isPlayer _x)&&(typeOf _x in _BGamer)):
      titletext ["","BLACK IN",2];
-     _Bmarker = getMarkerType "B_Safe";
-     if(isnil (_Bmarker))then{
+     if(MarkerType "B_Safe" != "")then{
      player setPos (getMarkerPos "B_Safe");
      sleep 0.2;
      player switchMove "";
@@ -84,30 +87,28 @@ _RGamer = [
      player setCaptive false;
      player setVariable ["_Hited",0,false];
      [ player,SaftyID ] call BIS_fnc_holdActionRemove;
-    };
    };
- };
- case east: {
-   if ((isPlayer _x)&&(typeOf _x in _RGamer))then{
+
+
+ case ((isPlayer _x)&&(typeOf _x in _RGamer)):
      titletext ["","BLACK IN",2];
-     _Rmarker = getMarkerType "R_Safe";
-     if(isnil (_Rmarker))then{
-     _this setPos (getMarkerPos "R_Safe");
+     if(MarkerType "R_Safe" != "")then{
+     player setPos (getMarkerPos "R_Safe");
      sleep 0.2;
      player switchMove "";
      player allowDamage true;
      player setCaptive false;
      player setVariable ["_Hited",0,false];
      [ player,SaftyID ] call BIS_fnc_holdActionRemove;
-    };
    };
- };
 
+
+}forEach allUnits;
 };
    },
- {}, [], 10, nil, true, false
+ {}, [], 2, nil, true, false
  ] call BIS_fnc_holdActionAdd;
-
+};
 
 }];
 
