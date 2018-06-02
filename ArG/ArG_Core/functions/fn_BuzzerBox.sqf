@@ -37,35 +37,50 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
 
   call {
 
+
+    if (missionNamespace getvariable "Buzz" == 2) exitWith
+    {
+     {
+
+      _x setDamage 1;
+
+
+      }forEach _Speakers;
+    };
+
     	if (missionNamespace getvariable "Buzz" == 0) exitWith
     	{
+       {
+
+
 
         while {true} do
         {
-             {
-              
-              _x say3D "Buzzer";
-              }forEach _Speakers;
-
+            _x setDamage 0;
+            _x say3D "Buzzer";
             sleep 5;
+
          waituntil{missionNamespace getvariable "Buzz" == 0};
         };
-
+        }forEach _Speakers;
     	};
+
+
     	if (missionNamespace getvariable "Buzz" == 1) exitWith
     	{
+        {
+
+
 
         while {true} do
         {
-    	        {
-
-             _x say3D "Buzzer2";
-             }forEach _Speakers;
-
-
-             sleep 2.6;
+            _x setDamage 0;
+            _x say3D "Buzzer2";
+            sleep 11;
+            
          waituntil{missionNamespace getvariable "Buzz" == 1};
         };
+        }forEach _Speakers;
     	};
 
 };
