@@ -28,6 +28,17 @@ if(isServer)then{
   {
     if ((!isPlayer _x)&&(typeOf _x in _AiGamer)) then
     {
+      if(!(primaryWeapon _x isEqualTo "")&&(primaryWeaponItems _x select 0 == ""))then{
+         systemChat"attach";
+         _x addPrimaryWeaponItem "ArG_muzzle_snds_H";
+         };
+
+      if(!(handgunWeapon _x isEqualTo "")&&(handgunItems _x select 0 == ""))then{
+         systemChat"attach";
+         _x addHandgunItem "ArG_muzzle_snds_H";
+         };
+    };
+
         _x addMPEventHandler ["MPHit", {
 
 
@@ -50,6 +61,6 @@ if(isServer)then{
     }];
      _x setUnitPos "UP";
     };
-  } forEach allUnits;
+  } forEach allUnits-allPlayers;
 
 };
