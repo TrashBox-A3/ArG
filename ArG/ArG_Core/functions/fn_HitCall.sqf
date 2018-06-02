@@ -41,7 +41,11 @@ _Gamer = [
             player switchCamera "EXTERNAL";
           };
           player addEventHandler ["HandleDamage", {0}];
+<<<<<<< HEAD
 
+=======
+          player disableAI "ANIM";
+>>>>>>> parent of 74a63ab... dwdwdwdw
           player switchMove "Acts_JetsMarshallingRight_loop";
           player disableAI "ANIM";
      [] spawn
