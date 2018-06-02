@@ -61,6 +61,6 @@ if(isServer)then{
     }];
      _x setUnitPos "UP";
     };
-  } forEach allUnits-allPlayers;
+  } forEach allUnits;
 
 };
