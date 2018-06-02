@@ -74,7 +74,7 @@ shortcut = "reloadMagazine";
 condition = "true";
 statement = "this say3D 'Switch',[[[],'ArG_Core\functions\fn_BuzzerBox.sqf'], 'BIS_fnc_execVM', true,true] call BIS_fnc_MP;";
 };
-
+};
 };
 
 //Stater 2//
@@ -108,5 +108,5 @@ shortcut = "reloadMagazine";
 condition = "true";
 statement = "this say3D 'Switch',[[[],'ArG_Core\functions\fn_BuzzerBox.sqf'], 'BIS_fnc_execVM', true,true] call BIS_fnc_MP;";
 };
-
+};
 };
