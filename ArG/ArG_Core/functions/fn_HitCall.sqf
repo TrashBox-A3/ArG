@@ -41,14 +41,11 @@ _Gamer = [
             player switchCamera "EXTERNAL";
           };
           player addEventHandler ["HandleDamage", {0}];
-          player disableAI "ANIM";
           player switchMove "Acts_JetsMarshallingRight_loop";
           player disableAI "ANIM";
-     [] spawn
-      {
-	     sleep 2;
-	     player playMoveNow "ApanPknlMstpSnonWnonDnon_G01";
-      };
+          sleep 2;
+	        player playMoveNow "ApanPknlMstpSnonWnonDnon_G01";
+
 
 
 
