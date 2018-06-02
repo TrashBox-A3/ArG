@@ -1,5 +1,14 @@
 
+if(START)then{
 
+START = false;
+missionNamespace setVariable ["ST1",1,true];
+}
+else
+{
+START = true;
+missionNamespace setVariable ["ST2",1,true];
+};
 
 if(true)then{
 
