@@ -23,7 +23,7 @@ if(missionNamespace getvariable "ST1" == 1)then{
 if((missionNamespace getvariable "ST1" == 1)&&(missionNamespace getvariable "ST2" == 1))then{
 
 systemChat "Game Ready!";
-
+sleep 2;
 _tr1 = createTrigger ["EmptyDetector", [0,0,0]];
 _tr1 setTriggerTimeout [10, 10, 10, false];
 _tr1 setTriggerStatements [
@@ -35,14 +35,15 @@ _tr1 setTriggerStatements [
     waitUntil {triggerTimeoutCurrent _this > 0};
     waitUntil {
         if (floor triggerTimeoutCurrent _this <= 0) exitWith {true};
+        sleep 0.2;
         hintSilent parseText format [
-            "<t size='5' color='#ff0000' shadow='2'>%1</t>",
+            "<t size='5' color='##FFFF00' shadow='2'>%1</t>",
             floor triggerTimeoutCurrent _this
         ];
         false
     };
     hint "Go";
-
+    []execVM "ArG_Core\functions\fn_Count.sqf";
 
    sleep 10;
 
