@@ -23,6 +23,8 @@ if(missionNamespace getvariable "ST1" == 1)then{
 if((missionNamespace getvariable "ST1" == 1)&&(missionNamespace getvariable "ST2" == 1))then{
 
 systemChat "Game Ready!";
+
+{_x disableAI "MOVE";}count allUnits;
 sleep 2;
 _tr1 = createTrigger ["EmptyDetector", [0,0,0]];
 _tr1 setTriggerTimeout [10, 10, 10, false];
@@ -45,7 +47,7 @@ _tr1 setTriggerStatements [
     hint "Go";
     []execVM "ArG_Core\functions\fn_Count.sqf";
 
-
+   {_x enableAI "MOVE";}count allUnits;
 
 };
 
