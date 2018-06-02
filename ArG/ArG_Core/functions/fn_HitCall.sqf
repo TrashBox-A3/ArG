@@ -80,7 +80,6 @@ _Gamer = [
    switch (true) do {
 {
  case ((isPlayer _x)&&(typeOf _x in _BGamer)):
-
      if(MarkerType "B_Safe" != "")then{
      player setPos (getMarkerPos "B_Safe");
      sleep 0.2;
