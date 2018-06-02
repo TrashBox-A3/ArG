@@ -1,11 +1,4 @@
 
-
-
-
-
-
-
-
 if(isServer)then{
 
   params ["_AiGamer","_AIHited"];
@@ -37,7 +30,7 @@ if(isServer)then{
          systemChat"attach";
          _x addHandgunItem "ArG_muzzle_snds_H";
          };
-    };
+
 
         _x addMPEventHandler ["MPHit", {
 
@@ -61,6 +54,6 @@ if(isServer)then{
     }];
      _x setUnitPos "UP";
     };
-  } forEach allUnits;
+  } forEach allUnits-allPlayers;
 
 };
