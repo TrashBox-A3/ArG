@@ -1,11 +1,9 @@
 if (!isDedicated) then {waitUntil {!isNull player && isPlayer player};};
 
+Ready = false;
 
-
-
+STATE = false;
 
 []execVM "ArG_Core\functions\fn_Muzzle.sqf";
 
-[]execVM "ArG_Core\functions\fn_Count.sqf";
-
-[]execVM "ArG_Core\functions\fn_CounterBox.sqf";
+systemChat "ArG(Dev)";

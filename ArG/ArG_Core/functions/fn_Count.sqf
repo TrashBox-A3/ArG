@@ -15,7 +15,7 @@ while {true} do {
 
   while {_time > 0} do {
 
-    
+
 if (missionNamespace getvariable "Buzz" == 0) then {
 
 	_time = _time - 1;
@@ -44,6 +44,7 @@ if ((missionNamespace getvariable "Buzz" == 1)&&(_time < _MaxTime)) then {
   };
 };
 };
+
 
 
 };
