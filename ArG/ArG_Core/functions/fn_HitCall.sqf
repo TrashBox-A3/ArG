@@ -2,9 +2,9 @@
 
 private ["_unit","_Hited"];
 
-_unit = _this select 0;
+_unit = player;
 
-player setVariable ["_Hited",0,false];
+_unit setVariable ["_Hited",0,false];
 
 _Gamer = [
 "ArG_Gamer_1",
@@ -23,34 +23,34 @@ _Gamer = [
 
  {
 
-   if ((isPlayer _x)&&(typeOf _x in _Gamer)&&(player getvariable "_Hited" == 0)) then
+   if ((isPlayer _x)&&(typeOf _x in _Gamer)&&(_unit getvariable "_Hited" == 0)) then
 
    {
-      player addMPEventHandler ["MPHit", {
+      _x addMPEventHandler ["MPHit", {
 
-      player allowDamage false;
+      _x allowDamage false;
 
 
-          player setCaptive true;
+          _x setCaptive true;
 
-      player setVariable ["_Hited",1,false];
+      _x setVariable ["_Hited",1,false];
 
-      player say3D "HitCall";
+      _x say3D "HitCall";
       if ( (difficultyOption "thirdPersonView")isEqualTo 1) then
       	  {
-            player switchCamera "EXTERNAL";
+            _x switchCamera "EXTERNAL";
           };
-      player addEventHandler ["HandleDamage", {0}];
-      player disableAI "ANIM";
-      player switchMove "Acts_JetsMarshallingRight_loop";
+      _x addEventHandler ["HandleDamage", {0}];
+      _x disableAI "ANIM";
+      _x switchMove "Acts_JetsMarshallingRight_loop";
 
      [] spawn
       {
 	     sleep 2;
-	     player switchMove "ApanPknlMstpSnonWnonDnon_G01";
+	     _x switchMove "ApanPknlMstpSnonWnonDnon_G01";
       };
 
-  SaftyID = [player, "Back to Safety zone",
+  SaftyID = [_x, "Back to Safety zone",
   "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_forceRespawn_ca.paa",
   "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",
   "true", "true",
@@ -75,7 +75,7 @@ _Gamer = [
      titletext ["","BLACK IN",2];
      _Rmarker = getMarkerType "R_Safe";
      if(isnil (_Rmarker))then{
-     _this setPos (getMarkerPos "R_Safe");
+     player setPos (getMarkerPos "R_Safe");
      sleep 0.2;
      player switchMove "";
      player allowDamage true;
@@ -84,19 +84,6 @@ _Gamer = [
      [ player,SaftyID ] call BIS_fnc_holdActionRemove;
      };
  };
- case resistance: {
-     titletext ["","BLACK IN",2];
-     _Gmarker = getMarkerType "G_Safe";
-     if(isnil (_Gmarker))then{
-     player setPos (getMarkerPos "G_Safe");
-     sleep 0.2;
-     player switchMove "";
-     player allowDamage true;
-     player setCaptive false;
-     player setVariable ["_Hited",0,false];
-     [ player,SaftyID ] call BIS_fnc_holdActionRemove;
-     };
-   };
 
 };
    },
@@ -107,4 +94,4 @@ _Gamer = [
 }];
 
 };
-} forEach allUnits;
+} forEach _unit;
