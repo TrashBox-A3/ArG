@@ -74,9 +74,9 @@ _Gamer = [
    "ArG_Gamer_8"
    ];
 
-   switch (true) do {
+
 {
- case ((isPlayer _x)&&(typeOf _x in _BGamer)):
+ if ((isPlayer _x)&&(typeOf _x in _BGamer))then{
      titletext ["","BLACK IN",2];
      if(MarkerType "B_Safe" != "")then{
      player setPos (getMarkerPos "B_Safe");
@@ -87,9 +87,9 @@ _Gamer = [
      player setVariable ["_Hited",0,false];
      [ player,SaftyID ] call BIS_fnc_holdActionRemove;
    };
+};
 
-
- case ((isPlayer _x)&&(typeOf _x in _RGamer)):
+ if ((isPlayer _x)&&(typeOf _x in _RGamer))then{
      titletext ["","BLACK IN",2];
      if(MarkerType "R_Safe" != "")then{
      player setPos (getMarkerPos "R_Safe");
@@ -100,10 +100,10 @@ _Gamer = [
      player setVariable ["_Hited",0,false];
      [ player,SaftyID ] call BIS_fnc_holdActionRemove;
    };
-
+};
 
 }forEach allPlayers;
-};
+
    },
  {}, [], 2, nil, true, false
  ] call BIS_fnc_holdActionAdd;
