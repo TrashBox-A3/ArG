@@ -47,7 +47,7 @@ _Gamer = [
      [] spawn
       {
 	     sleep 2;
-	     player switchMove "ApanPknlMstpSnonWnonDnon_G01";
+	     player playMoveNow "ApanPknlMstpSnonWnonDnon_G01";
       };
 
 
