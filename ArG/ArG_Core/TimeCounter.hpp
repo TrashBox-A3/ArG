@@ -41,3 +41,38 @@ class  Land_Loudspeakers_F;
     hiddenSelectionsTextures[] = {};
 
 };
+
+//Stater 1//
+class  Land_Laptop_unfolded_F;
+
+    class ArG_Stater_1:  Land_Laptop_unfolded_F
+{
+    scope=2;
+    author="Rodeostar42";
+    displayName="Game Starter 1";
+    faction = "Empty";
+    editorCategory = "ArG_Objects";
+    editorSubcategory = "ArG_Items";
+
+    model = "\A3\Structures_F\Items\Electronics\Laptop_unfolded_F.p3d";
+    hiddenSelections[]={};
+    hiddenSelectionsTextures[] = {"\ArG_Core\Core_EditorPreviews\Core_Billboard.jpg"};
+
+};
+
+//Stater 2//
+
+    class ArG_Stater_2:  Land_Laptop_unfolded_F
+{
+    scope=2;
+    author="Rodeostar42";
+    displayName="Game Starter 2";
+    faction = "Empty";
+    editorCategory = "ArG_Objects";
+    editorSubcategory = "ArG_Items";
+
+    model = "\A3\Structures_F\Items\Electronics\Laptop_unfolded_F.p3d";
+    hiddenSelections[]={};
+    hiddenSelectionsTextures[] = {"\ArG_Core\Core_EditorPreviews\Core_Billboard.jpg"};
+
+};
