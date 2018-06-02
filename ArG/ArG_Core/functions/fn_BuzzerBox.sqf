@@ -77,7 +77,7 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
             _x setDamage 0;
             _x say3D "Buzzer2";
             sleep 11;
-            
+
          waituntil{missionNamespace getvariable "Buzz" == 1};
         };
         }forEach _Speakers;
