@@ -41,7 +41,7 @@ _Gamer = [
             player switchCamera "EXTERNAL";
           };
           player addEventHandler ["HandleDamage", {0}];
-          player disableAI "ANIM";
+
           player switchMove "Acts_JetsMarshallingRight_loop";
           player disableAI "ANIM";
      [] spawn
@@ -81,6 +81,10 @@ _Gamer = [
      if(MarkerType "B_Safe" != "")then{
      player setPos (getMarkerPos "B_Safe");
      sleep 0.2;
+     if ( (difficultyOption "thirdPersonView")isEqualTo 1) then
+         {
+           player switchCamera "INTERNAL";
+         };
      player switchMove "";
      player allowDamage true;
      player setCaptive false;
@@ -94,6 +98,10 @@ _Gamer = [
      if(MarkerType "R_Safe" != "")then{
      player setPos (getMarkerPos "R_Safe");
      sleep 0.2;
+     if ( (difficultyOption "thirdPersonView")isEqualTo 1) then
+         {
+           player switchCamera "INTERNAL";
+         };
      player switchMove "";
      player allowDamage true;
      player setCaptive false;
