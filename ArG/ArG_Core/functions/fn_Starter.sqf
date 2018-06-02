@@ -24,5 +24,31 @@ if((missionNamespace getvariable "ST1" == 1)&&(missionNamespace getvariable "ST2
 
 systemChat "Game Ready!";
 
+_tr1 = createTrigger ["EmptyDetector", [0,0,0]];
+_tr1 setTriggerTimeout [10, 10, 10, false];
+_tr1 setTriggerStatements [
+    "true",
+    "deleteVehicle thisTrigger",
+    ""
+];
+0 = _tr1 spawn {
+    waitUntil {triggerTimeoutCurrent _this > 0};
+    waitUntil {
+        if (floor triggerTimeoutCurrent _this <= 0) exitWith {true};
+        hintSilent parseText format [
+            "<t size='5' color='#ff0000' shadow='2'>%1</t>",
+            floor triggerTimeoutCurrent _this
+        ];
+        false
+    };
+    hint "Go";
+
+
+   sleep 10;
+
+   ["epicFail",false,2] call BIS_fnc_endMission;
+
+};
+
 };
 };
