@@ -37,7 +37,7 @@ _Gamer = [
           player setCaptive true;
 
       player setVariable ["_Hited",1,false];
-
+      [ player,Rodeo ] call BIS_fnc_holdActionRemove;
       player say3D "HitCall";
       if ( (difficultyOption "thirdPersonView")isEqualTo 1) then
       	  {
@@ -52,6 +52,8 @@ _Gamer = [
 	     sleep 2;
 	     player switchMove "ApanPknlMstpSnonWnonDnon_G01";
       };
+
+
 
       if((MarkerType "B_Safe" != "")or(MarkerType "R_Safe" != ""))then{
 
@@ -113,4 +115,5 @@ _Gamer = [
 }];
 
 };
+
 } forEach allUnits;
