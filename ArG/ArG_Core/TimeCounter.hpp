@@ -2,7 +2,7 @@
 class  Land_SatellitePhone_F;
 
     class ArG_BuzzerBox:  Land_SatellitePhone_F
-{
+  {
     scope=2;
     author="Rodeostar42";
     displayName="Buzzer box(Time Counter)";
@@ -19,16 +19,13 @@ class  Land_SatellitePhone_F;
                init = "Rodeo = [(_this select 0),'Time Counter','\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa','\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_hack_ca.paa','true','true',{_target say3D 'Click';missionNamespace setVariable ['Buzz',2,true];},{_target say3D 'Switch';},{[]execVM 'ArG_Core\functions\fn_BuzzerBox.sqf'},{},[],5,0,false,false] call BIS_fnc_holdActionAdd;";
 
           };
-
-
-
-};
+    };
 
 ///Buzzer Sound Source///
 class  Land_Loudspeakers_F;
 
     class ArG_Speaker:  Land_Loudspeakers_F
-{
+  {
     scope=2;
     author="Rodeostar42";
     displayName="Buzzer Sound Source";
@@ -40,13 +37,13 @@ class  Land_Loudspeakers_F;
     hiddenSelections[]={};
     hiddenSelectionsTextures[] = {};
 
-};
+  };
 
 //Stater 1//
 class  Land_Laptop_unfolded_F;
 
     class ArG_Stater_1:  Land_Laptop_unfolded_F
-{
+  {
     scope=2;
     author="Rodeostar42";
     displayName="Game Starter 1";

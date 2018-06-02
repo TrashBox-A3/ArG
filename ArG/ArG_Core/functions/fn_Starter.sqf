@@ -11,8 +11,6 @@ Ready = true;
 missionNamespace setVariable ["ST2",1,true];
 };
 
-
-
 if(missionNamespace getvariable "ST1" == 1)then{
     systemChat "BlueTeam Ready";
   };
