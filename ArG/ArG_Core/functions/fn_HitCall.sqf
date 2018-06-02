@@ -62,7 +62,7 @@ _Gamer = [
   "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",
   "true", "true",
  {},{},{
-
+  titletext ["","BLACK IN",2];
    _BGamer = [
    "ArG_Gamer_1",
    "ArG_Gamer_2",
@@ -80,7 +80,7 @@ _Gamer = [
    switch (true) do {
 {
  case ((isPlayer _x)&&(typeOf _x in _BGamer)):
-     titletext ["","BLACK IN",2];
+
      if(MarkerType "B_Safe" != "")then{
      player setPos (getMarkerPos "B_Safe");
      sleep 0.2;
@@ -93,7 +93,6 @@ _Gamer = [
 
 
  case ((isPlayer _x)&&(typeOf _x in _RGamer)):
-     titletext ["","BLACK IN",2];
      if(MarkerType "R_Safe" != "")then{
      player setPos (getMarkerPos "R_Safe");
      sleep 0.2;
