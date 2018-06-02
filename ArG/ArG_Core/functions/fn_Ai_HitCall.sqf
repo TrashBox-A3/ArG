@@ -1,14 +1,7 @@
 
-
-
-
-
-
-
-
 if(isServer)then{
 
-  params ["_AiGamer","_Hited"];
+  params ["_AiGamer","_AIHited"];
 
   _AiGamer = [
   "ArG_Gamer_1",
@@ -28,24 +21,39 @@ if(isServer)then{
   {
     if ((!isPlayer _x)&&(typeOf _x in _AiGamer)) then
     {
-        _x addMPEventHandler ["MPHit", {
-        remoteExec ["ArG_fnc_Hit_drawIcon3D",0];
+      if(!(primaryWeapon _x isEqualTo "")&&(primaryWeaponItems _x select 0 == ""))then{
 
-        _Hited = _this select 0;
+         _x addPrimaryWeaponItem "ArG_muzzle_snds_H";
+         };
+
+      if(!(handgunWeapon _x isEqualTo "")&&(handgunItems _x select 0 == ""))then{
+         
+         _x addHandgunItem "ArG_muzzle_snds_H";
+         };
+
+
+        _x addMPEventHandler ["MPHit", {
+
+
+        _AIHited = _this select 0;
         _AiGamer = _this select 1;
 
-        _Hited say3D "HitCall";
+        _AIHited allowDamage false;
 
-        _Hited setCaptive true;
+        _AIHited say3D "HitCall";
 
-        _Hited addEventHandler ["HandleDamage", {0}];
+        _AIHited setCaptive true;
 
-        _Hited switchMove "Acts_JetsMarshallingRight_loop";
+        _AIHited addEventHandler ["HandleDamage", {0}];
 
-        _Hited playMoveNow "ApanPknlMstpSnonWnonDnon_G01";
+        _AIHited switchMove "Acts_JetsMarshallingRight_loop";
+
+        _AIHited playMoveNow "ApanPknlMstpSnonWnonDnon_G01";
+
+        _AIHited allowfleeing 1;
     }];
      _x setUnitPos "UP";
     };
-  } forEach allUnits-switchableUnits-playableUnits;
+  } forEach allUnits-allPlayers;
 
 };

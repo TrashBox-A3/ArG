@@ -17,9 +17,12 @@ class ArG
 	{
 		file = "\ArG_Core\functions";
 		class HitCall {postInit = 1;};
-		class Ai_HitCall {postInit = 1;};
+		class Ai_HitCall {postInit = 1};
+		class Muzzle {};
 		class BuzzerBox {};
-		class Hit_drawIcon3D {};	
+		class Count {};
+		class Starter {};
+
 	};
 
 	};

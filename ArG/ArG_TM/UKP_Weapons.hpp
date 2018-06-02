@@ -1,6 +1,6 @@
 
 
-   
+
 
       ///AKS74U
     class rhs_weap_aks74u;
@@ -20,6 +20,31 @@
 
             "ArG_600Rnd_545x39_BB",
             "ArG_70Rnd_545x39_BB"
+        };
+
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+          class MuzzleSlot: MuzzleSlot
+          {
+            linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
+            compatibleItems[]=
+            {
+              "muzzle_snds_h",
+              "ArG_muzzle_snds_H"
+            };
+            iconPosition[]={0,0.44999999};
+            iconScale=0.2;
+          };
+          class CowsSlot: CowsSlot
+          {
+            iconPosition[]={0.5,0.34999999};
+            iconScale=0.2;
+          };
+          class PointerSlot: PointerSlot
+          {
+            iconPosition[]={0.2,0.44999999};
+            iconScale=0.25;
+          };
         };
 
         initSpeed = 300; // muzzle velocity
@@ -196,6 +221,3 @@
 
 
       };
-    
-
-  

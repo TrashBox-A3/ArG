@@ -3,6 +3,8 @@ class Mode_Burst;
 class Mode_FullAuto;
 class manual;
 class close;
+class Mode_Optics;
+class Mode_eye;
 class far_optic1;
 class far_optic2;
 class SlotInfo;
@@ -10,6 +12,10 @@ class CowsSlot;
 class MuzzleSlot;
 class PointerSlot;
 class WeaponSlotsInfo;
+class LinkedItems;
+class UnderBarrelSlot;
+class GripodSlot;
+
 class CfgWeapons
 {
 
@@ -17,10 +23,12 @@ class CfgWeapons
   #include "MK20.hpp"
   #include "EBR.hpp"
   #include "MK200.hpp"
+  
 
 class ItemCore;
     class InventoryItem_Base_F;
     class InventoryMuzzleItem_Base_F;
+    class InventoryUnderItem_Base_F;
     class InventoryOpticsItem_Base_F;
     class InventoryFlashLightItem_Base_F;
     class Zasleh2: ItemCore
@@ -49,24 +57,50 @@ class ItemCore;
             "ArG_30Rnd_65x39_BB_025"
         };
 
+        class WeaponSlotsInfo: WeaponSlotsInfo
+    		{
+    			class MuzzleSlot: MuzzleSlot
+    			{
+    				linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
+    				compatibleItems[]=
+    				{
+    					"muzzle_snds_h",
+              "ArG_muzzle_snds_H"
+    				};
+    				iconPosition[]={0,0.44999999};
+    				iconScale=0.2;
+    			};
+          class CowsSlot: CowsSlot
+    			{
+    				iconPosition[]={0.5,0.34999999};
+    				iconScale=0.2;
+    			};
+    			class PointerSlot: PointerSlot
+    			{
+    				iconPosition[]={0.2,0.44999999};
+    				iconScale=0.25;
+    			};
+          class UnderBarrelSlot {};
+        };
+
         class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot="CowsSlot";
-				item="optic_ARCO";
-			};
-			class LinkedItemsAcc
-			{
-				slot="PointerSlot";
-				item="acc_pointer_IR";
-			};
-			class LinkedItemsMuzzle
-			{
-				slot="MuzzleSlot";
-				item="muzzle_snds_H";
-			};
-		};
+    		{
+    			class LinkedItemsOptic
+    			{
+    				slot="CowsSlot";
+    				item="optic_Holosight";
+    			};
+    			class LinkedItemsMuzzle
+    			{
+    				slot="MuzzleSlot";
+    				item="ArG_muzzle_snds_H";
+    			};
+    			class LinkedItemsAcc
+    			{
+    				slot="PointerSlot";
+    				item="acc_pointer_IR";
+    			};
+    		};
 
         initSpeed = 250; // muzzle velocity
         maxRange = 100;
@@ -270,17 +304,48 @@ class ItemCore;
         };
 
         class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			class MuzzleSlot: MuzzleSlot
-			{
-				compatibleItems[]=
-				{
-					"ArG_muzzle_snds_H"
+    		{
+    			class MuzzleSlot: MuzzleSlot
+    			{
+    				linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
+    				compatibleItems[]=
+    				{
+    					"muzzle_snds_h",
+              "ArG_muzzle_snds_H"
+    				};
+    				iconPosition[]={0,0.44999999};
+    				iconScale=0.2;
+    			};
+          class CowsSlot: CowsSlot
+    			{
+    				iconPosition[]={0.5,0.34999999};
+    				iconScale=0.2;
+    			};
+    			class PointerSlot: PointerSlot
+    			{
+    				iconPosition[]={0.2,0.44999999};
+    				iconScale=0.25;
+    			};
+        };
 
-				};
-			};
-			mass=1;
-		};
+        class LinkedItems
+        {
+            class LinkedItemsOptic //Attachment: Optics
+            {
+                slot = "CowsSlot";
+                item = "rhsusf_acc_eotech_552";
+            };
+            class LinkedItemsMuzzle //Attachment: Barrel
+            {
+                slot = "MuzzleSlot";
+                item = "ArG_muzzle_snds_H";
+            };
+            class LinkedItemsAcc //Attachment: Accessory
+            {
+                slot = "PointerSlot";
+                item = "acc_pointer_IR";
+            };
+        };
 
         initSpeed = 250; // muzzle velocity
         maxRange = 100;
@@ -467,12 +532,12 @@ class ItemCore;
     		mFact=1;
     		tBody=100;
     		scope=2;
-    		displayName="ArG muzzle(Invisible) ";
+    		displayName="Invisible muzzle";
     		picture=;
     		model=;
     		class ItemInfo: InventoryMuzzleItem_Base_F
     		{
-    			mass=10;
+    			mass=0.1;
     			class MagazineCoef
     			{
     				initSpeed=1.05;

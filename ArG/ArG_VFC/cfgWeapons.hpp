@@ -1,10 +1,37 @@
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
+class manual;
+class close;
+class Mode_Optics;
+class Mode_eye;
+class far_optic1;
+class far_optic2;
+class SlotInfo;
+class CowsSlot;
+class MuzzleSlot;
+class PointerSlot;
+class WeaponSlotsInfo;
+class LinkedItems;
+class UnderBarrelSlot;
+class GripodSlot;
 class CfgWeapons
 {
 
   #include "VFC_M27IAR_GBB.hpp"
+  #include "VFC_MP7A2_GBB.hpp"
+
+  class ItemCore;
+      class InventoryItem_Base_F;
+      class InventoryMuzzleItem_Base_F;
+      class InventoryUnderItem_Base_F;
+      class InventoryOpticsItem_Base_F;
+      class InventoryFlashLightItem_Base_F;
+      class Zasleh2: ItemCore
+      {
+          scope=2;
+          model="A3\weapons_f\data\zaslehsdl_proxy.p3d";
+      };
 
 
     ///VFC HK416A5 GBB BLK///
@@ -23,7 +50,33 @@ class CfgWeapons
         descriptionShort = "VFC HK416A5 GBB (BLK)<br/>VFC";
         magazines[] = {
 
-            "VFC_30Rnd_556x45_M4_HK416_GBB"
+          "VFC_30Rnd_556x45_M4_HK416_02",
+          "VFC_30Rnd_556x45_M4_HK416_025"
+        };
+
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+          class MuzzleSlot: MuzzleSlot
+          {
+            linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
+            compatibleItems[]=
+            {
+              "muzzle_snds_h",
+              "ArG_muzzle_snds_H"
+            };
+            iconPosition[]={0,0.44999999};
+            iconScale=0.2;
+          };
+          class CowsSlot: CowsSlot
+          {
+            iconPosition[]={0.5,0.34999999};
+            iconScale=0.2;
+          };
+          class PointerSlot: PointerSlot
+          {
+            iconPosition[]={0.2,0.44999999};
+            iconScale=0.25;
+          };
         };
 
         initSpeed = 250; // muzzle velocity
@@ -218,7 +271,33 @@ class CfgWeapons
         descriptionShort = "VFC HK416A5 GBB (SAND)<br/>VFC";
         magazines[] = {
 
-            "VFC_30Rnd_556x45_M4_HK416_GBB"
+          "VFC_30Rnd_556x45_M4_HK416_02",
+          "VFC_30Rnd_556x45_M4_HK416_025"
+        };
+
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+          class MuzzleSlot: MuzzleSlot
+          {
+            linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
+            compatibleItems[]=
+            {
+              "muzzle_snds_h",
+              "ArG_muzzle_snds_H"
+            };
+            iconPosition[]={0,0.44999999};
+            iconScale=0.2;
+          };
+          class CowsSlot: CowsSlot
+          {
+            iconPosition[]={0.5,0.34999999};
+            iconScale=0.2;
+          };
+          class PointerSlot: PointerSlot
+          {
+            iconPosition[]={0.2,0.44999999};
+            iconScale=0.25;
+          };
         };
 
         initSpeed = 250; // muzzle velocity

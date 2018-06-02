@@ -1,19 +1,19 @@
-////////////VFC M27 IAR GBB////////
-class rhs_weap_m27iar;
-class ArG_VFC_M27IAR_GBB: rhs_weap_m27iar
+////////////VFC MP7A2 GBB////////
+class rhsusf_weap_MP7A2;
+class ArG_VFC_MP7A1_GBB: rhsusf_weap_MP7A2
 {
 	scope = 2;
 	author="Rodeostar42";
-	displayName="VFC M27 IAR GBB";
+	displayName="VFC MP7A1 GBB";
 
-	picture = "\rhsusf\addons\rhsusf_weapons2\icons\rhs_m27iar_icon_ca.paa";
-	model = "\rhsusf\addons\rhsusf_weapons2\M27\rhs_m27iar.p3d";
-	descriptionShort = "VFC M27 IAR GBB <br/>VFC";
+	picture = "\rhsusf\addons\rhsusf_weapons2\icons\rhs_mp7_0_icon_ca.paa";
+	model = "\rhsusf\addons\rhsusf_weapons2\MP7\mp7a2";
+	descriptionShort = "VFC MP7A1 GBB <br/>VFC";
 
 	magazines[] = {
 
-			"VFC_30Rnd_556x45_M4_HK416_02",
-			"VFC_30Rnd_556x45_M4_HK416_025"
+			"VFC_40Rnd_46x30_02",
+			"VFC_40Rnd_46x30_025"
 	};
 
 	class WeaponSlotsInfo: WeaponSlotsInfo
@@ -49,7 +49,7 @@ class ArG_VFC_M27IAR_GBB: rhs_weap_m27iar
 	inertia = 0.4;
 	dexterity = 1.6;
 	initSpeed = 250; // muzzle velocity
-	baseWeapon="ArG_VFC_M27IAR_GBB";
+	baseWeapon="ArG_VFC_MP7A1_GBB";
 
 	modes[]=
 	{

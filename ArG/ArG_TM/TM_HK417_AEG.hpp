@@ -1,20 +1,23 @@
-///M4 MWS///
+///SCAR H (FDE)///
+class SMA_HK417_16in;
 
-class rhs_weap_m4a1_blockII_KAC_bk;
-class ArG_TM_M4A1_NWS: rhs_weap_m4a1_blockII_KAC_bk
+class ArG_TM_HK417_AEG: SMA_HK417_16in
 {
   author="Rodeostar42";
 
   scope=2;
-  displayName="TM M4A1 MWS";
-  model = "\rhsusf\addons\rhsusf_weapons3\M4BII\m4a1_blockII_KACSTOCK.p3d";
-  baseWeapon="ArG_TM_M4A1_NWS";
-  picture = "\rhsusf\addons\rhsusf_weapons3\icons\rhs_m4bii_lmt_b_icon_ca.paa";
-  UiPicture = "\A3\weapons_f\data\UI\icon_regular_CA.paa";
-  descriptionShort = "GBB<br/>Tokyo MARUI";
+  displayName="ArG TM HK417 EARLY VARIANT";
+  model = "\SMA_HK417\HK417_16in.p3d";
+  baseWeapon="ArG_TM_HK417_AEG";
+  picture = "\SMA_HK417\ui\SMAHK41716in_ca.paa";
+
+  descriptionShort = "HK417 EARLY VARIANT<br/>Tokyo MARUI";
   magazines[] = {
 
-      "ArG_35Rnd_556x45_NWS"
+      "ArG_70Rnd_HK417_BB_02",
+      "ArG_70Rnd_HK417_BB_025",
+      "ArG_600Rnd_HK417_BB_02",
+      "ArG_600Rnd_HK417_BB_025"
   };
 
   class WeaponSlotsInfo: WeaponSlotsInfo
@@ -44,11 +47,11 @@ class ArG_TM_M4A1_NWS: rhs_weap_m4a1_blockII_KAC_bk
 
   initSpeed = 250; // muzzle velocity
   maxRange = 100;
-  flash = "";
+  flash = "gunfire";
   flashSize = 0;
   fireLightIntensity=0;
-  reloadAction="GestureReloadMX";
-  recoil="GBRecoil";
+  reloadaction = "GestureReloadSMG_02";
+  recoil="NextEGRecoil";
   maxZeroing=200;
   discreteDistanceInitIndex=0;
   maxRecoilSway=0.0125;
@@ -80,16 +83,16 @@ class ArG_TM_M4A1_NWS: rhs_weap_m4a1_blockII_KAC_bk
       midRangeProbab=0.69999999;
       maxRange=400;
       maxRangeProbab=0.30000001;
-      drySound[] = {"ArG_TM\Sound\M4A1_MWS.wss",5, 1,15};
+      drySound[] = {"ArG_TM\Sound\M4_SOPMOD.wss",4, 1,15};
       class StandardSound
   {
-      begin1[] = {"ArG_TM\Sound\M4A1_MWS.wss",5, 1,15};
+      begin1[] = {"ArG_TM\Sound\M4_SOPMOD.wss",4, 1,15};
       soundBegin[] = {"begin1",1};
       weaponSoundEffect = "DefaultRifle";
   };
       class SilencedSound
   {
-      begin1[] = {"ArG_TM\Sound\M4A1_MWS.wss",4, 1,15};
+      begin1[] = {"ArG_TM\Sound\M4_SOPMOD.wss",3, 1,15};
       soundBegin[] = {"begin1",1};
       weaponSoundEffect = "DefaultRifle";
   };
@@ -109,16 +112,16 @@ class ArG_TM_M4A1_NWS: rhs_weap_m4a1_blockII_KAC_bk
       maxRange=30;
       maxRangeProbab=0.1;
       aiRateOfFire=1e-006;
-      drySound[] = {"ArG_TM\Sound\M4A1_MWS.wss",5, 1,15};
+      drySound[] = {"ArG_TM\Sound\M4_SOPMOD.wss",4, 1,15};
       class StandardSound
   {
-      begin1[] = {"ArG_TM\Sound\M4A1_MWS.wss",5, 1,15};
+      begin1[] = {"ArG_TM\Sound\M4_SOPMOD.wss",4, 1,15};
       soundBegin[] = {"begin1",1};
       weaponSoundEffect = "DefaultRifle";
   };
       class SilencedSound
   {
-      begin1[] = {"ArG_TM\Sound\M4A1_MWS.wss",4, 1,15};
+      begin1[] = {"ArG_TM\Sound\M4_SOPMOD.wss",3, 1,15};
       soundBegin[] = {"begin1",1};
       weaponSoundEffect = "DefaultRifle";
   };
@@ -139,16 +142,16 @@ class ArG_TM_M4A1_NWS: rhs_weap_m4a1_blockII_KAC_bk
       flash = "";
       flashSize = 0;
       fireLightIntensity=0;
-      drySound[] = {"ArG_TM\Sound\M4A1_MWS.wss",5, 1,15};
+      drySound[] = {"ArG_TM\Sound\M4_SOPMOD.wss",4, 1,15};
       class StandardSound
   {
-      begin1[] = {"ArG_TM\Sound\M4A1_MWS.wss",5, 1,15};
+      begin1[] = {"ArG_TM\Sound\M4_SOPMOD.wss",4, 1,15};
       soundBegin[] = {"begin1",1};
       weaponSoundEffect = "DefaultRifle";
   };
       class SilencedSound
   {
-      begin1[] = {"ArG_TM\Sound\M4A1_MWS.wss",4, 1,15};
+      begin1[] = {"ArG_TM\Sound\M4_SOPMOD.wss",3, 1,15};
       soundBegin[] = {"begin1",1};
       weaponSoundEffect = "DefaultRifle";
   };
@@ -168,16 +171,16 @@ class ArG_TM_M4A1_NWS: rhs_weap_m4a1_blockII_KAC_bk
       flash = "";
       flashSize = 0;
       fireLightIntensity=0;
-      drySound[] = {"ArG_TM\Sound\M4A1_MWS.wss",5, 1,15};
+      drySound[] = {"ArG_TM\Sound\M4_SOPMOD.wss",4, 1,15};
       class StandardSound
   {
-      begin1[] = {"ArG_TM\Sound\M4A1_MWS.wss",5, 1,15};
+      begin1[] = {"ArG_TM\Sound\M4_SOPMOD.wss",4, 1,15};
       soundBegin[] = {"begin1",1};
       weaponSoundEffect = "DefaultRifle";
   };
       class SilencedSound
   {
-      begin1[] = {"ArG_TM\Sound\M4A1_MWS.wss",4, 1,15};
+      begin1[] = {"ArG_TM\Sound\M4_SOPMOD.wss",3, 1,15};
       soundBegin[] = {"begin1",1};
       weaponSoundEffect = "DefaultRifle";
   };
@@ -197,16 +200,16 @@ class ArG_TM_M4A1_NWS: rhs_weap_m4a1_blockII_KAC_bk
       flash = "";
       flashSize = 0;
       fireLightIntensity=0;
-      drySound[] = {"ArG_TM\Sound\M4A1_MWS.wss",5, 1,15};
+      drySound[] = {"ArG_TM\Sound\M4_SOPMOD.wss",4, 1,15};
       class StandardSound
   {
-      begin1[] = {"ArG_TM\Sound\M4A1_MWS.wss",5, 1,15};
+      begin1[] = {"ArG_TM\Sound\M4_SOPMOD.wss",4, 1,15};
       soundBegin[] = {"begin1",1};
       weaponSoundEffect = "DefaultRifle";
   };
       class SilencedSound
   {
-      begin1[] = {"ArG_TM\Sound\M4A1_MWS.wss",4, 1,15};
+      begin1[] = {"ArG_TM\Sound\M4_SOPMOD.wss",3, 1,15};
       soundBegin[] = {"begin1",1};
       weaponSoundEffect = "DefaultRifle";
   };

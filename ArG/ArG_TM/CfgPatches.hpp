@@ -5,6 +5,9 @@ class CfgPatches
 
 		requiredAddons[]=
 		{
+    "rhsusf_c_weapons",
+		"scar_arma3",
+		"SMA_HK417"
 
 		};
 		requiredVersion=0.1;
@@ -27,7 +30,9 @@ class CfgPatches
 			"ArG_35Rnd_556x45_NWS",
 			"ArG_30Rnd_556x45_TOP",
 			"ArG_M320",
-			"ArG_TM_AK47T3"
+			"ArG_TM_AK47T3",
+			"ArG_TM_VSR10_G",
+		  "ArG_TM_HK417_AEG"
 		};
 	};
 };

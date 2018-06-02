@@ -1,8 +1,34 @@
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
+class manual;
+class close;
+class Mode_Optics;
+class Mode_eye;
+class far_optic1;
+class far_optic2;
+class SlotInfo;
+class CowsSlot;
+class MuzzleSlot;
+class PointerSlot;
+class WeaponSlotsInfo;
+class LinkedItems;
+class UnderBarrelSlot;
+class GripodSlot;
 class CfgWeapons
 {
+
+  class ItemCore;
+      class InventoryItem_Base_F;
+      class InventoryMuzzleItem_Base_F;
+      class InventoryUnderItem_Base_F;
+      class InventoryOpticsItem_Base_F;
+      class InventoryFlashLightItem_Base_F;
+      class Zasleh2: ItemCore
+      {
+          scope=2;
+          model="A3\weapons_f\data\zaslehsdl_proxy.p3d";
+      };
 
     ///AKM///
     class rhs_weap_akm;
@@ -22,6 +48,31 @@ class CfgWeapons
 
             "ArG_600Rnd_762x39_BB",
             "ArG_70Rnd_762x39_BB"
+        };
+
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+          class MuzzleSlot: MuzzleSlot
+          {
+            linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
+            compatibleItems[]=
+            {
+              "muzzle_snds_h",
+              "ArG_muzzle_snds_H"
+            };
+            iconPosition[]={0,0.44999999};
+            iconScale=0.2;
+          };
+          class CowsSlot: CowsSlot
+          {
+            iconPosition[]={0.5,0.34999999};
+            iconScale=0.2;
+          };
+          class PointerSlot: PointerSlot
+          {
+            iconPosition[]={0.2,0.44999999};
+            iconScale=0.25;
+          };
         };
 
         initSpeed = 250; // muzzle velocity
@@ -50,7 +101,7 @@ class CfgWeapons
         class Single: Mode_SemiAuto
         {
             reloadTime=0.096000001;
-            
+
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
@@ -79,7 +130,7 @@ class CfgWeapons
         {
             reloadTime=0.096000001;
             dispersion=0.00086999999;
-            
+
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
@@ -197,8 +248,8 @@ class CfgWeapons
 
       };
 
-      
-   
+
+
     ///VAL///
     class rhs_weap_asval;
 
@@ -245,7 +296,7 @@ class CfgWeapons
         class Single: Mode_SemiAuto
         {
             reloadTime=0.096000001;
-            
+
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
@@ -274,7 +325,7 @@ class CfgWeapons
         {
             reloadTime=0.096000001;
             dispersion=0.00086999999;
-            
+
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;

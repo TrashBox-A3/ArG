@@ -24,4 +24,11 @@ class CfgFactionClasses {
 
   };
 
+
+  class ArG_Module {
+
+      displayName = "ArG Module(WIP)";
+  };
+
+
 };
