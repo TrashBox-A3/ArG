@@ -106,3 +106,25 @@ statement = "this say3D 'Click',missionNamespace setVariable ['ST2',1,true],[[[]
 };
 };
 };
+
+
+//ReJoin Point//
+class  Land_Tombstone_02_F;
+
+    class ArG_Revive:  Land_Tombstone_02_F
+  {
+    scope=2;
+    author="Rodeostar42";
+    displayName="Reviving point";
+    faction = "Empty";
+    editorCategory = "ArG_Objects";
+    editorSubcategory = "ArG_Items";
+    model = "\A3\Structures_F_Exp\Cultural\Cemeteries\Tombstone_02_F.p3d";
+    hiddenSelections[]={};
+    hiddenSelectionsTextures[] = {};
+
+      class EventHandlers
+          {
+               init = "Revive = [(_this select 0),'Revive','\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_revive_ca.paa','\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_reviveMedic_ca.paa','true','true',{},{_target say3D 'Click'},{[]execVM 'ArG_Core\functions\fn_Revive.sqf'},{},[],10,0,false,false] call BIS_fnc_holdActionAdd;";
+          };
+    };
