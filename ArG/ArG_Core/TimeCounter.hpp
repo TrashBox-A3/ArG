@@ -58,8 +58,8 @@ class  Land_Laptop_unfolded_F;
 {
 class Action1
 {
-displayName = "<img image='\ArG_Core\ArG.jpg' size='1' shadow='false' /> <t color=""#FF4500"">Game Starter 1";
-displayNameDefault = "<img image='\ArG_Core\ArG.jpg' size='3' shadow='false' /><t color=""#FF4500"">Game Starter 1";
+displayName = "<img image='\ArG_Core\Start.paa' size='1' shadow='false' /> <t color=""#00BFFF"">Game Starter 1";
+displayNameDefault = "<img image='\ArG_Core\Start.paa' size='3' shadow='false' /><t color=""#00BFFF"">Game Starter 1";
 priority = 3;
 radius = 20;
 position = "camera";
@@ -92,8 +92,8 @@ statement = "this say3D 'Click',missionNamespace setVariable ['ST1',1,true],[[[]
 {
 class Action2
 {
-displayName = "<img image='\ArG_Core\ArG.jpg' size='1' shadow='false' /> <t color=""#FF4500"">Game Starter 2";
-displayNameDefault = "<img image='\ArG_Core\ArG.jpg' size='3' shadow='false' /><t color=""#FF4500"">Game Starter 2";
+displayName = "<img image='\ArG_Core\Start.paa' size='1' shadow='false' /> <t color=""#FF0000"">Game Starter 2";
+displayNameDefault = "<img image='\ArG_Core\Start.paa' size='3' shadow='false' /><t color=""#FF0000"">Game Starter 2";
 priority = 3;
 radius = 20;
 position = "camera";
