@@ -12,7 +12,7 @@ if(missionNamespace getvariable "ST1" == 1)then{
 
 if((missionNamespace getvariable "ST1" == 1)&&(missionNamespace getvariable "ST2" == 1))then{
 
-cuttext ["Game Ready!","PLAIN",3];
+hint"Game Ready!";
 sleep 4;
 {_x enableSimulationGlobal false;}count allUnits;
 
@@ -36,7 +36,8 @@ _tr1 setTriggerStatements [
     };
 
     titletext ["GoGoGo!!","WHITE IN",6];
-
+    playSound "BackgroundTrack03_F"
+    10 fadeMusic 0;
 
 
    {_x enableSimulationGlobal true;}count allUnits;
