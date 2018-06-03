@@ -1,11 +1,29 @@
 ///script by Rodeostar42///
 
 private ["_unit","_Hited"];
-_unit = [_this,0,player,[objNull]] call BIS_fnc_param;
+
 
 
 player setVariable ["_Hited",0,false];
 
+allowFire = true;
+
+player addAction ["", {
+    playSound3D ['a3\sounds_f\weapons\Other\dry9.wss', _this select 0];
+}, "", 0, false, true, "DefaultAction", "isNil 'allowFire'"];
+
+KK_fnc_playerWeaponMulfunction = {
+    _frame = diag_frameno;
+    _wep = currentWeapon _this;
+    _ammo = _this ammo _wep;
+    if (_ammo > 0) then {
+        allowFire = nil;
+        _this setAmmo [_wep, 0];
+        waitUntil {_frame < diag_frameno};
+        _this setAmmo [_wep, _ammo];
+        hint "Jammed!";
+    };
+};
 
 
 _Gamer = [
@@ -52,24 +70,7 @@ _Gamer = [
 	     player playMoveNow "ApanPknlMstpSnonWnonDnon_G01";
       };
 
-      allowFire = true;
 
-player addAction ["", {
-    playSound3D ['a3\sounds_f\weapons\Other\dry9.wss', _this select 0];
-}, "", 0, false, true, "DefaultAction", "isNil 'allowFire'"];
-
-KK_fnc_playerWeaponMulfunction = {
-    _frame = diag_frameno;
-    _wep = currentWeapon _this;
-    _ammo = _this ammo _wep;
-    if (_ammo > 0) then {
-        allowFire = nil;
-        _this setAmmo [_wep, 0];
-        waitUntil {_frame < diag_frameno};
-        _this setAmmo [_wep, _ammo];
-        hint "Jammed!";
-    };
-};
 
 NoFire = player addEventHandler ["Fired", {
     if (true) then {
@@ -123,7 +124,7 @@ player addEventHandler ["Take", {
      player allowDamage true;
      player setCaptive false;
      player setVariable ["_Hited",0,false];
-     player removeEventHandler ["Fired", NoFire];
+     allowFire = true;
      [ player,SaftyID ] call BIS_fnc_holdActionRemove;
    };
 };
@@ -141,7 +142,7 @@ player addEventHandler ["Take", {
      player allowDamage true;
      player setCaptive false;
      player setVariable ["_Hited",0,false];
-     player removeEventHandler ["Fired", NoFire];
+     allowFire = true;
      [ player,SaftyID ] call BIS_fnc_holdActionRemove;
    };
 };
