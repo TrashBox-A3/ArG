@@ -29,7 +29,7 @@ _Gamer = [
       player addMPEventHandler ["MPHit", {
 
           player allowDamage false;
-          if(side (_this select 3) != Civilian)then{
+          if((side (_this select 3) == west)or(side (_this select 3) == east))then{
           player setCaptive true;
           player setVariable ["_Hited",1,false];
           [ player,Rodeo ] call BIS_fnc_holdActionRemove;
