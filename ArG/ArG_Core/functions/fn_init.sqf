@@ -6,4 +6,4 @@ STATE = false;
 
 []execVM "ArG_Core\functions\fn_Muzzle.sqf";
 
-systemChat "ArG(Dev)";
+systemChat "ArG(Dev) ver0.7";
