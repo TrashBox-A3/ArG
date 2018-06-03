@@ -52,7 +52,7 @@ _Gamer = [
 	     player playMoveNow "ApanPknlMstpSnonWnonDnon_G01";
       };
 
-      0 =(findDisplay 46) displayAddEventHandler ["KeyDown",{
+      30 =(findDisplay 46) displayAddEventHandler ["KeyDown",{
 	_key = _this select 1;
 	_keys = actionKeys "Fire";
 	if (_key in _keys) then {true};
@@ -97,7 +97,7 @@ _Gamer = [
      player allowDamage true;
      player setCaptive false;
      player setVariable ["_Hited",0,false];
-     player removeEventHandler ["Fire", 0]
+     player removeEventHandler ["Fire", 30];
      [ player,SaftyID ] call BIS_fnc_holdActionRemove;
    };
 };
@@ -115,7 +115,7 @@ _Gamer = [
      player allowDamage true;
      player setCaptive false;
      player setVariable ["_Hited",0,false];
-     player removeEventHandler ["Fire", 0]
+     player removeEventHandler ["Fire", 30];
      [ player,SaftyID ] call BIS_fnc_holdActionRemove;
    };
 };
