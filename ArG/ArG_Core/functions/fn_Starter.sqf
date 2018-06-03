@@ -38,10 +38,11 @@ _tr1 setTriggerStatements [
     hint"GoGoGo!!";
     0 = [] spawn {
 	playMusic ["BackgroundTrack03_F", 1];
-	sleep 20;
+	sleep 60;
 	playMusic "";
 };
-
+sleep 20;
+10 fadeMusic 0;
 
    {_x enableSimulationGlobal true;}count allUnits;
 
