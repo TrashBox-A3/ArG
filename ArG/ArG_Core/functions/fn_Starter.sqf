@@ -3,10 +3,12 @@
 
 if(missionNamespace getvariable "ST1" == 1)then{
   sleep 4;
+    cuttext ["",1];
     cuttext ["BlueTeam Ready","PLAIN",3];
   };
    if(missionNamespace getvariable "ST2" == 1)then{
      sleep 4;
+       cuttext ["",1];
        cuttext ["RedTeam Ready","PLAIN",3];
   };
 
@@ -23,7 +25,7 @@ _tr1 setTriggerStatements [
     "deleteVehicle thisTrigger",
     ""
 ];
-titletext ["","BLACK OUT",8];
+titletext ["","WHITE OUT",8];
 0 = _tr1 spawn {
     waitUntil {triggerTimeoutCurrent _this > 0};
     waitUntil {
