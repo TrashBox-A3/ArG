@@ -27,12 +27,14 @@ if(isServer)then{
          };
 
       if(!(handgunWeapon _x isEqualTo "")&&(handgunItems _x select 0 == ""))then{
-         
+
          _x addHandgunItem "ArG_muzzle_snds_H";
          };
 
 
         _x addMPEventHandler ["MPHit", {
+
+          [_this select 3] (side player == sideenemy);  
 
 
         _AIHited = _this select 0;
