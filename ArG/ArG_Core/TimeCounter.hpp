@@ -39,18 +39,17 @@ class  Land_Loudspeakers_F;
   };
 
 //Stater 1//
-class  Land_Laptop_unfolded_F;
+class  Land_PhoneBooth_01_F;
 
-    class ArG_Stater_1:  Land_Laptop_unfolded_F
+    class ArG_Stater_1:  Land_PhoneBooth_01_F
   {
     scope=2;
     author="Rodeostar42";
-    displayName="Game Starter 1";
+    displayName="Call Ready(Blue)";
     faction = "Empty";
     editorCategory = "ArG_Objects";
     editorSubcategory = "ArG_Items";
-
-    model = "\A3\Structures_F\Items\Electronics\Laptop_unfolded_F.p3d";
+    model = "\A3\Structures_F_EPB\Civ\Accessories\PhoneBooth_01_F.p3d";
     hiddenSelections[]={};
     hiddenSelectionsTextures[] = {};
 
@@ -75,16 +74,17 @@ statement = "this say3D 'Click',missionNamespace setVariable ['ST1',1,true],[[[]
 
 //Stater 2//
 
-    class ArG_Stater_2:  Land_Laptop_unfolded_F
+class  Land_PhoneBooth_01_malden_F;
+
+    class ArG_Stater_2:  Land_PhoneBooth_01_malden_F
 {
     scope=2;
     author="Rodeostar42";
-    displayName="Game Starter 2";
+    displayName="Call Ready(Red)";
     faction = "Empty";
     editorCategory = "ArG_Objects";
     editorSubcategory = "ArG_Items";
-
-    model = "\A3\Structures_F\Items\Electronics\Laptop_unfolded_F.p3d";
+    model = "\A3\Structures_F_Argo\Commercial\Accessories\PhoneBooth_01_malden_F.p3d";
     hiddenSelections[]={};
     hiddenSelectionsTextures[] = {};
 
