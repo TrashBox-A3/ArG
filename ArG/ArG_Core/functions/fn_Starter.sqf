@@ -43,7 +43,7 @@ _tr1 setTriggerStatements [
         false
     };
     hint "Go";
-    []execVM "ArG_Core\functions\fn_Count.sqf";
+    
 
    {_x enableAI "MOVE";}count allUnits;
 
