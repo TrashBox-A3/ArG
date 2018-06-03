@@ -29,6 +29,7 @@ _Gamer = [
       player addMPEventHandler ["MPHit", {
 
           player allowDamage false;
+          if(side (_this select 3) != Civilian)then{
           player setCaptive true;
           player setVariable ["_Hited",1,false];
           [ player,Rodeo ] call BIS_fnc_holdActionRemove;
@@ -103,7 +104,7 @@ _Gamer = [
      player allowDamage true;
      player setCaptive false;
      player setVariable ["_Hited",0,false];
-     
+
      [ player,SaftyID ] call BIS_fnc_holdActionRemove;
    };
 };
@@ -114,7 +115,7 @@ _Gamer = [
  {}, [], 10, nil, true, false
  ] call BIS_fnc_holdActionAdd;
 };
-
+};
 }];
 
 };

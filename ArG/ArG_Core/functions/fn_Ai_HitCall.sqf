@@ -34,13 +34,12 @@ if(isServer)then{
 
         _x addMPEventHandler ["MPHit", {
 
-        if(side (_this select 3) == sideenemy)then{
-
-
         _AIHited = _this select 0;
         _AiGamer = _this select 1;
 
         _AIHited allowDamage false;
+
+        if(side (_this select 3) != Civilian)then{
 
         _AIHited say3D "HitCall";
 
