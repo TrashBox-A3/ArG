@@ -5,7 +5,9 @@ if(missionNamespace getvariable "ST1" == 1)then{
   sleep 4;
     cuttext ["","PLAIN",1];
     cuttext ["BlueTeam Ready","PLAIN",3];
-  };
+  }
+  else
+  {
    if(missionNamespace getvariable "ST2" == 1)then{
      sleep 4;
        cuttext ["","PLAIN",1];
