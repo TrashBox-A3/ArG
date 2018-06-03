@@ -33,8 +33,8 @@ _tr1 setTriggerStatements [
         false
     };
 
-    titletext ["GoGoGo!!","WHITE IN",4];
-    hint "Go";
+    titletext ["GoGoGo!!","WHITE IN",6];
+    
 
 
    {_x enableSimulationGlobal true;}count allUnits;

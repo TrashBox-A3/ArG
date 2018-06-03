@@ -58,8 +58,8 @@ class  Land_Laptop_unfolded_F;
 {
 class Action1
 {
-displayName = "<img image='\ArG_Core\Start.paa' size='1' shadow='false' /> <t color=""#00BFFF"">Ready";
-displayNameDefault = "<img image='\ArG_Core\Start.paa' size='3' shadow='false' /><t color=""#00BFFF"">Ready";
+displayName = "<img image='\ArG_Core\Start.paa' size='1' shadow='false' /> <t color=""#00BFFF"">Start Ready";
+displayNameDefault = "<img image='\ArG_Core\Start.paa' size='3' shadow='false' /><t color=""#00BFFF"">Start Ready";
 priority = 3;
 radius = 20;
 position = "camera";
@@ -67,7 +67,7 @@ showWindow = true;
 hideOnUse = true;
 onlyForPlayer = 1;
 shortcut = "reloadMagazine";
-condition = "true";
+condition = "(!(missionNamespace getvariable 'ST1' == 1))";
 statement = "this say3D 'Click',missionNamespace setVariable ['ST1',1,true],[[[],'ArG_Core\functions\fn_Starter.sqf'], 'BIS_fnc_execVM', true,true] call BIS_fnc_MP;";
 };
 };
@@ -92,8 +92,8 @@ statement = "this say3D 'Click',missionNamespace setVariable ['ST1',1,true],[[[]
 {
 class Action2
 {
-displayName = "<img image='\ArG_Core\Start.paa' size='1' shadow='false' /> <t color=""#FF0000"">Ready";
-displayNameDefault = "<img image='\ArG_Core\Start.paa' size='3' shadow='false' /><t color=""#FF0000"">Ready";
+displayName = "<img image='\ArG_Core\Start.paa' size='1' shadow='false' /> <t color=""#FF0000"">Start Ready";
+displayNameDefault = "<img image='\ArG_Core\Start.paa' size='3' shadow='false' /><t color=""#FF0000"">Start Ready";
 priority = 3;
 radius = 20;
 position = "camera";
@@ -101,7 +101,7 @@ showWindow = true;
 hideOnUse = true;
 onlyForPlayer = 1;
 shortcut = "reloadMagazine";
-condition = "true";
+condition = "(!(missionNamespace getvariable 'ST2' == 1))";
 statement = "this say3D 'Click',missionNamespace setVariable ['ST2',1,true],[[[],'ArG_Core\functions\fn_Starter.sqf'], 'BIS_fnc_execVM', true,true] call BIS_fnc_MP;";
 };
 };
