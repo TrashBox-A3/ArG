@@ -16,7 +16,7 @@ class  Land_SatellitePhone_F;
 
       class EventHandlers
           {
-               init = "Rodeo = [(_this select 0),'Time Counter','\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa','\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_hack_ca.paa','((Captive _this false))','true',{missionNamespace setVariable ['Buzz',2,true];},{_target say3D 'Click'},{[]execVM 'ArG_Core\functions\fn_BuzzerBox.sqf'},{},[],5,0,false,false] call BIS_fnc_holdActionAdd;";
+               init = "Rodeo = [(_this select 0),'Time Counter','\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa','\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_hack_ca.paa','((side player == west)or(side player == east))','true',{missionNamespace setVariable ['Buzz',2,true];},{_target say3D 'Click'},{[]execVM 'ArG_Core\functions\fn_BuzzerBox.sqf'},{},[],5,0,false,false] call BIS_fnc_holdActionAdd;";
           };
     };
 
@@ -125,6 +125,6 @@ class  Land_Tombstone_02_F;
 
       class EventHandlers
           {
-               init = "Revive = [(_this select 0),'Revive','\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_revive_ca.paa','\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_reviveMedic_ca.paa','((Captive _this true))','true',{},{_target say3D 'Click'},{[]execVM 'ArG_Core\functions\fn_Revive.sqf'},{},[],10,0,false,false] call BIS_fnc_holdActionAdd;";
+               init = "Revive = [(_this select 0),'Revive','\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_revive_ca.paa','\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_reviveMedic_ca.paa','(side player == civilian)','true',{},{_target say3D 'Click'},{[]execVM 'ArG_Core\functions\fn_Revive.sqf'},{},[],10,0,false,false] call BIS_fnc_holdActionAdd;";
           };
     };
