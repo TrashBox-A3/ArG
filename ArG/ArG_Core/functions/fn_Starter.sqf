@@ -23,7 +23,7 @@ _tr1 setTriggerStatements [
     "deleteVehicle thisTrigger",
     ""
 ];
-titletext ["","WHITE OUT",10];
+titletext ["","BLACK OUT",8];
 0 = _tr1 spawn {
     waitUntil {triggerTimeoutCurrent _this > 0};
     waitUntil {
