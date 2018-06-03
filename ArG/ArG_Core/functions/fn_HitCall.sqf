@@ -71,14 +71,14 @@ KK_fnc_playerWeaponMulfunction = {
     };
 };
 
-player addEventHandler ["Fired", {
+NoFire = player addEventHandler ["Fired", {
     if (true) then {
         player spawn KK_fnc_playerWeaponMulfunction
     };
 }];
 
 player addEventHandler ["Take", {
-    if (_this select 0 == _this select 1) then {
+    if (typeOf (_this select 1) select [0,6] == "Supply") then {
         hint "Un-Jammed!";
         allowFire = true;
     };
@@ -123,7 +123,7 @@ player addEventHandler ["Take", {
      player allowDamage true;
      player setCaptive false;
      player setVariable ["_Hited",0,false];
-     player removeEventHandler ["Fire", 30];
+     player removeEventHandler ["Fire", NoFire];
      [ player,SaftyID ] call BIS_fnc_holdActionRemove;
    };
 };
@@ -141,7 +141,7 @@ player addEventHandler ["Take", {
      player allowDamage true;
      player setCaptive false;
      player setVariable ["_Hited",0,false];
-     player removeEventHandler ["Fire", 30];
+     player removeEventHandler ["Fire", NoFire];
      [ player,SaftyID ] call BIS_fnc_holdActionRemove;
    };
 };
