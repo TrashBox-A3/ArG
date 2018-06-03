@@ -34,7 +34,7 @@ if(isServer)then{
 
         _x addMPEventHandler ["MPHit", {
 
-          [_this select 3] (side player == sideenemy);  
+        if(side (_this select 3) == sideenemy)then{
 
 
         _AIHited = _this select 0;
@@ -52,7 +52,7 @@ if(isServer)then{
 
         _AIHited playMoveNow "ApanPknlMstpSnonWnonDnon_G01";
 
-        _AIHited allowfleeing 1;
+        _AIHited allowfleeing 1;};
     }];
      _x setUnitPos "UP";
     };
