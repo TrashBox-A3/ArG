@@ -1,4 +1,4 @@
-if(isServer)then{
+
 
 if(Ready)then{
 
@@ -49,5 +49,4 @@ _tr1 setTriggerStatements [
 
 };
 
-};
 };
