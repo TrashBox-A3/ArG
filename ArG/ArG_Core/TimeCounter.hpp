@@ -16,7 +16,7 @@ class  Land_SatellitePhone_F;
 
       class EventHandlers
           {
-               init = "Rodeo = [(_this select 0),'Time Counter','\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa','\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_hack_ca.paa','true','true',{_target say3D 'Click';missionNamespace setVariable ['Buzz',2,true];},{_target say3D 'Click';},{[]execVM 'ArG_Core\functions\fn_BuzzerBox.sqf'},{},[],5,0,false,false] call BIS_fnc_holdActionAdd;";
+               init = "Rodeo = [(_this select 0),'Time Counter','\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa','\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_hack_ca.paa','true','true',{missionNamespace setVariable ['Buzz',2,true];},{_target say3D 'Click';},{[]execVM 'ArG_Core\functions\fn_BuzzerBox.sqf'},{},[],5,0,false,false] call BIS_fnc_holdActionAdd;";
           };
     };
 
@@ -68,7 +68,7 @@ hideOnUse = true;
 onlyForPlayer = 1;
 shortcut = "reloadMagazine";
 condition = "true";
-statement = "this say3D 'Click';,[[[],'ArG_Core\functions\fn_Starter.sqf'], 'BIS_fnc_execVM', true,true] call BIS_fnc_MP;";
+statement = "this say3D 'Click',[[[],'ArG_Core\functions\fn_Starter.sqf'], 'BIS_fnc_execVM', true,true] call BIS_fnc_MP;";
 };
 };
 };
@@ -102,7 +102,7 @@ hideOnUse = true;
 onlyForPlayer = 1;
 shortcut = "reloadMagazine";
 condition = "true";
-statement = "this say3D 'Click';,[[[],'ArG_Core\functions\fn_Starter.sqf'], 'BIS_fnc_execVM', true,true] call BIS_fnc_MP;";
+statement = "this say3D 'Click',[[[],'ArG_Core\functions\fn_Starter.sqf'], 'BIS_fnc_execVM', true,true] call BIS_fnc_MP;";
 };
 };
 };
