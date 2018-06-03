@@ -71,8 +71,8 @@ class ItemCore;
               "muzzle_snds_65_TI_blk_F",
               "muzzle_snds_65_TI_ghex_F",
               "muzzle_snds_65_TI_hex_F",
-              "hlc_muzzle_300blk_KAC",
-              "hlc_muzzle_MAG58_Brake"
+              "hlc_muzzle_300blk_KAC"
+
     				};
     				iconPosition[]={0,0.44999999};
     				iconScale=0.2;
