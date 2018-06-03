@@ -1,15 +1,5 @@
 
 
-if(Ready)then{
-
-Ready = false;
-missionNamespace setVariable ["ST1",1,true];
-}
-else
-{
-Ready = true;
-missionNamespace setVariable ["ST2",1,true];
-};
 
 if(missionNamespace getvariable "ST1" == 1)then{
     systemChat "BlueTeam Ready";
