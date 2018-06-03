@@ -13,7 +13,7 @@ if(missionNamespace getvariable "ST1" == 1)then{
        cuttext ["","PLAIN",1];
        cuttext ["RedTeam Ready","PLAIN",3];
   };
-
+};
 if((missionNamespace getvariable "ST1" == 1)&&(missionNamespace getvariable "ST2" == 1))then{
 cuttext ["","PLAIN",1];
 cuttext ["Game Ready","PLAIN",3];
