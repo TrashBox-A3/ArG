@@ -18,10 +18,6 @@ class CfgPatches
 			"ArG_Gamer_6",
 			"ArG_Gamer_7",
 			"ArG_Gamer_8",
-			"ArG_Gamer_9",
-			"ArG_Gamer_10",
-			"ArG_Gamer_11",
-			"ArG_Gamer_12",
 			"ArG_Module"
 		};
 		weapons[]=
@@ -49,7 +45,8 @@ class CfgPatches
 		"ArG_Red_Flag",
 		"ArG_Green_Flag",
 		"ArG_Stater_1",
-		"ArG_Stater_2"
+		"ArG_Stater_2",
+		"ArG_Revive"
 		};
 	};
 };

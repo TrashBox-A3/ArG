@@ -1,5 +1,5 @@
 private ["_types","_Speakers"];
-
+[]execVM "ArG_Core\functions\fn_Count.sqf";
 _types = [
 "ArG_Speaker"
 ];

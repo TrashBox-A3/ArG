@@ -22,7 +22,7 @@ class ArG
 		class BuzzerBox {};
 		class Count {};
 		class Starter {};
-
+    class Revive {};
 	};
 
 	};
