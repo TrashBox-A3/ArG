@@ -148,16 +148,16 @@ class ItemCore;
             midRangeProbab=0.69999999;
             maxRange=400;
             maxRangeProbab=0.30000001;
-            drySound[] = {"ArG_Core\Sound\den_tan01.wss",4, 1,15};
+            drySound[] = {"ArG_Core\Sound\den_tan01.wss",5, 1,15};
             class StandardSound
         {
-            begin1[] = {"ArG_Core\Sound\den_tan01.wss",4, 1,15};
+            begin1[] = {"ArG_Core\Sound\den_tan01.wss",5, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
         };
             class SilencedSound
         {
-            begin1[] = {"ArG_Core\Sound\den_tan01.wss",3, 1,15};
+            begin1[] = {"ArG_Core\Sound\den_tan01.wss",5, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
         };
@@ -177,16 +177,16 @@ class ItemCore;
             maxRange=30;
             maxRangeProbab=0.1;
             aiRateOfFire=1e-006;
-            drySound[] = {"ArG_Core\Sound\den_tan01.wss",4, 1,15};
+            drySound[] = {"ArG_Core\Sound\den_tan01.wss",5, 1,15};
             class StandardSound
         {
-            begin1[] = {"ArG_Core\Sound\den_tan01.wss",4, 1,15};
+            begin1[] = {"ArG_Core\Sound\den_tan01.wss",5, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
         };
             class SilencedSound
         {
-            begin1[] = {"ArG_Core\Sound\den_tan01.wss",3, 1,15};
+            begin1[] = {"ArG_Core\Sound\den_tan01.wss",5, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
         };
@@ -207,16 +207,16 @@ class ItemCore;
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
-            drySound[] = {"ArG_Core\Sound\den_tan01.wss",4, 1,15};
+            drySound[] = {"ArG_Core\Sound\den_tan01.wss",5, 1,15};
             class StandardSound
         {
-            begin1[] = {"ArG_Core\Sound\den_tan01.wss",4, 1,15};
+            begin1[] = {"ArG_Core\Sound\den_tan01.wss",5, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
         };
             class SilencedSound
         {
-            begin1[] = {"ArG_Core\Sound\den_tan01.wss",3, 1,15};
+            begin1[] = {"ArG_Core\Sound\den_tan01.wss",5, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
         };
@@ -236,16 +236,16 @@ class ItemCore;
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
-            drySound[] = {"ArG_Core\Sound\den_tan01.wss",4, 1,15};
+            drySound[] = {"ArG_Core\Sound\den_tan01.wss",5, 1,15};
             class StandardSound
         {
-            begin1[] = {"ArG_Core\Sound\den_tan01.wss",4, 1,15};
+            begin1[] = {"ArG_Core\Sound\den_tan01.wss",5, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
         };
             class SilencedSound
         {
-            begin1[] = {"ArG_Core\Sound\den_tan01.wss",3, 1,15};
+            begin1[] = {"ArG_Core\Sound\den_tan01.wss",5, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
         };
@@ -265,16 +265,16 @@ class ItemCore;
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
-            drySound[] = {"ArG_Core\Sound\den_tan01.wss",4, 1,15};
+            drySound[] = {"ArG_Core\Sound\den_tan01.wss",5, 1,15};
             class StandardSound
         {
-            begin1[] = {"ArG_Core\Sound\den_tan01.wss",4, 1,15};
+            begin1[] = {"ArG_Core\Sound\den_tan01.wss",5, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
         };
             class SilencedSound
         {
-            begin1[] = {"ArG_Core\Sound\den_tan01.wss",3, 1,15};
+            begin1[] = {"ArG_Core\Sound\den_tan01.wss",5, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
         };
