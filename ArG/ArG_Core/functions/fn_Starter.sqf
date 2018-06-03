@@ -36,13 +36,12 @@ _tr1 setTriggerStatements [
     };
     cuttext ["","PLAIN",1];
     titletext ["GoGoGo!!","WHITE IN",6];
-
+    playSound "BackgroundTrack03_F";
 
 
    {_x enableSimulationGlobal true;}count allUnits;
 
 };
-playSound "BackgroundTrack03_F";
-sleep 20;
-10 fadeMusic 0;
+
+
 };
