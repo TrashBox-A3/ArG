@@ -23,7 +23,7 @@ class CfgWeapons
   #include "MK20.hpp"
   #include "EBR.hpp"
   #include "MK200.hpp"
-  
+
 
 class ItemCore;
     class InventoryItem_Base_F;
@@ -65,7 +65,14 @@ class ItemCore;
     				compatibleItems[]=
     				{
     					"muzzle_snds_h",
-              "ArG_muzzle_snds_H"
+              "ArG_muzzle_snds_H",
+              "muzzle_snds_H_khk_F",
+              "muzzle_snds_H_snd_F",
+              "muzzle_snds_65_TI_blk_F",
+              "muzzle_snds_65_TI_ghex_F",
+              "muzzle_snds_65_TI_hex_F",
+              "hlc_muzzle_300blk_KAC",
+              "hlc_muzzle_MAG58_Brake"
     				};
     				iconPosition[]={0,0.44999999};
     				iconScale=0.2;
