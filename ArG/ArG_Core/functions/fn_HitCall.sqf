@@ -123,7 +123,7 @@ player addEventHandler ["Take", {
      player allowDamage true;
      player setCaptive false;
      player setVariable ["_Hited",0,false];
-     player removeEventHandler ["Fire", NoFire];
+     player allowFire = true;
      [ player,SaftyID ] call BIS_fnc_holdActionRemove;
    };
 };
@@ -141,7 +141,7 @@ player addEventHandler ["Take", {
      player allowDamage true;
      player setCaptive false;
      player setVariable ["_Hited",0,false];
-     player removeEventHandler ["Fire", NoFire];
+     player allowFire = true;
      [ player,SaftyID ] call BIS_fnc_holdActionRemove;
    };
 };
