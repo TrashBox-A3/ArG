@@ -35,7 +35,7 @@ _tr1 setTriggerStatements [
         false
     };
     cuttext ["","PLAIN",1];
-    titletext ["GoGoGo!!","WHITE IN",6];
+    hint"GoGoGo!!";
     0 = [] spawn {
 	playMusic ["BackgroundTrack03_F", 1];
 	sleep 20;

@@ -72,7 +72,7 @@ statement = "this say3D 'Call_Start',missionNamespace setVariable ['ST1',1,true]
 };
 class EventHandlers
     {
-         init = "(_this select 0),if(missionNamespace getvariable 'ST2' == 1)then{(_this select 0) say3D 'Call_Tel'}";
+         init = "(_this select 0),if(missionNamespace getvariable 'ST2' == 1)then{this say3D 'Call_Tel'}";
     };
 
 
