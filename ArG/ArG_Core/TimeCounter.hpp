@@ -16,7 +16,7 @@ class  Land_SatellitePhone_F;
 
       class EventHandlers
           {
-               init = "Rodeo = [(_this select 0),'Time Counter','\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa','\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_hack_ca.paa','true','true',{missionNamespace setVariable ['Buzz',2,true];},{},{[]execVM 'ArG_Core\functions\fn_BuzzerBox.sqf'},{},[],5,0,false,false] call BIS_fnc_holdActionAdd;";
+               init = "Rodeo = [(_this select 0),'Time Counter','\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa','\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_hack_ca.paa','true','true',{missionNamespace setVariable ['Buzz',2,true];},{_target say3D 'Click'},{[]execVM 'ArG_Core\functions\fn_BuzzerBox.sqf'},{},[],5,0,false,false] call BIS_fnc_holdActionAdd;";
           };
     };
 
@@ -58,8 +58,8 @@ class  Land_Laptop_unfolded_F;
 {
 class Action1
 {
-displayName = "<img image='\ArG_Core\Start.paa' size='1' shadow='false' /> <t color=""#00BFFF"">Game Starter 1";
-displayNameDefault = "<img image='\ArG_Core\Start.paa' size='3' shadow='false' /><t color=""#00BFFF"">Game Starter 1";
+displayName = "<img image='\ArG_Core\Start.paa' size='1' shadow='false' /> <t color=""#00BFFF"">Ready";
+displayNameDefault = "<img image='\ArG_Core\Start.paa' size='3' shadow='false' /><t color=""#00BFFF"">Ready";
 priority = 3;
 radius = 20;
 position = "camera";
@@ -92,8 +92,8 @@ statement = "this say3D 'Click',missionNamespace setVariable ['ST1',1,true],[[[]
 {
 class Action2
 {
-displayName = "<img image='\ArG_Core\Start.paa' size='1' shadow='false' /> <t color=""#FF0000"">Game Starter 2";
-displayNameDefault = "<img image='\ArG_Core\Start.paa' size='3' shadow='false' /><t color=""#FF0000"">Game Starter 2";
+displayName = "<img image='\ArG_Core\Start.paa' size='1' shadow='false' /> <t color=""#FF0000"">Ready";
+displayNameDefault = "<img image='\ArG_Core\Start.paa' size='3' shadow='false' /><t color=""#FF0000"">Ready";
 priority = 3;
 radius = 20;
 position = "camera";

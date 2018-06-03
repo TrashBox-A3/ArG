@@ -13,7 +13,7 @@ if((missionNamespace getvariable "ST1" == 1)&&(missionNamespace getvariable "ST2
 systemChat "Game Ready!";
 sleep 2;
 {_x enableSimulationGlobal false;}count allUnits;
-sleep 2;
+
 _tr1 = createTrigger ["EmptyDetector", [0,0,0]];
 _tr1 setTriggerTimeout [10, 10, 10, false];
 _tr1 setTriggerStatements [
@@ -33,7 +33,7 @@ _tr1 setTriggerStatements [
         false
     };
 
-    titletext ["GoGoGo!!","WHITE IN",2];
+    titletext ["GoGoGo!!","WHITE IN",4];
     hint "Go";
 
 
