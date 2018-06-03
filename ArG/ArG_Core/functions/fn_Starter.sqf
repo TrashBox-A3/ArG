@@ -1,14 +1,14 @@
 
 
 
-if(missionNamespace getvariable "ST1" == 1)then{
+if((missionNamespace getvariable "ST1" == 1)&&(missionNamespace getvariable "ST2" == 0))then{
   sleep 4;
     cuttext ["","PLAIN",1];
     cuttext ["BlueTeam Ready","PLAIN",3];
   }
   else
   {
-   if(missionNamespace getvariable "ST2" == 1)then{
+   if((missionNamespace getvariable "ST2" == 1)&&(missionNamespace getvariable "ST1" == 0))then{
      sleep 4;
        cuttext ["","PLAIN",1];
        cuttext ["RedTeam Ready","PLAIN",3];
