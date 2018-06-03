@@ -2,16 +2,18 @@
 
 
 if(missionNamespace getvariable "ST1" == 1)then{
-    systemChat "BlueTeam Ready";
+  sleep 4;
+    cuttext ["BlueTeam Ready","PLAIN",3];
   };
    if(missionNamespace getvariable "ST2" == 1)then{
-       systemChat "RedTeam Ready";
+     sleep 4;
+       cuttext ["RedTeam Ready","PLAIN",3];
   };
 
 if((missionNamespace getvariable "ST1" == 1)&&(missionNamespace getvariable "ST2" == 1))then{
 
-systemChat "Game Ready!";
-sleep 2;
+cuttext ["Game Ready!","PLAIN",3];
+sleep 4;
 {_x enableSimulationGlobal false;}count allUnits;
 
 _tr1 = createTrigger ["EmptyDetector", [0,0,0]];
@@ -34,7 +36,7 @@ _tr1 setTriggerStatements [
     };
 
     titletext ["GoGoGo!!","WHITE IN",6];
-    
+
 
 
    {_x enableSimulationGlobal true;}count allUnits;
