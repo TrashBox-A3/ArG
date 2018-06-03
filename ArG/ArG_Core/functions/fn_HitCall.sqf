@@ -28,8 +28,10 @@ _Gamer = [
 
       player addMPEventHandler ["MPHit", {
 
-          player allowDamage false;
+          player addEventHandler ["HandleDamage", {0}];
+
           if((side (_this select 3) == west)or(side (_this select 3) == east))then{
+          player allowDamage false;
           player setCaptive true;
           player setVariable ["_Hited",1,false];
           [ player,Rodeo ] call BIS_fnc_holdActionRemove;
@@ -38,7 +40,6 @@ _Gamer = [
       	  {
             player switchCamera "EXTERNAL";
           };
-          player addEventHandler ["HandleDamage", {0}];
 
           player switchMove "Acts_JetsMarshallingRight_loop";
           player disableAI "ANIM";
