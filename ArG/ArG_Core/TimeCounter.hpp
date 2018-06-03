@@ -70,6 +70,13 @@ condition = "((missionNamespace getvariable 'ST1' == 0))";
 statement = "this say3D 'Call_Start',missionNamespace setVariable ['ST1',1,true],[[[],'ArG_Core\functions\fn_Starter.sqf'], 'BIS_fnc_execVM', true,true] call BIS_fnc_MP;";
 };
 };
+class EventHandlers
+    {
+         init = "(_this select 0),if(missionNamespace getvariable 'ST2' == 1)then{(_this select 0)say3D 'Call_Tel'}";
+    };
+
+
+
 };
 
 //Stater 2//

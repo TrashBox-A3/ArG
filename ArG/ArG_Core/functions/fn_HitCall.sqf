@@ -115,7 +115,7 @@ _Gamer = [
 }forEach allPlayers;
 
    },
- {}, [], 2, nil, true, false
+ {}, [], 10, nil, true, false
  ] call BIS_fnc_holdActionAdd;
 };
 
