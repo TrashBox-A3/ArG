@@ -30,4 +30,16 @@ class CfgSounds {
     titles[] = {};
   };
 
+  class Call_Start {
+    name = "";
+    sound[] = {"ArG_Core\Sound\Call_Start.wss", 1, 1.1};
+    titles[] = {};
+  };
+
+  class Call_Tel {
+    name = "";
+    sound[] = {"ArG_Core\Sound\Call_Tel.wss", 1, 1.1};
+    titles[] = {};
+  };
+
 };
