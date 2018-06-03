@@ -36,7 +36,7 @@ _tr1 setTriggerStatements [
     };
 
     titletext ["GoGoGo!!","WHITE IN",6];
-    playSound "BackgroundTrack03_F"
+    playSound "BackgroundTrack03_F";
     10 fadeMusic 0;
 
 
