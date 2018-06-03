@@ -6,6 +6,8 @@ _unit = player;
 
 player setVariable ["_Hited",0,false];
 
+
+
 _Gamer = [
 "ArG_Gamer_1",
 "ArG_Gamer_2",
