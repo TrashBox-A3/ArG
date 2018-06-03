@@ -36,7 +36,11 @@ _tr1 setTriggerStatements [
     };
     cuttext ["","PLAIN",1];
     titletext ["GoGoGo!!","WHITE IN",6];
-    playSound "BackgroundTrack03_F";
+    0 = [] spawn {
+	playMusic ["BackgroundTrack03_F", 1];
+	sleep 20;
+	playMusic "";
+};
 
 
    {_x enableSimulationGlobal true;}count allUnits;
