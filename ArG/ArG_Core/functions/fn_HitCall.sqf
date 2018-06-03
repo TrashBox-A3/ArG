@@ -1,30 +1,7 @@
 ///script by Rodeostar42///
 
 private ["_unit","_Hited"];
-
-
-
 player setVariable ["_Hited",0,false];
-
-allowFire = true;
-
-player addAction ["", {
-    playSound3D ['a3\sounds_f\weapons\Other\dry9.wss', _this select 0];
-}, "", 0, false, true, "DefaultAction", "isNil 'allowFire'"];
-
-KK_fnc_playerWeaponMulfunction = {
-    _frame = diag_frameno;
-    _wep = currentWeapon _this;
-    _ammo = _this ammo _wep;
-    if (_ammo > 0) then {
-        allowFire = nil;
-        _this setAmmo [_wep, 0];
-        waitUntil {_frame < diag_frameno};
-        _this setAmmo [_wep, _ammo];
-        hint "Jammed!";
-    };
-};
-
 
 _Gamer = [
 "ArG_Gamer_1",
@@ -71,22 +48,6 @@ _Gamer = [
       };
 
 
-
-NoFire = player addEventHandler ["Fired", {
-    if (true) then {
-        player spawn KK_fnc_playerWeaponMulfunction
-    };
-}];
-
-player addEventHandler ["Take", {
-    if (typeOf (_this select 1) select [0,6] == "Supply") then {
-        hint "Un-Jammed!";
-        allowFire = true;
-    };
-}];
-
-
-
       if((MarkerType "B_Safe" != "")or(MarkerType "R_Safe" != ""))then{
 
   SaftyID = [player, "Back to Safety zone",
@@ -124,7 +85,7 @@ player addEventHandler ["Take", {
      player allowDamage true;
      player setCaptive false;
      player setVariable ["_Hited",0,false];
-     allowFire = true;
+
      [ player,SaftyID ] call BIS_fnc_holdActionRemove;
    };
 };
@@ -142,7 +103,7 @@ player addEventHandler ["Take", {
      player allowDamage true;
      player setCaptive false;
      player setVariable ["_Hited",0,false];
-     allowFire = true;
+     
      [ player,SaftyID ] call BIS_fnc_holdActionRemove;
    };
 };
