@@ -56,7 +56,7 @@ class  Land_Laptop_unfolded_F;
 
     class UserActions
 {
-class Action
+class Action1
 {
 displayName = "<img image='\ArG_Core\ArG.jpg' size='1' shadow='false' /> <t color=""#FF4500"">Game Starter 1";
 displayNameDefault = "<img image='\ArG_Core\ArG.jpg' size='3' shadow='false' /><t color=""#FF4500"">Game Starter 1";
@@ -64,7 +64,7 @@ priority = 3;
 radius = 20;
 position = "camera";
 showWindow = true;
-hideOnUse = true;
+hideOnUse = -1;
 onlyForPlayer = 1;
 shortcut = "reloadMagazine";
 condition = "true";
@@ -90,7 +90,7 @@ statement = "this say3D 'Click',[[[],'ArG_Core\functions\fn_Starter.sqf'], 'BIS_
 
     class UserActions
 {
-class Action
+class Action2
 {
 displayName = "<img image='\ArG_Core\ArG.jpg' size='1' shadow='false' /> <t color=""#FF4500"">Game Starter 2";
 displayNameDefault = "<img image='\ArG_Core\ArG.jpg' size='3' shadow='false' /><t color=""#FF4500"">Game Starter 2";
@@ -98,7 +98,7 @@ priority = 3;
 radius = 20;
 position = "camera";
 showWindow = true;
-hideOnUse = true;
+hideOnUse = -1;
 onlyForPlayer = 1;
 shortcut = "reloadMagazine";
 condition = "true";
