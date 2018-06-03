@@ -26,6 +26,8 @@ _tr1 setTriggerStatements [
 0 = _tr1 spawn {
     waitUntil {triggerTimeoutCurrent _this > 0};
     waitUntil {
+      if (floor triggerTimeoutCurrent _this <= 2) exitWith {true};
+      titletext ["","WHITE IN",6];
         if (floor triggerTimeoutCurrent _this <= 0) exitWith {true};
         sleep 0.2;
         hintSilent parseText format [
@@ -34,7 +36,7 @@ _tr1 setTriggerStatements [
         ];
         false
     };
-    cuttext ["","PLAIN",1];
+    
     hint"GoGoGo!!";
     0 = [] spawn {
 	playMusic ["BackgroundTrack03_F", 1];
