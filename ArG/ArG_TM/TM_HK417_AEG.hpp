@@ -1,88 +1,38 @@
-class CfgPatches
-{
-	class ArG_HK417
-	{
-		requiredaddons[]=
-		{
-			"SMA_Weapons"
-		};
-		requiredversion=0.1;
-		units[]={};
-		weapons[]=
-		{
-			"ArG_TM_HK417_AEG"
-		};
-		author="Rodeostar42";
-	};
-};
-class asdg_OpticRail1913;
-class asdg_FrontSideRail
-{
-	class compatibleItems;
-};
-class asdg_UnderSlot;
-class CfgWeapons
-{
-	class Rifle;
-	class ItemCore;
-	class InventoryOpticsItem_Base_F;
-	class InventoryFlashLightItem_Base_F;
-	class InventoryMuzzleItem_Base_F;
-	class GrenadeLauncher;
-	class UGL_F: GrenadeLauncher
-	{
-		class Single;
-	};
-	class mk20_base_f;
-	class SMA_AssaultBase: mk20_base_f
-	{
-		class WeaponSlotsInfo;
-	};
-	class SMA_556_RIFLEBASE: SMA_AssaultBase
-	{
-		class Single;
-		class FullAuto;
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			class PointerSlot;
-		};
-	};
-	class SMA_762_RIFLEBASE: SMA_AssaultBase
+class SMA_HK417_16in: SMA_HK417
 	{
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
-			class MuzzleSlot;
-			class CowsSlot;
-			class PointerSlot;
+			class asdg_UnderSlot_SMAAssault: asdg_UnderSlot
+			{
+			};
+			mass=88;
+			class asdg_FrontSideRail_SMAAssault: asdg_FrontSideRail
+			{
+				class compatibleItems: compatibleItems
+				{
+					SMA_ANPEQ15_TOP_417TAN=1;
+					SMA_ANPEQ15_TOP_417BLK=1;
+					SMA_SFPEQ_HK417TOP_TAN=1;
+					SMA_SFPEQ_HK417TOP_TAN_LIGHT=1;
+					SMA_SFPEQ_HK417TOP_BLK=1;
+					SMA_SFPEQ_HK417TOP_BLK_LIGHT=1;
+				};
+			};
 		};
-		class Single;
-		class FullAuto;
-	};
-	class ArG_TM_HK417_AEG: SMA_762_RIFLEBASE
-	{
 		scope=2;
-
-		inertia=0.80000001;
-		dexterity=1.6;
+		inertia=0.81999999;
 		recoil="recoil_dmr_06";
-		displayName="HK417 ArG";
-		author="Rodeostar42";
+		displayName="HK417 Recce 16in ";
+		author="Specialist Military Arms";
 		handAnim[]=
 		{
 			"OFP2_ManSkeleton",
 			"SMA_HK417\Data\Anim\HK416agf.rtm"
 		};
-		model="\SMA_HK417\HK417.p3d";
-		picture="\SMA_HK417\ui\SMAHK417_ca.paa";
+		model="\SMA_HK417\HK417_16in.p3d";
+		picture="\SMA_HK417\ui\SMAHK41716in_ca.paa";
 		descriptionShort="7.62mm Battle Rifle";
 		reloadaction="GestureReloadSMG_02";
-		drysound[]=
-		{
-			"SMA_SOUND\data\HK417\Mainempty1",
-			1.5,
-			1,
-			10
-		};
 		reloadmagazinesound[]=
 		{
 			"SMA_SOUND\data\HK417\ARRL762.ogg",
@@ -105,113 +55,13 @@ class CfgWeapons
 		opticsZoomMin=0.375;
 		opticsZoomMax=1.1;
 		opticsZoomInit=0.75;
-		discreteDistance[]={100,200,300,400,500};
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			mass=83.199997;
-			allowedSlots[]={901};
-			class asdg_OpticRail_SMAAssault: asdg_OpticRail1913
-			{
-			};
-			class asdg_FrontSideRail_SMAAssault: asdg_FrontSideRail
-			{
-			};
-			class MuzzleSlot: MuzzleSlot
-			{
-				linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
-				compatibleItems[]=
-				{
-					"SMA_supptan_762",
-					"SMA_supp_762",
-					"sma_gemtech_one_blk",
-                                        "ArG_muzzle_snds_H"
-				};
-			};
-			class PointerSlot: PointerSlot
-			{
-				compatibleItems[]+=
-				{
-					"SMA_ANPEQ15_TOP_417TAN",
-					"SMA_ANPEQ15_TOP_417BLK",
-					"SMA_SFPEQ_HK417TOP_TAN",
-					"SMA_SFPEQ_HK417TOP_TAN_LIGHT",
-					"SMA_SFPEQ_HK417TOP_BLK",
-					"SMA_SFPEQ_HK417TOP_BLK_LIGHT"
-				};
-			};
-		};
+		discreteDistance[]={100,200,300,400,500,600,700,1000};
 		class Single: Single
-  {
-      reloadTime=0.096000001;
-
-      flash = "";
-      flashSize = 0;
-      fireLightIntensity=0;
-      dispersion=0.00086999999;
-      minRange=2;
-      minRangeProbab=0.5;
-      midRange=200;
-      midRangeProbab=0.69999999;
-      maxRange=400;
-      maxRangeProbab=0.30000001;
-      drySound[] = {"ArG_TM\Sound\M4_SOPMOD.wss",4, 1,15};
-      class StandardSound
-  {
-      begin1[] = {"ArG_TM\Sound\M4_SOPMOD.wss",4, 1,15};
-      soundBegin[] = {"begin1",1};
-      weaponSoundEffect = "DefaultRifle";
-  };
-      class SilencedSound
-  {
-      begin1[] = {"ArG_TM\Sound\M4_SOPMOD.wss",3, 1,15};
-      soundBegin[] = {"begin1",1};
-      weaponSoundEffect = "DefaultRifle";
-  };
-  };
-  class FullAuto: Mode_FullAuto
-  {
-      reloadTime=0.096000001;
-      dispersion=0.00086999999;
-
-      flash = "";
-      flashSize = 0;
-      fireLightIntensity=0;
-      minRange=0;
-      minRangeProbab=0.89999998;
-      midRange=15;
-      midRangeProbab=0.69999999;
-      maxRange=30;
-      maxRangeProbab=0.1;
-      aiRateOfFire=1e-006;
-      drySound[] = {"ArG_TM\Sound\M4_SOPMOD.wss",4, 1,15};
-      class StandardSound
-  {
-      begin1[] = {"ArG_TM\Sound\M4_SOPMOD.wss",4, 1,15};
-      soundBegin[] = {"begin1",1};
-      weaponSoundEffect = "DefaultRifle";
-  };
-      class SilencedSound
-  {
-      begin1[] = {"ArG_TM\Sound\M4_SOPMOD.wss",3, 1,15};
-      soundBegin[] = {"begin1",1};
-      weaponSoundEffect = "DefaultRifle";
-  };
-  };
-		class GunParticles
 		{
-			class MuzzelEffect
-			{
-				directionname="Konec hlavne";
-				effectname="RifleAssaultCloud";
-				positionname="Usti hlavne";
-			};
-			class EjectionEffect
-			{
-				positionName="Nabojnicestart";
-				directionName="Nabojniceend";
-				effectName="CaselessAmmoCloud";
-			};
+			dispersion=0.00028581001;
+		};
+		class FullAuto: FullAuto
+		{
+			dispersion=0.00028581001;
 		};
 	};
-
-};
