@@ -1,4 +1,4 @@
-
+SMA_HK417:
 class ArG_TM_HK417_AEG: SMA_HK417
 	{
 
