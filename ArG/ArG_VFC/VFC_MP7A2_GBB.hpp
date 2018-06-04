@@ -29,16 +29,7 @@ class ArG_VFC_MP7A1_GBB: rhsusf_weap_MP7A2
       iconPosition[]={0,0.44999999};
       iconScale=0.2;
     };
-    class CowsSlot: CowsSlot
-    {
-      iconPosition[]={0.5,0.34999999};
-      iconScale=0.2;
-    };
-    class PointerSlot: PointerSlot
-    {
-      iconPosition[]={0.2,0.44999999};
-      iconScale=0.25;
-    };
+    
   };
 
 
