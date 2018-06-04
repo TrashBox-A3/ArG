@@ -56,19 +56,7 @@ class ArG_TM_HK417_AEG: SMA_HK417_16in
 			};
 		};
 
-  class LinkedItems
-		{
-			class LinkedItemsOptic
-			{
-				slot = "asdg_OpticRail_SMAAssault";
-				item = "SMA_eotech552_3XDOWN";
-			};
-			class LinkedItemsUnder
-			{
-				slot = "asdg_Underbarrel";
-				item = "SMA_Gripod_01";
-		        };
-		};
+  
 
   initSpeed = 250; // muzzle velocity
   maxRange = 100;
