@@ -41,7 +41,7 @@ class CfgWeapons
 		class Single;
 		class FullAuto;
 	};
-	class SMA_HK417: SMA_762_RIFLEBASE
+	class ArG_TM_HK417_AEG: SMA_762_RIFLEBASE
 	{
 		scope=2;
 		dlc="SMA";
