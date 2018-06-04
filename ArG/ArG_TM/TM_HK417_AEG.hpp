@@ -1,3 +1,20 @@
+class CfgPatches
+{
+	class ArG_HK417
+	{
+		requiredaddons[]=
+		{
+			"SMA_Weapons"
+		};
+		requiredversion=0.1;
+		units[]={};
+		weapons[]=
+		{
+			"ArG_TM_HK417_AEG"
+		};
+		author="Rodeostar42";
+	};
+};
 class asdg_OpticRail1913;
 class asdg_FrontSideRail
 {
