@@ -1,5 +1,22 @@
-class SMA_HK417_16in: SMA_HK417
+class ArG_TM_HK417_AEG: SMA_HK417
 	{
+
+    author="Rodeostar42";
+
+  scope=2;
+  displayName="ArG TM HK417 EARLY VARIANT";
+  model = "\SMA_HK417\HK417_16in.p3d";
+  baseWeapon="ArG_TM_HK417_AEG";
+  picture = "\SMA_HK417\ui\SMAHK41716in_ca.paa";
+
+  descriptionShort = "HK417 EARLY VARIANT<br/>Tokyo MARUI";
+  magazines[] = {
+
+      "ArG_70Rnd_HK417_BB_02",
+      "ArG_70Rnd_HK417_BB_025",
+      "ArG_600Rnd_HK417_BB_02",
+      "ArG_600Rnd_HK417_BB_025"
+  };
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			class asdg_UnderSlot_SMAAssault: asdg_UnderSlot
@@ -18,21 +35,40 @@ class SMA_HK417_16in: SMA_HK417
 					SMA_SFPEQ_HK417TOP_BLK_LIGHT=1;
 				};
 			};
+
+      class MuzzleSlot: MuzzleSlot
+			{
+				linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
+				compatibleItems[]=
+				{
+					"SMA_supptan_762",
+					"SMA_supp_762",
+					"sma_gemtech_one_blk",
+          "ArG_muzzle_snds_H"
+				};
+			};
 		};
 		scope=2;
 		inertia=0.81999999;
-		recoil="recoil_dmr_06";
-		displayName="HK417 Recce 16in ";
-		author="Specialist Military Arms";
+    initSpeed = 250; // muzzle velocity
+  maxRange = 100;
+  flash = "gunfire";
+  flashSize = 0;
+  fireLightIntensity=0;
+  reloadaction = "GestureReloadSMG_02";
+  recoil="NextEGRecoil";
+  maxZeroing=200;
+  discreteDistanceInitIndex=0;
+  maxRecoilSway=0.0125;
+  swayDecaySpeed=1.25;
+  soundBullet[]={"emptySound",1};
 		handAnim[]=
 		{
 			"OFP2_ManSkeleton",
 			"SMA_HK417\Data\Anim\HK416agf.rtm"
 		};
-		model="\SMA_HK417\HK417_16in.p3d";
-		picture="\SMA_HK417\ui\SMAHK41716in_ca.paa";
-		descriptionShort="7.62mm Battle Rifle";
-		reloadaction="GestureReloadSMG_02";
+
+
 		reloadmagazinesound[]=
 		{
 			"SMA_SOUND\data\HK417\ARRL762.ogg",
@@ -57,11 +93,60 @@ class SMA_HK417_16in: SMA_HK417
 		opticsZoomInit=0.75;
 		discreteDistance[]={100,200,300,400,500,600,700,1000};
 		class Single: Single
-		{
-			dispersion=0.00028581001;
-		};
+    {
+      reloadTime=0.096000001;
+
+      flash = "";
+      flashSize = 0;
+      fireLightIntensity=0;
+      dispersion=0.00086999999;
+      minRange=2;
+      minRangeProbab=0.5;
+      midRange=200;
+      midRangeProbab=0.69999999;
+      maxRange=400;
+      maxRangeProbab=0.30000001;
+      drySound[] = {"ArG_TM\Sound\M4_SOPMOD.wss",4, 1,15};
+      class StandardSound
+  {
+      begin1[] = {"ArG_TM\Sound\M4_SOPMOD.wss",4, 1,15};
+      soundBegin[] = {"begin1",1};
+      weaponSoundEffect = "DefaultRifle";
+  };
+      class SilencedSound
+  {
+      begin1[] = {"ArG_TM\Sound\M4_SOPMOD.wss",3, 1,15};
+      soundBegin[] = {"begin1",1};
+      weaponSoundEffect = "DefaultRifle";
+  };
+  };
 		class FullAuto: FullAuto
-		{
-			dispersion=0.00028581001;
-		};
+    {
+      reloadTime=0.096000001;
+      dispersion=0.00086999999;
+
+      flash = "";
+      flashSize = 0;
+      fireLightIntensity=0;
+      minRange=0;
+      minRangeProbab=0.89999998;
+      midRange=15;
+      midRangeProbab=0.69999999;
+      maxRange=30;
+      maxRangeProbab=0.1;
+      aiRateOfFire=1e-006;
+      drySound[] = {"ArG_TM\Sound\M4_SOPMOD.wss",4, 1,15};
+      class StandardSound
+  {
+      begin1[] = {"ArG_TM\Sound\M4_SOPMOD.wss",4, 1,15};
+      soundBegin[] = {"begin1",1};
+      weaponSoundEffect = "DefaultRifle";
+  };
+      class SilencedSound
+  {
+      begin1[] = {"ArG_TM\Sound\M4_SOPMOD.wss",3, 1,15};
+      soundBegin[] = {"begin1",1};
+      weaponSoundEffect = "DefaultRifle";
+  };
+  };
 	};
