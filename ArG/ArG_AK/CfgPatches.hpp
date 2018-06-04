@@ -5,8 +5,8 @@ class CfgPatches
 
 		requiredAddons[]=
 		{
-			"A3_Weapons_F",
-			"A3_Weapons_F_Items"
+			"rhsusf_c_weapons",
+			"rhs_weapons"
 		};
 		requiredVersion=0.1;
 		units[]={};

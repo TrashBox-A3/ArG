@@ -5,11 +5,11 @@ class CfgPatches
 
 		requiredAddons[]=
 		{
-		"A3_Weapons_F",
-		"A3_Weapons_F_Items",
+
     "rhsusf_c_weapons",
 		"scar_arma3",
-		"SMA_HK417"
+		"SMA_HK417",
+		"hlc_wp_p226"
 
 		};
 		requiredVersion=0.1;
