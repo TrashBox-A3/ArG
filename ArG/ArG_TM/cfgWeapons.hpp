@@ -15,6 +15,8 @@ class WeaponSlotsInfo;
 class SAFE_PISTOL;
 class UnderBarrelSlot;
 class GripodSlot;
+class RHS_BoltAction;
+class Eventhandlers;
 class CfgWeapons
 {
 
