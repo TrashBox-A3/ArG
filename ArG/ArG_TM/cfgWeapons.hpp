@@ -15,8 +15,6 @@ class WeaponSlotsInfo;
 class SAFE_PISTOL;
 class UnderBarrelSlot;
 class GripodSlot;
-class Single;
-class FullAuto;
 class asdg_OpticRail1913;
 class asdg_FrontSideRail
 {

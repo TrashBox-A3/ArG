@@ -20,22 +20,6 @@ class ArG_TM_HK417_AEG: SMA_HK417
   };
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
-			class asdg_UnderSlot_SMAAssault: asdg_UnderSlot
-			{
-			};
-			mass=88;
-			class asdg_FrontSideRail_SMAAssault: asdg_FrontSideRail
-			{
-				class compatibleItems: compatibleItems
-				{
-					SMA_ANPEQ15_TOP_417TAN=1;
-					SMA_ANPEQ15_TOP_417BLK=1;
-					SMA_SFPEQ_HK417TOP_TAN=1;
-					SMA_SFPEQ_HK417TOP_TAN_LIGHT=1;
-					SMA_SFPEQ_HK417TOP_BLK=1;
-					SMA_SFPEQ_HK417TOP_BLK_LIGHT=1;
-				};
-			};
 
       class MuzzleSlot: MuzzleSlot
 			{
@@ -48,7 +32,7 @@ class ArG_TM_HK417_AEG: SMA_HK417
           "ArG_muzzle_snds_H"
 				};
 			};
-		};
+
 		scope=2;
 		inertia=0.81999999;
     initSpeed = 250; // muzzle velocity
@@ -86,14 +70,14 @@ class ArG_TM_HK417_AEG: SMA_HK417
 		};
 		modes[]=
 		{
-			"Single",
-			"FullAuto"
+      "Single",
+      "FullAuto"
 		};
 		opticsZoomMin=0.375;
 		opticsZoomMax=1.1;
 		opticsZoomInit=0.75;
 		discreteDistance[]={100,200,300,400,500,600,700,1000};
-		class Single: Single
+		class Single: Mode_SemiAuto
     {
       reloadTime=0.096000001;
 
@@ -121,7 +105,7 @@ class ArG_TM_HK417_AEG: SMA_HK417
       weaponSoundEffect = "DefaultRifle";
   };
   };
-		class FullAuto: FullAuto
+		class FullAuto: Mode_FullAuto
     {
       reloadTime=0.096000001;
       dispersion=0.00086999999;
