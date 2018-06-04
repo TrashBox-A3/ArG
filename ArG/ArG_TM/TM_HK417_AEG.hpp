@@ -1,4 +1,5 @@
-
+class asdg_OpticRail_SMAAssault:
+class asdg_FrontSideRail_SMAAssault:
 ///SCAR H (FDE)///
 class SMA_HK417_16in;
 
@@ -56,7 +57,7 @@ class ArG_TM_HK417_AEG: SMA_HK417_16in
 			};
 		};
 
-  
+
 
   initSpeed = 250; // muzzle velocity
   maxRange = 100;
