@@ -1,8 +1,4 @@
-class asdg_OpticRail1913;
-class asdg_FrontSideRail
-{
-	class compatibleItems;
-};
+
 ///SCAR H (FDE)///
 class SMA_HK417_16in;
 

@@ -31,6 +31,12 @@ class CfgWeapons
     #include "TM_VSR10_G.hpp"
     #include "TM_HK417_AEG.hpp"
 
+    class asdg_OpticRail1913;
+    class asdg_FrontSideRail
+    {
+    	class compatibleItems;
+    };
+
     class ItemCore;
         class InventoryItem_Base_F;
         class InventoryMuzzleItem_Base_F;
