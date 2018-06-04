@@ -32,7 +32,17 @@ class WeaponSlotsInfo: WeaponSlotsInfo
     iconPosition[]={0,0.44999999};
     iconScale=0.2;
   };
-  
+  class CowsSlot: CowsSlot
+  {
+    iconPosition[]={0.5,0.34999999};
+    iconScale=0.2;
+  };
+  class PointerSlot: PointerSlot
+  {
+    iconPosition[]={0.2,0.44999999};
+    iconScale=0.25;
+  };
+  class UnderBarrelSlot {};
 };
 
   initSpeed = 250; // muzzle velocity

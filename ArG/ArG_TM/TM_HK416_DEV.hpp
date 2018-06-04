@@ -31,7 +31,16 @@ class ArG_TM_HK416_DEV: rhs_weap_hk416d10
         iconPosition[]={0,0.44999999};
         iconScale=0.2;
       };
-      
+      class CowsSlot: CowsSlot
+      {
+        iconPosition[]={0.5,0.34999999};
+        iconScale=0.2;
+      };
+      class PointerSlot: PointerSlot
+      {
+        iconPosition[]={0.2,0.44999999};
+        iconScale=0.25;
+      };
     };
 
     initSpeed = 250; // muzzle velocity
