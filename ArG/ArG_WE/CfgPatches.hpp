@@ -5,19 +5,16 @@ class CfgPatches
 
 		requiredAddons[]=
 		{
-
+			"A3_Weapons_F",
+			"A3_Weapons_F_Items"
 		};
 		requiredVersion=0.1;
 		units[]={};
 		weapons[]=
 		{
-			
+
 			"ArG_WE_SVD"
-			
+
 		};
 	};
 };
-
-
-
-
