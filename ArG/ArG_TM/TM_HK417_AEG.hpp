@@ -1,5 +1,4 @@
-class asdg_OpticRail_SMAAssault:
-class asdg_FrontSideRail_SMAAssault:
+
 ///SCAR H (FDE)///
 class SMA_HK417_16in;
 
