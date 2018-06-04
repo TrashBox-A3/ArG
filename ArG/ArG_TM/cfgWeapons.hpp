@@ -30,7 +30,7 @@ class CfgWeapons
     #include "TM_Pistol.hpp"
     #include "TM_M320.hpp"
     #include "TM_VSR10_G.hpp"
-
+    #include "TM_HK417_AEG.hpp"
 
     class asdg_OpticRail1913;
 class asdg_FrontSideRail
