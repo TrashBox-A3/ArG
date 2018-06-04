@@ -307,22 +307,19 @@ class ItemCore;
     				linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
     				compatibleItems[]=
     				{
-    					"muzzle_snds_h",
-              "ArG_muzzle_snds_H"
+              "muzzle_snds_h",
+              "ArG_muzzle_snds_H",
+              "muzzle_snds_H_khk_F",
+              "muzzle_snds_H_snd_F",
+              "muzzle_snds_65_TI_blk_F",
+              "muzzle_snds_65_TI_ghex_F",
+              "muzzle_snds_65_TI_hex_F",
+              "hlc_muzzle_300blk_KAC"
     				};
     				iconPosition[]={0,0.44999999};
     				iconScale=0.2;
     			};
-          class CowsSlot: CowsSlot
-    			{
-    				iconPosition[]={0.5,0.34999999};
-    				iconScale=0.2;
-    			};
-    			class PointerSlot: PointerSlot
-    			{
-    				iconPosition[]={0.2,0.44999999};
-    				iconScale=0.25;
-    			};
+
         };
 
         class LinkedItems
