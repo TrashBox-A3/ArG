@@ -17,7 +17,6 @@ class UnderBarrelSlot;
 class GripodSlot;
 class RHS_BoltAction;
 class Eventhandlers;
-class LinkedItemsUnder;
 class CfgWeapons
 {
 
