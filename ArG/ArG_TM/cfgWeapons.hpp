@@ -15,6 +15,8 @@ class WeaponSlotsInfo;
 class SAFE_PISTOL;
 class UnderBarrelSlot;
 class GripodSlot;
+class asdg_OpticRail_SMAAssault:
+class asdg_FrontSideRail_SMAAssault:
 class CfgWeapons
 {
 
