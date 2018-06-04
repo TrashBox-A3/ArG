@@ -32,10 +32,11 @@ class CfgWeapons
     #include "TM_HK417_AEG.hpp"
 
     class asdg_OpticRail1913;
-    class asdg_FrontSideRail
-    {
-    	class compatibleItems;
-    };
+class asdg_FrontSideRail
+{
+	class compatibleItems;
+};
+class asdg_UnderSlot;
 
     class ItemCore;
         class InventoryItem_Base_F;

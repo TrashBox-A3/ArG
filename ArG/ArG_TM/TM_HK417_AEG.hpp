@@ -22,29 +22,39 @@ class ArG_TM_HK417_AEG: SMA_HK417_16in
   };
 
   class WeaponSlotsInfo: WeaponSlotsInfo
-  {
-    class MuzzleSlot: MuzzleSlot
-    {
-      linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
-      compatibleItems[]=
-      {
-        "muzzle_snds_h",
-        "ArG_muzzle_snds_H"
-      };
-      iconPosition[]={0,0.44999999};
-      iconScale=0.2;
-    };
-    class CowsSlot: CowsSlot
-    {
-      iconPosition[]={0.5,0.34999999};
-      iconScale=0.2;
-    };
-    class PointerSlot: PointerSlot
-    {
-      iconPosition[]={0.2,0.44999999};
-      iconScale=0.25;
-    };
-  };
+		{
+			mass=83.199997;
+			allowedSlots[]={901};
+			class asdg_OpticRail_SMAAssault: asdg_OpticRail1913
+			{
+			};
+			class asdg_FrontSideRail_SMAAssault: asdg_FrontSideRail
+			{
+			};
+			class MuzzleSlot: MuzzleSlot
+			{
+				linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
+				compatibleItems[]=
+				{
+					"SMA_supptan_762",
+					"SMA_supp_762",
+					"sma_gemtech_one_blk",
+          "ArG_muzzle_snds_H"
+				};
+			};
+			class PointerSlot: PointerSlot
+			{
+				compatibleItems[]+=
+				{
+					"SMA_ANPEQ15_TOP_417TAN",
+					"SMA_ANPEQ15_TOP_417BLK",
+					"SMA_SFPEQ_HK417TOP_TAN",
+					"SMA_SFPEQ_HK417TOP_TAN_LIGHT",
+					"SMA_SFPEQ_HK417TOP_BLK",
+					"SMA_SFPEQ_HK417TOP_BLK_LIGHT"
+				};
+			};
+		};
 
   class LinkedItems
 		{
