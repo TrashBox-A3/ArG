@@ -58,25 +58,25 @@ waituntil{(!(player hasweapon ""))};
 
        if(!(handgunWeapon player == ""))then{
          if(!(handgunWeapon player in _ArGWeapons))then{
-            systemChat "can not use real guns!";
+            
              player removeWeapon (handgunWeapon player);
        };
      };
 
      if(!(primaryWeapon player == ""))then{
        if(!(primaryWeapon player in _ArGWeapons))then{
-          systemChat "can not use real guns!";
+
            player removeWeapon (primaryWeapon player);
        };
      };
 
      if(!(secondaryWeapon player == ""))then{
 
-          systemChat "can not use!";
+
            player removeWeapon (secondaryWeapon player);
         };
 
-        
+
       };
     }forEach allUnits;
    };
