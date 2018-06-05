@@ -53,19 +53,25 @@ _ArGWeapons = [
 "ArG_WE_SVD"
 ];
 
+_Rifle = ["Rifle", configFile >> "CfgWeapons"];
+_Launcher = ["Launcher", configFile >> "CfgWeapons"];
+_handgun = ["Pistol", configFile >> "CfgWeapons"];
+_Throw =  ["Throw", configFile >> "CfgWeapons"];
+_Put = ["Put", configFile >> "CfgWeapons"];
+
 while{!(player hasweapon "")}do{
 
 {
   if ((isPlayer _x)&&(typeOf _x in _ArGGamer)) then {
 
-    if((weapons player in _ArGWeapons))then{
+
          if(!(handgunWeapon player in _ArGWeapons))then{
-        player removeWeapon (handgunWeapon player);
+        player removeWeapon (handgunWeapon player _handgun);
        };
            if(!(primaryWeapon player in _ArGWeapons))then{
-             player removeWeapon (primaryWeapon player);
+             player removeWeapon (primaryWeapon player _Rifle);
             };
-          };
+
     if(!(primaryWeapon player isEqualTo "")&&(primaryWeaponItems _x select 0 == ""))then{
 
     player addPrimaryWeaponItem "ArG_muzzle_snds_H";
