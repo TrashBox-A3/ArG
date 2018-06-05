@@ -24,6 +24,7 @@ class ArG
 		class Starter {};
     class Revive {};
 		class Remove_Weapons {};
+		class initPlayerLocal {postInit = 1;};
 	};
 
 	};
