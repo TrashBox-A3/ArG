@@ -70,6 +70,15 @@ while{!(player hasweapon "")}do{
        };
      };
 
+     if(!(secondaryWeapon player == ""))then{
+
+          systemChat "can not use!";
+           player removeWeapon (secondaryWeapon player);
+
+     };
+
+
+
 };
     }forEach allUnits;
 
