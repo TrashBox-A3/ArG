@@ -66,10 +66,10 @@ while{!(player hasweapon "")}do{
 
 
          if(!(handgunWeapon player in _ArGWeapons))then{
-        player removeWeapon (handgunWeapon player _handgun);
+        player removeWeapon (handgunWeapon player count _handgun > 0);
        };
            if(!(primaryWeapon player in _ArGWeapons))then{
-             player removeWeapon (primaryWeapon player _Rifle);
+             player removeWeapon (primaryWeapon player count _Rifle > 0);
             };
 
     if(!(primaryWeapon player isEqualTo "")&&(primaryWeaponItems _x select 0 == ""))then{
