@@ -3,8 +3,7 @@ if ((!isServer) && (player != player)) then
   waitUntil {player == player};
 };
 
-private ["_soldier"];
-_soldier = _this select 0;
+
 
 _ArGGamer = [
 "ArG_Gamer_1",
@@ -14,11 +13,7 @@ _ArGGamer = [
 "ArG_Gamer_5",
 "ArG_Gamer_6",
 "ArG_Gamer_7",
-"ArG_Gamer_8",
-"ArG_Gamer_9",
-"ArG_Gamer_10",
-"ArG_Gamer_11",
-"ArG_Gamer_12"
+"ArG_Gamer_8"
 ];
 
 _ArGWeapons = [
@@ -54,30 +49,31 @@ _ArGWeapons = [
 "ArG_WE_SVD"
 ];
 
+if(local player) then {
 
-
-while{!(_soldier hasweapon "")}do{
+while{!(player hasweapon "")}do{
 
 {
   if ((isPlayer _x)&&(typeOf _x in _ArGGamer)) then {
 
-       if(!(handgunWeapon _soldier == ""))then{
-         if(!(handgunWeapon _soldier in _ArGWeapons))then{
-            systemChat "no ArG Handgun";
-           _soldier removeWeapon (primaryWeapon _soldier);
+       if(!(handgunWeapon player == ""))then{
+         if(!(handgunWeapon player in _ArGWeapons))then{
+            systemChat "can not use real guns!";
+             player removeWeapon (handgunWeapon player);
        };
      };
 
-     if(!(primaryWeapon _soldier == ""))then{
-       if(!(primaryWeapon _soldier in _ArGWeapons))then{
-          systemChat "no ArG Rifle";
-           _soldier removeWeapon (handgunWeapon _soldier);
+     if(!(primaryWeapon player == ""))then{
+       if(!(primaryWeapon player in _ArGWeapons))then{
+          systemChat "can not use real guns!";
+           player removeWeapon (primaryWeapon player);
        };
      };
 
 };
     }forEach allUnits;
 
-    waituntil{(!(handgunWeapon _soldier == ""))or(!(primaryWeapon _soldier == ""))};
+    waituntil{(!(handgunWeapon player == ""))or(!(primaryWeapon player == ""))};
    };
 sleep 2;
+};
