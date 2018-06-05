@@ -58,24 +58,23 @@ waituntil{(!(player hasweapon ""))};
 
        if(!(handgunWeapon player == ""))then{
          if(!(handgunWeapon player in _ArGWeapons))then{
-            
+
              player removeWeapon (handgunWeapon player);
        };
-     };
+     }
+     else
+     {
 
      if(!(primaryWeapon player == ""))then{
        if(!(primaryWeapon player in _ArGWeapons))then{
-
            player removeWeapon (primaryWeapon player);
        };
      };
 
      if(!(secondaryWeapon player == ""))then{
-
-
            player removeWeapon (secondaryWeapon player);
         };
-
+      };
 
       };
     }forEach allUnits;

@@ -21,7 +21,7 @@ _ArGGamer = [
 ];
 
 while{!(player hasweapon "")}do{
-[]execVM "ArG_Core\functions\fn_Remove_Weapons.sqf";
+
 {
   if ((isPlayer _x)&&(typeOf _x in _ArGGamer)) then {
 
