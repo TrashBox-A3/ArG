@@ -23,6 +23,7 @@ class ArG
 		class Count {};
 		class Starter {};
     class Revive {};
+		class Remove_Weapons {};
 	};
 
 	};
