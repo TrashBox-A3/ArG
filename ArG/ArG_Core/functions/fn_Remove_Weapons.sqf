@@ -3,6 +3,9 @@ if ((!isServer) && (player != player)) then
   waitUntil {player == player};
 };
 
+private ["_soldier"];
+_soldier = _this select 0;
+
 _ArGGamer = [
 "ArG_Gamer_1",
 "ArG_Gamer_2",
@@ -51,30 +54,30 @@ _ArGWeapons = [
 "ArG_WE_SVD"
 ];
 
-_wArray = weapons player;
 
-while{!(player hasweapon "")}do{
+
+while{!(_soldier hasweapon "")}do{
 
 {
   if ((isPlayer _x)&&(typeOf _x in _ArGGamer)) then {
 
-       if(!(handgunWeapon player == ""))then{
-         if(!(handgunWeapon player in _ArGWeapons))then{
+       if(!(handgunWeapon _soldier == ""))then{
+         if(!(handgunWeapon _soldier in _ArGWeapons))then{
             systemChat "no ArG Handgun";
-
+           _soldier removeWeapon (primaryWeapon _soldier);
        };
      };
 
-     if(!(primaryWeapon player == ""))then{
-       if(!(primaryWeapon player in _ArGWeapons))then{
+     if(!(primaryWeapon _soldier == ""))then{
+       if(!(primaryWeapon _soldier in _ArGWeapons))then{
           systemChat "no ArG Rifle";
-
+           _soldier removeWeapon (handgunWeapon _soldier);
        };
      };
 
 };
     }forEach allUnits;
 
-    waituntil{(!(handgunWeapon player in _ArGWeapons))or(!(primaryWeapon player in _ArGWeapons))};
+    waituntil{(!(handgunWeapon _soldier == ""))or(!(primaryWeapon _soldier == ""))};
    };
 sleep 2;
