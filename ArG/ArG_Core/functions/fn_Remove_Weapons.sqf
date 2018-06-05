@@ -82,7 +82,7 @@ while{!(player hasweapon "")}do{
 };
     }forEach allUnits;
 
-    waituntil{(!(handgunWeapon player == ""))or(!(primaryWeapon player == ""))};
+    waituntil{(!(handgunWeapon player == ""))or(!(primaryWeapon player == ""))or(!(secondaryWeapon player == ""))};
    };
 sleep 2;
 };
