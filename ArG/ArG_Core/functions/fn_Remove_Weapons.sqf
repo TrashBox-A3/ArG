@@ -52,7 +52,7 @@ _ArGWeapons = [
 if(local player) then {
 
 while{!(player hasweapon "")}do{
-
+waituntil{(!(player hasweapon ""))};
 {
   if ((isPlayer _x)&&(typeOf _x in _ArGGamer)) then {
 
@@ -74,15 +74,11 @@ while{!(player hasweapon "")}do{
 
           systemChat "can not use!";
            player removeWeapon (secondaryWeapon player);
+        };
 
-     };
-
-
-
-};
+        
+      };
     }forEach allUnits;
-
-    waituntil{(!(handgunWeapon player == ""))or(!(primaryWeapon player == ""))or(!(secondaryWeapon player == ""))};
    };
 sleep 2;
 };
