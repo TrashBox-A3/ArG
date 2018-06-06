@@ -13,19 +13,12 @@ class ArG
 
   };
 
-	class Client
-  {
-	file = "\ArG_Core\functions";
-	class initPlayerLocal {postInit = 1;};
-
-  };
-
 	class Script
 	{
 		file = "\ArG_Core\functions";
-		class Remove_Weapons {postInit = 1;};
-		class HitCall {postInit = 1;};
-		class Ai_HitCall {postInit = 1};
+		class Remove_Weapons {};
+		class HitCall {};
+		class Ai_HitCall {};
 		class Muzzle {};
 		class BuzzerBox {};
 		class Count {};
