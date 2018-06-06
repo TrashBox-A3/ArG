@@ -1,4 +1,4 @@
-iif (!isServer) then {
+iif (!isDedicated) then {
 
 
 _ArGGamer = [
