@@ -23,7 +23,7 @@ class ArG
 		class Count {};
 		class Starter {};
     class Revive {};
-		class Remove_Weapons {};
+		class Remove_Weapons {postInit = 1;};
 		class initPlayerLocal {postInit = 1;};
 	};
 
