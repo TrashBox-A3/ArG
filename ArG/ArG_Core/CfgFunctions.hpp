@@ -16,15 +16,15 @@ class ArG
 	class Script
 	{
 		file = "\ArG_Core\functions";
-		class Remove_Weapons {postInit = 2};
-		class HitCall {postInit = 3};
-		class Ai_HitCall {postInit = 4};
-		class Muzzle {postInit = 5};
+		class HitCall {};
+		class Ai_HitCall {postInit = 1};
+		class Muzzle {};
 		class BuzzerBox {};
 		class Count {};
 		class Starter {};
     class Revive {};
-
+		class Remove_Weapons {};
+		class initPlayerLocal {postInit = 1;};
 	};
 
 	};
