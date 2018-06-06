@@ -1,5 +1,5 @@
 ///script by Rodeostar42///
-if (!isDedicated) then {
+if (!isServer) then {
 private ["_unit","_Hited"];
 player setVariable ["_Hited",0,false];
 
