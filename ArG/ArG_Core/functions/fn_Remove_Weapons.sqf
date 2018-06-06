@@ -1,4 +1,4 @@
-iif (!isDedicated) then {
+if (!isDedicated) then {
 
 
 _ArGGamer = [
