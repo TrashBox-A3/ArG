@@ -16,6 +16,7 @@ class ArG
 	class Script
 	{
 		file = "\ArG_Core\functions";
+		class Remove_Weapons {postInit = 1;};
 		class HitCall {postInit = 1;};
 		class Ai_HitCall {postInit = 1};
 		class Muzzle {postInit = 1;};
@@ -23,7 +24,6 @@ class ArG
 		class Count {};
 		class Starter {};
     class Revive {};
-		class Remove_Weapons {postInit = 1;};
 		class initPlayerLocal {postInit = 1;};
 	};
 
