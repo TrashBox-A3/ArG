@@ -1,6 +1,6 @@
 if (!isDedicated) then {
 
-
+private ["_ArGGamer","_ArGWeapons"];
 _ArGGamer = [
 "ArG_Gamer_1",
 "ArG_Gamer_2",
