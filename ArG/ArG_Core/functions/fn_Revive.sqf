@@ -1,3 +1,5 @@
+if (!isDedicated) then {
+
 _BGamer = [
 "ArG_Gamer_1",
 "ArG_Gamer_2",
@@ -44,3 +46,5 @@ if ((isPlayer _x)&&(typeOf _x in _BGamer))then{
          };
 
       }forEach allPlayers;
+
+    };

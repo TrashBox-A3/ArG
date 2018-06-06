@@ -1,8 +1,4 @@
-if ((!isServer) && (player != player)) then
-{
-  waitUntil {player == player};
-};
-
+iif (!isDedicated) then {
 
 
 _ArGGamer = [
@@ -80,4 +76,5 @@ waituntil{(!(player hasweapon ""))};
     }forEach allUnits;
    };
 sleep 2;
+};
 };
