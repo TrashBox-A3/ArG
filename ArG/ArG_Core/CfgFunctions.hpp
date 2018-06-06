@@ -16,9 +16,9 @@ class ArG
 	class Script
 	{
 		file = "\ArG_Core\functions";
-		class HitCall {};
+		class HitCall {postInit = 1;};
 		class Ai_HitCall {postInit = 1};
-		class Muzzle {};
+		class Muzzle {postInit = 1;};
 		class BuzzerBox {};
 		class Count {};
 		class Starter {};
