@@ -1,5 +1,5 @@
 ///script by Rodeostar42///
-
+if (!isDedicated) then {
 private ["_unit","_Hited"];
 player setVariable ["_Hited",0,false];
 
@@ -122,3 +122,4 @@ _Gamer = [
 };
 
 } forEach allPlayers;
+};
