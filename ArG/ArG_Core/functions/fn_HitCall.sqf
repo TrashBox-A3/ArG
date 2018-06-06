@@ -1,5 +1,5 @@
 ///script by Rodeostar42///
-if (!isServer) then {
+
 private ["_unit","_Hited"];
 player setVariable ["_Hited",0,false];
 
@@ -26,7 +26,7 @@ _Gamer = [
 
 
 
-      player addMPEventHandler ["MPHit", {
+      player addEventHandler ["Hit", {
 
           player addEventHandler ["HandleDamage", {0}];
 
@@ -122,4 +122,3 @@ _Gamer = [
 };
 
 } forEach allUnits;
-};
