@@ -44,7 +44,7 @@ _ArGWeapons = [
 "ArG_VFC_MP7A1_GBB",
 "ArG_WE_SVD"
 ];
-
+while {alive player} do {
 if(local player) then {
 
 while{!(player hasweapon "")}do{
@@ -76,5 +76,6 @@ waituntil{(!(player hasweapon ""))};
     }forEach allUnits;
    };
 sleep 2;
+};
 };
 };
