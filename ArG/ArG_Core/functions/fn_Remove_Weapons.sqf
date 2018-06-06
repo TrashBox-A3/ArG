@@ -45,7 +45,7 @@ _ArGWeapons = [
 "ArG_WE_SVD"
 ];
 
-if(local player) then {
+if(alive player) then {
 
 while{!(player hasweapon "")}do{
 waituntil{(!(player hasweapon ""))};
