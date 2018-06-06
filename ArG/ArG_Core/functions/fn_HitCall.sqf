@@ -110,7 +110,7 @@ _Gamer = [
    };
 };
 
-}forEach allUnits;
+}forEach allPlayers;
 
    },
  {}, [], 10, nil, true, false
