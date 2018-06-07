@@ -46,7 +46,7 @@ player addEventHandler ["Take", {
   "ArG_WE_SVD"
   ];
 
-
+if(!(player hasweapon "")) then {
 {
   if ((isPlayer _x)&&(typeOf _x in _ArGGamer)) then {
 
@@ -72,5 +72,5 @@ player addEventHandler ["Take", {
 
       };
     }forEach allUnits;
-
+};
 }];
