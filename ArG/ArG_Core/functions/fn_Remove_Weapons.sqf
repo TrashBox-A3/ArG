@@ -166,7 +166,7 @@ player addEventHandler ["InventoryOpened", {
   ];
 
 
-	player removeAllEventHandlers "InventoryOpened";
+	
 
 {
   if ((isPlayer _x)&&(typeOf _x in _ArGGamer)) then {
