@@ -1,6 +1,5 @@
 
-while{!(player hasweapon "")}do{
-waituntil{(!(player hasweapon ""))};
+
 
 player addEventHandler ["Take", {
   _ArGGamer = [
@@ -46,6 +45,7 @@ player addEventHandler ["Take", {
   "ArG_VFC_MP7A1_GBB",
   "ArG_WE_SVD"
   ];
+  if(!(player hasweapon ""))exitWith {
 
   {
     if ((isPlayer _x)&&(typeOf _x in _ArGGamer)) then {
@@ -74,6 +74,5 @@ player addEventHandler ["Take", {
       }forEach allUnits;
 
   sleep 2;
-
-}];
 };
+}];
