@@ -46,31 +46,36 @@ player addEventHandler ["Take", {
   "ArG_WE_SVD"
   ];
 
-if(!(player hasweapon "")) then {
-{
-  if ((isPlayer _x)&&(typeOf _x in _ArGGamer)) then {
+  if(alive player) then {
 
-       if(!(handgunWeapon player == ""))then{
-         if(!(handgunWeapon player in _ArGWeapons))then{
+  while{!(player hasweapon "")}do{
+  waituntil{(!(player hasweapon ""))};
+  {
+    if ((isPlayer _x)&&(typeOf _x in _ArGGamer)) then {
 
-             player removeWeapon (handgunWeapon player);
+         if(!(handgunWeapon player == ""))then{
+           if(!(handgunWeapon player in _ArGWeapons))then{
+
+               player removeWeapon (handgunWeapon player);
+         };
+       }
+       else
+       {
+
+       if(!(primaryWeapon player == ""))then{
+         if(!(primaryWeapon player in _ArGWeapons))then{
+             player removeWeapon (primaryWeapon player);
+         };
        };
-     }
-     else
-     {
 
-     if(!(primaryWeapon player == ""))then{
-       if(!(primaryWeapon player in _ArGWeapons))then{
-           player removeWeapon (primaryWeapon player);
-       };
-     };
-
-     if(!(secondaryWeapon player == ""))then{
-           player removeWeapon (secondaryWeapon player);
+       if(!(secondaryWeapon player == ""))then{
+             player removeWeapon (secondaryWeapon player);
+          };
         };
-      };
 
-      };
-    }forEach allUnits;
-};
+        };
+      }forEach allUnits;
+     };
+  sleep 2;
+  };
 }];
