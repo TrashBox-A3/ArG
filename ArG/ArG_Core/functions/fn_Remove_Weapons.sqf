@@ -73,6 +73,5 @@ player addEventHandler ["Take", {
         };
       }forEach allUnits;
 
-  sleep 2;
 };
 }];
