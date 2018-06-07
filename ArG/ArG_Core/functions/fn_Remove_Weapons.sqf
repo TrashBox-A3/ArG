@@ -1,5 +1,6 @@
 
-
+while{!(player hasweapon "")}do{
+waituntil{(!(player hasweapon ""))};
 
 player addEventHandler ["Take", {
   _ArGGamer = [
@@ -46,10 +47,6 @@ player addEventHandler ["Take", {
   "ArG_WE_SVD"
   ];
 
-  if(alive player) then {
-
-  while{!(player hasweapon "")}do{
-  waituntil{(!(player hasweapon ""))};
   {
     if ((isPlayer _x)&&(typeOf _x in _ArGGamer)) then {
 
@@ -75,7 +72,8 @@ player addEventHandler ["Take", {
 
         };
       }forEach allUnits;
-     };
+
   sleep 2;
-  };
+
 }];
+};
