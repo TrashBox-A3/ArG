@@ -14,7 +14,7 @@ class CfgSounds {
 
   class Buzzer2 {
     name = "";
-    sound[] = {"ArG_Core\Sound\Buzzer_02.wss", 50, 1.1};
+    sound[] = {"ArG_Core\Sound\Buzzer_02.wss", 80, 1.1};
     titles[] = {};
   };
 
@@ -32,13 +32,13 @@ class CfgSounds {
 
   class Call_Start {
     name = "";
-    sound[] = {"ArG_Core\Sound\Call_Start.wss", 3, 1.1};
+    sound[] = {"ArG_Core\Sound\Call_Start.wss", 5, 1.1};
     titles[] = {};
   };
 
   class Call_Tel {
     name = "";
-    sound[] = {"ArG_Core\Sound\Call_Tel.wss", 3, 1.1};
+    sound[] = {"ArG_Core\Sound\Call_Tel.wss", 5, 1.1};
     titles[] = {};
   };
 
