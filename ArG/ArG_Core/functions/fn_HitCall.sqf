@@ -23,32 +23,32 @@ _Gamer = [
 
 
       player addEventHandler ["Hit", {
-
+             params ["_unit", "_source", "_damage", "_instigator"];
           player addEventHandler ["HandleDamage", {0}];
 
           if((side (_this select 3) == west)or(side (_this select 3) == east))then{
-          player allowDamage false;
-          player setCaptive true;
-          player setVariable ["_Hited",1,false];
-          [ player,Rodeo ] call BIS_fnc_holdActionRemove;
-          player say3D "HitCall";
+          _unit allowDamage false;
+          _unit setCaptive true;
+          _unit setVariable ["_Hited",1,false];
+          [ _unit,Rodeo ] call BIS_fnc_holdActionRemove;
+          _unit say3D "HitCall";
       if ( (difficultyOption "thirdPersonView")isEqualTo 1) then
       	  {
-            player switchCamera "EXTERNAL";
+            _unit switchCamera "EXTERNAL";
           };
 
-          player switchMove "Acts_JetsMarshallingRight_loop";
-          player disableAI "ANIM";
+          _unit switchMove "Acts_JetsMarshallingRight_loop";
+          _unit disableAI "ANIM";
      [] spawn
       {
 	     sleep 2;
-	     player playMoveNow "ApanPknlMstpSnonWnonDnon_G01";
+	     _unit playMoveNow "ApanPknlMstpSnonWnonDnon_G01";
       };
 
 
       if((MarkerType "B_Safe" != "")or(MarkerType "R_Safe" != ""))then{
 
-  SaftyID = [player, "Back to Safety zone",
+  SaftyID = [_unit, "Back to Safety zone",
   "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_forceRespawn_ca.paa",
   "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",
   "true", "true",
@@ -73,36 +73,36 @@ _Gamer = [
  if ((isPlayer _x)&&(typeOf _x in _BGamer))then{
      titletext ["","BLACK IN",2];
      if(MarkerType "B_Safe" != "")then{
-     player setPos (getMarkerPos "B_Safe");
+     _unit setPos (getMarkerPos "B_Safe");
      sleep 0.2;
      if ( (difficultyOption "thirdPersonView")isEqualTo 1) then
          {
-           player switchCamera "INTERNAL";
+           _unit switchCamera "INTERNAL";
          };
-     player switchMove "";
-     player allowDamage true;
-     player setCaptive false;
-     player setVariable ["_Hited",0,false];
+     _unit switchMove "";
+     _unit allowDamage true;
+     _unit setCaptive false;
+     _unit setVariable ["_Hited",0,false];
 
-     [ player,SaftyID ] call BIS_fnc_holdActionRemove;
+     [ _unit,SaftyID ] call BIS_fnc_holdActionRemove;
    };
 };
 
  if ((isPlayer _x)&&(typeOf _x in _RGamer))then{
      titletext ["","BLACK IN",2];
      if(MarkerType "R_Safe" != "")then{
-     player setPos (getMarkerPos "R_Safe");
+     _unit setPos (getMarkerPos "R_Safe");
      sleep 0.2;
      if ( (difficultyOption "thirdPersonView")isEqualTo 1) then
          {
-           player switchCamera "INTERNAL";
+           _unit switchCamera "INTERNAL";
          };
-     player switchMove "";
-     player allowDamage true;
-     player setCaptive false;
-     player setVariable ["_Hited",0,false];
+     _unit switchMove "";
+     _unit allowDamage true;
+     _unit setCaptive false;
+     _unit setVariable ["_Hited",0,false];
 
-     [ player,SaftyID ] call BIS_fnc_holdActionRemove;
+     [ _unit,SaftyID ] call BIS_fnc_holdActionRemove;
    };
 };
 
