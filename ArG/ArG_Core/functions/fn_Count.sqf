@@ -1,5 +1,5 @@
 
-
+if(isServer)then{
 
 params [
     ["_logic", objNull, [objNull]],
@@ -50,5 +50,6 @@ if ((missionNamespace getvariable "Buzz" == 1)&&(_time < _MaxTime)) then {
 
 
 
+};
 };
 };
