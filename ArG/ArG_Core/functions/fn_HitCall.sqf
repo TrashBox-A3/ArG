@@ -44,11 +44,11 @@ _Gamer = [
 	     sleep 2;
 	     player playMoveNow "ApanPknlMstpSnonWnonDnon_G01";
       };
-      while{(!(magazines player == ""))}do{
+      while{(!(currentMagazine _unit == ""))}do{
 
        _unit removeMagazine (currentMagazine _unit);
 
-      waituntil{(!(magazines player == ""))};
+      waituntil{(!(currentMagazine _unit == ""))};
     };
 
       if((MarkerType "B_Safe" != "")or(MarkerType "R_Safe" != ""))then{
