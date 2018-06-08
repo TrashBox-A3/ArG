@@ -50,6 +50,7 @@ if((missionNamespace getvariable "ST1" == 1)&&(missionNamespace getvariable "ST2
 
 
    {_x enableSimulationGlobal true;}count allUnits;
+   Start;PublicVariable"Start";
    sleep 30;
    30 fadeMusic 0;
   };
