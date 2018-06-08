@@ -8,9 +8,7 @@ class CfgPatches
 
     "rhsusf_c_weapons",
 		"scar_arma3",
-		"SMA_HK417",
-		"hlc_core",
-		"hlc_wp_p226"
+		"SMA_HK417"
 
 		};
 		requiredVersion=0.1;
