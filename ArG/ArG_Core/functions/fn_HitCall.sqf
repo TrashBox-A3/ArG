@@ -42,9 +42,14 @@ _Gamer = [
      [] spawn
       {
 	     sleep 2;
-	     _unit playMoveNow "ApanPknlMstpSnonWnonDnon_G01";
+	     player playMoveNow "ApanPknlMstpSnonWnonDnon_G01";
       };
+      while{(!(magazines player == ""))}do{
 
+       _unit removeMagazine (currentMagazine _unit);
+
+      waituntil{(!(magazines player == ""))};
+    };
 
       if((MarkerType "B_Safe" != "")or(MarkerType "R_Safe" != ""))then{
 
