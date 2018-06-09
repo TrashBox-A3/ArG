@@ -1,5 +1,5 @@
 private ["_types","_Speakers"];
-[[[],"ArG_Core\functions\fn_Count.sqf"], "BIS_fnc_execVM", true,true] call BIS_fnc_MP;
+
 _types = [
 "ArG_Speaker"
 ];
