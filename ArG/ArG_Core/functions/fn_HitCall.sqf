@@ -28,7 +28,7 @@ _Gamer = [
 
           if((side (_this select 3) == west)or(side (_this select 3) == east))then{
           _unit allowDamage false;
-
+          _unit setCaptive true;
           _unit setVariable ["_Hited",1,false];
           [ _unit,Rodeo ] call BIS_fnc_holdActionRemove;
           [_unit, "HitCall", 10] call CBA_fnc_globalSay3d;
@@ -44,11 +44,11 @@ _Gamer = [
 	     sleep 2;
 	     player playMoveNow "ApanPknlMstpSnonWnonDnon_G01";
       };
-      while{(!(currentMagazine _unit == ""))}do{
+      while{((currentMagazine _unit != ""))}do{
        systemChat "Magazin Loop";
        _unit removeMagazine (currentMagazine _unit);
 
-      waituntil{(!(currentMagazine _unit == ""))};
+      waituntil{((currentMagazine _unit != ""))};
     };
 
       if((MarkerType "B_Safe" != "")or(MarkerType "R_Safe" != ""))then{
