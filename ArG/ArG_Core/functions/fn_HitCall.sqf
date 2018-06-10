@@ -116,15 +116,5 @@ _Gamer = [
 
 };
 
-if ((isPlayer _x)&&(typeOf _x in _Gamer)&&(player getvariable "_Hited" == 1)) then{
-
-while{(weaponState player select 3 != "")}do{
-
-player removePrimaryWeaponItem (currentMagazine player);
-       player removeHandgunItem (currentMagazine player);
-
-waituntil{(weaponState player select 3 != "")};
-};
-};
 
 } forEach allUnits;
