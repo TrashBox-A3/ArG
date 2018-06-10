@@ -44,13 +44,9 @@ _Gamer = [
 	     sleep 2;
 	     player playMoveNow "ApanPknlMstpSnonWnonDnon_G01";
       };
-      while{((currentMagazine player != ""))}do{
-       systemChat "Magazin Loop";
-       player removePrimaryWeaponItem (currentMagazine player);
+
+      player removePrimaryWeaponItem (currentMagazine player);
        player removeHandgunItem (currentMagazine player);
-      sleep 0.2;
-      waituntil{((currentMagazine player != ""))};
-    };
 
       if((MarkerType "B_Safe" != "")or(MarkerType "R_Safe" != ""))then{
 
@@ -122,5 +118,7 @@ _Gamer = [
 }];
 
 };
+
+
 
 } forEach allUnits;
