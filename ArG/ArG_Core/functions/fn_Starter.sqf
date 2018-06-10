@@ -41,6 +41,7 @@ if((missionNamespace getvariable "ST1" == 1)&&(missionNamespace getvariable "ST2
           false
        };
       titletext ["","WHITE IN",2];
+      cuttext ["","PLAIN",3];
       hint"GoGoGo!!";
       0 = [] spawn {
 	    playMusic ["BackgroundTrack03_F", 1];
