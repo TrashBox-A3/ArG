@@ -67,7 +67,7 @@ hideOnUse = true;
 onlyForPlayer = 1;
 shortcut = "reloadMagazine";
 condition = "((missionNamespace getvariable 'ST1' == 0))";
-statement = "[this, 'Call_Start', 5] call CBA_fnc_globalSay3d,missionNamespace setVariable ['ST1',1,true],[[[],'ArG_Core\functions\fn_Starter.sqf'], 'BIS_fnc_execVM', true,true] call BIS_fnc_MP;";
+statement = "this say3D 'Call_Start',missionNamespace setVariable ['ST1',1,true],[[[],'ArG_Core\functions\fn_Starter.sqf'], 'BIS_fnc_execVM', true,true] call BIS_fnc_MP;";
 };
 };
 
@@ -103,7 +103,7 @@ hideOnUse = true;
 onlyForPlayer = 1;
 shortcut = "reloadMagazine";
 condition = "((missionNamespace getvariable 'ST2' == 0))";
-statement = "[this, 'Call_Start', 5] call CBA_fnc_globalSay3d,missionNamespace setVariable ['ST2',1,true],[[[],'ArG_Core\functions\fn_Starter.sqf'], 'BIS_fnc_execVM', true,true] call BIS_fnc_MP;";
+statement = "this say3D 'Call_Start',missionNamespace setVariable ['ST2',1,true],[[[],'ArG_Core\functions\fn_Starter.sqf'], 'BIS_fnc_execVM', true,true] call BIS_fnc_MP;";
 };
 };
 };
