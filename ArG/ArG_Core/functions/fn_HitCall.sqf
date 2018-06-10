@@ -47,7 +47,7 @@ _Gamer = [
       while{((weaponState player select 3 != ""))}do{
        systemChat "Magazin Loop";
        player removePrimaryWeaponItem (currentMagazine player);
-       player removeHandgunItem (currentMagazine player);
+
 
       waituntil{((weaponState player select 3 != ""))};
     };
