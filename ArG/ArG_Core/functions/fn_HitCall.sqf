@@ -44,12 +44,12 @@ _Gamer = [
 	     sleep 2;
 	     player playMoveNow "ApanPknlMstpSnonWnonDnon_G01";
       };
-      while{((weaponState player select 3 != ""))}do{
+      while{((currentMagazine player != ""))}do{
        systemChat "Magazin Loop";
        player removePrimaryWeaponItem (currentMagazine player);
-
+       player removeHandgunItem (currentMagazine player);
       sleep 0.2;
-      waituntil{((weaponState player select 3 != ""))};
+      waituntil{((currentMagazine player != ""))};
     };
 
       if((MarkerType "B_Safe" != "")or(MarkerType "R_Safe" != ""))then{
