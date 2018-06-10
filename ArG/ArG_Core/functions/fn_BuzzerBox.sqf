@@ -36,7 +36,7 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
             while {true} do
             {
               _x setDamage 0;
-              [_x, "Buzzer", 100] call CBA_fnc_globalSay3d;
+              [_x, "Buzzer", 120] call CBA_fnc_globalSay3d;
                 sleep 5;
               waituntil{missionNamespace getvariable "Buzz" == 0};
             };
@@ -49,7 +49,7 @@ for [{_i=0},{_i < (count _types)},{_i=_i+1}] do
             while {true} do
             {
               _x setDamage 0;
-              [_x, "Buzzer2", 100] call CBA_fnc_globalSay3d;
+              [_x, "Buzzer2", 120] call CBA_fnc_globalSay3d;
                 sleep 11;
 
               waituntil{missionNamespace getvariable "Buzz" == 1};
