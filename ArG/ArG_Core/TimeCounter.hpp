@@ -38,6 +38,47 @@ class  Land_Loudspeakers_F;
 
   };
 
+  ///Starter Gate///
+  class  Land_BarGate_F;
+
+      class ArG_BarGate:  Land_BarGate_F
+    {
+      scope=2;
+      author="Rodeostar42";
+      displayName="Start Gate";
+      faction = "Empty";
+      editorCategory = "ArG_Objects";
+      editorSubcategory = "ArG_Items";
+      model = "\A3\Structures_F\Walls\BarGate_F.p3d";
+      hiddenSelections[]={};
+      hiddenSelectionsTextures[] = {};
+
+        class UserActions {
+		class OpenGate_1 {
+			displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+			displayName = "Open door";
+			position = "Bar_1_trigger";
+			radius = 3;
+			aiMaxRange = 9;
+			onlyForPlayer = 0;
+			condition = "false";
+			statement = "this animate ['Door_1_rot', 1]";
+		};
+		class CloseGate_1 : OpenGate_1 {
+			displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+			displayName = "Close door";
+			condition = "false";
+			statement = "this animate ['Door_1_rot', 0]";
+		};
+	};
+
+        class EventHandlers
+            {
+                 init = "if((missionNamespace getvariable 'ST1' == 1)&&(missionNamespace getvariable 'ST2' == 1))then{this animate ['Door_1_rot', 1];};";
+            };
+
+    };
+
 //Stater 1//
 class  Land_PhoneBooth_01_F;
 
