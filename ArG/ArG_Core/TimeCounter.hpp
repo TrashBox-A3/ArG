@@ -74,7 +74,7 @@ class  Land_Loudspeakers_F;
 
         class EventHandlers
             {
-                 init = "if(Start)then{(_this select 0) animate ['Door_1_rot', 1];};";
+                 init = "if(Start)then{(_this select 0) animate ['Door_1_rot', 1];systemChat 'open';};";
             };
 
     };
