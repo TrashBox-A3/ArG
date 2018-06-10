@@ -48,7 +48,7 @@ _Gamer = [
        systemChat "Magazin Loop";
        player removePrimaryWeaponItem (currentMagazine player);
 
-
+      sleep 0.2;
       waituntil{((weaponState player select 3 != ""))};
     };
 
