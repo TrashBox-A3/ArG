@@ -61,21 +61,18 @@ class  Land_Loudspeakers_F;
 			radius = 3;
 			aiMaxRange = 9;
 			onlyForPlayer = 0;
-			condition = "false";
+			condition = "Start";
 			statement = "this animate ['Door_1_rot', 1]";
 		};
 		class CloseGate_1 : OpenGate_1 {
 			displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
 			displayName = "Close door";
-			condition = "false";
+			condition = "Start";
 			statement = "this animate ['Door_1_rot', 0]";
 		};
 	};
 
-        class EventHandlers
-            {
-                 init = "if(Start)then{(_this select 0) animate ['Door_1_rot', 1];systemChat 'open';};";
-            };
+
 
     };
 
@@ -101,7 +98,7 @@ class Action1
 displayName = "<img image='\ArG_Core\Start.paa' size='1' shadow='false' /> <t color=""#00BFFF"">Start Ready";
 displayNameDefault = "<img image='\ArG_Core\Start.paa' size='3' shadow='false' /><t color=""#00BFFF"">Start Ready";
 priority = 3;
-radius = 20;
+radius = 5;
 position = "camera";
 showWindow = true;
 hideOnUse = true;
@@ -137,7 +134,7 @@ class Action2
 displayName = "<img image='\ArG_Core\Start.paa' size='1' shadow='false' /> <t color=""#FF0000"">Start Ready";
 displayNameDefault = "<img image='\ArG_Core\Start.paa' size='3' shadow='false' /><t color=""#FF0000"">Start Ready";
 priority = 3;
-radius = 20;
+radius = 5;
 position = "camera";
 showWindow = true;
 hideOnUse = true;
