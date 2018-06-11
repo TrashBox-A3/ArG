@@ -32,7 +32,7 @@ _Gamer = [
           _unit setVariable ["_Hited",1,false];
           [ _unit,Rodeo ] call BIS_fnc_holdActionRemove;
           [_unit, "HitCall", 10] call CBA_fnc_globalSay3d;
-          
+
 
       if ( (difficultyOption "thirdPersonView")isEqualTo 1) then
       	  {
@@ -46,6 +46,13 @@ _Gamer = [
 	     sleep 2;
 	     player playMoveNow "ApanPknlMstpSnonWnonDnon_G01";
       };
+
+      _unit addEventHandler ["Fired", {
+    	params ["_Hiten", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_gunner"];
+
+    _Hiten removePrimaryWeaponItem (currentMagazine _Hiten);
+           _Hiten removeHandgunItem (currentMagazine _Hiten);
+        }];
 
       if((MarkerType "B_Safe" != "")or(MarkerType "R_Safe" != ""))then{
 
@@ -74,16 +81,16 @@ _Gamer = [
  if ((isPlayer _x)&&(typeOf _x in _BGamer))then{
      titletext ["","BLACK IN",2];
      if(MarkerType "B_Safe" != "")then{
-     _unit setPos (getMarkerPos "B_Safe");
+     player setPos (getMarkerPos "B_Safe");
      sleep 0.2;
      if ( (difficultyOption "thirdPersonView")isEqualTo 1) then
          {
-           _unit switchCamera "INTERNAL";
+           player switchCamera "INTERNAL";
          };
-     _unit switchMove "";
-     _unit allowDamage true;
-     _unit setCaptive false;
-     _unit setVariable ["_Hited",0,false];
+     player switchMove "";
+     player allowDamage true;
+     player setCaptive false;
+     player setVariable ["_Hited",0,false];
 
      [ _unit,SaftyID ] call BIS_fnc_holdActionRemove;
    };
@@ -92,16 +99,16 @@ _Gamer = [
  if ((isPlayer _x)&&(typeOf _x in _RGamer))then{
      titletext ["","BLACK IN",2];
      if(MarkerType "R_Safe" != "")then{
-     _unit setPos (getMarkerPos "R_Safe");
+     player setPos (getMarkerPos "R_Safe");
      sleep 0.2;
      if ( (difficultyOption "thirdPersonView")isEqualTo 1) then
          {
-           _unit switchCamera "INTERNAL";
+           player switchCamera "INTERNAL";
          };
-     _unit switchMove "";
-     _unit allowDamage true;
-     _unit setCaptive false;
-     _unit setVariable ["_Hited",0,false];
+     player switchMove "";
+     player allowDamage true;
+     player setCaptive false;
+     player setVariable ["_Hited",0,false];
 
      [ _unit,SaftyID ] call BIS_fnc_holdActionRemove;
    };
