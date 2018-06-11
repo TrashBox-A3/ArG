@@ -91,7 +91,7 @@ _Gamer = [
      player allowDamage true;
      player setCaptive false;
      player setVariable ["_Hited",0,false];
-     _unit removeEventHandler ["Fired", unFire];
+     player removeEventHandler ["Fired", unFire];
      [ player,SaftyID ] call BIS_fnc_holdActionRemove;
    };
 };
@@ -109,7 +109,7 @@ _Gamer = [
      player allowDamage true;
      player setCaptive false;
      player setVariable ["_Hited",0,false];
-     _unit removeEventHandler ["Fired", unFire];
+     player removeEventHandler ["Fired", unFire];
      [ player,SaftyID ] call BIS_fnc_holdActionRemove;
    };
 };
