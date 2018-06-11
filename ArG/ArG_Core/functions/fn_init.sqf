@@ -6,4 +6,4 @@ STATE = false;
 
 [[[],"ArG_Core\functions\fn_Count.sqf"], "BIS_fnc_execVM", true,true] call BIS_fnc_MP;
 
-systemChat "ArG(Dev) ver0.7.3";
+systemChat "ArG(Dev) ver0.7.8";
