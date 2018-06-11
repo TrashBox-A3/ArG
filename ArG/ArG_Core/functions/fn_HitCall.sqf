@@ -32,6 +32,12 @@ _Gamer = [
           _unit setVariable ["_Hited",1,false];
           [ _unit,Rodeo ] call BIS_fnc_holdActionRemove;
           [_unit, "HitCall", 10] call CBA_fnc_globalSay3d;
+          _unit addEventHandler ["Fired", {
+    	params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_gunner"];
+
+    _unit removePrimaryWeaponItem (currentMagazine _unit);
+           _unit removeHandgunItem (currentMagazine _unit);
+        }];
       if ( (difficultyOption "thirdPersonView")isEqualTo 1) then
       	  {
             _unit switchCamera "EXTERNAL";
@@ -44,15 +50,6 @@ _Gamer = [
 	     sleep 2;
 	     player playMoveNow "ApanPknlMstpSnonWnonDnon_G01";
       };
-
-      _unit addEventHandler ["Fired", {
-	params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_gunner"];
-
-_unit removePrimaryWeaponItem (currentMagazine _unit);
-       _unit removeHandgunItem (currentMagazine _unit);
-
-
-}];
 
       if((MarkerType "B_Safe" != "")or(MarkerType "R_Safe" != ""))then{
 
