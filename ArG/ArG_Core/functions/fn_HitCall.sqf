@@ -32,13 +32,8 @@ _Gamer = [
           _unit setVariable ["_Hited",1,false];
           [ _unit,Rodeo ] call BIS_fnc_holdActionRemove;
           [_unit, "HitCall", 10] call CBA_fnc_globalSay3d;
-          _unit addEventHandler ["Fired", {
-    	params ["_Hiten", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_gunner"];
+          
 
-    _Hiten removePrimaryWeaponItem (currentMagazine _Hiten);
-           _Hiten removeHandgunItem (currentMagazine _Hiten);
-        }];
-        
       if ( (difficultyOption "thirdPersonView")isEqualTo 1) then
       	  {
             _unit switchCamera "EXTERNAL";
