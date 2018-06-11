@@ -45,6 +45,15 @@ _Gamer = [
 	     player playMoveNow "ApanPknlMstpSnonWnonDnon_G01";
       };
 
+      _unit addEventHandler ["Fired", {
+	params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_gunner"];
+
+_unit removePrimaryWeaponItem (currentMagazine _unit);
+       _unit removeHandgunItem (currentMagazine _unit);
+
+
+}];
+
       if((MarkerType "B_Safe" != "")or(MarkerType "R_Safe" != ""))then{
 
   SaftyID = [_unit, "Back to Safety zone",
