@@ -8,7 +8,7 @@ class CfgSounds {
 
   class Buzzer {
     name = "";
-    sound[] = {"ArG_Core\Sound\Buzzer.wss", 16, 1.1};
+    sound[] = {"ArG_Core\Sound\Buzzer.wss", 12, 1.1};
     titles[] = {};
   };
 
