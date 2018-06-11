@@ -61,13 +61,13 @@ class  Land_Loudspeakers_F;
 			radius = 3;
 			aiMaxRange = 9;
 			onlyForPlayer = 0;
-			condition = "Start";
+			condition = "this animationPhase 'Door_1_rot' < 0.5";
 			statement = "this animate ['Door_1_rot', 1]";
 		};
 		class CloseGate_1 : OpenGate_1 {
 			displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
 			displayName = "Close door";
-			condition = "Start";
+			condition = "this animationPhase 'Door_1_rot' >= 0.5";
 			statement = "this animate ['Door_1_rot', 0]";
 		};
 	};
