@@ -47,7 +47,7 @@ _Gamer = [
 	     player playMoveNow "ApanPknlMstpSnonWnonDnon_G01";
       };
 
-      0 = _unit addEventHandler ["Fired", {
+      unFire = _unit addEventHandler ["Fired", {
     	params ["_Hiten", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_gunner"];
 
     _Hiten removePrimaryWeaponItem (currentMagazine _Hiten);
@@ -91,7 +91,7 @@ _Gamer = [
      player allowDamage true;
      player setCaptive false;
      player setVariable ["_Hited",0,false];
-     player removeEventHandler ["Fired", 0];
+     _unit removeEventHandler ["Fired", unFire];
      [ player,SaftyID ] call BIS_fnc_holdActionRemove;
    };
 };
@@ -109,7 +109,7 @@ _Gamer = [
      player allowDamage true;
      player setCaptive false;
      player setVariable ["_Hited",0,false];
-     player removeEventHandler ["Fired", 0];
+     _unit removeEventHandler ["Fired", unFire];
      [ player,SaftyID ] call BIS_fnc_holdActionRemove;
    };
 };
