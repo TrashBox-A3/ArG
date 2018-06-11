@@ -92,7 +92,7 @@ _Gamer = [
      player setCaptive false;
      player setVariable ["_Hited",0,false];
 
-     [ _unit,SaftyID ] call BIS_fnc_holdActionRemove;
+     [ player,SaftyID ] call BIS_fnc_holdActionRemove;
    };
 };
 
@@ -110,7 +110,7 @@ _Gamer = [
      player setCaptive false;
      player setVariable ["_Hited",0,false];
 
-     [ _unit,SaftyID ] call BIS_fnc_holdActionRemove;
+     [ player,SaftyID ] call BIS_fnc_holdActionRemove;
    };
 };
 
