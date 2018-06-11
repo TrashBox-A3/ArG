@@ -38,28 +38,7 @@ class  Land_Loudspeakers_F;
 
   };
 
-  ///Starter Gate///
-  class  Land_BarGate_F;
-
-      class ArG_BarGate:  Land_BarGate_F
-    {
-      scope=2;
-      author="Rodeostar42";
-      displayName="Start Gate";
-      faction = "Empty";
-      editorCategory = "ArG_Objects";
-      editorSubcategory = "ArG_Items";
-      model = "\A3\Structures_F\Walls\BarGate_F.p3d";
-      hiddenSelections[]={};
-      hiddenSelectionsTextures[] = {};
-
-
-	};
-
-
-
   
-
 //Stater 1//
 class  Land_PhoneBooth_01_F;
 

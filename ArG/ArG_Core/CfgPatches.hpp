@@ -46,8 +46,7 @@ class CfgPatches
 		"ArG_Green_Flag",
 		"ArG_Stater_1",
 		"ArG_Stater_2",
-		"ArG_Revive",
-		"ArG_BarGate"
+		"ArG_Revive"
 		};
 	};
 };
