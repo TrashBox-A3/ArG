@@ -38,7 +38,7 @@ class  Land_Loudspeakers_F;
 
   };
 
-  
+
 //Stater 1//
 class  Land_PhoneBooth_01_F;
 
@@ -61,7 +61,7 @@ class Action1
 displayName = "<img image='\ArG_Core\Start.paa' size='1' shadow='false' /> <t color=""#00BFFF"">Start Ready";
 displayNameDefault = "<img image='\ArG_Core\Start.paa' size='3' shadow='false' /><t color=""#00BFFF"">Start Ready";
 priority = 3;
-radius = 5;
+radius = 20;
 position = "camera";
 showWindow = true;
 hideOnUse = true;
@@ -97,7 +97,7 @@ class Action2
 displayName = "<img image='\ArG_Core\Start.paa' size='1' shadow='false' /> <t color=""#FF0000"">Start Ready";
 displayNameDefault = "<img image='\ArG_Core\Start.paa' size='3' shadow='false' /><t color=""#FF0000"">Start Ready";
 priority = 3;
-radius = 5;
+radius = 20;
 position = "camera";
 showWindow = true;
 hideOnUse = true;
