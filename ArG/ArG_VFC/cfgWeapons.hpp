@@ -40,7 +40,7 @@ class CfgWeapons
     class ArG_VFC_HK416A5_GBB_BLK: arifle_SPAR_01_blk_F
     {
         author="Rodeostar42";
-
+        _generalMacro = "arifle_SPAR_01_blk_F";
         scope=2;
         displayName="VFC HK416A5 GBB (BLK)";
         model = "\A3\Weapons_F_Exp\Rifles\SPAR_01\SPAR_01_F.p3d";
@@ -61,7 +61,9 @@ class CfgWeapons
             linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
             compatibleItems[]=
             {
-              "muzzle_snds_h",
+              "muzzle_snds_m",
+					    "muzzle_snds_m_khk_F",
+					    "muzzle_snds_m_snd_F",
               "ArG_muzzle_snds_H"
             };
             iconPosition[]={0,0.44999999};
@@ -261,7 +263,7 @@ class CfgWeapons
     class ArG_VFC_HK416A5_GBB_SND: arifle_SPAR_01_snd_F
     {
         author="Rodeostar42";
-
+        _generalMacro = "arifle_SPAR_01_snd_F";
         scope=2;
         displayName="VFC HK416A5 GBB (SAND)";
         model = "\A3\Weapons_F_Exp\Rifles\SPAR_01\SPAR_01_F.p3d";
@@ -282,7 +284,9 @@ class CfgWeapons
             linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
             compatibleItems[]=
             {
-              "muzzle_snds_h",
+              "muzzle_snds_m",
+					    "muzzle_snds_m_khk_F",
+					    "muzzle_snds_m_snd_F",
               "ArG_muzzle_snds_H"
             };
             iconPosition[]={0,0.44999999};
@@ -298,7 +302,13 @@ class CfgWeapons
             iconPosition[]={0.2,0.44999999};
             iconScale=0.25;
           };
-        };
+          class UnderBarrelSlot: UnderBarrelSlot
+			    {
+				    iconPosition[]={0.2,0.80000001};
+				    iconScale=0.30000001;
+			    };
+			      mass=90;
+          };
 
         initSpeed = 250; // muzzle velocity
         maxRange = 100;

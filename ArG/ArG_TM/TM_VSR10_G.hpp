@@ -151,7 +151,23 @@ class ArG_TM_VSR10_G: rhs_weap_m24sws_blk
       soundBegin[] = {"begin1",1};
       weaponSoundEffect = "DefaultRifle";
   };
+
+  muzzles[]={"this","SAFE"};
+	
+	class Eventhandlers: Eventhandlers
+	{
+		class RHS_BoltAction {
+			fired = "[_this select 0,_this select 1,_this select 1] call rhs_fnc_boltAction;";
+		};
+	};
+	rhs_boltActionSound[] ={"rhsusf\addons\rhsusf_sounds\m2010\bolt.wss", 1.42, 1, 20};
+	rhs_boltActionAnim = "RHS_GestureRechamberM2010";
+
+
   };
+
+
+
 
 
 

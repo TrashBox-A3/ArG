@@ -5,7 +5,7 @@ class CfgPatches
 
 		requiredAddons[]=
 		{
-
+			"rhs_weapons2"
 		};
 		requiredVersion=0.1;
 		units[]={};
@@ -16,7 +16,3 @@ class CfgPatches
 		};
 	};
 };
-
-
-
-
