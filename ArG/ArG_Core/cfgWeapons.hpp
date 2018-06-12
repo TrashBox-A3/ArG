@@ -23,7 +23,7 @@ class CfgWeapons
   #include "MK20.hpp"
   #include "EBR.hpp"
   #include "MK200.hpp"
-  
+
 
 class ItemCore;
     class InventoryItem_Base_F;
@@ -65,22 +65,19 @@ class ItemCore;
     				compatibleItems[]=
     				{
     					"muzzle_snds_h",
-              "ArG_muzzle_snds_H"
+              "ArG_muzzle_snds_H",
+              "muzzle_snds_H_khk_F",
+              "muzzle_snds_H_snd_F",
+              "muzzle_snds_65_TI_blk_F",
+              "muzzle_snds_65_TI_ghex_F",
+              "muzzle_snds_65_TI_hex_F",
+              "hlc_muzzle_300blk_KAC"
+
     				};
     				iconPosition[]={0,0.44999999};
     				iconScale=0.2;
     			};
-          class CowsSlot: CowsSlot
-    			{
-    				iconPosition[]={0.5,0.34999999};
-    				iconScale=0.2;
-    			};
-    			class PointerSlot: PointerSlot
-    			{
-    				iconPosition[]={0.2,0.44999999};
-    				iconScale=0.25;
-    			};
-          class UnderBarrelSlot {};
+
         };
 
         class LinkedItems
@@ -141,16 +138,16 @@ class ItemCore;
             midRangeProbab=0.69999999;
             maxRange=400;
             maxRangeProbab=0.30000001;
-            drySound[] = {"ArG_Core\Sound\den_tan01.wss",4, 1,15};
+            drySound[] = {"ArG_Core\Sound\den_tan01.wss",5, 1,15};
             class StandardSound
         {
-            begin1[] = {"ArG_Core\Sound\den_tan01.wss",4, 1,15};
+            begin1[] = {"ArG_Core\Sound\den_tan01.wss",5, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
         };
             class SilencedSound
         {
-            begin1[] = {"ArG_Core\Sound\den_tan01.wss",3, 1,15};
+            begin1[] = {"ArG_Core\Sound\den_tan01.wss",5, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
         };
@@ -170,16 +167,16 @@ class ItemCore;
             maxRange=30;
             maxRangeProbab=0.1;
             aiRateOfFire=1e-006;
-            drySound[] = {"ArG_Core\Sound\den_tan01.wss",4, 1,15};
+            drySound[] = {"ArG_Core\Sound\den_tan01.wss",5, 1,15};
             class StandardSound
         {
-            begin1[] = {"ArG_Core\Sound\den_tan01.wss",4, 1,15};
+            begin1[] = {"ArG_Core\Sound\den_tan01.wss",5, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
         };
             class SilencedSound
         {
-            begin1[] = {"ArG_Core\Sound\den_tan01.wss",3, 1,15};
+            begin1[] = {"ArG_Core\Sound\den_tan01.wss",5, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
         };
@@ -200,16 +197,16 @@ class ItemCore;
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
-            drySound[] = {"ArG_Core\Sound\den_tan01.wss",4, 1,15};
+            drySound[] = {"ArG_Core\Sound\den_tan01.wss",5, 1,15};
             class StandardSound
         {
-            begin1[] = {"ArG_Core\Sound\den_tan01.wss",4, 1,15};
+            begin1[] = {"ArG_Core\Sound\den_tan01.wss",5, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
         };
             class SilencedSound
         {
-            begin1[] = {"ArG_Core\Sound\den_tan01.wss",3, 1,15};
+            begin1[] = {"ArG_Core\Sound\den_tan01.wss",5, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
         };
@@ -229,16 +226,16 @@ class ItemCore;
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
-            drySound[] = {"ArG_Core\Sound\den_tan01.wss",4, 1,15};
+            drySound[] = {"ArG_Core\Sound\den_tan01.wss",5, 1,15};
             class StandardSound
         {
-            begin1[] = {"ArG_Core\Sound\den_tan01.wss",4, 1,15};
+            begin1[] = {"ArG_Core\Sound\den_tan01.wss",5, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
         };
             class SilencedSound
         {
-            begin1[] = {"ArG_Core\Sound\den_tan01.wss",3, 1,15};
+            begin1[] = {"ArG_Core\Sound\den_tan01.wss",5, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
         };
@@ -258,16 +255,16 @@ class ItemCore;
             flash = "";
             flashSize = 0;
             fireLightIntensity=0;
-            drySound[] = {"ArG_Core\Sound\den_tan01.wss",4, 1,15};
+            drySound[] = {"ArG_Core\Sound\den_tan01.wss",5, 1,15};
             class StandardSound
         {
-            begin1[] = {"ArG_Core\Sound\den_tan01.wss",4, 1,15};
+            begin1[] = {"ArG_Core\Sound\den_tan01.wss",5, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
         };
             class SilencedSound
         {
-            begin1[] = {"ArG_Core\Sound\den_tan01.wss",3, 1,15};
+            begin1[] = {"ArG_Core\Sound\den_tan01.wss",5, 1,15};
             soundBegin[] = {"begin1",1};
             weaponSoundEffect = "DefaultRifle";
         };
@@ -310,22 +307,19 @@ class ItemCore;
     				linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
     				compatibleItems[]=
     				{
-    					"muzzle_snds_h",
-              "ArG_muzzle_snds_H"
+              "muzzle_snds_h",
+              "ArG_muzzle_snds_H",
+              "muzzle_snds_H_khk_F",
+              "muzzle_snds_H_snd_F",
+              "muzzle_snds_65_TI_blk_F",
+              "muzzle_snds_65_TI_ghex_F",
+              "muzzle_snds_65_TI_hex_F",
+              "hlc_muzzle_300blk_KAC"
     				};
     				iconPosition[]={0,0.44999999};
     				iconScale=0.2;
     			};
-          class CowsSlot: CowsSlot
-    			{
-    				iconPosition[]={0.5,0.34999999};
-    				iconScale=0.2;
-    			};
-    			class PointerSlot: PointerSlot
-    			{
-    				iconPosition[]={0.2,0.44999999};
-    				iconScale=0.25;
-    			};
+
         };
 
         class LinkedItems

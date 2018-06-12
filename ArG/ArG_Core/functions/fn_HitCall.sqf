@@ -11,11 +11,7 @@ _Gamer = [
 "ArG_Gamer_5",
 "ArG_Gamer_6",
 "ArG_Gamer_7",
-"ArG_Gamer_8",
-"ArG_Gamer_9",
-"ArG_Gamer_10",
-"ArG_Gamer_11",
-"ArG_Gamer_12"
+"ArG_Gamer_8"
 ];
 
 
@@ -26,33 +22,36 @@ _Gamer = [
 
 
 
-      player addMPEventHandler ["MPHit", {
-
+      player addEventHandler ["Hit", {
+             params ["_unit", "_source", "_damage", "_instigator"];
           player addEventHandler ["HandleDamage", {0}];
 
           if((side (_this select 3) == west)or(side (_this select 3) == east))then{
-          player allowDamage false;
-          player setCaptive true;
-          player setVariable ["_Hited",1,false];
-          [ player,Rodeo ] call BIS_fnc_holdActionRemove;
-          player say3D "HitCall";
+          _unit allowDamage false;
+          _unit setCaptive true;
+          _unit setVariable ["_Hited",1,false];
+          [ _unit,Rodeo ] call BIS_fnc_holdActionRemove;
+          [_unit, "HitCall", 10] call CBA_fnc_globalSay3d;
+
+
       if ( (difficultyOption "thirdPersonView")isEqualTo 1) then
       	  {
-            player switchCamera "EXTERNAL";
+            _unit switchCamera "EXTERNAL";
           };
 
-          player switchMove "Acts_JetsMarshallingRight_loop";
-          player disableAI "ANIM";
+          _unit switchMove "Acts_JetsMarshallingRight_loop";
+          _unit disableAI "ANIM";
      [] spawn
       {
 	     sleep 2;
 	     player playMoveNow "ApanPknlMstpSnonWnonDnon_G01";
       };
 
+      
 
       if((MarkerType "B_Safe" != "")or(MarkerType "R_Safe" != ""))then{
 
-  SaftyID = [player, "Back to Safety zone",
+  SaftyID = [_unit, "Back to Safety zone",
   "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_forceRespawn_ca.paa",
   "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",
   "true", "true",
@@ -121,4 +120,5 @@ _Gamer = [
 
 };
 
-} forEach allPlayers;
+
+} forEach allUnits;

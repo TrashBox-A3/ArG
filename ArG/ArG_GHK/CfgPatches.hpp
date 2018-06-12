@@ -5,18 +5,14 @@ class CfgPatches
 
 		requiredAddons[]=
 		{
-
+			"rhs_weapons"
 		};
 		requiredVersion=0.1;
 		units[]={};
 		weapons[]=
 		{
-			
+
 			"ArG_GHK_AKM"
 		};
 	};
 };
-
-
-
-

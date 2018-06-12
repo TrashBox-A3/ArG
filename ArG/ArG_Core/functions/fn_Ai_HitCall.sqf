@@ -11,11 +11,7 @@ if(isServer)then{
   "ArG_Gamer_5",
   "ArG_Gamer_6",
   "ArG_Gamer_7",
-  "ArG_Gamer_8",
-  "ArG_Gamer_9",
-  "ArG_Gamer_10",
-  "ArG_Gamer_11",
-  "ArG_Gamer_12"
+  "ArG_Gamer_8"
   ];
 
   {
@@ -38,7 +34,7 @@ if(isServer)then{
         _AiGamer = _this select 1;
 
         _AIHited addEventHandler ["HandleDamage", {0}];
-        
+
         if(side (_this select 3) != Civilian)then{
 
         _AIHited say3D "HitCall";

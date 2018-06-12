@@ -1,3 +1,5 @@
+if (!isDedicated) then {
+
 _BGamer = [
 "ArG_Gamer_1",
 "ArG_Gamer_2",
@@ -23,6 +25,7 @@ if ((isPlayer _x)&&(typeOf _x in _BGamer))then{
      player allowDamage true;
      player setCaptive false;
      player setVariable ["_Hited",0,false];
+     player removeEventHandler ["Fired", RemMag];
       if(MarkerType "B_Safe" != "")then{
          [player,SaftyID] call BIS_fnc_holdActionRemove;
         };
@@ -38,9 +41,12 @@ if ((isPlayer _x)&&(typeOf _x in _BGamer))then{
         player allowDamage true;
         player setCaptive false;
         player setVariable ["_Hited",0,false];
+        player removeEventHandler ["Fired", RemMag];
          if(MarkerType "R_Safe" != "")then{
             [ player,SaftyID ] call BIS_fnc_holdActionRemove;
           };
          };
 
       }forEach allPlayers;
+
+    };

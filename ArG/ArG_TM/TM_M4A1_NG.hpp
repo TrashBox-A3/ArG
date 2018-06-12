@@ -19,31 +19,32 @@ class ArG_TM_M4A1_NG: rhs_weap_m4a1_carryhandle
   };
 
 
-class WeaponSlotsInfo: WeaponSlotsInfo
-{
-  class MuzzleSlot: MuzzleSlot
+  class WeaponSlotsInfo: WeaponSlotsInfo
   {
-    linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
-    compatibleItems[]=
+    class MuzzleSlot: MuzzleSlot
     {
-      "muzzle_snds_h",
-      "ArG_muzzle_snds_H"
+      linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
+      compatibleItems[]=
+      {
+        "muzzle_snds_h",
+        "ArG_muzzle_snds_H"
+      };
+      iconPosition[]={0,0.44999999};
+      iconScale=0.2;
     };
-    iconPosition[]={0,0.44999999};
-    iconScale=0.2;
+    class CowsSlot: CowsSlot
+    {
+      iconPosition[]={0.5,0.34999999};
+      iconScale=0.2;
+    };
+    class PointerSlot: PointerSlot
+    {
+      iconPosition[]={0.2,0.44999999};
+      iconScale=0.25;
+    };
+    class UnderBarrelSlot {};
+
   };
-  class CowsSlot: CowsSlot
-  {
-    iconPosition[]={0.5,0.34999999};
-    iconScale=0.2;
-  };
-  class PointerSlot: PointerSlot
-  {
-    iconPosition[]={0.2,0.44999999};
-    iconScale=0.25;
-  };
-  class UnderBarrelSlot {};
-};
 
   initSpeed = 250; // muzzle velocity
   maxRange = 100;

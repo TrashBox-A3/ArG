@@ -4,7 +4,7 @@ class SMA_HK417_16in;
 class ArG_TM_HK417_AEG: SMA_HK417_16in
 {
   author="Rodeostar42";
-
+  _generalMacro = "mk20_base_F";
   scope=2;
   displayName="ArG TM HK417 EARLY VARIANT";
   model = "\SMA_HK417\HK417_16in.p3d";
@@ -27,22 +27,15 @@ class ArG_TM_HK417_AEG: SMA_HK417_16in
       linkProxy="\A3\data_f\proxies\weapon_slots\MUZZLE";
       compatibleItems[]=
       {
-        "muzzle_snds_h",
+        "SMA_supptan_762",
+        "SMA_supp_762",
+        "sma_gemtech_one_blk",
         "ArG_muzzle_snds_H"
       };
       iconPosition[]={0,0.44999999};
       iconScale=0.2;
     };
-    class CowsSlot: CowsSlot
-    {
-      iconPosition[]={0.5,0.34999999};
-      iconScale=0.2;
-    };
-    class PointerSlot: PointerSlot
-    {
-      iconPosition[]={0.2,0.44999999};
-      iconScale=0.25;
-    };
+
   };
 
   initSpeed = 250; // muzzle velocity

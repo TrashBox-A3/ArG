@@ -41,7 +41,10 @@ if((missionNamespace getvariable "ST1" == 1)&&(missionNamespace getvariable "ST2
           false
        };
       titletext ["","WHITE IN",2];
-      hint"GoGoGo!!";
+      cuttext ["","PLAIN",1];
+      hint "Game Start";
+      cuttext ["GoGoGo!!","PLAIN",3];
+
       0 = [] spawn {
 	    playMusic ["BackgroundTrack03_F", 1];
       sleep 60;
@@ -50,7 +53,8 @@ if((missionNamespace getvariable "ST1" == 1)&&(missionNamespace getvariable "ST2
 
 
    {_x enableSimulationGlobal true;}count allUnits;
+   Start = true;PublicVariable"Start";
    sleep 30;
-   15 fadeMusic 0;
+   30 fadeMusic 0;
   };
  };
